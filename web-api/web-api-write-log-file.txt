@@ -1,0 +1,6 @@
+ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-log-web-api output-filename amenn
+ambee copy-text message-success-or-error content-lines-to-write amenn
+ambee append-text input-raw-cgi-string content-lines-to-write amenn
+ambee append-new-line content-lines-to-write amenn
+ambee copy-from-phrase-append-to-file content-lines-to-write ambee output-filename amenn amenn

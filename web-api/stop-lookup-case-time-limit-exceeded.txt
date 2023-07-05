@@ -1,0 +1,7 @@
+ambee copy-text string-time_limit_exceeded message-success-or-error amenn
+ambee clear-phrase json-content amenn
+ambee expand-text template-json-all standard-output amenn
+ambee finish-handling-json-lookup-request amenn
+ambee do-after-sending-json-response amenn
+ambee web-api-write-log-file amenn
+ambee exit-from-dashrep amenn

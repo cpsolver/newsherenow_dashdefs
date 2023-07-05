@@ -1,0 +1,20 @@
+no-space
+{
+no-space
+
+code-open-quote km_times_100 code-close-quote no-space : no-space code-open-quote distance-to-item code-close-quote no-space , no-space
+
+code-open-quote bizname code-close-quote no-space : no-space code-open-quote business-name code-close-quote no-space , no-space
+
+code-open-quote biztype code-close-quote no-space : no-space code-open-quote biztype-of-item code-close-quote no-space , no-space
+
+code-open-quote website code-close-quote no-space : no-space code-open-quote website-of-item code-close-quote no-space , no-space
+
+code-open-quote tagline code-close-quote no-space : no-space code-open-quote tagline-of-item code-close-quote no-space , no-space
+
+code-open-quote lat9 code-close-quote no-space : no-space code-open-quote latitude-of-item code-close-quote no-space , no-space
+
+code-open-quote lon9 code-close-quote no-space : no-space code-open-quote longitude-of-item code-close-quote no-space
+
+},
+no-space

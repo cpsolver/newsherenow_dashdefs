@@ -1,0 +1,5 @@
+ambee copy-characters-from-position-to-position latitude-integer region-latitude-first-four-digits 1 4 amenn
+ambee copy-characters-from-position-to-position longitude-integer region-longitude-first-four-digits 1 4 amenn
+ambee copy-text region-latitude-first-four-digits region-id amenn
+ambee append-text-no-space character-underscore region-id amenn
+ambee append-text-no-space region-longitude-first-four-digits region-id amenn

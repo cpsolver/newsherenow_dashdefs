@@ -1,0 +1,5 @@
+no-space content-type-json new-line
+
+no-space {"msg":" no-space message-success-or-error no-space ",
+no-space json-content
+no-space } no-space

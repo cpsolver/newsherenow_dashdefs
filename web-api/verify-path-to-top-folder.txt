@@ -1,0 +1,18 @@
+combee
+avoid the full text string being anywhere in this source code!
+comenn
+ambee put-into-phrase string-path_to_top_folder pathto amenn
+ambee put-into-phrase string-temp topfolder amenn
+ambee append-text-no-space string-temp string-path_to_top_folder amenn
+
+ambee put-into-phrase zero-if-ok-check-one ambee get-position-of-matching-text string-path_to_top_folder template-path-to-street-intersections amenn amenn
+ambee put-into-phrase zero-if-ok-check-two ambee get-position-of-matching-text string-path_to_top_folder template-path-to-street-names amenn amenn
+ambee put-into-phrase zero-if-ok-check-three ambee get-position-of-matching-text string-path_to_top_folder template-path-to-biz amenn amenn
+
+ambee copy-text zero-if-ok-check-one three-zeros-if-ok-all amenn
+ambee append-text-no-space zero-if-ok-check-two three-zeros-if-ok-all amenn
+ambee append-text-no-space zero-if-ok-check-three three-zeros-if-ok-all amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions three-zeros-if-ok-all string-000 amenn amenn
+    ambee copy-text string-invalid_path message-success-or-error amenn
+ambee if-end amenn

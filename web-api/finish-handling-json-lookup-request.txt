@@ -1,0 +1,11 @@
+ambee if-yes-begin ambee yes-or-no-empty-phrase message-success-or-error amenn amenn
+    ambee copy-text string-message-success message-success-or-error amenn
+ambee if-end amenn
+
+ambee expand-text template-json-all standard-output amenn
+ambee copy-and-replace standard-output standard-output string-comma-close-square-bracket character-close-square-bracket amenn
+ambee copy-and-replace standard-output standard-output string-comma-close-brace character-close-brace amenn
+
+
+ambee trace-show standard-output amenn
+ambee check-elapsed-time amenn

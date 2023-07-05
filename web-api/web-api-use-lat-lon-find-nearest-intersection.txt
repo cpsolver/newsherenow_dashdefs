@@ -1,0 +1,25 @@
+ambee web-api-get-lat-lon amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase message-success-or-error amenn amenn
+    ambee find-intersection-closest-to-latitude-longitude-at-center amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase message-success-or-error amenn amenn
+    ambee copy-text latitude-at-center latitude-integer amenn
+    ambee copy-text longitude-at-center longitude-integer amenn
+    ambee get-region-id-from-latitude-longitude-integer amenn
+    ambee calculate-latitude-longitude-decimal amenn
+ambee if-else amenn
+    ambee string-message-intersection_not_found message-success-or-error amenn
+    ambee clear-phrase latitude-integer amenn
+    ambee clear-phrase longitude-integer amenn
+    ambee clear-phrase latitude-at-center amenn
+    ambee clear-phrase longitude-at-center amenn
+    ambee clear-phrase region-id amenn
+    ambee clear-phrase latitude-decimal amenn
+    ambee clear-phrase longitude-decimal amenn
+ambee if-end amenn
+
+
+ambee trace-show latitude-decimal amenn
+ambee trace-show longitude-decimal amenn

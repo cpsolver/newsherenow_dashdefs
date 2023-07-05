@@ -1,0 +1,7 @@
+no-space
+
+code-open-quote lat code-close-quote no-space : no-space code-open-quote latitude-decimal code-close-quote no-space character-comma no-space
+code-open-quote lon code-close-quote no-space : no-space code-open-quote longitude-decimal code-close-quote no-space character-comma no-space
+
+code-open-quote street_name_1 code-close-quote no-space : no-space code-open-quote first-street-name code-close-quote no-space character-comma no-space
+code-open-quote street_name_2 code-close-quote no-space : no-space code-open-quote second-street-name code-close-quote no-space character-comma no-space

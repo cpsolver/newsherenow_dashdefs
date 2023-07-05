@@ -1,0 +1,17 @@
+ambee if-no-begin ambee yes-or-no-empty-phrase latitude-integer amenn amenn
+    ambee copy-text latitude-integer latitude-at-center amenn
+    ambee copy-text longitude-integer longitude-at-center amenn
+    ambee get-region-ids-to-search amenn
+    ambee use-handler-with-each-word-in-phrase handle-get-businesses-in-region-file region-ids-to-search amenn
+    ambee copy-text string-message-success message-success-or-error amenn
+ambee if-else amenn
+    ambee clear-phrase json-content amenn
+    ambee copy-text string-message-intersection_not_found message-success-or-error amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-all-item-ids amenn amenn
+    ambee handle-json-multiple-businesses-found amenn
+    ambee expand-text template-json-list-of-businesses json-content-businesses amenn
+    ambee append-text-no-space json-content-businesses json-content amenn
+    ambee copy-text string-message-success message-success-or-error amenn
+ambee if-end amenn

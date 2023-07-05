@@ -1,0 +1,13 @@
+combee
+todo: get list of admin ids from file
+comenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase input-key amenn amenn
+    ambee copy-words-found-in-both-lists input-key list-of-admin-user-ids not-empty-if-valid-access-id amenn
+ambee if-else amenn
+    ambee clear-phrase not-empty-if-valid-access-id amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase not-empty-if-valid-access-id amenn amenn
+    ambee copy-text string-message-access_denied message-success-or-error amenn
+ambee if-end amenn

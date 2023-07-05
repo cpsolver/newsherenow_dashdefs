@@ -1,0 +1,4 @@
+combee *** assumes that check-elapsed-time was just executed! *** comenn
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee elapsed-time amenn ambee time-limit-in-seconds amenn amenn amenn amenn
+ambee stop-lookup-case-time-limit-exceeded amenn
+ambee if-end amenn

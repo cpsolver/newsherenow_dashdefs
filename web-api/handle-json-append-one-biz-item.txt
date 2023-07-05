@@ -1,0 +1,11 @@
+ambee copy-text word-to-use-in-handler item-id amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen biz-name business-name amenn
+ambee copy-and-replace business-name business-name character-underscore character-space amenn
+ambee copy-text distance-to-item-id fenambee item-id amenn distance-to-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen latitude latitude-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen longitude longitude-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen website website-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen biztype biztype-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen tagline tagline-of-item amenn
+ambee expand-text template-json-business-single-item expanded-content amenn
+ambee append-text-no-space expanded-content json-content-businesses-generated-portion amenn

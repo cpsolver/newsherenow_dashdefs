@@ -1,0 +1,51 @@
+ambee trace-show region-id amenn
+
+
+ambee check-elapsed-time amenn
+combee ***
+ambee stop-lookup-if-time-limit-exceeded amenn
+*** comenn
+
+
+ambee copy-text word-to-use-in-handler region-id amenn
+ambee copy-text street-ids-in-region fenambee region-id amenn street-ids amenn
+ambee specify-path-and-filename-for-intersection-info-in-region-id amenn
+ambee clear-phrase list-of-storage-phrase-names amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-search-for-intersections amenn amenn amenn
+ambee find-lines-in-file-that-begin-with-any-two-words-listed ambee file-to-search-for-intersections amenn street-ids list-of-storage-phrase-names amenn
+ambee if-end amenn
+
+ambee put-into-phrase count-of-intersections-found  ambee get-count-of-words list-of-storage-phrase-names amenn  amenn
+
+
+ambee trace-show count-of-intersections-found amenn
+ambee trace-show list-of-storage-phrase-names amenn
+ambee check-elapsed-time amenn
+combee ***
+ambee stop-lookup-if-time-limit-exceeded amenn
+*** comenn
+
+
+ambee clear-phrase intersection-ids-in-region fenambee region-id amenn amenn
+ambee clear-phrase pointers-for-intersection-info amenn
+ambee put-into-phrase yes-or-no-found-at-least-one-intersection  ambee yes-or-no-same-two-words nonzero ambee zero-or-nonzero ambee count-of-intersections-found amenn amenn amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-found-at-least-one-intersection amenn amenn
+ambee generate-counts-from-integer-to-integer 1 ambee count-of-intersections-found amenn pointers-for-intersection-info amenn
+ambee use-handler-with-each-word-in-phrase get-intersection-info-based-on-one-pointer-to-info pointers-for-intersection-info amenn
+ambee append-text intersection-ids-in-region fenambee region-id amenn intersection-ids-in-all-regions amenn
+ambee append-text region-id list-of-region-ids-with-intersections amenn
+ambee if-end amenn
+
+
+combee
+ambee trace-show pointers-for-intersection-info amenn
+ambee trace-show intersection-ids-in-region fenambee region-id amenn amenn
+comenn
+
+
+ambee check-elapsed-time amenn
+combee ***
+ambee stop-lookup-if-time-limit-exceeded amenn
+*** comenn
