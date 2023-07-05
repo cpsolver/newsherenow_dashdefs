@@ -1,0 +1,9 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text first-street-id street-id amenn
+ambee copy-text second-street-id first-street-id amenn
+ambee copy-text street-id second-street-id amenn
+ambee copy-text first-street-name street-name amenn
+ambee copy-text second-street-name first-street-name amenn
+ambee copy-text street-name second-street-name amenn

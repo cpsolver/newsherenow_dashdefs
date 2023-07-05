@@ -1,0 +1,6 @@
+collected-info-biz-id
+biz-name
+latitude
+longitude
+biztype
+website

@@ -1,0 +1,28 @@
+ambee copy-text word-to-use-in-handler region-id amenn
+ambee expand-text template-path-to-biz dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-biz-filename file-to-read amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show file-to-read amenn
+
+
+ambee clear-phrase list-of-biz-ids-in-region fenambee region-id amenn amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-read amenn amenn amenn
+ambee copy-from-columns-in-file-to-named-phrases ambee file-to-read amenn pattern-prefix-and-column-names-for-biz-info list-of-biz-ids-in-region fenambee region-id amenn amenn
+ambee if-end amenn
+
+ambee append-text list-of-biz-ids-in-region fenambee region-id amenn list-of-all-item-ids amenn
+
+
+ambee trace-show list-of-biz-ids-in-region fenambee region-id amenn amenn
+
+
+ambee expand-text template-biz-tagline-filename file-to-read amenn
+ambee clear-phrase list-of-biz-tagline-ids-in-region fenambee region-id amenn amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-read amenn amenn amenn
+ambee copy-from-columns-in-file-to-named-phrases ambee file-to-read amenn pattern-prefix-and-column-names-for-biz-tagline list-of-biz-tagline-ids-in-region fenambee region-id amenn amenn
+ambee if-end amenn
+

@@ -1,0 +1,12 @@
+ambee copy-characters-from-position-to-position street-id street-id-prefixed-with-zeros 2 999 amenn
+ambee copy-zero-pad-left-to-length street-id-prefixed-with-zeros street-id-prefixed-with-zeros 14 amenn
+ambee put-into-phrase count-of-characters-in-street-id-with-zeros  ambee get-count-of-characters street-id-prefixed-with-zeros amenn amenn
+ambee copy-characters-from-position-to-position street-id-prefixed-with-zeros street-names-pattern-digits ambee numeric-minus ambee count-of-characters-in-street-id-with-zeros amenn 3 amenn 999 amenn
+ambee expand-text filename-pattern-street-id-to-street-name file-to-search amenn
+
+
+combee
+ambee trace-show street-id-prefixed-with-zeros amenn
+ambee trace-show street-names-pattern-digits amenn
+ambee trace-show file-to-search amenn
+comenn

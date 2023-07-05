@@ -1,0 +1,8 @@
+ambee put-into-phrase scale-value-for-longitude-adjustment  ambee numeric-cosine ambee numeric-divide-by ambee numeric-multiply ambee value-of-pi amenn ambee numeric-absolute ambee numeric-minus ambee latitude-at-center amenn ambee latitude-integer-at-equator amenn amenn amenn amenn 01800000000  amenn amenn  amenn
+
+
+combee
+ambee trace-show latitude-at-center amenn
+ambee trace-show latitude-integer-at-equator amenn
+ambee trace-show scale-value-for-longitude-adjustment amenn
+comenn

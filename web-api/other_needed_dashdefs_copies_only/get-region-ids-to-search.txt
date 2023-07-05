@@ -1,0 +1,35 @@
+combee
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+comenn
+
+
+ambee put-into-phrase region-half-width-increment  3  amenn
+ambee put-into-phrase region-full-width-increment  ambee numeric-multiply 2 ambee region-half-width-increment amenn amenn  amenn
+
+ambee put-into-phrase latitude-five-digits  ambee get-characters-from-position-to-position latitude-at-center 1 5  amenn  amenn
+ambee put-into-phrase longitude-five-digits  ambee get-characters-from-position-to-position longitude-at-center 1 5  amenn  amenn
+
+ambee put-into-phrase latitude-five-digits  ambee numeric-add ambee latitude-five-digits amenn ambee region-half-width-increment amenn  amenn  amenn
+ambee put-into-phrase longitude-five-digits  ambee numeric-add ambee longitude-five-digits amenn ambee region-half-width-increment amenn  amenn  amenn
+ambee get-region-id-based-on-latitude-longitude-five-digits amenn
+ambee copy-text region-id region-ids-to-search amenn
+
+ambee put-into-phrase latitude-five-digits  ambee numeric-minus ambee latitude-five-digits amenn ambee region-full-width-increment amenn  amenn  amenn
+ambee get-region-id-based-on-latitude-longitude-five-digits amenn
+ambee append-text region-id region-ids-to-search amenn
+
+ambee put-into-phrase longitude-five-digits  ambee numeric-minus ambee longitude-five-digits amenn ambee region-full-width-increment amenn  amenn  amenn
+ambee get-region-id-based-on-latitude-longitude-five-digits amenn
+ambee append-text region-id region-ids-to-search amenn
+
+ambee put-into-phrase latitude-five-digits  ambee numeric-add ambee latitude-five-digits amenn ambee region-full-width-increment amenn  amenn  amenn
+ambee get-region-id-based-on-latitude-longitude-five-digits amenn
+ambee append-text region-id region-ids-to-search amenn
+
+ambee copy-words-unique-only region-ids-to-search region-ids-to-search amenn
+
+
+combee
+ambee trace-show region-ids-to-search amenn
+comenn

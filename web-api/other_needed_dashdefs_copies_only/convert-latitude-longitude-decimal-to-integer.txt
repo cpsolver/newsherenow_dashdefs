@@ -1,0 +1,4 @@
+ambee put-into-phrase latitude-or-longitude  latitude  amenn
+ambee convert-latitude-or-longitude-decimal-to-integer amenn
+ambee put-into-phrase latitude-or-longitude  longitude  amenn
+ambee convert-latitude-or-longitude-decimal-to-integer amenn

@@ -1,0 +1,69 @@
+ambee trace-show-where amenn
+ambee trace-show region-id amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+ambee clear-phrase intersection-id amenn
+ambee copy-characters-from-position-to-position latitude-at-center last-seven-digits-of-latitude-integer 5 11  amenn
+ambee copy-characters-from-position-to-position longitude-at-center last-seven-digits-of-longitude-integer 5 11  amenn
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+ambee specify-path-and-filename-for-intersection-info-in-region-id amenn
+ambee clear-phrase list-of-storage-phrase-names amenn
+
+combee **** todo_current: was bug here, now fixed? **** comenn
+
+
+ambee trace-show file-to-search-for-intersections amenn
+
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-search-for-intersections amenn amenn amenn
+ambee copy-from-columns-in-file-to-column-lists ambee file-to-search-for-intersections amenn values-in-column amenn
+ambee if-end amenn
+
+
+ambee trace-show values-in-column amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words nonzero ambee zero-or-nonzero ambee get-count-of-words values-in-column-4 amenn amenn amenn amenn
+ambee put-into-phrase last-seven-digits-of-latitude-integer-negative  ambee numeric-multiply -1 ambee last-seven-digits-of-latitude-integer amenn amenn  amenn
+ambee put-into-phrase last-seven-digits-of-longitude-integer-negative  ambee numeric-multiply -1 ambee last-seven-digits-of-longitude-integer amenn amenn  amenn
+ambee numeric-vector-add-number values-in-column-3 ambee last-seven-digits-of-latitude-integer-negative amenn list-of-latitude-deltas amenn
+ambee numeric-vector-add-number values-in-column-4 ambee last-seven-digits-of-longitude-integer-negative amenn list-of-longitude-deltas amenn
+ambee numeric-vectors-from-delta-values-calculate-distances list-of-latitude-deltas list-of-longitude-deltas list-of-distances-for-intersections amenn
+ambee generate-counts-from-integer-to-integer 1 ambee get-count-of-words values-in-column-1  amenn pointers-to-intersections amenn
+ambee copy-words-rearrange-using-order-sort-numeric pointers-to-intersections pointers-sorted-by-distance list-of-distances-for-intersections amenn
+ambee copy-word-at-position pointers-sorted-by-distance pointer-to-closest-intersection 1  amenn
+ambee copy-word-at-position values-in-column-1 first-street-id ambee pointer-to-closest-intersection amenn amenn
+ambee copy-word-at-position values-in-column-2 second-street-id ambee pointer-to-closest-intersection amenn amenn
+ambee if-else amenn
+ambee clear-phrase first-street-id amenn
+ambee clear-phrase second-street-id amenn
+ambee if-end amenn
+
+
+ambee trace-show first-street-id amenn
+ambee trace-show second-street-id amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase first-street-id amenn amenn
+ambee find-single-specific-intersection-based-on-street-ids amenn
+ambee get-street-names-based-on-first-second-street-ids amenn
+ambee clear-phrase city-name-and-country-or-state amenn
+ambee if-else amenn
+combee *** future_todo: verify allows for not finding any intersections in this region *** comenn
+ambee clear-phrase first-street-name amenn
+ambee clear-phrase second-street-name amenn
+ambee clear-phrase city-name-and-country-or-state amenn
+ambee if-end amenn
+
+
+ambee trace-show file-to-search-for-intersections amenn
+ambee trace-show yes-or-no-intersection-file-exists amenn
+ambee trace-show pointers-sorted-by-distance amenn
+ambee trace-show pointer-to-closest-intersection amenn
+ambee trace-show first-street-id amenn
+ambee trace-show second-street-id amenn
+ambee trace-show first-street-name amenn
+ambee trace-show second-street-name amenn
