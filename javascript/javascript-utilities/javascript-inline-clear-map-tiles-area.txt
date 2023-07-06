@@ -1,0 +1,1 @@
+jsvar-global-canvas no-space .clearRect( 0 , 0 , 512 , 512 ) js-statement-end

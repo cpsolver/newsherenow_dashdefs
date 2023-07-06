@@ -1,0 +1,8 @@
+jsfunction-draw-map-tile-at-position-8 js-equals function( ) {
+    var jsvar-x-offset-scaled comma-sep jsvar-y-offset-scaled js-statement-end
+    var jsvar-map-tile-image js-equals jsfunction-map-tile-image underscore-here 8 js-statement-end
+    jsvar-x-offset-scaled js-equals js-paren-begin jsvar-global-width-at-map-tile-position-one js-paren-end js-multiply jsvar-global-map-size-scale js-statement-end
+    jsvar-y-offset-scaled js-equals js-paren-begin jsvar-global-height-at-map-tile-position-one js-plus jsvar-global-map-tile-width js-paren-end js-multiply jsvar-global-map-size-scale js-statement-end
+    jsvar-global-canvas no-space .drawImage( jsvar-map-tile-image , 0,0, jsvar-global-map-tile-width , jsvar-global-map-tile-width , jsvar-x-offset-scaled , jsvar-y-offset-scaled , jsvar-global-map-tile-width-scaled , jsvar-global-map-tile-width-scaled ) js-statement-end
+} js-statement-end
+<new_line>
