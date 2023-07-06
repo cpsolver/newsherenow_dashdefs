@@ -1,0 +1,27 @@
+ambee copy-text word-to-use-in-handler pointer-to-biz-item amenn
+ambee copy-word-at-position biz-ids-unique-not-sorted biz-id ambee pointer-to-biz-item amenn amenn
+
+
+ambee trace-show a*************-***************a amenn
+ambee trace-show collected-info-biz-id fenambee biz-id amennfen biz-name amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words n2380825990 ambee biz-id amenn amenn amenn
+
+combee ***
+n2380825990 is Wally_Waffle which is exactly 57.56 km from North Jackson, based on latitude and longitude calculations done online ("great-circle distance between two points")
+*** comenn
+
+ambee copy-word-at-position list-of-kilometer-distances-for-all-biz-items distance-value ambee pointer-to-biz-item amenn amenn
+ambee trace-show distance-value amenn
+
+ambee copy-word-at-position list-of-distances-for-all-biz-items lat-lon-distance-value ambee pointer-to-biz-item amenn amenn
+ambee trace-show lat-lon-distance-value amenn
+
+ambee trace-show collected-info-biz-id fenambee biz-id amennfen latitude amenn
+ambee trace-show collected-info-biz-id fenambee biz-id amennfen longitude amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+ambee trace-show pointer-to-biz-item amenn
+
+ambee if-end amenn

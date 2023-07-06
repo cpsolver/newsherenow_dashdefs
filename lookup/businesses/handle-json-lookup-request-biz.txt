@@ -1,0 +1,30 @@
+ambee calculate-calendar-info amenn
+ambee clear-phrase generated-json-content-polls-local amenn
+
+combee ***
+later, sort businesses by combination of distance and user-based ranking of preference,
+so that popular distant businesses push out less-popular closer businesses
+*** comenn
+
+ambee get-location-latitude-longitude-loc-version amenn
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+ambee get-region-ids-to-search amenn
+ambee use-handler-with-each-word-in-phrase handle-get-businesses-in-region-file region-ids-to-search amenn
+ambee clear-phrase json-content-businesses-generated-portion amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-all-item-ids amenn amenn
+ambee handle-json-multiple-businesses-found amenn
+ambee if-else amenn
+ambee handle-json-no-businesses-found amenn
+ambee if-end amenn
+
+
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+ambee trace-show list-of-all-item-ids amenn
+ambee trace-show json-content-businesses-generated-portion amenn
+
+
+ambee calculate-hour-based-on-longitude amenn
+ambee copy-text json-content-businesses json-content amenn
+ambee finish-handling-json-lookup-request amenn

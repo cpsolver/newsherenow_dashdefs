@@ -1,0 +1,13 @@
+ambee put-into-phrase string-row  row  amenn
+ambee put-into-phrase string-column  column  amenn
+ambee put-into-phrase number-of-items-to-position-in-grid  ambee get-count-of-words list-of-items-to-position-in-grid amenn  amenn
+
+
+ambee trace-show list-of-items-to-position-in-grid amenn
+ambee trace-show number-of-items-to-position-in-grid amenn
+combee ***
+*** comenn
+
+
+ambee generate-counts-from-integer-to-integer 1 ambee number-of-items-to-position-in-grid amenn list-of-grid-position-numbers amenn
+ambee use-handler-with-each-word-in-phrase handle-one-item-put-into-grid list-of-grid-position-numbers amenn

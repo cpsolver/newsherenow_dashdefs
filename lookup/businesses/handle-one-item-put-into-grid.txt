@@ -1,0 +1,10 @@
+ambee copy-text word-to-use-in-handler grid-position-number amenn
+ambee copy-word-at-position list-of-items-to-position-in-grid item-id ambee grid-position-number amenn amenn
+ambee copy-word-at-position list-of-row-numbers-by-grid-position-in-four-by-twenty-grid row-number-for-item-id fenambee item-id amenn ambee grid-position-number amenn amenn
+ambee copy-word-at-position list-of-column-numbers-by-grid-position-in-four-by-twenty-grid column-number-for-item-id fenambee item-id amenn ambee grid-position-number amenn amenn
+
+
+ambee trace-show row-number-for-item-id fenambee item-id amenn amenn
+ambee trace-show column-number-for-item-id fenambee item-id amenn amenn
+combee ***
+*** comenn

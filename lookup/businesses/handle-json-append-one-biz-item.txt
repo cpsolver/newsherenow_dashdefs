@@ -1,0 +1,25 @@
+ambee copy-text word-to-use-in-handler item-id amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen biz-name business-name amenn
+ambee copy-and-replace business-name business-name character-underscore character-space amenn
+ambee copy-text distance-to-item-id fenambee item-id amenn distance-to-item amenn
+ambee put-into-phrase percentage-distance-to-item  ambee numeric-multiply ambee multiplier-to-scale-offset-distance-into-percentage amenn ambee numeric-minus ambee distance-to-item amenn ambee closest-distance-to-item amenn amenn amenn  amenn
+ambee put-into-phrase percentage-distance-to-item  ambee numeric-minimum 100 ambee numeric-maximum 0 ambee numeric-integer ambee percentage-distance-to-item amenn amenn amenn amenn  amenn
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions string-zero multiplier-to-scale-offset-distance-into-percentage amenn amenn
+ambee put-into-phrase percentage-distance-to-item  50  amenn
+ambee if-end amenn
+
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen latitude latitude-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen longitude longitude-of-item amenn
+ambee copy-text row-number-for-item-id fenambee item-id amenn row-number amenn
+ambee copy-text column-number-for-item-id fenambee item-id amenn column-number amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen website website-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen biztype biztype-of-item amenn
+ambee copy-without-extra-spaces collected-info-biz-id fenambee item-id amennfen tagline tagline-of-item amenn
+ambee put-into-phrase current-grid-row-column-identifier  gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn  amenn
+ambee expand-text template-json-business-single-item expanded-content amenn
+ambee append-text expanded-content json-content-businesses-generated-portion amenn
+
+
+combee ***
+ambee debug-show-info-one-biz-item amenn
+*** comenn

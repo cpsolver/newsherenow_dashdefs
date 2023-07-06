@@ -1,0 +1,2 @@
+ambee copy-text collected-info-biz-id fenambee word-to-use-in-handler amennfen latitude sortable-vertical-value-for-item-id fenambee word-to-use-in-handler amenn amenn
+ambee copy-text collected-info-biz-id fenambee word-to-use-in-handler amennfen longitude sortable-horizontal-value-for-item-id fenambee word-to-use-in-handler amenn amenn

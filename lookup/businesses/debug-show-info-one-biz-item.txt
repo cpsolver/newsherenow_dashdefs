@@ -1,0 +1,15 @@
+ambee put-into-phrase position-in-original-list  ambee get-position-of-word item-id biz-ids-unique-not-sorted amenn  amenn
+ambee put-into-phrase displayed-latitude-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-latitudes-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show displayed-latitude-for-biz-id fenambee item-id amenn amenn
+ambee put-into-phrase displayed-longitude-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-longitudes-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show displayed-longitude-for-biz-id fenambee item-id amenn amenn
+ambee put-into-phrase displayed-latitude-delta-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-latitude-deltas-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show displayed-latitude-delta-for-biz-id fenambee item-id amenn amenn
+ambee trace-show scale-value-for-longitude-adjustment amenn
+ambee put-into-phrase scaled-displayed-longitude-delta-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-longitude-deltas-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show scaled-displayed-longitude-delta-for-biz-id fenambee item-id amenn amenn
+ambee put-into-phrase lat-lon-based-distance-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-distances-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show lat-lon-based-distance-for-biz-id fenambee item-id amenn amenn
+ambee trace-show kilometers-hundredths-per-latitude-integer amenn
+ambee put-into-phrase displayed-distance-for-biz-id fenambee item-id amenn  ambee get-word-at-position list-of-kilometer-distances-for-all-biz-items ambee position-in-original-list amenn amenn  amenn
+ambee trace-show displayed-distance-for-biz-id fenambee item-id amenn amenn

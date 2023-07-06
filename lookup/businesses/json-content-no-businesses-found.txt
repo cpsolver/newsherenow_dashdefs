@@ -1,0 +1,11 @@
+code-open-quote selectext-id-yes-no-got-biz code-close-quote no-space ,"contents","yes",
+
+code-open-quote selectext-id-post-json-action code-close-quote no-space ,"contents", no-space code-open-quote selectext-got-biz code-close-quote ,
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote target-selectext-biz-or-polls code-close-quote ,
+
+code-open-quote selectext-id-nav-tab-current code-close-quote no-space ,"contents", no-space code-open-quote target-selectext-biz-or-polls code-close-quote ,
+
+code-open-quote selectext-id-grid-biz code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-no-news-of-type-biz code-close-quote no-space ,"display","block",
