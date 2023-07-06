@@ -1,0 +1,26 @@
+combee *** for output, Monday is day 1 , Sunday is day 7 *** comenn
+ambee put-into-phrase modulus-operand-first  ambee numeric-add ambee start-day-of-week-for-year fenambee year-number amenn amenn ambee days-into-year-for-month-number fenambee month-number amenn amenn ambee day-of-month amenn -1  amenn  amenn
+
+combee *** future_todo: switch to using list-of-leap-years *** comenn
+ambee if-yes-begin ambee yes-if-not-no ambee yes-or-no-leap-year fenambee year-number amenn amenn ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee month-number amenn 2  amenn amenn amenn amenn
+ambee numeric-increment modulus-operand-first amenn
+ambee if-end amenn
+
+ambee put-into-phrase modulus-operand-second  7  amenn
+ambee calculate-numeric-modulus amenn
+ambee copy-text modulus-result day-of-week-number amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 0 ambee day-of-week-number amenn amenn amenn
+ambee put-into-phrase day-of-week-number  7  amenn
+ambee if-end amenn
+
+
+combee ***
+ambee trace-show year-number amenn
+ambee trace-show start-day-of-week-for-year fenambee year-number amenn amenn
+ambee trace-show month-number amenn
+ambee trace-show days-into-year-for-month-number fenambee month-number amenn amenn
+ambee trace-show day-of-month amenn
+ambee trace-show yes-or-no-leap-year fenambee year-number amenn amenn
+ambee trace-show day-of-week-number amenn
+*** comenn

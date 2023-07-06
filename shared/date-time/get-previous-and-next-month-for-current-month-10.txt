@@ -1,0 +1,4 @@
+ambee put-into-phrase previous-month-number  9  amenn
+ambee put-into-phrase year-containing-previous-month  ambee current-year amenn  amenn
+ambee put-into-phrase next-month-number  11  amenn
+ambee put-into-phrase year-containing-next-month  ambee current-year amenn  amenn

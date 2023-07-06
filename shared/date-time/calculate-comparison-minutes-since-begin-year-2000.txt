@@ -1,0 +1,7 @@
+ambee put-into-phrase comparison-minutes-since-begin-year-2000  ambee numeric-add ambee minute-number amenn ambee numeric-multiply 60 ambee numeric-add ambee hour-number amenn ambee numeric-multiply 24 ambee numeric-add ambee days-into-year-for-month-number fenambee month-number amenn amenn ambee day-of-month amenn ambee numeric-multiply 366 ambee numeric-minus ambee year-number amenn 2000 amenn amenn amenn amenn amenn amenn amenn  amenn
+
+
+combee ***
+Perl code version:
+$comparison_date_time_in_minutes = $minute + ( 60 * ( $hours_gmt + ( 24 * ( $days_in_year_prior_to_first_day_of_month_number[ $month_number ] + $day_of_month + ( 366 * ( $year - 2000 ) ) ) ) ) ) ;
+*** comenn
