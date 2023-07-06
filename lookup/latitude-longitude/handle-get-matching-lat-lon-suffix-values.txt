@@ -1,0 +1,12 @@
+ambee put-into-phrase pointer-offset  ambee numeric-add ambee word-to-use-in-handler amenn ambee pointer-offset-for-latitude amenn amenn  amenn
+ambee copy-characters-from-position-to-position text-containing-latitude-longitude-suffix-digits nearby-latitude-suffix-digits ambee pointer-offset amenn ambee numeric-add 6 ambee pointer-offset amenn amenn amenn
+ambee append-text nearby-latitude-suffix-digits list-of-nearby-latitude-suffix-digits amenn
+ambee put-into-phrase pointer-offset  ambee numeric-add ambee word-to-use-in-handler amenn ambee pointer-offset-for-longitude amenn amenn  amenn
+ambee copy-characters-from-position-to-position text-containing-latitude-longitude-suffix-digits nearby-longitude-suffix-digits ambee pointer-offset amenn ambee numeric-add 6 ambee pointer-offset amenn amenn amenn
+ambee append-text nearby-longitude-suffix-digits list-of-nearby-longitude-suffix-digits amenn
+
+
+combee
+ambee trace-show nearby-latitude-suffix-digits amenn
+ambee trace-show nearby-longitude-suffix-digits amenn
+comenn

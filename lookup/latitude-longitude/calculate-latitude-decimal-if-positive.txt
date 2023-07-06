@@ -1,0 +1,2 @@
+ambee put-into-phrase latitude-integer-adjusted  ambee get-characters-from-position-to-position latitude-integer 2 99 amenn amenn
+ambee put-into-phrase latitude-decimal  ambee numeric-add 0 ambee get-characters-from-position-to-position latitude-integer-adjusted 1 3 amenn amenn nospay . nospay ambee get-characters-from-position-to-position latitude-integer-adjusted 4 99 amenn amenn

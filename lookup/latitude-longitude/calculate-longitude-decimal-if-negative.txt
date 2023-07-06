@@ -1,0 +1,12 @@
+ambee put-into-phrase longitude-integer-adjusted  ambee get-characters-from-position-to-position longitude-integer 2 99 amenn amenn
+ambee put-into-phrase longitude-nines-complement  ambee numeric-minus 9999999999 ambee longitude-integer-adjusted amenn amenn amenn
+ambee copy-zero-pad-left-to-length longitude-nines-complement longitude-nines-complement 10 amenn
+ambee put-into-phrase longitude-decimal  ambee numeric-add 0 ambee get-characters-from-position-to-position longitude-nines-complement 1 3 amenn amenn nospay . nospay ambee get-characters-from-position-to-position longitude-nines-complement 4 99 amenn amenn
+ambee prepend-text-no-space character-hyphen longitude-decimal amenn
+
+
+combee ***
+ambee trace-show longitude-integer-adjusted amenn
+ambee trace-show longitude-nines-complement amenn
+ambee trace-show longitude-decimal amenn
+*** comenn

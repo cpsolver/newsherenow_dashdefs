@@ -1,0 +1,20 @@
+ambee copy-text distance-in-hundredths characters-in-list amenn
+ambee convert-characters-in-list-into-list-of-characters amenn
+ambee copy-text list-of-characters distance-digits-split-into-words amenn
+
+ambee put-into-phrase word-count  ambee get-count-of-words distance-digits-split-into-words amenn   amenn
+ambee copy-word-at-position distance-digits-split-into-words distance-hundredths-digit ambee word-count amenn  amenn
+ambee copy-words-from-position-to-position distance-digits-split-into-words distance-digits-split-into-words 1 ambee numeric-minus ambee word-count amenn 1  amenn amenn
+ambee copy-without-extra-spaces distance-digits-split-into-words distance-integer-digits amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase distance-integer-digits amenn amenn
+ambee put-into-phrase distance-integer-digits  0  amenn
+ambee if-end amenn
+
+
+combee
+ambee trace-show list-of-characters amenn
+ambee trace-show distance-digits-split-into-words amenn
+ambee trace-show distance-hundredths-digit amenn
+ambee trace-show distance-integer-digits amenn
+comenn

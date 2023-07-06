@@ -1,0 +1,6 @@
+ambee numeric-increment vector-position-pointer amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee word-to-use-in-handler amenn ambee maximum-character-distance-for-lat-lon-match amenn amenn amenn amenn
+ambee copy-word-at-position list-of-sorted-positions pointer-to-nearby-suffix-digits ambee vector-position-pointer amenn amenn
+ambee append-text pointer-to-nearby-suffix-digits list-of-positions-that-match-both-lat-lon-suffix-digits amenn
+ambee if-end amenn

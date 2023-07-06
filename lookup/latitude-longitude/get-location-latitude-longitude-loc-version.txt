@@ -1,0 +1,5 @@
+ambee clear-phrase latitude-integer amenn
+ambee clear-phrase longitude-integer amenn
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-loc-map-center combee *** need space here *** comenn  amenn loc-words character-underscore character-space amenn
+ambee copy-words-from-position-to-position loc-words latitude-integer 1 1  amenn
+ambee copy-words-from-position-to-position loc-words longitude-integer 2 2  amenn

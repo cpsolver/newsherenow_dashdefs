@@ -1,0 +1,54 @@
+combee **** reminder: suffix digits have length of 7 digits; string-to-match-for-latitude/longitude-values can include text label, but must contain first 3 digits (out of 7 digits) to match **** comenn
+
+ambee generate-positions-of-delimiter string-to-match-for-latitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-latitude-suffix-digits amenn
+ambee generate-positions-of-delimiter string-to-match-for-longitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-longitude-suffix-digits amenn
+ambee find-adjacent-matching-latitude-longitude-suffix-digits amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase list-of-positions-that-match-both-lat-lon-suffix-digits amenn amenn
+ambee copy-characters-from-position-to-position string-to-match-for-latitude-values string-to-match-for-latitude-values 1 ambee numeric-add -1 ambee get-count-of-characters string-to-match-for-latitude-values amenn amenn amenn
+ambee copy-characters-from-position-to-position string-to-match-for-longitude-values string-to-match-for-longitude-values 1 ambee numeric-add -1 ambee get-count-of-characters string-to-match-for-longitude-values amenn amenn amenn
+ambee generate-positions-of-delimiter string-to-match-for-latitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-latitude-suffix-digits amenn
+ambee generate-positions-of-delimiter string-to-match-for-longitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-longitude-suffix-digits amenn
+
+combee **** todo: if need to find nearer intersection that has different digit in last position of suffix digits, search for those positions and append them to list-of-positions-matching-latitude-suffix-digits and list-of-positions-matching-longitude-suffix-digits **** comenn
+
+ambee find-adjacent-matching-latitude-longitude-suffix-digits amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase list-of-positions-that-match-both-lat-lon-suffix-digits amenn amenn
+ambee copy-characters-from-position-to-position string-to-match-for-latitude-values string-to-match-for-latitude-values 1 ambee numeric-add -1 ambee get-count-of-characters string-to-match-for-latitude-values amenn amenn amenn
+ambee copy-characters-from-position-to-position string-to-match-for-longitude-values string-to-match-for-longitude-values 1 ambee numeric-add -1 ambee get-count-of-characters string-to-match-for-longitude-values amenn amenn amenn
+ambee generate-positions-of-delimiter string-to-match-for-latitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-latitude-suffix-digits amenn
+ambee generate-positions-of-delimiter string-to-match-for-longitude-values text-containing-latitude-longitude-suffix-digits list-of-positions-matching-longitude-suffix-digits amenn
+
+combee **** todo: if need to find nearer intersection that has different digit in last position of suffix digits, search for those positions and append them to list-of-positions-matching-latitude-suffix-digits and list-of-positions-matching-longitude-suffix-digits **** comenn
+
+ambee find-adjacent-matching-latitude-longitude-suffix-digits amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-positions-that-match-both-lat-lon-suffix-digits amenn amenn
+ambee use-handler-with-each-word-in-phrase handle-get-matching-lat-lon-suffix-values list-of-positions-that-match-both-lat-lon-suffix-digits amenn
+ambee put-into-phrase last-seven-digits-of-latitude-integer-negative  ambee numeric-multiply -1 ambee last-seven-digits-of-latitude-integer amenn amenn  amenn
+ambee put-into-phrase last-seven-digits-of-longitude-integer-negative  ambee numeric-multiply -1 ambee last-seven-digits-of-longitude-integer amenn amenn  amenn
+ambee numeric-vector-add-number list-of-nearby-latitude-suffix-digits ambee last-seven-digits-of-latitude-integer-negative amenn list-of-latitude-deltas amenn
+ambee numeric-vector-add-number list-of-nearby-longitude-suffix-digits ambee last-seven-digits-of-longitude-integer-negative amenn list-of-longitude-deltas amenn
+ambee numeric-vectors-from-delta-values-calculate-distances list-of-latitude-deltas list-of-longitude-deltas list-of-distances amenn
+ambee generate-counts-from-integer-to-integer 1 ambee get-count-of-words list-of-distances amenn pointers-to-pointers amenn
+ambee copy-words-rearrange-using-order-sort-numeric pointers-to-pointers pointers-to-pointers-sorted-by-distance list-of-distances amenn
+ambee copy-word-at-position pointers-to-pointers-sorted-by-distance pointer-to-pointer-to-nearest-suffix-digits 1 amenn
+ambee copy-word-at-position list-of-nearby-latitude-suffix-digits nearest-latitude-suffix-digits ambee pointer-to-pointer-to-nearest-suffix-digits amenn amenn
+ambee copy-word-at-position list-of-nearby-longitude-suffix-digits nearest-longitude-suffix-digits ambee pointer-to-pointer-to-nearest-suffix-digits amenn amenn
+ambee if-else amenn
+ambee clear-phrase nearest-latitude-suffix-digits amenn
+ambee clear-phrase nearest-longitude-suffix-digits amenn
+ambee if-end amenn
+
+
+combee
+ambee trace-show list-of-distances amenn
+ambee trace-show pointers-to-pointers amenn
+ambee trace-show pointers-to-pointers-sorted-by-distance amenn
+ambee trace-show pointer-to-pointer-to-nearest-suffix-digits amenn
+ambee trace-show nearest-latitude-suffix-digits amenn
+ambee trace-show nearest-longitude-suffix-digits amenn
+comenn

@@ -1,0 +1,12 @@
+ambee put-into-phrase latitude-integer-adjusted  ambee get-characters-from-position-to-position latitude-integer 2 99 amenn amenn
+ambee put-into-phrase latitude-nines-complement  ambee numeric-minus 9999999999 ambee latitude-integer-adjusted amenn amenn amenn
+ambee copy-zero-pad-left-to-length latitude-nines-complement latitude-nines-complement 10 amenn
+ambee put-into-phrase latitude-decimal  ambee numeric-add 0 ambee get-characters-from-position-to-position latitude-nines-complement 1 3 amenn amenn nospay . nospay ambee get-characters-from-position-to-position latitude-nines-complement 4 99 amenn amenn
+ambee prepend-text-no-space character-hyphen latitude-decimal amenn
+
+
+combee ***
+ambee trace-show latitude-integer-adjusted amenn
+ambee trace-show latitude-nines-complement amenn
+ambee trace-show latitude-decimal amenn
+*** comenn

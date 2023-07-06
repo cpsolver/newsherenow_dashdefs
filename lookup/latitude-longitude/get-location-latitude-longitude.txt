@@ -1,0 +1,14 @@
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-cgi-latitude combee *** need space here *** comenn  amenn latitude-integer amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-cgi-longitude combee *** need space here *** comenn  amenn longitude-integer amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase input-loc amenn amenn
+ambee get-location-latitude-longitude-loc-version amenn
+ambee if-end amenn
+
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+
+
+combee
+ambee trace-show latitude-integer amenn
+ambee trace-show longitude-integer amenn
+comenn
