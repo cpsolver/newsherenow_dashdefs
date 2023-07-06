@@ -1,0 +1,11 @@
+style-button-clickable
+no-space
+style-rounded-corners-small
+no-space
+padding:5px;
+no-space
+style-color-background-lighter
+no-space
+style-button-clickable-border
+no-space
+style-button-clickable-shadow

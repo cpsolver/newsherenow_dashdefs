@@ -1,0 +1,9 @@
+style-button-clickable
+no-space
+padding:5px;
+no-space
+style-color-background-lighter
+no-space
+style-border-none
+no-space
+style-rounded-corners-small

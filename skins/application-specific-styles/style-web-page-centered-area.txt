@@ -1,0 +1,13 @@
+style-border-none
+no-space
+
+combee **** following lines are from fiverr web designer! **** comenn
+width: 100%;
+no-space
+background: transparent;
+no-space
+padding: 0;
+no-space
+margin: 0 0 0 0;
+no-space
+outline: 0 none;

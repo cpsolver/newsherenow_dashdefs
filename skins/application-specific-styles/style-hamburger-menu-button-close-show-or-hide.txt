@@ -1,0 +1,9 @@
+style-hamburger-menu-button-open-show-or-hide
+no-space
+style-font-family-multiplication-sign
+no-space
+font hyphen-here size: 33px;
+no-space
+font hyphen-here weight: bold;
+no-space
+padding: 7px;

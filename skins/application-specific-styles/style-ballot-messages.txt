@@ -1,0 +1,15 @@
+style-border-none
+no-space
+border hyphen-here radius: 9px;
+no-space
+style-color-background-lighter
+no-space
+style-padding-medium
+no-space
+width: 30%;
+no-space
+
+combee **** from web designer **** comenn
+margin: auto;
+no-space
+margin hyphen-here bottom: 26px;

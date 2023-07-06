@@ -1,0 +1,7 @@
+style-table-no-borders
+no-space
+style-padding-none
+no-space
+style-table-cell-full-height
+no-space
+width:33%;

@@ -1,0 +1,376 @@
+. no-space class-style-map-density
+no-space
+{
+no-space
+width:80vw;
+no-space
+height:44vw;
+no-space
+padding hyphen-here left:0px;
+}
+<new_line>
+
+. no-space class-style-hamburger-menu-item
+no-space
+{
+no-space
+margin:1vw 0vw 1vw 0vw; 
+no-space
+}
+<new_line>
+
+. no-space class-style-website-tagline
+comma-sep
+# no-space selectext-id-message-click-on-map
+comma-sep
+# no-space selectext-id-nav-tab underscore-double-here selectext-polls
+comma-sep
+# no-space selectext-id-nav-tab underscore-double-here selectext-info
+comma-sep
+# no-space selectext-id-nav-tab underscore-double-here selectext-about
+no-space
+{
+no-space
+style-hide
+no-space
+}
+<new_line>
+
+. no-space class-style-main-input-form
+no-space
+{
+no-space
+padding:1.5vw;
+no-space
+margin:1.5vw;
+no-space
+width:94vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-content-area
+no-space
+{
+no-space
+width:94vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-main-input-form
+no-space
+{
+no-space
+width:88vw;
+no-space
+}
+
+. no-space class-style-website-logo-at-top
+no-space
+{
+no-space
+border hyphen-here radius:6px;
+no-space
+padding:5px 8px;
+no-space
+}
+<new_line>
+
+. no-space class-style-font-size-logo-larger
+no-space
+{
+no-space
+font hyphen-here size:14px;
+no-space
+}
+<new_line>
+
+. no-space class-style-font-size-logo-smaller
+no-space
+{
+no-space
+font hyphen-here size:11px;
+no-space
+}
+<new_line>
+
+. no-space class-style-navigation-tabs-show
+no-space
+{
+no-space
+line hyphen-here height:109%;
+no-space
+padding: 4.4vw 1.4vw 0.7vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-nav-tab-clickable-not-highlighted
+no-space
+{
+no-space
+font hyphen-here size:80%;
+no-space
+padding: 1vw 2vw 1vw 2vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-nav-tab-clickable-highlighted
+no-space
+{
+no-space
+font hyphen-here size:68%;
+no-space
+padding: 1vw 3vw 1vw 3vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-button-location-example
+no-space
+{
+no-space
+font hyphen-here size:13px;
+no-space
+line hyphen-here height: 120%;
+no-space
+width:17vw;
+no-space
+height:calc(150px - 10vw);
+no-space
+margin: no-space 3px;
+no-space
+}
+<new_line>
+
+combee **** these adjustments might not work because height and width of img element are handled differently **** comenn
+. no-space class-style-animated-gif-working
+no-space
+{
+no-space
+width:25px;
+no-space
+height:25px;
+no-space
+}
+. no-space class-style-animated-gif-working-tiny
+no-space
+{
+no-space
+width:18px;
+no-space
+height:18px;
+no-space
+}
+
+. no-space class-style-grid-floating-cell-biz
+no-space
+. no-space class-style-grid-floating-cell-news
+no-space
+{
+no-space
+margin hyphen-here bottom: 6px;
+no-space
+}
+<new_line>
+
+combee **** some of these classes are further modified below **** comenn
+. no-space class-style-button-language
+comma-sep
+. no-space class-style-button-on-map-page
+comma-sep
+. no-space class-style-rectangle-around-map-tiles
+comma-sep
+. no-space class-style-rectangle-around-news-items
+comma-sep
+. no-space class-style-business-div
+comma-sep
+. no-space class-style-news-div
+comma-sep
+. no-space class-style-box-around-one-news-type
+comma-sep
+. no-space class-style-poll-button
+comma-sep
+. no-space class-style-page-about-visible-text
+comma-sep
+. no-space class-style-button-about-subpage
+comma-sep
+. no-space class-style-button-at-bottom
+no-space
+{
+no-space
+padding:7px;
+no-space
+width:auto;
+no-space
+height:auto;
+no-space
+margin hyphen-here left:auto;
+no-space
+margin hyphen-here right:auto;
+no-space
+}
+<new_line>
+
+. no-space class-style-button-language
+comma-sep
+. no-space class-style-button-on-map-page
+comma-sep
+. no-space class-style-poll-button
+comma-sep
+. no-space class-style-button-about-subpage
+comma-sep
+. no-space class-style-button-at-bottom
+no-space
+{
+no-space
+width:75vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-business-div
+no-space
+{
+no-space
+width:63vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-page-about-visible-text
+comma-sep
+. no-space class-style-buttons-to-about-subpages
+no-space
+{
+no-space
+width:85vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-button-language
+comma-sep
+. no-space class-style-button-on-map-page
+comma-sep
+. no-space class-style-button-about-subpage
+comma-sep
+. no-space class-style-button-at-bottom
+no-space
+{
+no-space
+padding hyphen-here top:17px;
+no-space
+padding hyphen-here bottom:17px;
+no-space
+}
+<new_line>
+
+. no-space class-style-about-visible-heading
+comma-sep
+. no-space class-style-heading-about
+no-space
+{
+style-text-align-left
+no-space
+margin hyphen-here left:15px;
+no-space
+}
+<new_line>
+
+input[type=text]
+no-space
+{
+no-space
+width: 78vw;
+no-space
+}
+<new_line>
+
+. no-space class_style_map_news_description
+comma-sep
+. no-space selectext_news_item_info
+no-space
+{
+no-space
+word hyphen-here break:break hyphen-here all;
+no-space
+}
+<new_line>
+
+. no-space class-style-side-by-side-float
+no-space
+{
+no-space
+float:none;
+no-space
+margin hyphen-here top:1.5vw;
+no-space
+margin hyphen-here bottom:1.5vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-grid-floating-full-polls
+no-space
+{
+no-space
+width:100%;
+no-space
+margin hyphen-here top:16px;
+no-space
+}
+<new_line>
+
+. no-space class-style-ballot-messages
+comma-sep
+. no-space selectext-item-hide-if-poll-open
+comma-sep
+. no-space selectext-item-show-if-poll-closed
+comma-sep
+. no-space selectext-item-show-when-cast-ballot
+no-space
+{
+no-space
+width:85%;
+no-space
+}
+<new_line>
+
+. no-space class-style-grid-table-biz
+comma-sep
+. no-space class-style-grid-table-news
+comma-sep
+. no-space class-style-grid-table-polls
+comma-sep
+. no-space class-style-grid-floating-cell-biz
+comma-sep
+. no-space class-style-grid-floating-cell-news
+comma-sep
+. no-space class-style-grid-floating-cell-polls
+comma-sep
+. no-space class-style-grid-floating-full-biz
+comma-sep
+. no-space class-style-grid-floating-full-news
+comma-sep
+. no-space class-style-grid-floating-full-polls
+comma-sep
+. no-space class-style-buttons-to-about-subpages
+no-space
+{
+no-space
+float:none !important;
+no-space
+}
+<new_line>
+
+. no-space class-style-buttons-to-about-subpages
+no-space
+{
+no-space
+margin:auto !important;
+no-space
+}
+<new_line>

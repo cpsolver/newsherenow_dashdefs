@@ -1,0 +1,6 @@
+combee **** following values are from fiverr web designer! **** comenn
+background:linear hyphen-here gradient(0deg,
+no-space
+style-gradient-for-nav-tabs-both-versions
+no-space
+);

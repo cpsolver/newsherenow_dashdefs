@@ -1,0 +1,5 @@
+style-ballot-oval
+no-space
+style-color-background-lighter
+no-space
+style-font-size-3

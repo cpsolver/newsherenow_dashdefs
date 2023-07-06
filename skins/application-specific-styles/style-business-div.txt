@@ -1,0 +1,22 @@
+style-button-clickable
+no-space
+width:260px;
+no-space
+
+combee ****
+reminder: height is javascript calculated
+height:130px;
+**** comenn
+
+no-space
+padding: 5px 9px 3px 9px;
+no-space
+margin:4px;
+no-space
+background hyphen-here color:hsl(0,100%,50%);
+no-space
+style-button-border-background-color
+no-space
+
+combee **** from web designer **** comenn
+box hyphen-here shadow: 0px 0px 0px 0px hsl( no-space hue-background no-space ,35%,65%);

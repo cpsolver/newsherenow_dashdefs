@@ -1,0 +1,3 @@
+style-color-background-lighter
+no-space
+style-padding-for-news-item

@@ -1,0 +1,7 @@
+style-font-size-paragraph-medium
+no-space
+style-text-align-left
+no-space
+margin:15px;
+no-space
+padding hyphen-here right:30px;

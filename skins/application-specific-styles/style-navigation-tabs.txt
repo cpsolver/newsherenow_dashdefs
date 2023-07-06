@@ -1,0 +1,16 @@
+style-vertical-align-middle
+no-space
+style-background-image-gradient-nav-tabs
+no-space
+
+combee **** following lines are from fiverr web designer! **** comenn
+margin: 0px 7px 0px 7px;
+no-space
+padding: 14px;
+no-space
+line hyphen-here height: line-height-percent-nav-tabs-default no-space %;
+no-space
+overflow hyphen-here y: hidden;
+no-space
+min hyphen-here height: 24px;
+no-space

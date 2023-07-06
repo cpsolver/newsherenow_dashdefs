@@ -1,0 +1,9 @@
+combee **** values below are from web designer **** comenn
+z hyphen-here index: 999;
+no-space
+position: absolute;
+no-space
+top: 12px;
+no-space
+combee **** following value can be changed to handle right-to-left languages **** comenn
+left: style-hamburger-menu-area-position-left no-space ;

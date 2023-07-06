@@ -1,0 +1,9 @@
+style-font-size-4
+no-space
+style-padding-small
+no-space
+style-margin-small
+no-space
+style-centered-text
+no-space
+style-align-left

@@ -1,0 +1,1 @@
+background:linear hyphen-here gradient(90deg,hsla( no-space hue-background no-space ,100%,95%,1.0) 0%,hsla( no-space hue-background no-space ,100%,90%,1.0) 35%,hsla( no-space hue-background no-space ,100%,95%,1.0) 100%);

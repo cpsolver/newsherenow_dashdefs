@@ -1,0 +1,23 @@
+@media only screen and (max hyphen-here width: 1320px){
+<new_line>
+stylesheet-small-screen-tablet-big
+}
+<new_line>
+
+@media only screen and (max hyphen-here width: 1150px){
+<new_line>
+stylesheet-small-screen-tablet
+}
+<new_line>
+
+@media only screen and (max hyphen-here width: 990px){
+<new_line>
+stylesheet-small-screen-medium
+}
+<new_line>
+
+@media only screen and (max hyphen-here width: 700px){
+<new_line>
+stylesheet-small-screen-phone
+}
+<new_line>

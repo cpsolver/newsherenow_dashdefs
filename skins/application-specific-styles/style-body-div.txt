@@ -1,0 +1,9 @@
+style-padding-medium
+no-space
+style-margin-none
+no-space
+style-border-none
+no-space
+style-outline-none
+no-space
+style-box-rounded

@@ -1,0 +1,8 @@
+style-flexbox-footer
+no-space
+width:65vw;
+no-space
+style-background-transparent
+no-space
+combee **** following line is from fiverr web designer! **** comenn
+text hyphen-here align: center;

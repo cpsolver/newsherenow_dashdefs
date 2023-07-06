@@ -1,0 +1,10 @@
+. no-space class-style-map-density
+no-space
+{
+no-space
+width:40vw;
+no-space
+height:22vw;
+no-space
+}
+<new_line>

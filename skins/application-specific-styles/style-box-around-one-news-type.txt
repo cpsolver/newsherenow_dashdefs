@@ -1,0 +1,5 @@
+style-border-none
+no-space
+padding:10px 40px;
+no-space
+style-color-background-lighter

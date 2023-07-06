@@ -1,0 +1,5 @@
+style-float-left
+no-space
+width:200px;
+no-space
+style-margin-small

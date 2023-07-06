@@ -1,0 +1,12 @@
+width:90vw;
+no-space
+style-background-image-gradient-content-area
+no-space
+style-centered-block-or-image
+no-space
+combee **** following line is from fiverr web designer! **** comenn
+padding: 10px 14px;
+no-space
+style-border-none
+no-space
+style-in-front

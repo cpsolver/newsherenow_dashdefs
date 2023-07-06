@@ -1,0 +1,26 @@
+. no-space class-style-wink ,
+# no-space selectext-id-keypress-prompt-empty
+{
+animation: wink 1.4s normal infinite linear;
+combee **** linear or ease-in-out **** comenn
+}
+<new_line>
+
+@keyframes wink {
+0% {
+style-color-foreground-black
+}
+40% {
+style-color-foreground-black
+}
+60% {
+style-color-foreground-suggest
+}
+80% {
+style-color-foreground-suggest
+}
+100% {
+style-color-foreground-black
+}
+}
+<new_line>

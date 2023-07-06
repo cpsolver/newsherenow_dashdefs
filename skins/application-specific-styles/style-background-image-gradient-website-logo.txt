@@ -1,0 +1,1 @@
+background:linear hyphen-here gradient(135deg,hsla( no-space hue-website-logo no-space ,100%,35%,1) 0%,hsla( no-space hue-website-logo no-space ,100%,60%,1) 50%,hsla( no-space hue-website-logo no-space ,100%,35%,1) 100%);

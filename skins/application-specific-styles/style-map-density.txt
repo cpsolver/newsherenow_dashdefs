@@ -1,0 +1,7 @@
+width: 600px;
+no-space
+height: 325px;
+no-space
+padding: 7px;
+no-space
+margin hyphen-here top: 40px;

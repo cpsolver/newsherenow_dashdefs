@@ -1,0 +1,9 @@
+font-size:135%;
+no-space
+padding-left:20px;
+no-space
+padding-right:20px;
+no-space
+padding-top:12px;
+no-space
+padding-bottom:12px;

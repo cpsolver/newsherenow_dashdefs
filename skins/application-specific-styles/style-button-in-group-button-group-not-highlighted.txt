@@ -1,0 +1,7 @@
+style-ballot-oval
+no-space
+style-color-background
+no-space
+style-button-border
+no-space
+style-button-clickable-shadow

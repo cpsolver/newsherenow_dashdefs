@@ -1,0 +1,7 @@
+style-hamburger-menu-list
+no-space
+display: block;
+no-space
+line hyphen-here height: 300%;
+no-space
+transition: all 0.5s cubic hyphen-here bezier(0.42, 0, 0.58, 1);

@@ -1,0 +1,15 @@
+style-navigation-tab-any
+no-space
+width: 70px;
+no-space
+height: 34px;
+no-space
+padding hyphen-here left:25px;
+no-space
+padding hyphen-here right:25px;
+no-space
+style-color-navigation-tab-highlighted
+no-space
+font hyphen-here size: 140%;
+no-space
+style-bold

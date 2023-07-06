@@ -1,0 +1,3 @@
+width:150px;
+no-space
+height:50px;

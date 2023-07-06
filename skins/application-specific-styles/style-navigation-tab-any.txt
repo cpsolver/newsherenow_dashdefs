@@ -1,0 +1,29 @@
+combee ***
+Reminder: margins are not compatible with display:inline
+*** comenn
+
+display: inline;
+no-space
+style-cursor-clickable
+no-space
+style-button-rounded-corners
+no-space
+width: 60px;
+no-space
+height: 28px;
+no-space
+font hyphen-here size: 125%;
+no-space
+padding hyphen-here left: 18px;
+no-space
+padding hyphen-here right: 18px;
+no-space
+padding hyphen-here top: 8px;
+no-space
+padding hyphen-here bottom: 8px;
+no-space
+style-button-clickable-color-background
+no-space
+style-button-clickable-border
+no-space
+style-button-clickable-shadow

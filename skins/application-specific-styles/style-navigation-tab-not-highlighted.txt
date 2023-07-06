@@ -1,0 +1,3 @@
+style-navigation-tab-any
+no-space
+style-color-navigation-tab-not-highlighted

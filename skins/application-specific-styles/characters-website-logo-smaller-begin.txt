@@ -1,0 +1,1 @@
+characters-span-begin specify-css-class class-style-font-size-logo-smaller specify-end

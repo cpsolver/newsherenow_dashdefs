@@ -1,0 +1,6 @@
+width: no-space width-button-about no-space px;
+no-space
+height: no-space height-button-about no-space px;
+no-space
+combee **** from web designer **** comenn
+padding: 4px 12px;

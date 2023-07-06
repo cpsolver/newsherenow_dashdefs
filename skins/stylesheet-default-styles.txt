@@ -1,0 +1,248 @@
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, img, small, strong, dl, dt, dd, ol, ul, li, form, label
+no-space
+{
+no-space
+margin: 0;
+no-space
+padding: 0;
+no-space
+border: 0 none;
+no-space
+outline: 0 none;
+no-space
+vertical hyphen-here align: baseline;
+no-space
+}
+<new_line>
+
+ol, ul
+no-space
+{
+no-space
+list hyphen-here style: none outside none;
+no-space
+}
+<new_line>
+
+html, div, object, blockquote, pre, address, code, img, small, strong, dl, dt, dd, ol, ul, li, form, label
+no-space
+{
+no-space
+font hyphen-here family: "Verdana","Tahoma","Calibri","Lucida Grande","Lucida Sans Unicode",sans hyphen-here serif;
+no-space
+font hyphen-here size: 14px;
+no-space
+font hyphen-here weight: normal;
+no-space
+}
+<new_line>
+
+body
+{
+no-space
+style-color-body
+no-space
+style-background-image-gradient-outside-content-area
+no-space
+style-margin-none
+no-space
+style-padding-none
+no-space
+line hyphen-here height: line-height-percent-default-numeric no-space %;
+no-space
+text hyphen-here align: center;
+no-space
+}
+<new_line>
+
+table th, table td
+{
+no-space
+border: 0;
+no-space
+border hyphen-here collapse: collapse;
+no-space
+vertical hyphen-here align: top;
+no-space
+}
+<new_line>
+
+p
+no-space
+{
+no-space
+font hyphen-here size: 14px;
+no-space
+font hyphen-here weight: normal;
+no-space
+line hyphen-here height: 160%;
+no-space
+text hyphen-here align: center;
+no-space
+combee ****
+previously:
+margin: 13px 0px 14px 4px;
+if margin needed, use class-style-margin-medium or -small or -large
+**** comenn
+combee **** from web designer **** comenn
+margin: 0px 0px 0px 0px;
+no-space
+}
+<new_line>
+
+a
+no-space
+{
+no-space
+text hyphen-here decoration: none;
+no-space
+}
+<new_line>
+
+a:hover
+no-space
+{
+no-space
+text hyphen-here decoration: underline;
+no-space
+}
+<new_line>
+
+h1, h2, h3, h4, h5, h6
+no-space
+{
+no-space
+font hyphen-here family: "Palatino","Georgia","Times",serif;
+no-space
+font hyphen-here weight: 500;
+no-space
+line hyphen-here height: 100%;
+no-space
+margin: 5px 0;
+no-space
+combee **** from web designer **** comenn
+letter hyphen-here spacing: 0.0rem;
+no-space
+}
+<new_line>
+
+h1
+no-space
+{
+no-space
+combee **** from web designer **** comenn
+font hyphen-here size: 23px;
+no-space
+font hyphen-here weight: bold;
+no-space
+letter hyphen-here spacing: 1px;
+no-space
+margin hyphen-here bottom: 17px;
+no-space
+}
+<new_line>
+
+h2
+no-space
+{
+no-space
+font hyphen-here size: 23px;
+no-space
+}
+<new_line>
+
+h3
+no-space
+{
+no-space
+font hyphen-here size: 20px;
+no-space
+}
+<new_line>
+
+h4
+no-space
+{
+no-space
+font hyphen-here size: 18px;
+no-space
+}
+<new_line>
+
+h4
+no-space
+{
+no-space
+font hyphen-here size: 17px;
+no-space
+}
+<new_line>
+
+h5
+no-space
+{
+no-space
+font hyphen-here size: 16px;
+no-space
+}
+<new_line>
+
+h6
+no-space
+{
+no-space
+font hyphen-here size: 15px;
+no-space
+}
+<new_line>
+
+input[type=text]
+no-space
+{
+no-space
+border hyphen-here radius: 6px;
+no-space
+padding: 10px;
+no-space
+font hyphen-here size: 16px;
+no-space
+}
+<new_line>
+
+combee ***
+br.clearfix {
+clear: both;
+}
+*** comenn
+
+. no-space class-style-website-logo-at-top
+no-space
+{
+no-space
+font hyphen-here size:17px;
+no-space
+border hyphen-here radius:10px;
+no-space
+padding:10px 40px;
+no-space
+}
+<new_line>
+
+. no-space class-style-website-tagline
+no-space
+{
+no-space
+style-show
+no-space
+}
+<new_line>
+
+combee **** no navigation tabs if printed **** comenn
+@media print
+no-space
+{
+no-space
+# no-space selectext-id-nav-tabs-list { display:none; }
+no-space
+}
+<new_line>

@@ -1,0 +1,11 @@
+style-centered-text
+no-space
+font hyphen-here size:17px;
+no-space
+padding-none
+no-space
+
+combee **** from web designer **** comenn
+margin hyphen-here top: 14px;
+no-space
+margin hyphen-here bottom: 0px;

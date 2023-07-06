@@ -1,0 +1,13 @@
+display:flex;
+no-space
+justify-content:space-between;
+no-space
+flex-wrap:wrap;
+no-space
+align-items:center;
+no-space
+align-content:space-between;
+no-space
+margin hyphen-here left:auto;
+no-space
+margin hyphen-here right:auto;

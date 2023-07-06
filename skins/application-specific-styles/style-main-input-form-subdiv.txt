@@ -1,0 +1,7 @@
+display: inline-block;
+no-space
+margin-left: auto;
+no-space
+margin-right: auto;
+no-space
+text-align: center;

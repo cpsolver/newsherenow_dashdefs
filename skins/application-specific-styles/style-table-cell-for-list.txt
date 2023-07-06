@@ -1,0 +1,4 @@
+style-table-cell-no-border no-space padding-top:30px;padding-bottom:30px;padding-left:50px;padding-right:50px;
+combee ***
+width:300px;
+*** comenn

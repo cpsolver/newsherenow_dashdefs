@@ -1,0 +1,20 @@
+combee **** following lines are from fiverr web designer! **** comenn
+display: flex;
+no-space
+justify hyphen-here content: space hyphen-here between;
+no-space
+flex hyphen-here wrap: wrap;
+no-space
+align hyphen-here items: center;
+no-space
+align hyphen-here content: space hyphen-here between;
+no-space
+margin hyphen-here left: auto;
+no-space
+margin hyphen-here right: auto;
+no-space
+width: 75vw;
+no-space
+margin hyphen-here top: 10px;
+no-space
+background: transparent;

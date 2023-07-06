@@ -1,0 +1,15 @@
+style-button-clickable
+no-space
+width:24vw;
+no-space
+height:230px;
+no-space
+padding:10px 20px;
+no-space
+style-margin-medium
+no-space
+style-poll-button-color-background
+no-space
+style-poll-button-border
+no-space
+box hyphen-here shadow: -1px 0px 5px 1px hsl( no-space hue-poll-button no-space ,35%,65%);

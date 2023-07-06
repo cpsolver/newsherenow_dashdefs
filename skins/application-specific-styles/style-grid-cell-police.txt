@@ -1,0 +1,9 @@
+style-table-no-borders
+no-space
+padding: 7px 3px 7px 3px;
+no-space
+margin: 7px 3px 7px 3px;
+no-space
+style-table-cell-full-height
+no-space
+width:33%;

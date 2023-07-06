@@ -1,0 +1,3 @@
+style-centered-text
+no-space
+style-bold

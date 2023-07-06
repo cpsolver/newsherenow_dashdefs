@@ -1,0 +1,17 @@
+style-background-color-white
+combee
+background: hsla( no-space hue-background no-space ,100%,40%,1.0);
+comenn
+
+no-space
+display: block;
+no-space
+width: 19px;
+no-space
+border hyphen-here radius:4px;
+no-space
+margin: 4px;
+
+combee **** values below are from web designer **** comenn
+height: 0px;
+padding: 2px 4px;

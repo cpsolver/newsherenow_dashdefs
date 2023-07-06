@@ -1,0 +1,1 @@
+font hyphen-here variant:small hyphen-here caps;

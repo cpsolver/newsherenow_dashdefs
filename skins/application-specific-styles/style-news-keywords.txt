@@ -1,0 +1,4 @@
+style-font-red
+style-rectangle-rounded-medium
+style-font-size-paragraph-medium
+style-color-rectangle-background-lighter

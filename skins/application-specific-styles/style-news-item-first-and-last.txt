@@ -1,0 +1,7 @@
+style-color-background-lighter
+no-space
+style-border-none
+no-space
+style-rounded-corners-small
+no-space
+style-padding-for-news-item

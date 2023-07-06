@@ -1,0 +1,7 @@
+style-margin-none
+no-space
+padding:1px;
+no-space
+font hyphen-here size:1px;
+no-space
+style-background-transparent

@@ -1,0 +1,3 @@
+style-float-left
+no-space
+style-margin-small

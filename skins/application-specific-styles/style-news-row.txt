@@ -1,0 +1,3 @@
+style-table-no-borders
+no-space
+style-table-row-full-height

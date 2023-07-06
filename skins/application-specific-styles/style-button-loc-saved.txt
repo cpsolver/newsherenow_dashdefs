@@ -1,0 +1,7 @@
+width:25vw;
+no-space
+height:15vw;
+no-space
+padding:2vw;
+no-space
+margin:2vw;

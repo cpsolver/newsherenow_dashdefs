@@ -1,0 +1,13 @@
+style-button
+no-space
+font hyphen-here size: 15px;
+no-space
+style-button-rounded-corners
+no-space
+padding: 10px 25px;
+no-space
+style-button-clickable-color-background
+no-space
+style-button-clickable-border
+no-space
+style-button-clickable-shadow

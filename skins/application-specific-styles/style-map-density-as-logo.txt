@@ -1,0 +1,5 @@
+padding: 0px;
+no-space
+width: 60px;
+no-space
+height: 32px;

@@ -1,0 +1,4 @@
+combee **** applies to table/grid, not its contents **** comenn
+padding:0px;
+no-space
+margin:0px;

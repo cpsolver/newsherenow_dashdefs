@@ -1,0 +1,11 @@
+hsla( no-space hue-background no-space ,75%,45%,1.0) 0%,
+no-space
+hsla( no-space hue-background no-space ,55%,50%,1.0) 10%,
+no-space
+hsla( no-space hue-background no-space ,60%,60%,1.0) 30%,
+no-space
+hsla( no-space hue-background no-space ,65%,60%,1.0) 70%,
+no-space
+hsla( no-space hue-background no-space ,72%,60%,1.0) 90%,
+no-space
+hsla( no-space hue-background no-space ,65%,55%,1.0) 100%

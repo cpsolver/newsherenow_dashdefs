@@ -1,0 +1,1 @@
+padding: no-space margin-size-for-outer-rectangle no-space px;

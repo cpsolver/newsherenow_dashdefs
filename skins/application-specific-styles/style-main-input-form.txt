@@ -1,0 +1,17 @@
+width:68vw;
+no-space
+padding hyphen-here left:6vw;
+no-space
+padding hyphen-here right:6vw;
+no-space
+padding hyphen-here top:12px;
+no-space
+padding hyphen-here bottom:12px;
+no-space
+margin hyphen-here top:7px;
+no-space
+margin hyphen-here bottom:7px;
+no-space
+style-color-background-main-input-form
+no-space
+style-centered-block-or-image

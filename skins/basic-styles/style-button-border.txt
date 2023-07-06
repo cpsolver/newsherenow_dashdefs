@@ -1,0 +1,2 @@
+combee **** from web designer, but changed from 3px to 2px **** comenn
+border: 2px outset hsla( no-space hue-foreground no-space ,44%,48%,0.23);

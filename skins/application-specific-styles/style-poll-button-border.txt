@@ -1,0 +1,2 @@
+combee **** from web designer **** comenn
+border: 1px outset hsla( no-space hue-for-closest-news-or-biz-item no-space ,100%,30%,0.4);

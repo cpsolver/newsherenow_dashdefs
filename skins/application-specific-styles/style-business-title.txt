@@ -1,0 +1,11 @@
+font hyphen-here size:17px;
+no-space
+style-bold
+no-space
+padding hyphen-here top:5px;
+no-space
+padding hyphen-here bottom:3px;
+no-space
+padding hyphen-here left:9px;
+no-space
+padding hyphen-here right:9px;

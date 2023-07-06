@@ -1,0 +1,19 @@
+style-font-size-3
+no-space
+line-height: 110%;
+no-space
+style-bold
+no-space
+style-padding-small
+no-space
+style-margin-small
+no-space
+style-centered-text
+no-space
+
+combee **** from web designer **** comenn
+padding hyphen-here bottom: 17px;
+no-space
+margin hyphen-here bottom: 8px;
+no-space
+border hyphen-here bottom: 1px solid #b6b29a70;

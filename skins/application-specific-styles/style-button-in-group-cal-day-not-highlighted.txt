@@ -1,0 +1,11 @@
+style-button-clickable
+no-space
+padding:5px;
+no-space
+style-color-background
+no-space
+style-border-none
+no-space
+style-box-shadow-none
+no-space
+style-rounded-corners-small

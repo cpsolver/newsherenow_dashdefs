@@ -1,0 +1,17 @@
+style-button
+no-space
+border hyphen-here top hyphen-here left hyphen-here radius: 100px 50px;
+no-space
+border hyphen-here bottom hyphen-here left hyphen-here radius: 100px 50px;
+no-space
+border hyphen-here top hyphen-here right hyphen-here radius: 100px 50px;
+no-space
+border hyphen-here bottom hyphen-here right hyphen-here radius: 100px 50px;
+no-space
+padding hyphen-here top:7px;
+no-space
+padding hyphen-here bottom:7px;
+no-space
+padding hyphen-here left:12px;
+no-space
+padding hyphen-here right:12px;

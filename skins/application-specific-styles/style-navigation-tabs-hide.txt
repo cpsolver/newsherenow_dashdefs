@@ -1,0 +1,20 @@
+style-navigation-tabs
+no-space
+height: 0px;
+no-space
+width: 0px;
+overflow hyphen-here x: hidden;
+no-space
+overflow hyphen-here y: hidden;
+no-space
+padding: 0px;
+no-space
+min hyphen-here height: 0px;
+no-space
+line hyphen-here height: 100%;
+no-space
+margin: 0px 0px 0px 0px;
+no-space
+font hyphen-here size: 0px;
+no-space
+transition: all 0.5s cubic hyphen-here bezier(0.42, 0, 0.58, 1);

@@ -1,0 +1,13 @@
+style-button-clickable
+no-space
+width:320px;
+no-space
+padding:10px;
+no-space
+margin:10px;
+no-space
+style-color-background
+no-space
+style-button-border-background-color
+no-space
+style-button-shadow-background-color

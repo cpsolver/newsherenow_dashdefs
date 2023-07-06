@@ -1,0 +1,12 @@
+combee **** from web designer **** comenn
+color:hsl(0,100%,48%);
+no-space
+font hyphen-here size:14px;
+no-space
+font hyphen-here weight:normal;
+no-space
+line hyphen-here height:160%;
+no-space
+margin:0px 0px 0px 0px;
+no-space
+text-align-center

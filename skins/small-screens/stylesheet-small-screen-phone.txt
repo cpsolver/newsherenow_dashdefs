@@ -1,0 +1,52 @@
+# no-space selectext-id-button-to-other-languages
+no-space
+{
+no-space
+style-hide
+no-space
+}
+<new_line>
+
+. no-space class-style-ballot-rotate-to-landscape
+no-space
+{
+no-space
+style-show
+no-space
+}
+<new_line>
+
+. no-space class-style-navigation-tabs
+no-space
+{
+no-space
+line hyphen-here height:200%;
+no-space
+}
+<new_line>
+
+. no-space class-style-nav-tab-clickable-highlighted
+comma-sep
+. no-space class-style-nav-tab-clickable-not-highlighted
+no-space
+{
+no-space
+width:40vw;
+no-space
+height:15vw;
+no-space
+}
+<new_line>
+
+. no-space class-style-button-location-example
+no-space
+{
+no-space
+font hyphen-here size:12px;
+no-space
+width:23vw;
+no-space
+height:calc(115px - 10vw);
+no-space
+}
+<new_line>

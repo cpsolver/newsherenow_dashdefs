@@ -1,0 +1,26 @@
+ambee copy-words-found-in-both-lists palette-choice list-of-palette-choices empty-or-valid-palette-choice amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase empty-or-valid-palette-choice amenn amenn
+ambee copy-text palette-name-default palette-choice amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words palette-choice palette-name-default amenn amenn
+
+combee
+ambee copy-text palette fenambee palette-choice amennfen hue-background hue-background amenn
+ambee copy-text palette fenambee palette-choice amennfen hue-foreground hue-foreground amenn
+ambee copy-text palette fenambee palette-choice amennfen saturation-background saturation-background amenn
+ambee copy-text palette fenambee palette-choice amennfen saturation-foreground saturation-foreground amenn
+ambee copy-text palette fenambee palette-choice amennfen luminance-background luminance-background amenn
+ambee copy-text palette fenambee palette-choice amennfen luminance-foreground luminance-foreground amenn
+comenn
+
+ambee trace-show empty-or-valid-palette-choice amenn
+
+ambee if-end amenn
+
+
+ambee trace-show empty-or-valid-palette-choice amenn
+ambee trace-show palette-choice amenn
+ambee trace-show list-of-palette-choices amenn
+ambee trace-show palette-name-default amenn

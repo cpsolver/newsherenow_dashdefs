@@ -1,0 +1,6 @@
+combee **** rotated version of background used for horizontal navigation tabs **** comenn
+background:linear hyphen-here gradient(90deg,
+no-space
+style-gradient-for-nav-tabs-both-versions
+no-space
+);

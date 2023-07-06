@@ -1,0 +1,1 @@
+style-padding-medium no-space style-table-cell-no-border

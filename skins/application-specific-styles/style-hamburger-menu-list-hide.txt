@@ -1,0 +1,24 @@
+style-hamburger-menu-list
+no-space
+
+combee **** reminder: cannot animate "display:none" so must set sizes to zero **** comenn
+display: block;
+
+no-space
+height: 0px;
+no-space
+padding: 0px;
+no-space
+margin: 0px;
+no-space
+line hyphen-here height: 0%;
+no-space
+font hyphen-here size: 0px;
+no-space
+
+combee
+from fivver:
+transition: all 0.6s cubic hyphen-here bezier(0, 0, 1, 1);
+equal to ease in and ease out:
+comenn
+transition: all 0.5s cubic hyphen-here bezier(0.42, 0, 0.58, 1);

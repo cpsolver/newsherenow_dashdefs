@@ -1,0 +1,20 @@
+. no-space class-style-map-density
+no-space
+{
+no-space
+width:30vw;
+no-space
+height:16vw;
+no-space
+}
+<new_line>
+
+
+input[type=text]
+no-space
+{
+no-space
+width:30vw;
+no-space
+}
+<new_line>

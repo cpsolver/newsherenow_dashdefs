@@ -1,0 +1,7 @@
+style-font-size-4
+no-space
+padding hyphen-here left:8px;
+no-space
+padding hyphen-here right:8px;
+no-space
+vertical hyphen-here align:middle;

@@ -1,0 +1,11 @@
+font-size: 15px;
+no-space
+font-weight: normal;
+no-space
+line-height: 160%;
+no-space
+width: 100%;
+no-space
+margin: 13px 0px 14px 4px;
+no-space
+text-align: center;

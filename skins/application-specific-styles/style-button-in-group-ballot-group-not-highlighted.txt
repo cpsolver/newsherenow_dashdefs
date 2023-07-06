@@ -1,0 +1,3 @@
+style-ballot-oval
+no-space
+style-color-background

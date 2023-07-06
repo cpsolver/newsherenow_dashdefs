@@ -1,0 +1,17 @@
+style-button-clickable
+no-space
+font hyphen-here weight: normal;
+no-space
+font hyphen-here size: 125%;
+no-space
+padding: 4px;
+no-space
+margin: 0;
+no-space
+background hyphen-here color: no-space hsl( no-space hue-background no-space ,95%,35%);
+no-space
+style-color-white
+no-space
+style-border-none
+no-space
+style-shadow-none

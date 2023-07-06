@@ -1,0 +1,5 @@
+style-cursor-clickable
+no-space
+style-overflow-hidden
+no-space
+text-align-center

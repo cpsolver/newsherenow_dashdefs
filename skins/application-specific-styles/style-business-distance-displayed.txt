@@ -1,0 +1,13 @@
+style-centered-text
+no-space
+margin hyphen-here bottom: 3px;
+no-space
+padding-none
+no-space
+
+combee **** from web designer **** comenn
+margin hyphen-here top: 0px;
+no-space
+font hyphen-here size: 13px;
+no-space
+color:hsl( no-space hue-background no-space ,15%,45%,);
