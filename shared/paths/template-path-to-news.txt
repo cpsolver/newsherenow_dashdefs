@@ -1,0 +1,2 @@
+ambee copy-characters-from-position-to-position region-id first-four-characters-of-region-id 1 4 amenn
+serverpathtotopfolder/news/news/lat9_ no-space first-four-characters-of-region-id no-space slash-or-backslash-server no-space
