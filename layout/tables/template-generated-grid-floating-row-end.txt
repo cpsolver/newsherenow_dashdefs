@@ -1,0 +1,8 @@
+combee **** reminder: the following code does not handle 3 columns of businesses nicely
+div-begin
+specify-style style-clear-both specify-end
+no-space
+div-end
+**** comenn
+
+<new_line>

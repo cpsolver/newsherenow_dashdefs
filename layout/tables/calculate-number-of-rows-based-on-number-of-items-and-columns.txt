@@ -1,0 +1,12 @@
+ambee put-into-phrase dashrep-number-of-full-rows  ambee numeric-integer ambee numeric-divide-by ambee number-of-items amenn ambee number-of-columns amenn  amenn amenn  amenn
+ambee put-into-phrase full-rows-times-number-of-columns  ambee numeric-multiply ambee dashrep-number-of-full-rows amenn ambee number-of-columns amenn amenn  amenn
+ambee put-into-phrase number-of-items-in-last-row  ambee numeric-minus ambee number-of-items amenn ambee full-rows-times-number-of-columns amenn amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words zero ambee zero-or-nonzero ambee number-of-items-in-last-row amenn amenn amenn amenn
+ambee calculate-number-of-rows-for-case-last-row-full amenn
+ambee if-else amenn
+ambee calculate-number-of-rows-for-case-last-row-not-full amenn
+ambee if-end amenn
+
+ambee clear-phrase dashrep-number-of-full-rows amenn
+

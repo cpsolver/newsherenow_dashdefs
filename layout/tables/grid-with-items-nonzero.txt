@@ -1,0 +1,38 @@
+ambee copy-text grid-item-count number-of-items amenn
+ambee copy-text grid-columns number-of-columns amenn
+ambee generate-counts-from-integer-to-integer 1 ambee number-of-columns amenn list-of-grid-column-numbers amenn
+
+
+ambee trace-show number-of-items amenn
+ambee trace-show number-of-columns amenn
+
+
+ambee calculate-number-of-rows-based-on-number-of-items-and-columns amenn
+ambee copy-text number-of-rows grid-number-of-rows amenn
+
+
+ambee trace-show grid-number-of-rows amenn
+
+
+ambee generate-counts-from-integer-to-integer 1 ambee grid-number-of-rows amenn list-of-grid-row-numbers amenn
+
+
+ambee trace-show list-of-grid-row-numbers amenn
+
+
+ambee put-into-phrase dashrep-action-trace-on-yes-or-no  no  amenn
+
+
+ambee use-handler-with-each-word-in-phrase grid-handle-one-row list-of-grid-row-numbers amenn
+
+table-begin
+specify-css-class class-style-grid-table fenambee grid-name amenn specify-end
+specify-id selectext-id-grid underscore-here ambee grid-name-for-css-class amenn specify-end
+no-space
+contents-grid-named fenambee grid-name amennfen all-rows
+no-space
+table-end
+
+
+ambee put-into-phrase dashrep-action-trace-on-yes-or-no  no  amenn
+

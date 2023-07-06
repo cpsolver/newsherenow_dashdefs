@@ -1,0 +1,8 @@
+ambee clear-phrase contents-grid-named fenambee grid-name amennfen row fenambee grid-row-number amennfen column fenambee grid-column-number amenn amenn
+ambee expand-text template-grid-cell expanded-results amenn
+
+
+ambee trace-show expanded-results amenn
+
+
+ambee append-text expanded-results row-content-for-grid-named fenambee grid-name amennfen row fenambee grid-row-number amenn amenn

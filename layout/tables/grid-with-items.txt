@@ -1,0 +1,6 @@
+ambee if-yes-begin ambee yes-or-no-same-two-words nonzero ambee zero-or-nonzero ambee grid-item-count amenn amenn amenn amenn
+ambee grid-with-items-nonzero amenn
+ambee if-else amenn
+ambee grid-with-items-zero amenn
+ambee if-end amenn
+

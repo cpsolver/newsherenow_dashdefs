@@ -1,0 +1,3 @@
+paragraph-begin
+specify-possible-text-direction
+specify-css-class class-style-paragraph-centered specify-end

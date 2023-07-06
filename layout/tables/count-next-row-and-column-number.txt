@@ -1,0 +1,6 @@
+ambee numeric-increment column-number amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee column-number amenn ambee number-of-columns amenn amenn amenn amenn
+ambee count-next-row-and-column-number-case-next-row amenn
+ambee if-end amenn
+

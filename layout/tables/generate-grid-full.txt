@@ -1,0 +1,20 @@
+ambee generate-counts-from-integer-to-integer 1 ambee number-of-rows amenn list-of-grid-row-numbers amenn
+ambee generate-counts-from-integer-to-integer 1 ambee number-of-columns amenn list-of-grid-column-numbers amenn
+ambee copy-and-replace template-generated-grid-full-begin grid-item string-bracketed-grid-name grid-name amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-grid-name-for-css-class grid-name-for-css-class amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-grid-style-type grid-style-type amenn
+ambee append-text grid-item generated-grid-named fenambee grid-name amenn amenn
+
+combee **** new code: **** comenn
+ambee copy-and-replace template-generated-grid-floating-full-begin grid-item string-bracketed-grid-name grid-name amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-grid-name-for-css-class grid-name-for-css-class amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-grid-style-type grid-style-type amenn
+ambee append-text grid-item generated-grid-floating-named fenambee grid-name amenn amenn
+
+ambee copy-text digit-1 row-number amenn
+ambee copy-text digit-1 column-number amenn
+ambee use-handler-with-each-word-in-phrase generate-grid-one-row list-of-grid-row-numbers amenn
+ambee append-text template-generated-grid-full-end generated-grid-named fenambee grid-name amenn amenn
+
+combee **** new code: **** comenn
+ambee append-text template-generated-grid-floating-full-end generated-grid-floating-named fenambee grid-name amenn amenn

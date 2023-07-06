@@ -1,0 +1,12 @@
+ambee copy-and-replace template-generated-grid-cell grid-item string-bracketed-grid-name grid-name amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-row-number row-number amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-column-number column-number amenn
+ambee append-text grid-item generated-grid-named fenambee grid-name amenn amenn
+
+combee **** new code: **** comenn
+ambee copy-and-replace template-generated-grid-floating-cell grid-item string-bracketed-grid-name grid-name amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-row-number row-number amenn
+ambee copy-and-replace grid-item grid-item string-bracketed-column-number column-number amenn
+ambee append-text grid-item generated-grid-floating-named fenambee grid-name amenn amenn
+
+ambee numeric-increment column-number amenn

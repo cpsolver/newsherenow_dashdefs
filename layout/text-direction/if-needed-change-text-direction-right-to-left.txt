@@ -1,0 +1,13 @@
+combee ****
+reminder: Can use &rtl; and &ltr; within translations to handle numbers and punctuation correctly (because those characters, unlike Arabic characters, do not have directionality)
+**** comenn
+
+ambee copy-words-found-in-both-lists language-choice list-of-languages-right-to-left empty-if-left-to-right amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase empty-if-left-to-right amenn amenn
+ambee copy-text text-direction-right-to-left text-direction-left-to-right amenn
+ambee copy-text specify-text-direction-right-to-left specify-possible-text-direction amenn
+ambee copy-text style-align-right style-align-left amenn
+ambee copy-text style-text-align-right style-text-align-left amenn
+ambee copy-text style-hamburger-menu-area-position-left-for-rtl-layout style-hamburger-menu-area-position-left amenn
+ambee if-end amenn

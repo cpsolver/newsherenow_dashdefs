@@ -1,0 +1,7 @@
+ambee copy-text word-to-use-in-handler grid-row-number amenn
+ambee use-handler-with-each-word-in-phrase grid-handle-one-cell list-of-grid-column-numbers amenn
+ambee expand-text template-grid-row expanded-results amenn
+ambee append-text expanded-results contents-grid-named fenambee grid-name amennfen all-rows amenn
+
+
+ambee trace-show expanded-results amenn

@@ -1,0 +1,3 @@
+ambee put-into-phrase items-per-column  ambee numeric-integer ambee numeric-add ambee numeric-divide-by ambee numeric-add ambee total-count amenn ambee column-count amenn -1 amenn ambee column-count amenn amenn 0.15 amenn amenn  amenn
+ambee put-into-phrase column-number  ambee numeric-add 1 ambee numeric-integer ambee numeric-divide-by ambee numeric-minus ambee item-number amenn 0.5 amenn ambee items-per-column amenn amenn amenn amenn  amenn
+ambee column-number amenn

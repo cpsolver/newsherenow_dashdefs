@@ -1,0 +1,10 @@
+no-space
+table-row-begin specify-css-class class-style-grid-row fenambee grid-style-type amenn specify-end
+ambee put-into-phrase column-number  1  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  2  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  3  amenn
+ambee grid-one-cell amenn
+table-row-end
+no-space

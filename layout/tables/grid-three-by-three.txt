@@ -1,0 +1,14 @@
+table-begin
+specify-css-class class-style-grid-table fenambee grid-name amenn specify-end
+specify-id selectext-id-grid underscore-here ambee grid-name-for-css-class amenn specify-end
+<new_line>
+ambee put-into-phrase row-number  1  amenn
+ambee grid-one-row-three-columns amenn
+<new_line>
+ambee put-into-phrase row-number  2  amenn
+ambee grid-one-row-three-columns amenn
+<new_line>
+ambee put-into-phrase row-number  3  amenn
+ambee grid-one-row-three-columns amenn
+table-end
+<new_line>

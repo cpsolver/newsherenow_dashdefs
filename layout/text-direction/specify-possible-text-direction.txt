@@ -1,0 +1,3 @@
+combee ****
+keep this empty! (to specify default left to right text direction, without adding "ltr" code)
+**** comenn

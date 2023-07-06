@@ -1,0 +1,8 @@
+ambee copy-text word-to-use-in-handler grid-column-number amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words equal ambee numeric-equal-greater-less-compare ambee grid-row-number amenn ambee grid-number-of-rows amenn amenn amenn amenn
+ambee grid-handle-one-cell-not-empty amenn
+ambee if-else amenn
+ambee grid-handle-one-cell-case-last-row amenn
+ambee if-end amenn
+

@@ -1,0 +1,7 @@
+no-space
+div-begin specify-css-class class-style-grid-floating-cell-<grid_name> specify-end
+no-space
+contents-grid-named-<grid_name>-row-<row_number>-column-<column_number>
+no-space
+div-end
+no-space
