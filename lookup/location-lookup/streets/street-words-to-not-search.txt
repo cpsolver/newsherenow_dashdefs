@@ -1,0 +1,2 @@
+street road highway avenue boulevard
+n s e w ne se sw nw north south east west northeast southeast southwest northwest

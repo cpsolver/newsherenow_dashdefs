@@ -1,0 +1,13 @@
+ambee copy-text word-to-use-in-handler street-word amenn
+ambee clear-phrase street-ids-for-all-regions amenn
+ambee use-handler-with-each-word-in-phrase get-street-ids-in-one-region-based-on-one-street-word region-ids-to-search amenn
+
+combee *** ignore if common street word, otherwise hours of computation needed *** comenn
+combee *** future_todo: verify optimum value *** comenn
+ambee if-yes-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare 1500 ambee get-count-of-words street-ids-linked-to-street-word fenambee street-word amenn amenn amenn amenn amenn
+ambee clear-phrase street-ids-linked-to-street-word fenambee street-word amenn amenn
+ambee if-end amenn
+
+
+ambee trace-show street-word amenn
+ambee trace-show street-ids-linked-to-street-word fenambee street-word amenn amenn

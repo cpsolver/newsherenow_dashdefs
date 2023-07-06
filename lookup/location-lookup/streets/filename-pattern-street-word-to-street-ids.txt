@@ -1,0 +1,1 @@
+street_words_category_ no-space region-latitude-first-four-digits no-space _ no-space region-longitude-first-four-digits no-space .txt

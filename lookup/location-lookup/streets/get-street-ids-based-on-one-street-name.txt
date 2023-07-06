@@ -1,0 +1,9 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase street-ids-linked-to-street-name-number fenambee street-name-number amenn amenn
+ambee copy-text street-name fenambee street-name-number amenn street-name amenn
+ambee copy-and-replace street-name list-of-street-words character-underscore character-space amenn
+ambee copy-words-found-only-in-first-list list-of-street-words street-words-to-not-search list-of-street-words amenn
+ambee put-into-phrase yes-or-no-is-first-word-in-street-name  yes  amenn
+ambee use-handler-with-each-word-in-phrase get-street-ids-based-on-one-street-word list-of-street-words amenn

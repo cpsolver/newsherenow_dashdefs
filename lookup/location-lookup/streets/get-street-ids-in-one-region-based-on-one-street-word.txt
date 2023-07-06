@@ -1,0 +1,20 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text word-to-use-in-handler region-id amenn
+ambee copy-characters-from-position-to-position region-id region-latitude-first-four-digits 1 4  amenn
+ambee copy-characters-from-position-to-position region-id region-longitude-first-four-digits 6 9  amenn
+ambee expand-text template-path-to-street-words path-to-street-words amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-reading  ambee path-to-street-words amenn  amenn
+ambee expand-text filename-pattern-street-word-to-street-ids file-to-search amenn
+ambee copy-text street-word street-word-terminated-with-space amenn
+ambee append-text-no-space character-underscore street-word-terminated-with-space amenn
+ambee copy-and-replace street-word-terminated-with-space street-word-terminated-with-space character-underscore character-space amenn
+ambee find-line-in-file-that-begins-with-text ambee file-to-search amenn street-word-terminated-with-space street-ids amenn
+ambee copy-words-from-position-to-position street-ids street-ids 2 9999  amenn
+ambee append-text street-ids street-ids-in-region fenambee region-id amenn amenn
+ambee append-text street-ids street-ids-linked-to-street-word fenambee street-word amenn amenn
+
+
+ambee trace-show street-word amenn
+ambee trace-show street-ids-in-region fenambee region-id amenn amenn

@@ -1,0 +1,31 @@
+ambee trace-show-where amenn
+ambee trace-show street-name-1 amenn
+ambee trace-show street-name-2 amenn
+
+
+ambee check-elapsed-time amenn
+
+
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+ambee get-region-ids-to-search amenn
+
+
+ambee check-elapsed-time amenn
+
+
+ambee put-into-phrase street-name-number  1  amenn
+ambee get-street-ids-based-on-one-street-name amenn
+ambee put-into-phrase street-name-number  2  amenn
+ambee get-street-ids-based-on-one-street-name amenn
+
+
+ambee check-elapsed-time amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase street-ids amenn amenn
+ambee have-street-ids-get-intersection-ids amenn
+ambee if-else amenn
+ambee use-city-or-postal-code-as-location amenn
+ambee if-end amenn
+
