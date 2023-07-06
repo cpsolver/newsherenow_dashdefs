@@ -1,0 +1,1 @@
+http-www-news-here-now-domain-name no-space /maptiles/map_tile_not_available.png no-space

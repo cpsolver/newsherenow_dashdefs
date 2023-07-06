@@ -1,0 +1,3 @@
+0.0000045511111
+combee *** 2**6 etc. at zoom 6 is 64 *** comenn
+combee *** at zoom 6 there are 64 x 256 pixels (=16384) per 360 degrees = 45.51111111111111 pixels per degree *** comenn

@@ -1,0 +1,52 @@
+ambee trace-show-where amenn
+ambee trace-show latitude-integer amenn
+ambee trace-show longitude-integer amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+combee **** reminder: next line not really needed because all map tiles always found because zoom level 6 has map tiles for entire globe **** comenn
+ambee expand-text template-url-local-map-tile-not-available url-local-map-tile-not-available amenn
+
+ambee put-into-phrase yes-or-no-found-local-map-tiles  no  amenn
+ambee clear-phrase list-of-osm-map-tiles-needed amenn
+ambee copy-text map-zoom-level-closer map-zoom-level amenn
+ambee if-needed-determine-map-tile-filenames-at-next-zoom-level amenn
+ambee copy-text map-zoom-level-farther map-zoom-level amenn
+ambee if-needed-determine-map-tile-filenames-at-next-zoom-level amenn
+ambee copy-text map-zoom-level-full-coverage map-zoom-level amenn
+ambee if-needed-determine-map-tile-filenames-at-next-zoom-level amenn
+ambee copy-text map-zoom-level-checking map-zoom-level amenn
+ambee copy-text string-no yes-or-no-at-highest-zoom amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions map-zoom-level map-zoom-level-closer amenn amenn
+ambee copy-text string-yes yes-or-no-at-highest-zoom amenn
+ambee if-end amenn
+
+ambee put-into-phrase tile-x-number  ambee tile-x-number-center amenn  amenn
+ambee put-into-phrase tile-y-number  ambee tile-y-number-center amenn  amenn
+ambee copy-text pixels-per-integer-degree-latitude-at-zoom fenambee map-zoom-level amenn pixels-per-integer-degree-latitude amenn
+ambee copy-text pixels-per-integer-degree-longitude-at-zoom fenambee map-zoom-level amenn pixels-per-integer-degree-longitude amenn
+
+
+combee ****
+ambee trace-show url-map-tile-in-position-1 amenn
+ambee trace-show url-map-tile-in-position-2 amenn
+ambee trace-show url-map-tile-in-position-3 amenn
+ambee trace-show url-map-tile-in-position-4 amenn
+ambee trace-show url-map-tile-in-position-5 amenn
+ambee trace-show url-map-tile-in-position-6 amenn
+ambee trace-show url-map-tile-in-position-7 amenn
+ambee trace-show url-map-tile-in-position-8 amenn
+ambee trace-show url-map-tile-in-position-9 amenn
+ambee trace-show list-of-osm-map-tiles-needed amenn
+ambee trace-show pixels-per-integer-degree-latitude-at-zoom-12 amenn
+ambee trace-show pixels-per-integer-degree-latitude-at-zoom-10 amenn
+ambee trace-show pixels-per-integer-degree-latitude-at-zoom-6 amenn
+ambee trace-show map-zoom-level amenn
+ambee trace-show pixels-per-integer-degree-latitude amenn
+ambee trace-show pixels-per-integer-degree-longitude amenn
+ambee trace-show kilometers-hundredths-per-latitude-integer amenn
+**** comenn
+
+combee **** bug: kilometers-hundredths-per-latitude-integer should be different from kilometers-hundredths-per-latitude-integer , but is not **** comenn

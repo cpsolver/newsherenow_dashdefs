@@ -1,0 +1,15 @@
+ambee expand-text template-map-tile-zoom-x-y-numbers map-tile-zoom-x-y-numbers amenn
+ambee expand-text template-filename-local-map-tile filename-local-map-tile amenn
+ambee expand-text template-folder-for-local-map-tiles dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-url-to-local-map-tile url-local-map-tile amenn
+ambee copy-text url-local-map-tile url-map-tile-in-position fenambee map-tile-position-number amenn amenn
+
+ambee if-no-begin ambee yes-or-no-file-exists ambee filename-local-map-tile amenn amenn amenn
+ambee append-text-no-space map-tile-zoom-x-y-numbers list-of-osm-map-tiles-needed amenn
+ambee append-new-line list-of-osm-map-tiles-needed amenn
+ambee copy-text url-local-map-tile-not-available url-map-tile-in-position fenambee map-tile-position-number amenn amenn
+ambee put-into-phrase yes-or-no-found-local-map-tiles  no amenn
+ambee if-end amenn
+
+
+ambee trace-show url-map-tile-in-position fenambee map-tile-position-number amenn amenn

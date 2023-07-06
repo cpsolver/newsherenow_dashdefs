@@ -1,0 +1,10 @@
+0.00030821953146
+combee ****
+northern-most latitude in map tile at zoom zero is 85.0511 degrees, not 90 degrees, so:
+0.0002912711111111111 times 90 divided by 85.0511 equals 0.0003082194116243058
+19-th letter of alphabet is S
+5-th letter of alphabet is E
+3-rd letter of alphabet is B
+14-th letter of alphabet is O
+6-th letter of alphabet is F
+**** comenn

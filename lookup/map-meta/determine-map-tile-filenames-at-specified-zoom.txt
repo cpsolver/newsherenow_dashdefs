@@ -1,0 +1,51 @@
+combee *** reminder: in all quadrants, tile corner is top left *** comenn
+
+ambee put-into-phrase pixel-distance-from-left-to-location  ambee numeric-minimum ambee map-tile-width-minus-one amenn ambee numeric-maximum 1 ambee numeric-integer ambee numeric-multiply ambee tile-x-offset-from-corner amenn ambee map-tile-width amenn amenn amenn amenn amenn  amenn
+ambee put-into-phrase pixel-distance-from-right-to-location  ambee numeric-minus ambee map-tile-width amenn ambee pixel-distance-from-left-to-location amenn amenn  amenn
+ambee put-into-phrase pixel-distance-from-top-to-location  ambee numeric-minimum ambee map-tile-height-minus-one amenn ambee numeric-maximum 1 ambee numeric-integer ambee numeric-multiply ambee tile-y-offset-from-corner amenn ambee map-tile-height amenn amenn amenn amenn amenn  amenn
+ambee put-into-phrase pixel-distance-from-bottom-to-location  ambee numeric-minus ambee map-tile-height amenn ambee pixel-distance-from-top-to-location amenn amenn  amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn -1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn -1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  1  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee tile-x-number-center amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn -1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  2  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn 1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn -1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  3  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn -1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee tile-y-number-center amenn  amenn
+ambee put-into-phrase map-tile-position-number  4  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee tile-x-number-center amenn  amenn
+ambee put-into-phrase tile-y-number  ambee tile-y-number-center amenn  amenn
+ambee put-into-phrase map-tile-position-number  5  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn 1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee tile-y-number-center amenn  amenn
+ambee put-into-phrase map-tile-position-number  6  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn -1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn 1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  7  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee tile-x-number-center amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn 1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  8  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn
+
+ambee put-into-phrase tile-x-number  ambee numeric-add ambee tile-x-number-center amenn 1  amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-add ambee tile-y-number-center amenn 1  amenn  amenn
+ambee put-into-phrase map-tile-position-number  9  amenn
+ambee specify-url-map-tile-based-on-x-y-numbers amenn

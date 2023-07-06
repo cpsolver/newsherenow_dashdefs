@@ -1,0 +1,3 @@
+0.00007281777778
+combee *** 2**12 etc. at zoom 10 is 1024 *** comenn
+combee *** at zoom 10 there are 1024 x 256 pixels (=262144) per 360 degrees = 728.1777777777778 pixels per degree *** comenn

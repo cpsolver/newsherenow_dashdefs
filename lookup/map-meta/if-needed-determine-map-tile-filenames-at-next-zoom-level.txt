@@ -1,0 +1,14 @@
+ambee trace-show latitude-integer amenn
+ambee trace-show longitude-integer amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+ambee if-no-begin ambee yes-or-no-found-local-map-tiles amenn amenn
+ambee copy-text map-zoom-level map-zoom-level-checking amenn
+ambee calculate-tile-x-y-values-based-on-lat-lon amenn
+ambee put-into-phrase tile-x-number-center  ambee tile-x-number amenn  amenn
+ambee put-into-phrase tile-y-number-center  ambee tile-y-number amenn  amenn
+ambee put-into-phrase yes-or-no-found-local-map-tiles  yes  amenn
+ambee determine-map-tile-filenames-at-specified-zoom amenn
+ambee if-end amenn

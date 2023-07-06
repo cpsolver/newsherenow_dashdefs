@@ -1,0 +1,1 @@
+serverpathtotopfolder/public_html/maptiles/zoom_ no-space map-zoom-level no-space / no-space

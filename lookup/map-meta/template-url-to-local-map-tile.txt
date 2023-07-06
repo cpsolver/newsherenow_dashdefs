@@ -1,0 +1,1 @@
+http-www-news-here-now-domain-name no-space /maptiles/zoom_ no-space map-zoom-level no-space / no-space filename-local-map-tile no-space

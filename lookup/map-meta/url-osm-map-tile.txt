@@ -1,0 +1,4 @@
+ambee put-into-phrase osm-map-tile-file-name  https://a.tile.openstreetmap.org/ nospay ambee map-zoom-level amenn nospay / nospay ambee tile-x-number amenn nospay / nospay ambee tile-y-number amenn nospay .png amenn
+ambee append-text osm-map-tile-file-name list-of-osm-map-tiles-needed amenn
+ambee append-new-line list-of-osm-map-tiles-needed amenn
+ambee osm-map-tile-file-name amenn

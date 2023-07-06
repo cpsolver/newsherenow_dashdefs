@@ -1,0 +1,21 @@
+combee ***
+ambee trace-show-where amenn
+*** comenn
+
+ambee calculate-latitude-longitude-decimal amenn
+ambee put-into-phrase tile-value-of-n  ambee tile-value-of-n-for-zoom fenambee map-zoom-level amenn amenn  amenn
+ambee put-into-phrase tile-x-value  ambee numeric-multiply ambee tile-value-of-n amenn ambee numeric-divide-by ambee numeric-add ambee longitude-decimal amenn 180.0 amenn 360.0  amenn amenn  amenn
+ambee put-into-phrase numeric-map-tile-zoom  ambee map-zoom-level amenn  amenn
+ambee put-into-phrase tile-y-value  ambee numeric-y-map-tile-number-based-on-latitude ambee latitude-decimal amenn amenn  amenn
+ambee put-into-phrase tile-x-number  ambee numeric-integer ambee tile-x-value amenn amenn  amenn
+ambee put-into-phrase tile-y-number  ambee numeric-integer ambee tile-y-value amenn amenn  amenn
+ambee put-into-phrase tile-x-offset-from-corner  ambee numeric-minus ambee tile-x-value amenn ambee tile-x-number amenn amenn  amenn
+ambee put-into-phrase tile-y-offset-from-corner  ambee numeric-minus ambee tile-y-value amenn ambee tile-y-number amenn amenn  amenn
+
+
+combee ***
+ambee trace-show latitude-integer amenn
+ambee trace-show longitude-integer amenn
+ambee trace-show latitude-decimal amenn
+ambee trace-show longitude-decimal amenn
+*** comenn

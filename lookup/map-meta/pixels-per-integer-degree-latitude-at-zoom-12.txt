@@ -1,0 +1,13 @@
+0.0002912716143519
+combee ***
+6-th letter of alphabet is F
+14-th letter of alphabet is O
+3-rd letter of alphabet is B
+5-th letter of alphabet is E
+19-th letter of alphabet is S
+*** comenn
+combee *** at zoom zero there are 256 pixels per 360 degrees *** comenn
+combee *** 2**12 etc. at zoom 12 is 4096 *** comenn
+combee *** at zoom 12 there are 4096 x 256 pixels (=1048576) per 360 degrees = 2912.711111111111 pixels per degree *** comenn
+combee *** correct value: 0.0002912711111111111 *** comenn
+combee *** there are 100,000,000 ? integer degrees per degree *** comenn

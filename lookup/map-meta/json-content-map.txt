@@ -1,0 +1,75 @@
+code-open-quote selectext-id-loc-map-center code-close-quote no-space ,"contents", no-space code-open-quote latitude-integer no-space _ no-space longitude-integer code-close-quote ,
+
+code-open-quote selectext-id-post-json-action code-close-quote no-space ,"contents", no-space code-open-quote selectext-got-location code-close-quote ,
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-map code-close-quote ,
+
+code-open-quote selectext-id-city-name code-close-quote no-space ,"contents", no-space code-open-quote city-name code-close-quote ,
+
+code-open-quote selectext-id-city-name-and-country-or-state code-close-quote no-space ,"contents", no-space code-open-quote city-name-and-country-or-state code-close-quote ,
+
+code-open-quote selectext-id-city-name-found code-close-quote no-space ,"contents", no-space code-open-quote city-name-found code-close-quote ,
+
+code-open-quote selectext-id-country-code code-close-quote no-space ,"contents", no-space code-open-quote country-code code-close-quote ,
+
+code-open-quote selectext-id-yes-if-show-miles code-close-quote no-space ,"contents", no-space code-open-quote yes-or-no-show-miles code-close-quote ,
+
+code-open-quote selectext-id-yes-if-at-highest-zoom code-close-quote no-space ,"contents", no-space code-open-quote yes-or-no-at-highest-zoom code-close-quote ,
+
+code-open-quote selectext-id-postal-code code-close-quote no-space ,"contents", no-space code-open-quote postal-code code-close-quote ,
+
+code-open-quote selectext-id-neighborhood-name code-close-quote no-space ,"contents", no-space code-open-quote neighborhood-name code-close-quote ,
+
+code-open-quote selectext-id-street-name-one code-close-quote no-space ,"contents", no-space code-open-quote first-street-name code-close-quote ,
+
+code-open-quote selectext-id-street-name-two code-close-quote no-space ,"contents", no-space code-open-quote second-street-name code-close-quote ,
+
+code-open-quote selectext-id-latitude-decimal code-close-quote no-space ,"contents", no-space code-open-quote latitude-decimal code-close-quote ,
+
+code-open-quote selectext-id-longitude-decimal code-close-quote no-space ,"contents", no-space code-open-quote longitude-decimal code-close-quote ,
+
+code-open-quote selectext-id-street-id code-close-quote no-space ,"contents", no-space code-open-quote first-street-id code-close-quote ,
+
+code-open-quote selectext-id-cross-street-id code-close-quote no-space ,"contents", no-space code-open-quote second-street-id code-close-quote ,
+
+code-open-quote selectext-id-map-tile-width underscore-here 1 code-close-quote no-space ,"contents", no-space code-open-quote pixel-distance-from-right-to-location code-close-quote ,
+
+code-open-quote selectext-id-map-tile-height underscore-here 1 code-close-quote no-space ,"contents", no-space code-open-quote pixel-distance-from-bottom-to-location code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 1 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-1 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 2 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-2 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 3 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-3 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 4 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-4 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 5 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-5 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 6 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-6 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 7 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-7 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 8 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-8 code-close-quote ,
+
+code-open-quote selectext-id-url-map-tile underscore-here 9 code-close-quote no-space ,"contents", no-space code-open-quote url-map-tile-in-position-9 code-close-quote ,
+
+code-open-quote selectext-id-pixels-per-degree-latitude code-close-quote no-space ,"contents", no-space code-open-quote pixels-per-integer-degree-latitude code-close-quote ,
+
+code-open-quote selectext-id-pixels-per-degree-longitude code-close-quote no-space ,"contents", no-space code-open-quote pixels-per-integer-degree-longitude code-close-quote ,
+
+code-open-quote selectext-id-poll-button-count code-close-quote no-space ,"contents", code-open-quote 0 code-close-quote ,
+
+code-open-quote selectext-id-no-local-polls-here code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-choose-your-local-poll code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-no-local-polls-if-no-location code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-icon-found-local-polls code-close-quote no-space ,"display","none",
+
+json-content-date-time
+
+json-content-calendar
+
+possible-json-content-geolocate-info
