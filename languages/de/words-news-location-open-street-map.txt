@@ -1,0 +1,1 @@
+Nachrichtenstandort auf der Open Street Map anzeigen

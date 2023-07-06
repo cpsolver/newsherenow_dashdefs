@@ -1,0 +1,1 @@
+Ihr Browser unterst&#252;tzt das Canvas-Tag nicht.

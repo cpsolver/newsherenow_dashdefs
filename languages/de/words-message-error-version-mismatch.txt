@@ -1,0 +1,1 @@
+Die Version der &#8220;Webanwendung&#8221; in Ihrem Browser ist &#228;lter als die Version des Codes, der auf dem Server ausgef&#252;hrt wird. Bitte klicken Sie auf die Schaltfl&#228;che &#8220;Aktualisieren&#8221; in Ihrem Browser. Dadurch wird die neueste Version der News Here Now-Webanwendung geladen.

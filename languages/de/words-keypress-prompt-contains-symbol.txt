@@ -1,0 +1,1 @@
+Ooops! Symbole wie Semikolons (;) und Unterstriche () sind nicht zul&#228;ssig. Erlaubt sind nur Kommas (,) und Bindestriche (-)

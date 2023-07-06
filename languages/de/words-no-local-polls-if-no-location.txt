@@ -1,0 +1,1 @@
+Lokale Umfragen k&#246;nnen erst angezeigt werden, wenn ein Standort angegeben wurde.

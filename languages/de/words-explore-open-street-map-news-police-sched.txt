@@ -1,0 +1,1 @@
+Zeigen Sie den Ort dieser geplanten Veranstaltung mit Open Street Map .org an

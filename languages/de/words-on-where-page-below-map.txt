@@ -1,0 +1,1 @@
+Die Beispiele zeigen, was in die Box eingegeben werden kann. Nachdem Sie auf eine Beispielschaltfl&#228;che geklickt haben, k&#246;nnen Sie hierher zur&#252;ckkehren (zur Registerkarte WHERE), um zu sehen, wie der Ort angegeben wurde.

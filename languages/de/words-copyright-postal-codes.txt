@@ -1,0 +1,1 @@
+Bei Suchen, die Postleitzahlen enthalten, werden Daten von www.GeoNames.org verwendet. Einige Regierungen (wie Kanada) gestatten keine &#246;ffentliche Verwendung aller Zeichen in ihren Postleitzahlen, und in diesen F&#228;llen werden nur die ersten paar Zeichen verwendet.

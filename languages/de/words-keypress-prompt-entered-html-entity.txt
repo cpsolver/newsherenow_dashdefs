@@ -1,0 +1,1 @@
+Ja, HTML-Entities sind erlaubt, aber wie sie interpretiert werden, ist noch nicht absehbar

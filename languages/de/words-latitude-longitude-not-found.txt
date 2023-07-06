@@ -1,0 +1,1 @@
+Kann keine Kreuzung in der N&#228;he des angegebenen Breiten- und L&#228;ngengrades finden. Die Ursache f&#252;r diesen Fehler ist unbekannt. Funktioniert Ihr GPS-Standort mit anderen Websites? Wenn ja, verwenden Sie bitte die Kontaktseite, um diesen Fehler zu melden, und geben Sie die Namen der n&#228;chsten sich kreuzenden Stra&#223;en an.

@@ -1,0 +1,1 @@
+Wenn Ihr GPS-Standort verf&#252;gbar ist, wird hier eine Schaltfl&#228;che angezeigt, nachdem Sie auf die Registerkarte WHERE geklickt haben.

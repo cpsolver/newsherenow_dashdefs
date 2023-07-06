@@ -1,0 +1,1 @@
+Erw&#228;gen Sie auch die Verwendung eines nahegelegenen St&#228;dtenamens mit denselben Stra&#223;ennamen. Zum Beispiel, italics-begin fort worth, chestnut, 23 italics-end und italics-begin dallas, chestnut, 23 italics-end gehen an dieselbe Kreuzung. (Grenzen werden ignoriert.)
