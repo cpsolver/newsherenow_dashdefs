@@ -1,0 +1,1 @@
+input-ip-address epoch-seconds-now epoch-seconds-at-current-ballot epoch-seconds-at-previous-ballot poll-id poll-version-name raw-ballot-rankings

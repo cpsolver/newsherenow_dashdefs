@@ -1,0 +1,5 @@
+code-open-quote selectext-id-no-local-polls-here code-close-quote no-space ,"display","block",
+code-open-quote selectext-id-poll-button-count code-close-quote no-space ,"contents","0",
+code-open-quote selectext-id-no-local-polls-if-no-location code-close-quote no-space ,"display","none",
+code-open-quote selectext-id-icon-found-local-polls code-close-quote no-space ,"display","none",
+code-open-quote selectext-id-choose-your-local-poll code-close-quote no-space ,"display","none",

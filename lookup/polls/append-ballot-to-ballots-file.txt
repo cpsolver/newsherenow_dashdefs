@@ -1,0 +1,6 @@
+ambee trace-show-where amenn
+ambee trace-show ballot-info-to-save amenn
+
+combee **** reminder: filename numbers start at 00003 not 00001 so that files 00001 and 00002 can be edited manually without losing ballots added to other files **** comenn
+ambee put-into-phrase status-empty-when-append-success  no_success_yet  amenn
+ambee use-handler-with-each-word-in-phrase append-ballot-to-ballots-file-single-attempt list-of-ballot-filename-numbers amenn

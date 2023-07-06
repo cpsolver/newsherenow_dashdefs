@@ -1,0 +1,3 @@
+collected-info-poll-id
+latitude
+longitude

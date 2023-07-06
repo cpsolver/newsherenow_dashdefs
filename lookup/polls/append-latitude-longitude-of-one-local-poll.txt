@@ -1,0 +1,3 @@
+ambee copy-text word-to-use-in-handler poll-id amenn
+ambee append-text collected-info-poll-id fenambee poll-id amennfen latitude list-of-poll-latitude-values amenn
+ambee append-text collected-info-poll-id fenambee poll-id amennfen longitude list-of-poll-longitude-values amenn

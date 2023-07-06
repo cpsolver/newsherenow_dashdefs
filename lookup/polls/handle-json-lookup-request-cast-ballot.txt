@@ -1,0 +1,61 @@
+ambee trace-show-where amenn
+
+ambee put-into-phrase epoch-seconds-now  ambee get-current-time-in-epoch-seconds amenn  amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-ballot-current-id combee *** need space here *** comenn amenn epoch-seconds-at-current-ballot amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-ballot-previous-id combee *** need space here *** comenn amenn epoch-seconds-at-previous-ballot amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-poll-id combee *** need space here *** comenn amenn poll-id amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-poll-version-name combee *** need space here *** comenn amenn poll-version-name amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-ballot-rankings-encoded combee *** need space here *** comenn amenn raw-ballot-rankings amenn
+
+ambee copy-and-replace input-ip-address input-ip-address character-space character-underscore amenn
+ambee copy-and-replace epoch-seconds-at-current-ballot epoch-seconds-at-current-ballot character-space character-underscore amenn
+ambee copy-and-replace epoch-seconds-at-previous-ballot epoch-seconds-at-previous-ballot character-space character-underscore amenn
+ambee copy-and-replace poll-id poll-id character-space character-underscore amenn
+ambee copy-and-replace poll-version-name poll-version-name character-space character-underscore amenn
+ambee copy-and-replace raw-ballot-rankings raw-ballot-rankings character-space character-underscore amenn
+
+ambee copy-and-replace input-ip-address input-ip-address character-hyphen character-underscore amenn
+ambee copy-and-replace epoch-seconds-at-current-ballot epoch-seconds-at-current-ballot character-hyphen character-underscore amenn
+ambee copy-and-replace epoch-seconds-at-previous-ballot epoch-seconds-at-previous-ballot character-hyphen character-underscore amenn
+ambee copy-and-replace poll-id poll-id character-hyphen character-underscore amenn
+ambee copy-and-replace poll-version-name poll-version-name character-hyphen character-underscore amenn
+ambee copy-and-replace raw-ballot-rankings raw-ballot-rankings character-hyphen character-underscore amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase input-ip-address amenn amenn
+ambee put-into-phrase input-ip-address  ???  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase epoch-seconds-at-current-ballot amenn amenn
+ambee put-into-phrase epoch-seconds-at-current-ballot  ???  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase epoch-seconds-at-previous-ballot amenn amenn
+ambee put-into-phrase epoch-seconds-at-previous-ballot  0  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase poll-id amenn amenn
+ambee put-into-phrase poll-id  ???  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase poll-version-name amenn amenn
+ambee put-into-phrase poll-version-name  ???  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase raw-ballot-rankings amenn amenn
+ambee put-into-phrase raw-ballot-rankings  ???  amenn
+ambee if-end amenn
+
+ambee expand-text template-ballot-info-to-save ballot-info-to-save amenn
+ambee append-ballot-to-ballots-file amenn
+
+ambee expand-text content-type-json standard-output amenn
+ambee expand-text template-json-content-begin json-content-begin amenn
+ambee append-text-no-space json-content-begin standard-output amenn
+ambee expand-text template-json-content-ballot-cast-done json-content-ballot-cast-done amenn
+ambee append-text-no-space json-content-ballot-cast-done standard-output amenn
+ambee expand-text template-json-content-end json-content-end amenn
+ambee append-text-no-space json-content-end standard-output amenn
+
+
+ambee trace-show poll-id amenn
+ambee trace-show standard-output amenn

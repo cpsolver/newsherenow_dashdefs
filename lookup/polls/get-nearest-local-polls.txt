@@ -1,0 +1,7 @@
+ambee use-handler-with-each-word-in-phrase handle-get-polls-in-region-file region-ids-to-search amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-nearest-poll-ids amenn amenn
+ambee handle-json-polls-local-found amenn
+ambee if-else amenn
+ambee expand-text template-json-content-polls-local-not-found generated-json-content-polls-local amenn
+ambee if-end amenn

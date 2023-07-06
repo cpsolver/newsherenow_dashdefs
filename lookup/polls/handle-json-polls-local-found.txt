@@ -1,0 +1,26 @@
+ambee copy-words-unique-only list-of-nearest-poll-ids list-of-nearest-poll-ids amenn
+ambee use-handler-with-each-word-in-phrase append-latitude-longitude-of-one-local-poll list-of-nearest-poll-ids amenn
+ambee numeric-vector-add-number list-of-poll-latitude-values ambee latitude-at-center-negative amenn list-of-latitude-deltas-for-all-poll-items amenn
+ambee numeric-vector-add-number list-of-poll-longitude-values ambee longitude-at-center-negative amenn list-of-longitude-deltas-for-all-poll-items amenn
+ambee numeric-vector-multiply-by-number list-of-longitude-deltas-for-all-poll-items ambee scale-value-for-longitude-adjustment amenn list-of-longitude-deltas-for-all-poll-items amenn
+ambee numeric-vectors-from-delta-values-calculate-distances list-of-latitude-deltas-for-all-poll-items list-of-longitude-deltas-for-all-poll-items list-of-distances-for-all-poll-items amenn
+ambee copy-words-rearrange-using-order-sort-numeric list-of-nearest-poll-ids poll-ids-sorted-by-distance list-of-distances-for-all-poll-items amenn
+ambee append-text string-repeated-empty-placeholder poll-ids-sorted-by-distance amenn
+ambee put-into-phrase maximum-number-of-items-to-list  ambee numeric-multiply ambee number-of-columns-for-polls-local amenn ambee number-of-rows-for-polls-local amenn amenn  amenn
+ambee copy-words-from-position-to-position poll-ids-sorted-by-distance poll-ids-to-display 1 ambee maximum-number-of-items-to-list amenn amenn
+ambee put-into-phrase dashrep-gather-tag-unique  uniqueid  amenn
+ambee clear-phrase button-number amenn
+ambee use-handler-with-each-word-in-phrase handle-get-json-for-one-button-poll-local poll-ids-to-display amenn
+ambee copy-text button-number number-of-poll-buttons-to-display amenn
+ambee expand-text template-json-content-polls-local-found-end expanded-text amenn
+ambee append-text-no-space expanded-text generated-json-content-polls-local amenn
+
+
+ambee trace-show list-of-nearest-poll-ids amenn
+ambee trace-show list-of-poll-latitude-values amenn
+ambee trace-show list-of-poll-longitude-values amenn
+ambee trace-show number-of-poll-buttons-to-display amenn
+ambee trace-show maximum-number-of-items-to-list amenn
+ambee trace-show poll-ids-sorted-by-distance amenn
+ambee trace-show poll-ids-to-display amenn
+ambee trace-show generated-json-content-polls-local amenn

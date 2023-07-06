@@ -1,0 +1,5 @@
+code-open-quote selectext-id-button-request-vote code-close-quote no-space ,"display","none" ,
+code-open-quote selectext-id-ballot-sent code-close-quote no-space ,"display","none" ,
+code-open-quote selectext-id-ballot-cast code-close-quote no-space ,"display","block",
+code-open-quote selectext-id-ballot-cast-clarification code-close-quote no-space ,"display","block",
+code-open-quote selectext-id-ballot-cast-penalty code-close-quote no-space ,"display","block",

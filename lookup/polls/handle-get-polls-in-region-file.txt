@@ -1,0 +1,18 @@
+ambee copy-text word-to-use-in-handler region-id amenn
+ambee expand-text template-path-to-local-polls dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-local-polls-in-region file-to-read amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-read amenn amenn amenn
+ambee copy-from-columns-in-file-to-named-phrases ambee file-to-read amenn pattern-prefix-and-column-names-for-polls-info list-of-poll-ids-in-region fenambee region-id amenn amenn
+
+ambee trace-show pattern-prefix-and-column-names-for-polls-info amenn
+
+ambee if-end amenn
+
+ambee append-text list-of-poll-ids-in-region fenambee region-id amenn list-of-nearest-poll-ids amenn
+
+
+ambee trace-show list-of-poll-ids-in-region fenambee region-id amenn amenn
+ambee trace-show list-of-nearest-poll-ids amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show file-to-read amenn
