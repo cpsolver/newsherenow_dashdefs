@@ -1,0 +1,1 @@
+You must specify a location before a map can be displayed.

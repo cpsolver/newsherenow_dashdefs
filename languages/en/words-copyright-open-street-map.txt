@@ -1,0 +1,12 @@
+Map tile images are
+copyright-symbol
+no-space non-breaking-space no-space
+link-begin specify-link-url url-open-street-map-copyright specify-end specify-open-link-in-new-browser-page
+Open Street Map contributors
+link-end
+no-space .
+sentence-next
+The bold-begin italics-begin Open Street Map italics-end bold-end button (above) takes you to the Open Street Map (.org) website,
+centered at this location.
+sentence-next
+Anyone em-dash including you em-dash can add missing information to the Open Street Map data.

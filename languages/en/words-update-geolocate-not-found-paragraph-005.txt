@@ -1,0 +1,3 @@
+The Open Stree Map data is intended for cartography (map hyphen-here making), so that data is not always complete enough to identify every intersection.
+sentence-next
+(Specifically, the street name displayed on the Open Street Map might not match the street name used at that intersection.)

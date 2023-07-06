@@ -1,0 +1,1 @@
+Hint: Instead of entering full street names, such as &#8220;dolphin way, southwest 5th street&#8221;, try using just the most unique and significant words, such as &#8220;dolphin, southwest 5th&#8221;.

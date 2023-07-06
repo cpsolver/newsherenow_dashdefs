@@ -1,0 +1,1 @@
+Local polls cannot be displayed until a location has been specified.

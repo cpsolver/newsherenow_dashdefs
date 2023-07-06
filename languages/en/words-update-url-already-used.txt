@@ -1,0 +1,7 @@
+The URL you supplied exactly matches the URL for another news item (that already exists).
+sentence-next
+You can edit that news.
+sentence-next
+Or, you can delete that news, and then add your news using the same URL.
+sentence-next
+To go to the intersection that is closest to where that matching news is located, click the button below.

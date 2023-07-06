@@ -1,0 +1,1 @@
+A narrow screen width is detected, so the map is not full size.

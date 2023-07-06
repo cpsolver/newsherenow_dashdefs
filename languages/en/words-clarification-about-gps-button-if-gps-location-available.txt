@@ -1,0 +1,1 @@
+If your GPS location becomes available, then a button to use it will appear here after you click the WHERE tab.

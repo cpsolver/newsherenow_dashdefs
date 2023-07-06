@@ -1,0 +1,13 @@
+Why do they deserve free advertising here?
+sentence-next
+bold-begin They struggle to compete against bold-end
+MacDonalds, Starbucks, Amazon, Home Depot,
+and other
+bold-begin big chain businesses bold-end
+that buy lots of advertising on search engines and
+open-quote recommendation close-quote websites.
+sentence-next
+But when you walk into one of those chain businesses
+you are choosing to bold-begin take money out of your wallet bold-end
+and send it to their corporate headquarters,
+in a bold-begin city far away bold-end no-space .

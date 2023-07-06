@@ -1,0 +1,1 @@
+Ooops! sentence-next Periods and abbreviations are not allowed, except when they appear in the official city or street name. sentence-next For example, use &#8220;street&#8221; instead of &#8220;st.&#8221;, but &#8220;st. louis&#8221; is OK.

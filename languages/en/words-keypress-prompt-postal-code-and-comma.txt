@@ -1,0 +1,1 @@
+Have postal code, click bold-begin words-go-here-button bold-end no-space , any street names will be ignored

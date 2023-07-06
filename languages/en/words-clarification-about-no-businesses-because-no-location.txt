@@ -1,0 +1,1 @@
+You must specify a location before any businesses can be displayed.

@@ -1,0 +1,8 @@
+This news source has been received,
+a person will look at the content at this URL.
+sentence-next
+If the content is appropriate,
+then the code needed to get news from this news source will be written.
+sentence-next
+Currently this is a time hyphen-here consuming process,
+so a delay of weeks (or possibly more) may occur before news from this source will begin to appear.

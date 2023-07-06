@@ -1,0 +1,8 @@
+Searches that involve postal codes use data from
+link-begin specify-link-url https://www.geonames.org specify-end specify-open-link-in-new-browser-page
+www.GeoNames.org
+link-end
+no-space .
+sentence-next
+Some governments (such as Canada) do not allow public use of all characters in their postal codes,
+and in those cases only the first few characters are used.

@@ -1,0 +1,8 @@
+This is the estimated standard time at this location.
+sentence-next
+The actual hour at this location is unknown because
+this website does not track
+politically hyphen-here chosen time hyphen-here zone boundaries
+or open-quote daylight savings close-quote adjustments.
+sentence-next
+News is updated regularly, but not instantly.

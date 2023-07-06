@@ -1,0 +1,21 @@
+Most popular: poll-question-<poll_question_number>-popularity-ranking-1
+Most popular among voters who dislike most popular: poll-question-<poll_question_number>-representation-ranking-2
+Second-most popular: poll-question-<poll_question_number>-popularity-ranking-2
+Third-most popular: poll-question-<poll_question_number>-popularity-ranking-3
+Fourth-most popular: poll-question-<poll_question_number>-popularity-ranking-4
+
+Summary of VoteFair Popularity Ranking:
+
+Single-mark ballot ranking:
+
+Pairwise counts, sorted by popularity, in space-separated columns:
+x_y_z x_y_z 32 13 14
+
+Permission to copy and republish this news story is hereby granted on the condition that &#8220;News Here Now&#8221; (or &#8220;NewsHereNow.com&#8221;) is credited as the source.
+
+combee ***
+reminder: use underscore where space appears within title & candidate names.
+reminder: tab characters are obsolete.
+reminder: start with simple standard template; increase sophistication with time.
+reminder: allow putting pairwise counts into spreadsheets
+*** comenn

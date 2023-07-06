@@ -1,0 +1,1 @@
+To specify a smaller city such as italics-begin Kent OH italics-end (instead of italics-begin Kent WA italics-end no-space ) or italics-begin Vancouver WA italics-end (instead of italics-begin Vancouver BC italics-end no-space ) include the state (or province) name, or its two hyphen-here letter abbreviation, bold-begin before the first comma bold-end no-space .

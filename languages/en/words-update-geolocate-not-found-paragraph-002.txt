@@ -1,0 +1,1 @@
+The street might have multiple names, but the name used at the Open Street Map (.org) website is the only name recognized.

@@ -1,0 +1,10 @@
+Your information will become visible after we confirm that the event description is posted at a domain name that is checked for inappropriate content (&#8220;moderated&#8221;), similar to domains such as Facebook.com and Craigslist.org.
+sentence-next
+If the unfamiliar domain name is approved, your news will appear automatically.
+sentence-next
+If your submission fails this check, it will be discarded without notice
+(as if it were spam, an advertisement, a prank, or a submission from a software robot).
+sentence-next
+This new domain name has been added to the website administrator&#39;s to hyphen-here do list for verification.
+sentence-next
+You do not need to do anything more.

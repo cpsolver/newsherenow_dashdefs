@@ -1,0 +1,17 @@
+If you usually trust
+bold-begin word-yelp ratings bold-end
+when you look for a place to eat, then you should know that word-yelp hides and shows
+open-quote suspicious close-quote
+reviews differently depending on whether the business is paying for it&#39;s
+open-quote extra services. close-quote
+sentence-next
+To avoid that unethical bias,
+here at words-news-here-now-capitalized you can judge a restaurant by clicking to
+bold-begin view its menu (and prices) on its website bold-end
+em-dash if the
+open-quote www close-quote
+icon appears on that restaurant&#39;s button.
+sentence-next
+If that icon is missing from a favorite restaurant, you (or anyone) can add their website link to
+bold-begin Open Street Map (.org) bold-end no-space ,
+which is where we get most of our business information.

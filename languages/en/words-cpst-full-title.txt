@@ -1,0 +1,3 @@
+italics-begin
+The Creative Problem Solver's Toolbox: A Complete Course In The Art Of Creating Solutions To Problems Of Any Kind
+italics-end

@@ -1,0 +1,7 @@
+Regarding dependability, a loss of news information is likely when a news source changes the way in which its news is coded.
+sentence-next
+(Currently there is no standard way to code police reports.)
+sentence-next
+When this situation happens, please again supply the news source location (its URL),
+and after open-quote manual close-quote (programming) adjustments are made,
+then the revised news source will replace the previous news source.

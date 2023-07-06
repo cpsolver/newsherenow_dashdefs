@@ -1,0 +1,10 @@
+If you can read this message, then you may have a slow computer,
+or a slow Internet connection.
+sentence-next
+If you are still reading this message, then probably your browser has Javascript disabled.
+sentence-next
+Please use a browser that has Javascript enabled,
+or perhaps try viewing this website from a different computer.
+sentence-next
+If you can still see this message after trying another browser or computer,
+then we are embarassed to admit that we are in the process of fixing a bug in our Javascript code.

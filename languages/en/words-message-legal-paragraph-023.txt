@@ -1,0 +1,8 @@
+This website fully complies with the European Union's General Data Protection Regulation (GDPR)
+because we do not collect any personal information.
+sentence-next
+Specifically,
+we have no way to contact you,
+we cannot distinguish you from any other person,
+and
+we supply exactly the same news to you as to anyone else who requests news at the same location.

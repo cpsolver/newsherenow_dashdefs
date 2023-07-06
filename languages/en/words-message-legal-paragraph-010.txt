@@ -1,0 +1,6 @@
+Additionally,
+if law hyphen-here enforcement officials have reasonable suspicion that a user of this website might have committed a specific violent crime,
+then the operator of this website reserves the right to assist law hyphen-here enforcement officials by providing what little information is collected here,
+which consists of Internet IP addresses and specific locations viewed using those IP addresses.
+sentence-next
+That information is ignored for all other users.

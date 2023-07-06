@@ -1,0 +1,2 @@
+If you attempt to exceed this limit,
+all your attempted ballots will be trashed.

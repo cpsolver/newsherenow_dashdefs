@@ -1,0 +1,1 @@
+Ooops! sentence-next Symbols such as semicolons (;) and underscores (_) are not allowed. sentence-next Only commas (,) and hyphens (-) are allowed

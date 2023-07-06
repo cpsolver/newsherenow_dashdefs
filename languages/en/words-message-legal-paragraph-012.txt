@@ -1,0 +1,4 @@
+This website uses SSL (Secure Sockets Layer) encryption to help protect your privacy each time information flows between your computer and our servers.
+sentence-next
+However, if you are using a computer that is shared with other people,
+the SSL encryption does not protect your privacy from the other people who use that computer.

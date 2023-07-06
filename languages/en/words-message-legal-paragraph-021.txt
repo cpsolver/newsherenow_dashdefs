@@ -1,0 +1,5 @@
+This website offers a button for using your GPS coordinates as your location of interest.
+sentence-next
+If you regard knowlege of your GPS location to be an invasion of privacy, please do not use the GPS button.
+sentence-next
+We really, really, do not want to know where you are, we just want to offer convenience to people who appreciate convenience.

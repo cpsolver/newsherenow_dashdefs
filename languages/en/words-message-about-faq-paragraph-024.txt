@@ -1,0 +1,14 @@
+The exact location of a news item is crowdsourced.
+sentence-next
+This means that people em-dash like you em-dash
+must move the news event from the city center
+to the correct location.
+sentence-next
+Usually the news description includes the names of two intersecting streets
+(the street where the event happened, and a nearby cross hyphen-here street).
+sentence-next
+You can use that information when you move the news event.
+sentence-next
+When news appears at the correct location,
+appreciate that other fans of this website have
+already done the move.

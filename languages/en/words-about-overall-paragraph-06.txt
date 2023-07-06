@@ -1,0 +1,8 @@
+If you&#39;re reading this newspaper in your browser,
+please consider using your browser&#39;s
+bold-begin Add bookmark to Home screen bold-end
+button.
+sentence-next
+Magically this website will become an bold-begin app bold-end no-space .
+sentence-next
+That&#39;s because words-news-here-now-capitalized is bold-begin both a website and a webapp bold-end no-space .

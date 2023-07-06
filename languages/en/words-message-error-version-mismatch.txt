@@ -1,0 +1,5 @@
+The version of the open-quote web application close-quote in your browser is older than the version of the code running on the server.
+sentence-next
+Please click the open-quote refresh close-quote button on your browser.
+sentence-next
+That will load the latest version of the News Here Now open-quote web application close-quote no-space .

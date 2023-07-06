@@ -1,0 +1,6 @@
+Non-chain restaurants, delicatessens, bakeries, cafes, tea shops, bookstores, and hardware stores are listed here for free.
+sentence-next
+The other businesses listed here are NewsHereNow sponsors.
+sentence-next
+Eating places are color hyphen-here coded by distance (from orange to pink);
+all other businesses are colored green.

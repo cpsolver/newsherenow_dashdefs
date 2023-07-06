@@ -1,0 +1,4 @@
+However,
+if you click a link that takes you to another website,
+the other website may track the fact that you expressed interest in a news event or business or map view
+that they associate with a specific location.

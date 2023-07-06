@@ -1,0 +1,5 @@
+Most business names and locations are from Open Street Map (.org).
+sentence-next
+If a business name, or location, or website, is not correct in the Open Street Map data, please correct it there.
+sentence-next
+If a qualifying neighborhood business does not show up on the Open Street Map (.org) website, please add it there.

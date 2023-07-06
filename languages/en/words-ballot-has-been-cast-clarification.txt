@@ -1,0 +1,6 @@
+You can vote in only one election poll, with only one ballot.
+sentence-next
+You can change your mind and cast a different ballot,
+even in another election poll,
+but your most recent ballot will replace all your
+previous ballots.

@@ -1,0 +1,5 @@
+Sample special events: farmers market, artists market, community theatre production, book signing, etc.
+sentence-next
+A special event must be open to the public for the hours specified.
+sentence-next
+If the cost of attending the event is excessive, the event may be deleted as being of limited interest.

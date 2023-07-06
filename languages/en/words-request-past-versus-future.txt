@@ -1,0 +1,1 @@
+Is this an unscheduled event (such as an emergency), or an event that was scheduled for a future date?

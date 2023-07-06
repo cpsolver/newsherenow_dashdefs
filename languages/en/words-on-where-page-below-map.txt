@@ -1,0 +1,3 @@
+The examples demonstrate what can be typed into the box.
+sentence-next
+After you click an example button, you can come back here (to the WHERE tab) to see how the location was specified.

@@ -1,0 +1,11 @@
+This website uses open-quote web storage close-quote
+to store in your browser the most recent locations you requested.
+sentence-next
+The stored location names appear in the buttons that
+are near the open-quote Go Here close-quote button.
+sentence-next
+If your browser is well hyphen-here behaved,
+it will not allow other websites to view the stored location information.
+sentence-next
+This use of web storage is for your convenience,
+so you do not need to re hyphen-here enter the same location repeatedly.
