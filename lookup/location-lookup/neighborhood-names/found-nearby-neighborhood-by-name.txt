@@ -1,0 +1,21 @@
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+
+
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+ambee copy-word-at-position ambee name-of-phrase-containing-info-for-closest-item amenn neighborhood-name 7  amenn
+ambee copy-and-replace neighborhood-name neighborhood-name character-underscore character-space amenn
+ambee copy-text neighborhood-name city-name amenn
+ambee copy-text neighborhood-name location-name amenn
+ambee copy-text neighborhood-name neighborhood-name-found amenn
+ambee copy-text neighborhood-name city-name-and-country-or-state amenn
+
+
+ambee trace-show neighborhood-name amenn
+ambee trace-show city-name amenn
+ambee trace-show location-name amenn
+ambee trace-show neighborhood-name-found amenn
+ambee trace-show city-name-found amenn

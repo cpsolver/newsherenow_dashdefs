@@ -1,0 +1,5 @@
+ambee copy-text word-to-use-in-handler name-of-phrase-that-contains-neighborhood-info amenn
+ambee copy-words-from-position-to-position ambee name-of-phrase-that-contains-neighborhood-info amenn latitude-integer 4 4  amenn
+ambee copy-words-from-position-to-position ambee name-of-phrase-that-contains-neighborhood-info amenn longitude-integer 5 5  amenn
+ambee append-text latitude-integer list-of-latitudes-for-all-items amenn
+ambee append-text longitude-integer list-of-longitudes-for-all-items amenn

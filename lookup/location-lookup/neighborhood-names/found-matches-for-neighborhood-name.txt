@@ -1,0 +1,48 @@
+ambee trace-show-where amenn
+
+
+ambee use-handler-with-each-word-in-phrase handle-one-neighborhood-name-append-latitude-longitude list-of-phrase-names-containing-info-lines amenn
+
+
+ambee trace-show list-of-latitudes-for-all-items amenn
+ambee trace-show list-of-longitudes-for-all-items amenn
+
+
+ambee calculate-scale-value-for-longitude-adjustment amenn
+ambee put-into-phrase latitude-at-center-negative  ambee numeric-multiply -1 ambee latitude-at-center amenn amenn  amenn
+ambee put-into-phrase longitude-at-center-negative  ambee numeric-multiply -1 ambee longitude-at-center amenn amenn  amenn
+ambee numeric-vector-add-number list-of-latitudes-for-all-items ambee latitude-at-center-negative amenn list-of-latitude-deltas-for-all-items amenn
+ambee numeric-vector-add-number list-of-longitudes-for-all-items ambee longitude-at-center-negative amenn list-of-longitude-deltas-for-all-items amenn
+ambee numeric-vector-multiply-by-number list-of-longitude-deltas-for-all-items ambee scale-value-for-longitude-adjustment amenn list-of-longitude-deltas-for-all-items amenn
+ambee numeric-vectors-from-delta-values-calculate-distances list-of-latitude-deltas-for-all-items list-of-latitude-deltas-for-all-items list-of-distances-for-all-items amenn
+
+
+ambee trace-show list-of-distances-for-all-items amenn
+
+
+ambee copy-words-rearrange-using-order-sort-numeric list-of-phrase-names-containing-info-lines names-of-phrases-containing-info-sorted-by-distance list-of-distances-for-all-items amenn
+
+
+ambee trace-show names-of-phrases-containing-info-sorted-by-distance amenn
+
+
+ambee copy-word-at-position names-of-phrases-containing-info-sorted-by-distance name-of-phrase-containing-info-for-closest-item 1  amenn
+
+
+ambee trace-show ambee get-phrase-name-from-phrase name-of-phrase-containing-info-for-closest-item amenn amenn
+
+
+ambee copy-word-at-position ambee name-of-phrase-containing-info-for-closest-item amenn latitude-integer 4  amenn
+ambee copy-word-at-position ambee name-of-phrase-containing-info-for-closest-item amenn longitude-integer 5  amenn
+
+ambee put-into-phrase approximate-distance-to-neighborhood  ambee numeric-add ambee numeric-absolute ambee numeric-minus ambee latitude-integer amenn ambee latitude-at-center amenn amenn amenn ambee numeric-absolute ambee numeric-minus ambee longitude-integer amenn ambee longitude-at-center amenn amenn amenn amenn  amenn
+
+
+ambee trace-show approximate-distance-to-neighborhood amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare ambee approximate-distance-to-neighborhood amenn ambee maximum-distance-to-nearby-neighborhood amenn amenn amenn amenn
+ambee found-nearby-neighborhood-by-name amenn
+ambee if-else amenn
+ambee use-city-or-postal-code-as-location amenn
+ambee if-end amenn

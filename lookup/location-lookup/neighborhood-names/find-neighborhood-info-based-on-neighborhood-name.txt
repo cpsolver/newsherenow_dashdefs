@@ -1,0 +1,28 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase list-of-latitudes-for-all-items amenn
+ambee clear-phrase list-of-longitudes-for-all-items amenn
+ambee copy-text neighborhood-name possible-city-name amenn
+ambee point-to-needed-city-info-file amenn
+ambee clear-phrase list-of-phrase-names-containing-info-lines amenn
+
+
+ambee trace-show file-name-with-city-name-info amenn
+ambee trace-show neighborhood-name amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase file-name-with-city-name-info amenn amenn
+ambee find-lines-in-file-that-begin-with-any-listed-word ambee file-name-with-city-name-info amenn neighborhood-name list-of-phrase-names-containing-info-lines amenn
+ambee if-end amenn
+
+
+ambee trace-show list-of-phrase-names-containing-info-lines amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-phrase-names-containing-info-lines amenn amenn
+ambee found-matches-for-neighborhood-name amenn
+ambee if-else amenn
+ambee clear-phrase neighborhood-name amenn
+ambee clear-phrase neighborhood-name-found amenn
+ambee if-end amenn
