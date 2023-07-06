@@ -1,0 +1,1 @@
+As pesquisas locais n&#227;o podem ser exibidas at&#233; que um local tenha sido especificado.

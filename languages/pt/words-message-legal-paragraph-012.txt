@@ -1,0 +1,1 @@
+Este site usa criptografia SSL (Secure Sockets Layer) para ajudar a proteger sua privacidade sempre que as informa&#231;&#245;es fluem entre seu computador e nossos servidores. No entanto, se voc&#234; estiver usando um computador compartilhado com outras pessoas, a criptografia SSL n&#227;o proteger&#225; sua privacidade das outras pessoas que usam esse computador.

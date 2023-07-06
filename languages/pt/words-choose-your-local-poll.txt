@@ -1,0 +1,3 @@
+Qual distrito eleitoral &#233; seu?
+sentence-next
+Por favor, clique em seu bot&#227;o.

@@ -1,0 +1,1 @@
+Uma largura de tela estreita &#233; detectada, portanto, o mapa n&#227;o &#233; em tamanho total.

@@ -1,0 +1,8 @@
+Este &#233; o tempo padr&#227;o estimado neste local.
+sentence-next
+A hora real neste local &#233; desconhecida porque
+este site n&#227;o acompanha
+limites de fuso hor&#225;rio politicamente escolhidos
+ou open-quote Daylight poupan&#231;a close-quote ajustes.
+sentence-next
+A not&#237;cia &#233; atualizada regularmente, mas n&#227;o instantaneamente.

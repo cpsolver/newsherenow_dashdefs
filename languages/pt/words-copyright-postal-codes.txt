@@ -1,0 +1,1 @@
+As pesquisas que envolvem c&#243;digos postais usam dados de www.GeoNames.org. Alguns governos (como o Canad&#225;) n&#227;o permitem o uso p&#250;blico de todos os caracteres em seus c&#243;digos postais e, nesses casos, apenas os primeiros caracteres s&#227;o usados.

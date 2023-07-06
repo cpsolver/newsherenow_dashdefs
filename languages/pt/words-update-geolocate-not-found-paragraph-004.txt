@@ -1,0 +1,1 @@
+As duas ruas podem n&#227;o se cruzar. Por exemplo, uma rua pode passar por cima da outra em uma ponte.

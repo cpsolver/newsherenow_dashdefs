@@ -1,0 +1,5 @@
+Se voc&#234; confia geralmente avalia&#231;&#245;es do word-yelp quando voc&#234; procura um lugar para comer, a seguir voc&#234; deve saber que o word-yelp esconde e mostra que revis&#245;es &#8220;suspeitos&#8221; diferentemente segundo se o neg&#243;cio est&#225; pagando por ele s&#227;o &#8220;os servi&#231;os extra.&#8221;
+sentence-next
+Para evitar essa polariza&#231;&#227;o n&#227;o-&#233;tico, aqui em words-news-here-now-capitalized voc&#234; pode julgar um restaurante clicando para ver seu menu (e os pre&#231;os) em seu Web site em-dash se o &#237;cone de &#8220;WWW&#8221; aparece no bot&#227;o desse restaurante.
+sentence-next
+Se esse &#237;cone falta de um restaurante favorito, voc&#234; (ou qualquer um) podem adicionar sua rela&#231;&#227;o do Web site ao OpenStreetMap (.org), que &#233; onde n&#243;s obtemos a maioria de nosso neg&#243;cio information.

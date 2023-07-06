@@ -1,0 +1,1 @@
+A maior cidade do mundo com o nome que voc&#234; digitou &#233; assumida. Para especificar uma cidade diferente com o mesmo nome, insira um c&#243;digo de estado, prov&#237;ncia ou pa&#237;s de duas letras, conforme mostrado em alguns dos exemplos.
