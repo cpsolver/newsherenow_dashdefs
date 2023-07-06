@@ -1,0 +1,27 @@
+ambee append-text-no-space character-newline generated-css-stylesheet amenn
+ambee put-into-phrase count-of-style-names  0  amenn
+ambee copy-text path-to-dashdef dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-shorter-defs-combo-sandbox input-filename amenn
+ambee copy-from-file-to-phrase ambee input-filename amenn list-of-special-phrase-names amenn
+ambee copy-and-replace list-of-special-phrase-names list-of-styles-associated-with-css-class-names character-colon character-space amenn
+ambee copy-words-that-begin-with-text list-of-styles-associated-with-css-class-names list-of-styles-associated-with-css-class-names string-class-hyphen-style-hyphen amenn
+ambee put-into-phrase list-of-class-names-to-omit  class-style-button-in-group  amenn
+ambee copy-words-found-only-in-first-list list-of-styles-associated-with-css-class-names list-of-class-names-to-omit list-of-styles-associated-with-css-class-names amenn
+ambee copy-words-unique-only list-of-styles-associated-with-css-class-names list-of-styles-associated-with-css-class-names amenn
+ambee use-handler-with-each-word-in-phrase handle-one-style-name list-of-styles-associated-with-css-class-names amenn
+ambee use-handler-with-each-word-in-phrase generate-stylesheet-items-for-one-button-group list-of-button-group-names amenn
+ambee use-handler-with-each-word-in-phrase handle-one-hover-style-name list-of-hover-styles amenn
+
+
+ambee trace-show hue-background amenn
+ambee trace-show hue-foreground amenn
+ambee trace-show hue-body amenn
+ambee trace-show saturation-background amenn
+ambee trace-show saturation-foreground amenn
+ambee trace-show saturation-body amenn
+ambee trace-show luminance-background amenn
+ambee trace-show luminance-foreground amenn
+ambee trace-show luminance-body amenn
+ambee trace-show list-of-styles-associated-with-css-class-names amenn
+combee ***
+*** comenn

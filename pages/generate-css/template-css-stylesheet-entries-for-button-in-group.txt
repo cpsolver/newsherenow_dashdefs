@@ -1,0 +1,31 @@
+. no-space
+class-style-button-in-group underscore-double-here selectext fenambee name-of-group amenn underscore-double-here selectext-highlighted
+no-space { no-space
+style-button-in-group fenambee name-of-group amennfen highlighted
+no-space } no-space
+
+<new_line>
+
+. no-space
+class-style-button-in-group underscore-double-here selectext fenambee name-of-group amenn underscore-double-here selectext-not-highlighted
+no-space { no-space
+style-button-in-group fenambee name-of-group amennfen not-highlighted
+no-space } no-space
+
+<new_line>
+
+. no-space
+class-style-button-in-group underscore-double-here selectext fenambee name-of-group amenn underscore-double-here selectext-highlighted no-space :hover
+no-space { no-space
+style-button-in-group fenambee name-of-group amennfen highlighted-hover
+no-space } no-space
+
+<new_line>
+
+. no-space
+class-style-button-in-group underscore-double-here selectext fenambee name-of-group amenn underscore-double-here selectext-not-highlighted no-space :hover
+no-space { no-space
+style-button-in-group fenambee name-of-group amennfen highlighted-hover
+no-space } no-space
+
+<new_line>

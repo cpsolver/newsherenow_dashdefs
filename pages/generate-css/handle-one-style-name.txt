@@ -1,0 +1,33 @@
+combee *** reminder, do not begin any of these phrase names with the word "class-" *** comenn
+ambee copy-text word-to-use-in-handler name-of-class-style-with-hyphens amenn
+ambee copy-and-replace name-of-class-style-with-hyphens name-of-style string-class-hyphen empty-text amenn
+ambee put-into-phrase length-of-name-of-class-style  ambee get-count-of-characters name-of-class-style-with-hyphens amenn  amenn
+ambee copy-characters-from-position-to-position name-of-class-style-with-hyphens last-character ambee length-of-name-of-class-style amenn ambee length-of-name-of-class-style amenn amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions character-hyphen last-character amenn amenn
+ambee clear-phrase name-of-style amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase name-of-style amenn amenn
+ambee copy-text character-period expanded-css-class-definition amenn
+ambee append-text-no-space ambee get-phrase-name-from-phrase name-of-class-style-with-hyphens amenn expanded-css-class-definition amenn
+ambee append-text-no-space character-open-brace expanded-css-class-definition amenn
+ambee clear-phrase expanded-text amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase name-of-style amenn amenn
+ambee expand-text ambee get-phrase-name-from-phrase name-of-style amenn expanded-text amenn
+ambee if-end amenn
+
+ambee append-text-no-space expanded-text expanded-css-class-definition amenn
+ambee append-text-no-space character-close-brace expanded-css-class-definition amenn
+ambee append-text-no-space string-bracketed-new-line expanded-css-class-definition amenn
+ambee append-text-no-space expanded-css-class-definition generated-css-stylesheet amenn
+ambee if-end amenn
+
+
+ambee trace-show name-of-class-style-with-hyphens amenn
+ambee trace-show name-of-style amenn
+ambee trace-show expanded-text amenn
+ambee trace-show expanded-css-class-definition amenn
+combee ***
+*** comenn

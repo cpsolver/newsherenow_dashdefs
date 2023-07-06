@@ -1,0 +1,3 @@
+ambee copy-text word-to-use-in-handler name-of-style-with-hyphens amenn
+ambee expand-text template-one-css-class-definition-version-hover expanded-css-class-definition amenn
+ambee append-text-no-space expanded-css-class-definition generated-css-stylesheet amenn

@@ -1,0 +1,1 @@
+. no-space name-of-class-style-with-hyphens no-space { no-space name-of-style no-space } no-space <new_line>
