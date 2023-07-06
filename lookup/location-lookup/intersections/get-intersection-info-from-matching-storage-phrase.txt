@@ -1,0 +1,11 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text word-to-use-in-handler storage-phrase-name amenn
+ambee copy-text ambee storage-phrase-name amenn storage-contents amenn
+ambee copy-word-at-position storage-contents street-id-one 1 amenn
+ambee copy-word-at-position storage-contents street-id-two 2 amenn
+
+ambee if-yes-begin ambee yes-if-all-yes ambee yes-or-no-same-two-phrase-definitions street-id-one first-street-id-at-intersection amenn ambee yes-or-no-same-two-phrase-definitions street-id-two second-street-id-at-intersection amenn amenn amenn
+ambee copy-text storage-contents intersection-info amenn
+ambee if-end amenn

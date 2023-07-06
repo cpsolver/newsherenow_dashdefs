@@ -1,0 +1,57 @@
+ambee trace-show-where amenn
+
+
+ambee check-elapsed-time amenn
+combee ***
+ambee stop-lookup-if-time-limit-exceeded amenn
+*** comenn
+
+
+ambee calculate-scale-value-for-longitude-adjustment amenn
+ambee put-into-phrase latitude-phrase-names-pattern  latitude-at-intersection-id-ambee-intersection-ids-amenn  amenn
+ambee put-into-phrase longitude-phrase-names-pattern  longitude-at-intersection-id-ambee-intersection-ids-amenn  amenn
+ambee append-multiple-from-phrases-named-in-pattern latitude-phrase-names-pattern list-of-latitudes-for-all-intersection-items amenn
+ambee copy-without-extra-spaces list-of-latitudes-for-all-intersection-items list-of-latitudes-for-all-intersection-items amenn
+ambee append-multiple-from-phrases-named-in-pattern longitude-phrase-names-pattern list-of-longitudes-for-all-intersection-items amenn
+ambee copy-without-extra-spaces list-of-longitudes-for-all-intersection-items list-of-longitudes-for-all-intersection-items amenn
+ambee put-into-phrase latitude-at-center-negative  ambee numeric-multiply -1 ambee latitude-at-center amenn amenn  amenn
+ambee put-into-phrase longitude-at-center-negative  ambee numeric-multiply -1 ambee longitude-at-center amenn amenn  amenn
+ambee numeric-vector-add-number list-of-latitudes-for-all-intersection-items ambee latitude-at-center-negative amenn list-of-latitude-deltas-for-all-intersection-items amenn
+ambee numeric-vector-add-number list-of-longitudes-for-all-intersection-items ambee longitude-at-center-negative amenn list-of-longitude-deltas-for-all-intersection-items amenn
+ambee numeric-vector-multiply-by-number list-of-longitude-deltas-for-all-intersection-items ambee scale-value-for-longitude-adjustment amenn list-of-longitude-deltas-for-all-intersection-items amenn
+ambee numeric-vectors-from-delta-values-calculate-distances list-of-latitude-deltas-for-all-intersection-items list-of-latitude-deltas-for-all-intersection-items list-of-lat-lon-distances-for-all-intersection-items amenn
+
+
+ambee put-into-phrase mismatch-score-phrase-names-pattern  mismatch-score-for-intersection-id-ambee-intersection-ids-amenn  amenn
+ambee append-multiple-from-phrases-named-in-pattern mismatch-score-phrase-names-pattern list-of-mismatch-scores-for-all-intersection-items amenn
+
+combee *** reminder: 7215581 is lat-lon-distance between Corvallis and wrong intersection in Eugene for which mismatch score is different by one (1) *** comenn
+ambee put-into-phrase scale-lat-lon-distance-per-mismatch-score  3500000  amenn
+
+ambee numeric-vector-multiply-by-number list-of-mismatch-scores-for-all-intersection-items ambee scale-lat-lon-distance-per-mismatch-score amenn list-of-scaled-mismatch-scores-for-all-intersection-items amenn
+ambee numeric-vectors-add list-of-lat-lon-distances-for-all-intersection-items list-of-scaled-mismatch-scores-for-all-intersection-items list-of-combined-distance-and-mismatch-values amenn
+ambee copy-words-rearrange-using-order-sort-numeric intersection-ids intersection-ids-sorted-by-distance-and-mismatch list-of-combined-distance-and-mismatch-values amenn
+ambee copy-words-rearrange-using-order-sort-numeric intersection-ids intersection-ids-sorted-by-distance-and-mismatch list-of-combined-distance-and-mismatch-values amenn
+ambee copy-word-at-position intersection-ids-sorted-by-distance-and-mismatch closest-intersection-id 1  amenn
+
+
+ambee check-elapsed-time amenn
+
+
+ambee trace-show intersection-ids amenn
+ambee trace-show list-of-latitudes-for-all-intersection-items amenn
+ambee trace-show list-of-longitudes-for-all-intersection-items amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+ambee trace-show list-of-latitude-deltas-for-all-intersection-items amenn
+ambee trace-show list-of-longitude-deltas-for-all-intersection-items amenn
+ambee trace-show list-of-lat-lon-distances-for-all-intersection-items amenn
+ambee trace-show list-of-scaled-mismatch-scores-for-all-intersection-items amenn
+ambee trace-show scale-lat-lon-distance-per-mismatch-score amenn
+ambee trace-show list-of-combined-distance-and-mismatch-values amenn
+ambee trace-show intersection-ids-sorted-by-distance-and-mismatch amenn
+ambee trace-show closest-intersection-id amenn
+
+
+ambee copy-text closest-intersection-id intersection-id amenn
+ambee have-one-matching-intersection-id amenn

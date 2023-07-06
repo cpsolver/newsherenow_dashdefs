@@ -1,0 +1,15 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase list-of-best-matching-intersections amenn
+ambee put-into-phrase lowest-degree-of-intersection-mismatch  99999  amenn
+ambee use-handler-with-each-word-in-phrase get-intersection-ids-in-one-region-based-on-street-ids region-ids-to-search amenn
+ambee copy-words-unique-only intersection-ids-in-all-regions intersection-ids amenn
+ambee put-into-phrase zero-one-multiple-intersections  ambee zero-one-multiple ambee get-count-of-words intersection-ids amenn amenn  amenn
+
+
+ambee trace-show intersection-ids amenn
+ambee trace-show zero-one-multiple-intersections amenn
+
+
+ambee have fenambee zero-one-multiple-intersections amennfen intersection-ids-find-best-match amenn

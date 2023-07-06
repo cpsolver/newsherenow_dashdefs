@@ -1,0 +1,33 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase latitude-at-center amenn
+ambee clear-phrase longitude-at-center amenn
+ambee copy-text region-id region-ids-to-search amenn
+ambee copy-text first-street-id street-ids-for-locsaved amenn
+ambee append-text second-street-id street-ids-for-locsaved amenn
+ambee copy-text street-ids-for-locsaved street-ids-in-region fenambee region-id amenn amenn
+ambee clear-phrase intersection-ids-in-all-regions amenn
+ambee use-handler-with-each-word-in-phrase get-intersection-ids-in-one-region-based-on-street-ids region-ids-to-search amenn
+
+
+ambee trace-show region-id amenn
+ambee trace-show region-ids-to-search amenn
+ambee trace-show street-ids-in-region fenambee region-id amenn amenn
+ambee trace-show intersection-ids-in-all-regions amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 1 ambee get-count-of-words intersection-ids-in-all-regions amenn amenn amenn
+ambee copy-text intersection-ids-in-all-regions intersection-id amenn
+ambee copy-text latitude-at-intersection-id fenambee intersection-id amenn latitude-at-center amenn
+ambee copy-text longitude-at-intersection-id fenambee intersection-id amenn longitude-at-center amenn
+
+
+ambee trace-show intersection-id amenn
+ambee trace-show latitude-at-intersection-id fenambee intersection-id amenn amenn
+ambee trace-show longitude-at-intersection-id fenambee intersection-id amenn amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+ambee if-end amenn

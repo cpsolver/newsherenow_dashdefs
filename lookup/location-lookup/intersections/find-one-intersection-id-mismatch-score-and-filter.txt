@@ -1,0 +1,38 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text word-to-use-in-handler intersection-id amenn
+ambee copy-and-replace intersection-id street-id-in-two-words character-underscore character-space amenn
+ambee copy-words-from-position-to-position street-id-in-two-words first-street-id 1 1  amenn
+ambee copy-words-from-position-to-position street-id-in-two-words second-street-id 2 2  amenn
+ambee copy-text words-associated-with-street-id fenambee first-street-id amenn words-in-first-street-name amenn
+ambee copy-text words-associated-with-street-id fenambee second-street-id amenn words-in-second-street-name amenn
+
+ambee copy-words-found-in-both-lists words-in-street-name-1 words-in-first-street-name empty-if-no-words-matched-in-case-first-first amenn
+ambee copy-words-found-in-both-lists words-in-street-name-2 words-in-second-street-name empty-if-no-words-matched-in-case-second-second amenn
+ambee put-into-phrase yes-or-no-match-for-case-unflipped  ambee yes-or-no-opposite ambee yes-if-any-yes ambee yes-or-no-empty-phrase empty-if-no-words-matched-in-case-first-first amenn ambee yes-or-no-empty-phrase empty-if-no-words-matched-in-case-second-second amenn amenn amenn  amenn
+
+ambee copy-words-found-in-both-lists words-in-street-name-1 words-in-second-street-name empty-if-no-words-matched-in-case-first-second amenn
+ambee copy-words-found-in-both-lists words-in-street-name-2 words-in-first-street-name empty-if-no-words-matched-in-case-second-first amenn
+ambee put-into-phrase yes-or-no-match-for-case-flipped  ambee yes-or-no-opposite ambee yes-if-any-yes ambee yes-or-no-empty-phrase empty-if-no-words-matched-in-case-first-second amenn ambee yes-or-no-empty-phrase empty-if-no-words-matched-in-case-second-first amenn amenn amenn  amenn
+ambee put-into-phrase current-mismatch-score  999  amenn
+ambee calculate-intersection-mismatch-score-for-case-unflipped fenambee yes-or-no-match-for-case-unflipped amennfen and-flipped fenambee yes-or-no-match-for-case-flipped amenn amenn
+ambee append-text intersection-id list-of-intersections-with-mismatch-score fenambee current-mismatch-score amenn amenn
+ambee copy-text current-mismatch-score mismatch-score-for-intersection-id fenambee intersection-id amenn amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare ambee current-mismatch-score amenn ambee overall-lowest-mismatch-score amenn amenn amenn amenn
+ambee copy-text current-mismatch-score overall-lowest-mismatch-score amenn
+ambee if-end amenn
+
+
+ambee trace-show intersection-id amenn
+ambee trace-show words-in-first-street-name amenn
+ambee trace-show words-in-second-street-name amenn
+combee ***
+ambee trace-show empty-if-no-words-matched-in-case-first-first amenn
+ambee trace-show empty-if-no-words-matched-in-case-second-second amenn
+ambee trace-show empty-if-no-words-matched-in-case-first-second amenn
+ambee trace-show empty-if-no-words-matched-in-case-second-first amenn
+ambee trace-show unflipped-or-flipped amenn
+*** comenn
+ambee trace-show current-mismatch-score amenn

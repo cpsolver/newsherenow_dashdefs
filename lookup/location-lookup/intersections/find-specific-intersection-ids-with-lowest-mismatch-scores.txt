@@ -1,0 +1,21 @@
+ambee trace-show-where amenn
+
+
+ambee check-elapsed-time amenn
+combee ***
+ambee stop-lookup-if-time-limit-exceeded amenn
+*** comenn
+
+
+ambee put-into-phrase overall-lowest-mismatch-score  9999  amenn
+ambee find-all-intersection-id-mismatch-scores-and-filter amenn
+ambee copy-text list-of-intersections-with-mismatch-score fenambee overall-lowest-mismatch-score amenn list-of-intersections-with-lowest-mismatch-scores amenn
+ambee append-text list-of-intersections-with-mismatch-score fenambee numeric-add 1 ambee overall-lowest-mismatch-score amenn amenn list-of-intersections-with-lowest-mismatch-scores amenn
+ambee append-text list-of-intersections-with-mismatch-score fenambee numeric-add 2 ambee overall-lowest-mismatch-score amenn amenn list-of-intersections-with-lowest-mismatch-scores amenn
+ambee append-text list-of-intersections-with-mismatch-score fenambee numeric-add 3 ambee overall-lowest-mismatch-score amenn amenn list-of-intersections-with-lowest-mismatch-scores amenn
+ambee copy-text list-of-intersections-with-lowest-mismatch-scores intersection-ids amenn
+
+
+ambee trace-show list-of-intersections-with-lowest-mismatch-scores amenn
+ambee trace-show overall-lowest-mismatch-score amenn
+ambee trace-show intersection-ids amenn
