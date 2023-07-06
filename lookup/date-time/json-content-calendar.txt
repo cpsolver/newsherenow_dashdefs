@@ -1,0 +1,23 @@
+code-open-quote selectext-id-current-year-number code-close-quote no-space ,"contents", no-space code-open-quote current-year code-close-quote ,
+
+code-open-quote selectext-id-previous-month-year-number code-close-quote no-space ,"contents", no-space code-open-quote year-containing-previous-month code-close-quote ,
+
+code-open-quote selectext-id-current-month-year-number code-close-quote no-space ,"contents", no-space code-open-quote current-year code-close-quote ,
+
+code-open-quote selectext-id-next-month-year-number code-close-quote no-space ,"contents", no-space code-open-quote year-containing-next-month code-close-quote ,
+
+code-open-quote selectext-id-previous-month-number code-close-quote no-space ,"contents", no-space code-open-quote previous-month-number code-close-quote ,
+
+code-open-quote selectext-id-next-month-number code-close-quote no-space ,"contents", no-space code-open-quote next-month-number code-close-quote ,
+
+code-open-quote selectext-id-month-current-start-day-of-week-number code-close-quote no-space ,"contents", no-space code-open-quote current-month-start-day-of-week code-close-quote ,
+
+code-open-quote selectext-id-month-current-days-in-month code-close-quote no-space ,"contents", no-space code-open-quote current-month-days-in-month code-close-quote ,
+
+code-open-quote selectext-id-previous-month-start-day-of-week-number code-close-quote no-space ,"contents", no-space code-open-quote previous-month-start-day-of-week code-close-quote ,
+
+code-open-quote selectext-id-previous-month-days-in-month code-close-quote no-space ,"contents", no-space code-open-quote previous-month-days-in-month code-close-quote ,
+
+code-open-quote selectext-id-next-month-start-day-of-week-number code-close-quote no-space ,"contents", no-space code-open-quote next-month-start-day-of-week code-close-quote ,
+
+code-open-quote selectext-id-next-month-days-in-month code-close-quote no-space ,"contents", no-space code-open-quote next-month-days-in-month code-close-quote ,

@@ -1,0 +1,70 @@
+ambee if-yes-begin ambee yes-or-no-empty-phrase location-specific-time-adjustment-in-seconds amenn amenn
+ambee put-into-phrase location-specific-time-adjustment-in-seconds  0  amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee location-specific-time-adjustment-in-seconds amenn amenn amenn
+ambee clear-phrase time-month-number amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase time-month-number amenn amenn
+ambee split-epoch-seconds-into-named-components-for-zero-meridian ambee numeric-add ambee get-current-time-in-epoch-seconds amenn ambee location-specific-time-adjustment-in-seconds amenn amenn amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 0 ambee time-day-of-week amenn amenn amenn
+ambee put-into-phrase time-day-of-week  7  amenn
+ambee if-end amenn
+
+
+ambee copy-text time-year current-year amenn
+ambee copy-text time-month-number current-month-number amenn
+ambee copy-text time-day-of-month current-day-of-month amenn
+ambee copy-text time-day-of-week current-day-of-week-number amenn
+
+
+combee *** in case zero meridian is in different day, the calculations here are repeated a second time *** comenn
+
+ambee copy-text time-hour time-hour-at-zero-meridian amenn
+ambee copy-text time-hour current-hour amenn
+
+
+ambee copy-text time-minute current-minute amenn
+ambee get-previous-and-next-month-for-current-month fenambee current-month-number amenn amenn
+ambee put-into-phrase day-of-month  1  amenn
+ambee copy-text current-year year-number amenn
+ambee copy-text current-month-number month-number amenn
+ambee calculate-day-of-week-number amenn
+ambee copy-text day-of-week-number current-month-start-day-of-week amenn
+ambee copy-text year-containing-previous-month year-number amenn
+ambee copy-text previous-month-number month-number amenn
+ambee calculate-day-of-week-number amenn
+ambee copy-text day-of-week-number previous-month-start-day-of-week amenn
+ambee copy-text year-containing-next-month year-number amenn
+ambee copy-text next-month-number month-number amenn
+ambee calculate-day-of-week-number amenn
+ambee copy-text day-of-week-number next-month-start-day-of-week amenn
+
+
+ambee trace-show current-day-of-month amenn
+ambee trace-show current-month-start-day-of-week amenn
+ambee trace-show previous-month-start-day-of-week amenn
+ambee trace-show next-month-start-day-of-week amenn
+combee ***
+*** comenn
+
+
+ambee put-into-phrase current-month-days-in-month  ambee days-in-month-number fenambee current-month-number amenn amenn  amenn
+ambee put-into-phrase previous-month-days-in-month  ambee days-in-month-number fenambee previous-month-number amenn amenn  amenn
+ambee put-into-phrase next-month-days-in-month  ambee days-in-month-number fenambee next-month-number amenn amenn  amenn
+
+combee *** future_todo: switch to using list-of-leap-years *** comenn
+ambee if-yes-begin ambee no-if-any-no ambee yes-or-no-same-two-words 2 ambee current-month-number amenn amenn ambee yes-or-no-leap-year fenambee current-year amenn amenn amenn amenn
+ambee put-into-phrase current-month-days-in-month  29  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee no-if-any-no ambee yes-or-no-same-two-words 2 ambee previous-month-number amenn amenn ambee yes-or-no-leap-year fenambee year-containing-previous-month amenn amenn amenn amenn
+ambee put-into-phrase previous-month-days-in-month  29  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee no-if-any-no ambee yes-or-no-same-two-words 2 ambee next-month-number amenn amenn ambee yes-or-no-leap-year fenambee year-containing-next-month amenn amenn amenn amenn
+ambee put-into-phrase next-month-days-in-month  29  amenn
+ambee if-end amenn

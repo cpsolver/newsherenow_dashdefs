@@ -1,0 +1,26 @@
+ambee trace-show-where amenn
+
+
+combee *** 180 degrees divided by 12 time zones equals 15 degrees per time zone *** comenn
+
+ambee put-into-phrase hour-offset-based-on-meridian  ambee numeric-integer ambee numeric-add ambee numeric-divide-by ambee numeric-minus ambee get-characters-from-position-to-position longitude-integer 1 4  amenn 1000  amenn 15  amenn 0.5  amenn amenn  amenn
+
+ambee put-into-phrase time-hour-based-on-longitude  ambee numeric-add ambee time-hour amenn ambee hour-offset-based-on-meridian amenn amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare ambee time-hour-based-on-longitude amenn 0  amenn amenn amenn
+ambee put-into-phrase time-hour-based-on-longitude  ambee numeric-add 24 ambee time-hour-based-on-longitude amenn amenn  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee time-hour-based-on-longitude amenn 23  amenn amenn amenn
+ambee put-into-phrase time-hour-based-on-longitude  ambee numeric-minus ambee time-hour-based-on-longitude amenn 24 amenn  amenn
+ambee if-end amenn
+
+ambee put-into-phrase location-specific-time-adjustment-in-seconds  ambee numeric-multiply 3600 ambee numeric-minus ambee time-hour amenn ambee time-hour-based-on-longitude amenn amenn amenn  amenn
+ambee calculate-calendar-info amenn
+
+
+ambee trace-show longitude-integer amenn
+ambee trace-show hour-offset-based-on-meridian amenn
+ambee trace-show time-hour amenn
+ambee trace-show time-hour-based-on-longitude amenn
+ambee trace-show location-specific-time-adjustment-in-seconds amenn

@@ -1,0 +1,13 @@
+code-open-quote selectext-id-day-of-week-number code-close-quote no-space ,"contents", no-space current-day-of-week-number ,
+
+code-open-quote selectext-id-year code-close-quote no-space ,"contents", no-space current-year ,
+
+code-open-quote selectext-id-month-number code-close-quote no-space ,"contents", no-space current-month-number ,
+
+code-open-quote selectext-id-day-of-month code-close-quote no-space ,"contents", no-space current-day-of-month ,
+
+code-open-quote selectext-id-hour code-close-quote no-space ,"contents", no-space time-hour-based-on-longitude ,
+
+code-open-quote selectext-id-hour-zero-meridian code-close-quote no-space ,"contents", no-space time-hour-at-zero-meridian ,
+
+code-open-quote selectext-id-minute code-close-quote no-space ,"contents", no-space current-minute ,

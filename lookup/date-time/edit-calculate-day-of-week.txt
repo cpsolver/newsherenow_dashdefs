@@ -1,0 +1,13 @@
+ambee copy-text news-item-year year-number amenn
+ambee copy-text news-item-month month-number amenn
+ambee copy-text news-item-day-of-month day-of-month amenn
+ambee calculate-day-of-week-number amenn
+ambee copy-text day-of-week-number news-item-day-of-week-number amenn
+
+
+combee ***
+ambee trace-show news-item-year amenn
+ambee trace-show news-item-month amenn
+ambee trace-show news-item-day-of-month amenn
+ambee trace-show news-item-day-of-week-number amenn
+*** comenn
