@@ -1,0 +1,27 @@
+ambee put-into-phrase number-of-rows  13  amenn
+ambee put-into-phrase number-of-columns  13  amenn
+ambee put-into-phrase grid-name  ovals  amenn
+ambee put-into-phrase grid-name-for-css-class  ovals amenn
+ambee put-into-phrase grid-style-type  ovals amenn
+ambee generate-grid-full amenn
+ambee put-into-phrase grid-item-count  ambee numeric-multiply ambee number-of-columns amenn ambee number-of-rows amenn  amenn  amenn
+ambee generate-counts-from-integer-to-integer 1 ambee grid-item-count amenn list-of-counts-for-generating-ballot-oval-placeholders amenn
+ambee reset-count-next-row-and-column-number amenn
+ambee use-handler-with-each-word-in-phrase generate-one-ballot-oval-placeholder list-of-counts-for-generating-ballot-oval-placeholders amenn
+ambee generate-counts-from-integer-to-integer 2 ambee number-of-rows amenn list-of-row-numbers amenn
+ambee use-handler-with-each-word-in-phrase generate-one-ballot-choice-name-placeholder list-of-row-numbers amenn
+ambee generate-counts-from-integer-to-integer 2 ambee number-of-columns amenn list-of-column-numbers amenn
+ambee use-handler-with-each-word-in-phrase generate-one-ballot-ranking-name-placeholder list-of-column-numbers amenn
+ambee copy-text empty-text content-ballot-item-row-1-column-1 amenn
+ambee copy-and-replace generated-grid-named-ovals generated-ballot-ovals-for-question-1 string-contents-grid-named-ovals string-content-ballot-item-question-1 amenn
+ambee copy-and-replace generated-grid-named-ovals generated-ballot-ovals-for-question-2 string-contents-grid-named-ovals string-content-ballot-item-question-2 amenn
+ambee copy-and-replace generated-grid-named-ovals generated-ballot-ovals-for-question-3 string-contents-grid-named-ovals string-content-ballot-item-question-3 amenn
+ambee copy-and-replace generated-grid-named-ovals generated-ballot-ovals-for-question-4 string-contents-grid-named-ovals string-content-ballot-item-question-4 amenn
+ambee copy-and-replace template-content-ballot-single-question content-for-page-ballot-question-1 placeholder-question-number-here-with-underscores digit-1 amenn
+ambee copy-and-replace template-content-ballot-single-question content-for-page-ballot-question-2 placeholder-question-number-here-with-underscores digit-2 amenn
+ambee copy-and-replace template-content-ballot-single-question content-for-page-ballot-question-3 placeholder-question-number-here-with-underscores digit-3 amenn
+ambee copy-and-replace template-content-ballot-single-question content-for-page-ballot-question-4 placeholder-question-number-here-with-underscores digit-4 amenn
+ambee expand-text template-ballot-empty-grid-item content-ballot-item-question-1-row-1-column-1 amenn
+ambee expand-text template-ballot-empty-grid-item content-ballot-item-question-2-row-1-column-1 amenn
+ambee expand-text template-ballot-empty-grid-item content-ballot-item-question-3-row-1-column-1 amenn
+ambee expand-text template-ballot-empty-grid-item content-ballot-item-question-4-row-1-column-1 amenn

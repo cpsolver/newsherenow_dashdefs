@@ -1,0 +1,5 @@
+paragraph-begin
+specify-css-class class-style-ballot-ranking-name selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-ranking-name underscore-double-here question_number_here no-space character-underscore no-space ranking-number specify-end
+words-ballot-heading-current-column
+paragraph-end

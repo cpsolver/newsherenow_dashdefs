@@ -1,0 +1,33 @@
+combee **** todo:
+Allow two single-mark questions.  Really only need one, but ensure easy to add another.
+Use for yes-or-no-or-other answers.
+Use to ask if "likely or unlikely" to vote in congressional polls.
+Can use "...-click-put-info" as-is.
+**** comenn
+
+
+combee ****
+
+div-begin
+specify-css-class class-style-ballot-background-question specify-end
+
+paragraph-begin
+specify-css-class class-style-ballot-question-text specify-end
+specify-id selectext-id-ballot-question-3 specify-end
+(ballot question three)
+paragraph-end
+
+<new_line>
+
+generated-ballot-for-single-mark-question-1
+
+(single hyphen-here mark ballot here)
+
+div-end
+<new_line>
+
+vertical-gap
+
+<new_line>
+
+**** comenn

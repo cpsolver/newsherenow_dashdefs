@@ -1,0 +1,103 @@
+<new_line>
+div-begin
+specify-css-class class-style-ballot-background-question selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-ballot-background-question underscore-double-here question_number_here specify-end
+
+paragraph-begin
+specify-css-class class-style-ballot-question-title class-style-font-title-readable specify-end
+specify-id selectext-id-ballot-question-title underscore-double-here question_number_here specify-end
+(ballot question one)
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ballot-question-subtitle specify-end
+specify-id selectext-id-ballot-question-subtitle underscore-double-here question_number_here specify-end
+(subtitle, ballot question one)
+paragraph-end
+
+combee **** this div needed to add overflow style **** comenn
+div-begin
+specify-css-class class-style-overflow-auto-horizontal specify-end
+
+generated-ballot-ovals-for-question-question_number_here
+
+div-end
+
+combee **** if need for testing: generated-grid-named-ovals **** comenn
+
+paragraph-begin
+specify-style style-hide specify-end
+no-space
+characters-span-begin
+specify-id selectext-id-ballot-choice-count-for-question underscore-double-here question_number_here specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 1 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 2 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 3 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 4 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 5 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 6 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 7 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 8 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 9 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 10 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 11 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-ballot-oval-ranking-for-question-choice underscore-double-here question_number_here underscore-double-here 12 specify-end
+no-space
+characters-span-end
+
+no-space
+paragraph-end
+
+div-end
+<new_line>
+
+vertical-gap
+<new_line>

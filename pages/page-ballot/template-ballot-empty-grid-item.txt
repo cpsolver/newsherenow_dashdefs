@@ -1,0 +1,5 @@
+paragraph-begin
+no-space
+non-breaking-space
+no-space
+paragraph-end

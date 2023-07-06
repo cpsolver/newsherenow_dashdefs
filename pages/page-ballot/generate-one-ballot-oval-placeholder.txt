@@ -1,0 +1,10 @@
+ambee copy-text row-number choice-number amenn
+ambee numeric-decrement choice-number amenn
+ambee copy-text column-number ranking-number amenn
+ambee numeric-decrement ranking-number amenn
+ambee expand-text template-ballot-one-oval-button expanded-text amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-1-row fenambee row-number amennfen column fenambee column-number amenn placeholder-question-number-here-with-underscores digit-1 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-2-row fenambee row-number amennfen column fenambee column-number amenn placeholder-question-number-here-with-underscores digit-2 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-3-row fenambee row-number amennfen column fenambee column-number amenn placeholder-question-number-here-with-underscores digit-3 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-4-row fenambee row-number amennfen column fenambee column-number amenn placeholder-question-number-here-with-underscores digit-4 amenn
+ambee count-next-row-and-column-number amenn

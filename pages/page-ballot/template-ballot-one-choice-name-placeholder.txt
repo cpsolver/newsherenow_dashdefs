@@ -1,0 +1,5 @@
+paragraph-begin
+specify-css-class class-style-ballot-choice-name selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-ballot-choice-name underscore-double-here question_number_here no-space character-underscore no-space choice-number specify-end
+no-space
+paragraph-end

@@ -1,0 +1,8 @@
+ambee copy-text word-to-use-in-handler row-number amenn
+ambee copy-text row-number choice-number amenn
+ambee numeric-decrement choice-number amenn
+ambee expand-text template-ballot-one-choice-name-placeholder expanded-text amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-1-row fenambee row-number amennfen column-1 placeholder-question-number-here-with-underscores digit-1 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-2-row fenambee row-number amennfen column-1 placeholder-question-number-here-with-underscores digit-2 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-3-row fenambee row-number amennfen column-1 placeholder-question-number-here-with-underscores digit-3 amenn
+ambee copy-and-replace expanded-text content-ballot-item-question-4-row fenambee row-number amennfen column-1 placeholder-question-number-here-with-underscores digit-4 amenn

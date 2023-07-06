@@ -1,0 +1,7 @@
+button-begin
+combee **** reminder: class definitions are generated automatically by listing "ballot-group" among the buttons that are controlled by the function "...-click-put-info" **** comenn
+specify-css-class class-style-button-in-group underscore-double-here selectext-ballot-group underscore-double-here selectext-not-highlighted selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-ballot-oval underscore-double-here question_number_here underscore-double-here choice-number underscore-double-here ranking-number specify-end
+specify-javascript-onclick javascript-ballot-click-oval-begin question_number_here javascript-ballot-click-oval-middle choice-number javascript-ballot-click-oval-middle ranking-number javascript-ballot-click-oval-end specify-end
+ranking-number
+button-end

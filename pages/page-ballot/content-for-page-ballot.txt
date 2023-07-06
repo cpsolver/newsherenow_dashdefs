@@ -1,0 +1,95 @@
+combee ***
+content for all items here are supplied by Javascript code
+*** comenn
+
+button-begin
+specify-css-class class-style-button-clickable class-style-margin-auto specify-end
+specify-id selectext-id-button-view-results specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-id-poll-specific-current javascript-handle-click-button-end specify-end
+words-view-poll-results-current
+button-end
+
+vertical-gap
+
+<new_line>
+
+heading-level-2-begin
+words-title-for-page-poll-ballot
+heading-level-2-end
+
+<new_line>
+
+heading-level-1-begin
+specify-id selectext-id-ballot-title specify-end
+words-current-search-term-in-polls-section
+heading-level-1-end
+
+<new_line>
+
+heading-level-2-begin
+specify-id selectext-id-ballot-subtitle specify-end
+words-current-search-term-in-polls-section-secondary
+heading-level-2-end
+
+<new_line>
+
+paragraph-begin
+words-leaving-preference-levels-empty
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ballot-rotate-to-landscape class-style-wink specify-end
+words-please-rotate-to-landscape
+paragraph-end
+
+vertical-gap
+<new_line>
+
+content-for-page-ballot-question-1
+
+content-for-page-ballot-question-2
+
+combee ****
+content-for-page-ballot-question-3
+
+content-for-page-ballot-question-4
+**** comenn
+
+combee **** currently not used, so virtually empty: **** comenn
+template-ballot-questions-single-mark
+
+
+<new_line>
+
+vertical-gap
+<new_line>
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-cast-ballot javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-cast-ballot specify-end
+no-space
+
+heading-level-2-begin
+specify-css-class class-style-margin-none specify-end
+words-button-cast-ballot
+heading-level-2-end
+
+paragraph-begin
+specify-css-class class-style-margin-none specify-end
+words-ballot-will-replace-previous-ballot
+paragraph-end
+
+no-space
+button-end
+
+paragraph-begin
+specify-style style-hide specify-end
+specify-css-class selectext-need-for-cast-ballot specify-end
+specify-id selectext-id-ballot-rankings-encoded specify-end
+no-space
+paragraph-end
+
+vertical-gap
+
+<new_line>
