@@ -1,0 +1,1 @@
+<link rel="manifest" href=" no-space http-www-news-here-now-domain-name no-space /web_app_manifest.txt" />

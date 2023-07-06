@@ -1,0 +1,9 @@
+no-space <new_line><new_line> no-space
+web-page-header
+no-space <new_line><new_line> no-space
+navigation-at-top
+no-space <new_line><new_line> no-space
+content-in-standard-page
+no-space <new_line><new_line> no-space
+web-page-footer
+no-space <new_line><new_line> no-space

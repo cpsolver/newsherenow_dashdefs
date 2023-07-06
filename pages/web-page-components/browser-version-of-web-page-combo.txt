@@ -1,0 +1,4 @@
+ambee content-type-if-cgi-version fenambee yes-or-no-cgi-version amenn amenn
+ambee web-page-begin amenn
+ambee web-page-standard-layout amenn
+ambee web-page-end amenn

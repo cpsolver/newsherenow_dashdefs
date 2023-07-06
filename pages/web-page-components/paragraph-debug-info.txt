@@ -1,0 +1,5 @@
+paragraph-begin
+specify-id selectext-id-debug-info specify-end
+specify-style style-hide specify-end
+no-space
+paragraph-end

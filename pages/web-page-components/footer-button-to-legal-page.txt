@@ -1,0 +1,6 @@
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-legal javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-footer-legal specify-end
+words-button-to-legal-page
+button-end

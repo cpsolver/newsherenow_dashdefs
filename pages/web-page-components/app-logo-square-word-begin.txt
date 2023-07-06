@@ -1,0 +1,22 @@
+paragraph-begin
+
+specify-style
+font-size:45px;
+no-space
+text hyphen-here align:center;
+no-space
+font-family:'Garamond','Georgia','Times','Times New Roman',serif;
+no-space
+text hyphen-here shadow: -5px -5px 9px hsla(0,100%,100%,1.0);
+no-space
+line-height:70%;
+no-space
+margin hyphen-here top:15px;
+specify-end
+
+no-space
+
+characters-span-begin
+specify-style
+font-size:50px;
+specify-end

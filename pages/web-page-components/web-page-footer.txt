@@ -1,0 +1,50 @@
+div-end
+
+combee ****
+vertical-gap
+div-begin
+specify-css-class class-style-web-page-footer-background specify-end
+div-end
+**** comenn
+
+
+footer-begin
+specify-css-class class-style-web-page-footer specify-end
+specify-id selectext-id-footer specify-end
+new-line
+
+paragraph-begin
+specify-css-class class-style-warning-minimum-age specify-end
+specify-id selectext-id-warning-minimum-age specify-end
+words-message-must-be-18-or-older
+paragraph-end
+new-line
+
+paragraph-begin
+specify-css-class class-style-margin-medium specify-end
+copyright-symbol words-copyright-notice-bottom-of-web-page
+paragraph-end
+new-line
+
+vertical-gap-tiny
+
+side-by-side-floating-begin
+button-to-legal-page
+side-by-side-floating-middle-not-last
+button-to-contact-page
+side-by-side-floating-middle-last
+button-to-top-of-page
+side-by-side-floating-end
+
+vertical-gap-tiny
+
+new-line
+footer-end
+new-line
+
+div-end
+new-line
+
+vertical-gap-tiny
+
+vertical-gap-tiny

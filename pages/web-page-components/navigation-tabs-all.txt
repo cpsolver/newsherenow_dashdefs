@@ -1,0 +1,83 @@
+navigation-tabs-begin
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-where
+combo-nav-tab-part-2
+selectext-where
+combo-nav-tab-part-3
+word-nav-tab-where
+combo-nav-tab-part-4
+
+nav-tab-gap
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-map
+combo-nav-tab-part-2
+selectext-map
+combo-nav-tab-part-3
+word-nav-tab-here
+image-here
+specify-style style-hide specify-end
+specify-css-class class-style-working-gif-map class-style-animated-gif-working-tiny specify-end
+specify-id selectext-id-working-gif-tab-map specify-end
+image-animated-gif-working-specify-tiny
+combo-nav-tab-part-4
+
+nav-tab-gap
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-biz
+combo-nav-tab-part-2
+selectext-biz
+combo-nav-tab-part-3
+word-nav-tab-biz
+image-here
+specify-style style-hide specify-end
+specify-css-class class-style-working-gif-biz class-style-animated-gif-working-tiny specify-end
+specify-id selectext-id-working-gif-tab-biz specify-end
+image-animated-gif-working-specify-tiny
+combo-nav-tab-part-4
+
+nav-tab-gap
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-news
+combo-nav-tab-part-2
+selectext-news
+combo-nav-tab-part-3
+word-nav-tab-news
+image-here
+specify-style style-hide specify-end
+specify-css-class class-style-working-gif-news class-style-animated-gif-working-tiny specify-end
+specify-id selectext-id-working-gif-tab-news specify-end
+image-animated-gif-working-specify-tiny
+combo-nav-tab-part-4
+
+nav-tab-gap
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-polls
+combo-nav-tab-part-2
+selectext-polls
+combo-nav-tab-part-3
+word-nav-tab-polls
+characters-span-begin
+combee **** reminder: display=inline when not hidden **** comenn
+specify-style style-hide specify-end
+specify-css-class class-style-icon-attention class-style-wink specify-end
+specify-id selectext-id-icon-found-local-polls specify-end
+icon-attention-nav-tab
+characters-span-end
+combo-nav-tab-part-4
+
+nav-tab-gap
+
+combo-nav-tab-part-1
+selectext-id-nav-tab underscore-double-here selectext-about
+combo-nav-tab-part-2
+selectext-about
+combo-nav-tab-part-3
+word-nav-tab-about
+combo-nav-tab-part-4
+
+navigation-tabs-end

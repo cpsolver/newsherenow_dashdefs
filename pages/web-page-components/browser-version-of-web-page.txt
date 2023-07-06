@@ -1,0 +1,5 @@
+no-space
+content-type-if-cgi-version fenambee yes-or-no-cgi-version amenn
+web-page-begin
+ambee web-page-content amenn
+web-page-end

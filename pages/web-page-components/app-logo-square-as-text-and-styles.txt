@@ -1,0 +1,64 @@
+combee *** final logo size needed is 152 by 152 but allow for padding and border *** comenn
+
+combee ***
+reminder: refine this:
+*** comenn
+
+div-begin specify-style
+width:200px;height:200px;
+no-space
+style-centered-block-or-image
+no-space
+background hyphen-here color: hsl(0,0%,50%);
+no-space
+padding hyphen-here top:12px;
+no-space
+padding hyphen-here bottom:12px;
+no-space
+padding hyphen-here left:12px;
+no-space
+padding hyphen-here right:12px;
+no-space
+specify-end
+
+div-begin specify-style
+width:130px;height:130px;
+no-space
+style-centered-block-or-image
+no-space
+border hyphen-here radius:20px;
+no-space
+padding hyphen-here top:2px;
+no-space
+padding hyphen-here bottom:22px;
+no-space
+padding hyphen-here left:22px;
+no-space
+padding hyphen-here right:22px;
+no-space
+border:0;
+no-space
+margin hyphen-here left:12px;
+no-space
+margin hyphen-here right:12px;
+no-space
+background:linear hyphen-here gradient(135deg,hsla( no-space hue-website-logo no-space ,100%,35%,1) 0%,hsla( no-space hue-website-logo no-space ,100%,60%,1) 50%,hsla( no-space hue-website-logo no-space ,100%,35%,1) 100%);
+no-space
+specify-end
+
+app-logo-square-word-begin
+N characters-span-end no-space EWS
+app-logo-square-word-end
+
+app-logo-square-word-begin
+H characters-span-end no-space ERE
+app-logo-square-word-end
+
+app-logo-square-word-begin
+N characters-span-end no-space OW
+app-logo-square-word-end
+
+div-end
+
+div-end
+

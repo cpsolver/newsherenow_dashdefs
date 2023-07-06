@@ -1,0 +1,20 @@
+combee *** for Safari browser *** comenn
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<new_line>
+combee *** reminder: change to translucent black in order to hide the status bar *** comenn
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<new_line>
+<link rel="apple-touch-startup-image" href=" no-space http-www-news-here-now-domain-name no-space /newsherenowlogo_ no-space language-choice no-space .png" />
+<new_line>
+<link rel="apple-touch-icon" href=" no-space http-www-news-here-now-domain-name no-space /newsherenowlogo_ no-space language-choice no-space .png" />
+<new_line>
+
+combee *** for Chrome browser *** comenn
+<meta name="mobile-web-app-capable" content="yes" />
+<new_line>
+<meta name="mobile-web-app-status-bar-style" content="black" />
+<new_line>
+<link rel="shortcut icon" href=" no-space http-www-news-here-now-domain-name no-space /newsherenowlogo_ no-space language-choice no-space .png" />
+
+combee *** reference:  https://www.html5rocks.com/en/mobile/fullscreen/ *** comenn
+combee *** reference:  https://stackoverflow.com/questions/1951381/configuring-android-web-applications *** comenn

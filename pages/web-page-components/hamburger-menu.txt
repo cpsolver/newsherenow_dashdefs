@@ -1,0 +1,109 @@
+div-begin
+specify-css-class class-style-hamburger-menu-area specify-end
+specify-id selectext-id-hamburger-menu-area specify-end
+
+div-begin
+specify-css-class class-style-hamburger-menu-button-open-show specify-end
+specify-id selectext-id-hamburger-menu-button-open specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-hamburger-menu-show
+javascript-handle-click-button-end-without-brighten specify-end
+
+combee **** style converts following 3 spans into 3 lines for hamburger icon **** comenn
+<span>
+specify-css-class class-style-hamburger-icon-line specify-end
+specify-id selectext-id-hamburger-icon-line-1 specify-end
+</span>
+<span>
+specify-css-class class-style-hamburger-icon-line specify-end
+specify-id selectext-id-hamburger-icon-line-2 specify-end
+</span>
+<span>
+specify-css-class class-style-hamburger-icon-line specify-end
+specify-id selectext-id-hamburger-icon-line-3 specify-end
+</span>
+
+div-end
+
+div-begin
+specify-css-class class-style-hamburger-menu-button-close-hide specify-end
+specify-id selectext-id-hamburger-menu-button-close specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-hamburger-menu-hide
+javascript-handle-click-button-end-without-brighten specify-end
+character-hamburger-menu-close
+div-end
+
+list-unnumbered-begin
+specify-css-class class-style-hamburger-menu-list-hide specify-end
+specify-id selectext-id-hamburger-menu-list specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-hamburger-menu-hide
+javascript-handle-click-button-end-without-brighten specify-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-where specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-where
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-where
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-here specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-map
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-here
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-biz specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-biz
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-biz
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-news specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-news
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-news
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-polls specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-polls
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-polls
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-about specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-about
+javascript-handle-click-button-end-without-brighten specify-end
+word-nav-tab-about
+list-item-end
+
+list-item-begin
+specify-css-class class-style-hamburger-menu-item specify-end
+specify-id selectext-id-hamburger-menu-item-foreign specify-end
+specify-javascript-onclick javascript-handle-click-button-begin
+selectext-to-foreign-languages-list
+javascript-handle-click-button-end-without-brighten specify-end
+word-hamburger-menu-item-languages
+list-item-end
+
+list-unnumbered-end
+
+div-end

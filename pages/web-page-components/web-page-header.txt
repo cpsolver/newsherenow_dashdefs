@@ -1,0 +1,66 @@
+hamburger-menu
+
+new-line
+
+div-begin
+specify-css-class class-style-web-page-centered-area specify-end
+specify-id selectext-id-web-page-centered-area specify-end
+
+new-line
+
+header-begin
+specify-css-class class-style-web-page-header specify-end
+specify-id selectext-id-header specify-end
+
+combee **** did not work because languages button stopped working:
+specify-javascript-onclick javascript-handle-click-button-begin javascript-handle-click-button-end specify-end
+**** comenn
+
+new-line
+
+side-by-side-floating-begin
+
+link-begin
+specify-link-url http-www-news-here-now-language-specific specify-end
+
+website-logo-rectangular-as-text-and-styles
+
+combee ****
+density-map-as-logo
+**** comenn
+
+link-end
+
+new-line
+
+combee *** reminder: put this iPad logo into file named apple-touch-icon.png then remove from here; just show when need to regenerate *** comenn
+combee ***
+side-by-side-floating-middle-not-last
+
+link-begin specify-link-url url-cgi-script specify-end
+app-logo-square-as-text-and-styles
+link-end
+*** comenn
+
+side-by-side-floating-middle-not-last
+
+paragraph-begin
+specify-css-class class-style-website-tagline specify-end
+specify-id selectext-id-website-tagline specify-end
+specify-style style-text-align-left style-margin-small specify-end
+words-website-tagline
+paragraph-end
+
+new-line
+
+side-by-side-floating-middle-last
+
+template-button-to-list-of-other-languages
+
+side-by-side-floating-end
+
+header-end
+
+new-line
+
+transition-to-below
