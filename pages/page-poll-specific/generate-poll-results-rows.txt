@@ -1,0 +1,2 @@
+ambee generate-counts-from-integer-to-integer 1 12 list-of-row-numbers amenn
+ambee use-handler-with-each-word-in-phrase generate-poll-results-one-row list-of-row-numbers amenn

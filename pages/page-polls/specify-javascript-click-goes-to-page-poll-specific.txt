@@ -1,0 +1,5 @@
+specify-javascript-onclick
+javascript-handle-click-button-begin
+selectext-id-poll-specific underscore-double-here row-number no-space character-underscore no-space column-number
+javascript-handle-click-button-end
+specify-end

@@ -1,0 +1,59 @@
+div-begin
+specify-css-class class-style-poll-button specify-end
+specify-id selectext-id-poll-button-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+specify-style style-hide specify-end
+specify-javascript-click-goes-to-page-poll-specific
+
+combee ***
+note: all content is inserted by javascript code, based on info sent via json format
+*** comenn
+
+paragraph-begin
+specify-css-class class-style-poll-button-title selectext-clear-poll-info class-style-font-title-readable specify-end
+specify-id selectext-id-poll-title-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-poll-button-subtitle selectext-clear-poll-info specify-end
+specify-id selectext-id-poll-subtitle-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-poll-button-question-text selectext-clear-poll-info specify-end
+specify-id selectext-id-poll-question-count-text-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-poll-button-status selectext-clear-poll-info specify-end
+specify-id selectext-id-poll-status-displayed-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-style style-hide specify-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-id-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-version-name-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-question-count-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-status-at-row-column underscore-double-here row-number no-space character-underscore no-space column-number specify-end
+no-space
+characters-span-end
+paragraph-end
+
+div-end

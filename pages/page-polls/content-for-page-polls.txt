@@ -1,0 +1,78 @@
+heading-level-1-begin
+words-heading-election-polls
+heading-level-1-end
+
+heading-level-2-begin
+specify-css-class selectext-group-copy specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-page-polls specify-end
+no-space
+heading-level-2-end
+
+vertical-clear
+
+
+combee **** local polls **** comenn
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here class-style-wink specify-end
+specify-id selectext-id-no-local-polls-if-no-location specify-end
+specify-style style-show specify-end
+words-no-local-polls-if-no-location
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here class-style-wink selectext-hide-on-page-polls specify-end
+specify-id selectext-id-no-local-polls-here specify-end
+specify-style style-hide specify-end
+words-no-local-polls-here
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here class-style-wink selectext-hide-on-page-polls specify-end
+specify-id selectext-id-choose-your-local-poll specify-end
+specify-style style-hide specify-end
+words-choose-your-local-poll
+paragraph-end
+
+generated-grid-floating-named-polls
+
+vertical-clear
+
+
+combee **** explanation paragraphs **** comenn
+
+paragraph-long-begin
+words-message-about-polls-paragraph-001
+paragraph-end
+
+paragraph-long-begin
+words-message-about-polls-paragraph-002
+paragraph-end
+
+combee ****
+no longer used because it applied to non-local polls:
+words-message-about-polls-paragraph-003
+**** comenn
+
+paragraph-long-begin
+words-message-about-polls-paragraph-004
+paragraph-end
+
+paragraph-long-begin
+words-message-about-polls-paragraph-005
+paragraph-end
+
+
+combee **** hidden polls count stored here **** comenn
+
+paragraph-begin
+specify-style style-hide specify-end
+no-space
+characters-span-begin
+specify-css-class selectext-need-for-poll-specific specify-end
+specify-id selectext-id-poll-button-count specify-end
+combee **** reminder: empty indicates non-local polls not yet downloaded; zero indicates none available **** comenn
+no-space
+characters-span-end
+no-space
+paragraph-end

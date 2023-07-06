@@ -1,0 +1,33 @@
+combee ***
+content for all items here are supplied by Javascript code
+*** comenn
+
+table-row-begin
+specify-css-class class-style-poll-results-row selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-poll-result-row underscore-double-here poll-results-row-number specify-end
+
+table-cell-begin
+specify-css-class class-style-poll-results-column-rank specify-end
+specify-id selectext-id-poll-result-rank underscore-double-here poll-results-row-number specify-end
+no-space
+table-cell-end
+
+table-cell-begin
+specify-css-class class-style-poll-results-column-choice-name specify-end
+specify-id selectext-id-poll-result-choice-name underscore-double-here poll-results-row-number specify-end
+no-space
+choice-name-at-rank-number
+no-space
+table-cell-end
+
+table-cell-begin
+specify-css-class class-style-poll-results-column-plurality specify-end
+specify-id selectext-id-poll-result-plurality underscore-double-here poll-results-row-number specify-end
+no-space
+plurality-rank-number
+no-space
+table-cell-end
+
+table-row-end
+
+<new_line>

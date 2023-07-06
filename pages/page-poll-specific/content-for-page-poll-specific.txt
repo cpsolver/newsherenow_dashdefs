@@ -1,0 +1,212 @@
+combee ***
+content for all items here are supplied by Javascript code
+*** comenn
+
+heading-level-1-begin
+specify-css-class class-style-poll-specific-title class-style-font-title-readable specify-end
+specify-id selectext-id-poll-title specify-end
+words-current-search-term-in-polls-section
+heading-level-1-end
+
+<new_line>
+
+heading-level-2-begin
+specify-css-class class-style-poll-specific-subtitle class-style-font-title-readable specify-end
+specify-id selectext-id-poll-subtitle specify-end
+words-current-search-term-in-polls-section-secondary
+heading-level-2-end
+
+<new_line>
+
+div-begin
+specify-css-class class-style-poll-info selectext-item-show-when-poll-download-begins selectext-item-hide-when-poll-download-done specify-end
+
+heading-level-1-begin
+words-message-downloading-poll-specifics
+heading-level-1-end
+
+paragraph-begin
+words-poll-specific-not-yet-downloaded
+paragraph-end
+
+image-animated-gif-working
+div-end
+
+<new_line>
+
+div-begin
+specify-css-class class-style-poll-info selectext-item-hide-when-poll-download-begins selectext-item-show-when-poll-download-done specify-end
+
+combee **** reminder: class-style-margin-auto is from web designer **** comenn
+button-begin
+specify-css-class class-style-button-clickable class-style-margin-auto selectext-item-show-if-poll-open selectext-item-hide-if-poll-closed selectext-item-hide-when-cast-ballot specify-end
+specify-id selectext-id-button-request-vote specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-show-ballot javascript-handle-click-button-end specify-end
+words-want-to-vote-in-this-poll
+button-end
+
+<new_line>
+
+div-begin
+specify-css-class class-style-ballot-messages selectext-item-hide-if-poll-open selectext-item-show-if-poll-closed selectext-item-show-when-cast-ballot specify-end
+
+paragraph-begin
+specify-css-class class-style-message-poll-closed selectext-item-show-if-poll-closed selectext-item-hide-when-cast-ballot specify-end
+words-poll-is-closed
+paragraph-end
+
+heading-level-2-begin
+specify-css-class selectext-item-hide-when-poll-download-begins selectext-item-show-when-cast-ballot specify-end
+specify-id selectext-id-ballot-sent specify-end
+words-ballot-has-been-sent
+image-here
+specify-css-class class-style-working-gif-polls class-style-animated-gif-working-tiny specify-end
+image-animated-gif-working-specify-tiny
+heading-level-2-end
+
+heading-level-2-begin
+specify-css-class class-style-ballot-cast selectext-item-hide-when-poll-download-begins selectext-item-hide-when-cast-ballot specify-end
+specify-id selectext-id-ballot-cast specify-end
+words-ballot-has-been-cast
+heading-level-2-end
+
+paragraph-begin
+specify-css-class class-style-ballot-cast-clarification selectext-item-hide-when-poll-download-begins selectext-item-hide-when-cast-ballot specify-end
+specify-id selectext-id-ballot-cast-clarification specify-end
+words-ballot-has-been-cast-clarification
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-ballot-cast-penalty selectext-item-hide-when-poll-download-begins selectext-item-hide-when-cast-ballot specify-end
+specify-id selectext-id-ballot-cast-penalty specify-end
+words-ballot-has-been-cast-penalty-warning
+heading-level-2-end
+
+div-end
+
+<new_line>
+
+heading-level-1-begin
+specify-css-class class-style-poll-specific-headline selectext-item-show-when-poll-download-begins specify-end
+specify-id selectext-id-poll-headline specify-end
+no-space
+heading-level-1-end
+
+<new_line>
+
+button-begin
+specify-css-class class-style-button-clickable class-style-margin-auto selectext-item-hide-when-poll-download-begins specify-end
+specify-id selectext-id-button-to-poll-results-external specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-external-poll-results javascript-handle-click-button-end specify-end
+words-button-to-external-webpage-results
+button-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-poll-specific-article selectext-item-show-when-poll-download-done specify-end
+specify-id selectext-id-poll-article specify-end
+paragraph-end
+
+<new_line>
+
+combee ****
+
+table-begin
+specify-css-class class-style-table-poll-results specify-end
+specify-style style-hide specify-end
+specify-id selectext-id-table-poll-results specify-end
+
+<new_line>
+
+table-row-begin
+specify-css-class class-style-poll-heading-row specify-end
+table-cell-begin
+specify-css-class class-style-poll-heading-column-rank specify-end
+no-space
+words-popularity-rank
+no-space
+table-cell-end
+table-cell-begin
+specify-css-class class-style-poll-heading-column-choice-name specify-end
+no-space
+words-poll-column-choice-name
+no-space
+table-cell-end
+table-cell-begin
+specify-css-class class-style-poll-heading-column-plurality specify-end
+no-space
+words-plurality-rank
+no-space
+table-cell-end
+table-row-end
+
+<new_line>
+
+generated-poll-results-rows
+
+<new_line>
+
+table-end
+
+**** comenn
+
+div-end
+
+<new_line>
+
+paragraph-begin
+specify-style style-hide specify-end
+no-space
+characters-span-begin
+specify-css-class selectext-need-for-poll-specific selectext-need-for-cast-ballot specify-end
+specify-id selectext-id-poll-id specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-need-for-cast-ballot specify-end
+specify-id selectext-id-poll-version-name specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-status specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-poll-question-count specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-need-for-cast-ballot specify-end
+specify-id selectext-id-ballot-current-id specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-need-for-cast-ballot specify-end
+specify-id selectext-id-ballot-previous-id specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+combee **** todo: when cast ballot, send to server this time value that was stored in browser (when previous ballot was cast); after cast ballot, update to current time; use at server to help detect ballot stuffing **** comenn
+specify-id selectext-id-epoch-seconds-timer specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-pointer-to-public-poll-result specify-end
+no-space
+characters-span-end
+no-space
+paragraph-end
+
+<new_line>
+
+vertical-gap
+
+<new_line>

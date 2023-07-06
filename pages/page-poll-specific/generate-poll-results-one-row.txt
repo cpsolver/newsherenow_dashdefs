@@ -1,0 +1,3 @@
+ambee copy-text word-to-use-in-handler poll-results-row-number amenn
+ambee expand-text template-poll-results-row generated-poll-results-one-row amenn
+ambee append-text-no-space generated-poll-results-one-row generated-poll-results-rows amenn
