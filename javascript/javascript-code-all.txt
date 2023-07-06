@@ -1,0 +1,257 @@
+javascript-script-begin
+<new_line>
+
+combee *** begin defining "nhn" namespace *** comenn
+var nhn js-equals (function( ) {
+<new_line>
+
+combee *** Note: avoid declaring global variables; instead, store strings in DOM *** comenn
+
+combee *** create the object that will handle JSON data retrievals, and specify its event handling *** comenn
+jsvar-global-http-request-object js-equals new XMLHttpRequest( ) js-statement-end
+<new_line>
+jsvar-global-http-request-object no-space .onload js-equals function ( ) {
+    jsfunction-log-json-response no-space ( ) js-statement-end
+    jsfunction-put-json-data-into-webpage no-space ( ) js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>
+jsvar-global-http-request-object no-space .onerror js-equals function ( ) {
+    jsfunction-log-json-response no-space ( ) js-statement-end
+    jsfunction-hide-page-segments-except js-params-begin code-open-quote selectext-errormessage code-close-quote js-params-end js-statement-end
+    window.location js-equals " no-space url-reload-page-with-error-indicated no-space " js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>
+<new_line>
+
+combee *** utilities, string handling *** comenn
+javascript-function-convert-unicode-from-html-entities-to-utf8
+<new_line>
+javascript-function-convert-unicode-from-utf8-to-html-entities
+<new_line>
+javascript-function-convert-integer-to-nines-complement
+<new_line>
+javascript-function-convert-loc-to-lat-lon-decimal
+<new_line>
+javascript-function-convert-integer-hundredths-to-decimal-string
+<new_line>
+
+combee *** utilities, get info from DOM *** comenn
+javascript-function-get-contents-from-html-element
+<new_line>
+javascript-function-get-contents-from-html-element-with-id
+<new_line>
+javascript-function-get-attribute-value-from-html-element
+<new_line>
+javascript-function-get-attribute-value-from-html-element-with-id
+<new_line>
+javascript-function-get-contents-from-html-textarea-element
+<new_line>
+javascript-function-get-width-of-visible-element-with-id
+<new_line>
+javascript-function-get-height-of-visible-element-with-id
+<new_line>
+javascript-function-get-widths-of-visible-elements-of-class
+<new_line>
+javascript-function-get-heights-of-visible-elements-of-class
+<new_line>
+
+combee *** utilities, change info in DOM *** comenn
+javascript-function-update-contents-of-html-element
+<new_line>
+javascript-function-update-contents-of-html-element-with-id
+<new_line>
+javascript-function-update-attribute-of-html-element
+<new_line>
+javascript-function-update-attribute-of-html-element-with-id
+<new_line>
+javascript-function-update-all-elements-of-class-with-attribute-value
+<new_line>
+javascript-function-hide-elements-of-class
+<new_line>
+javascript-function-show-elements-of-class
+<new_line>
+javascript-function-hide-element-with-id
+<new_line>
+javascript-function-show-element-with-id
+<new_line>
+javascript-function-scroll-to-top
+<new_line>
+javascript-function-move-focus-to-element-with-id
+<new_line>
+javascript-function-remove-focus-from-element-with-id
+<new_line>
+javascript-function-update-width-and-padding-of-centered-div
+<new_line>
+
+combee *** use web storage *** comenn
+javascript-function-save-values-in-browser
+<new_line>
+javascript-function-get-values-from-browser
+<new_line>
+javascript-function-shift-saved-values-from-position-to-position
+<new_line>
+javascript-function-put-location-info-into-first-saved-position
+<new_line>
+
+combee *** access info from server *** comenn
+javascript-function-convert-string-to-cgi-string
+<new_line>
+javascript-function-check-validity-of-url
+<new_line>
+javascript-function-get-parameters-send-request
+<new_line>
+javascript-function-log-json-response
+<new_line>
+javascript-function-put-json-data-into-webpage
+<new_line>
+
+combee *** application-specific, both get and update DOM *** comenn
+javascript-function-hide-page-segments-except
+<new_line>
+javascript-function-show-next-page-segment
+<new_line>
+javascript-function-adjust-heights
+<new_line>
+javascript-function-update-copies-of-content
+<new_line>
+javascript-function-ask-where-prompt
+<new_line>
+javascript-function-generate-displayed-location-name
+<new_line>
+javascript-function-colorize-grid-items-of-type
+<new_line>
+javascript-function-update-news-info
+<new_line>
+javascript-function-update-biz-info
+<new_line>
+javascript-function-update-now-info
+<new_line>
+javascript-function-update-calendar
+<new_line>
+javascript-function-update-page-map-for-info-type
+<new_line>
+javascript-function-update-page-info-for-clicked-button
+<new_line>
+javascript-function-show-hide-saved-locations
+<new_line>
+javascript-function-un-brighten-button
+<new_line>
+javascript-function-geo-location-get
+<new_line>
+javascript-function-geo-location-got
+<new_line>
+javascript-function-geo-location-failed
+<new_line>
+javascript-function-geo-location-do-request
+<new_line>
+javascript-function-ballot-encode-rankings
+<new_line>
+
+combee *** actions directly invoked by user *** comenn
+javascript-function-handle-click-button
+<new_line>
+javascript-function-insert-sample-location
+<new_line>
+javascript-function-handle-key-down
+<new_line>
+javascript-function-click-put-info
+<new_line>
+javascript-function-ballot-click-oval
+<new_line>
+javascript-function-ballot-initialize
+<new_line>
+javascript-function-get-cgi-user-info-with-class-name
+<new_line>
+javascript-function-handle-map-click
+<new_line>
+javascript-function-delete-saved-locations
+<new_line>
+
+combee *** globally define the variable that accesses the canvas where map tiles are displayed *** comenn
+var jsvar-global-canvas js-statement-end
+<new_line>
+
+combee *** use these map tile global values because they are frequently accessed by multiple functions *** comenn
+var jsvar-global-map-size-scale js-statement-end
+<new_line>
+var jsvar-global-map-tile-width js-statement-end
+<new_line>
+var jsvar-global-map-tile-width-scaled js-statement-end
+<new_line>
+var jsvar-global-width-at-map-tile-position-one js-statement-end
+<new_line>
+var jsvar-global-height-at-map-tile-position-one js-statement-end
+<new_line>
+var jsvar-global-yes-if-all-map-tiles-downloaded js-statement-end
+<new_line>
+var jsvar-global-yes-if-shapes-drawn-over-map js-statement-end
+<new_line>
+
+combee *** define some functions needed to display the map tiles *** comenn
+var jsfunction-map-tile-image underscore-here 1 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 2 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 3 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 4 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 5 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 6 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 7 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 8 js-equals new Image() js-statement-end
+<new_line>
+var jsfunction-map-tile-image underscore-here 9 js-equals new Image() js-statement-end
+<new_line>
+
+combee *** functions that display the map tiles *** comenn
+javascript-function-do-map-tile-calculations
+<new_line>
+javascript-function-draw-map-tile-at-position-1
+<new_line>
+javascript-function-draw-map-tile-at-position-2
+<new_line>
+javascript-function-draw-map-tile-at-position-3
+<new_line>
+javascript-function-draw-map-tile-at-position-4
+<new_line>
+javascript-function-draw-map-tile-at-position-5
+<new_line>
+javascript-function-draw-map-tile-at-position-6
+<new_line>
+javascript-function-draw-map-tile-at-position-7
+<new_line>
+javascript-function-draw-map-tile-at-position-8
+<new_line>
+javascript-function-draw-map-tile-at-position-9
+<new_line>
+javascript-function-check-if-all-map-tiles-downloaded
+<new_line>
+javascript-function-draw-shapes-over-map
+<new_line>
+
+combee *** support browser back and forward buttons *** comenn
+window.onhashchange js-equals jsfunction-handle-click-button js-params-begin code-open-quote selectext-back code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+<new_line>
+
+combee *** startup *** comenn
+javascript-function-startup
+<new_line>
+window.onload js-equals startup js-statement-end
+<new_line>
+
+combee *** give access to actions directly invoked by user , but these require "nhn." prefix *** comenn
+return { jsfunction-handle-click-button : jsfunction-handle-click-button , jsfunction-insert-sample-location : jsfunction-insert-sample-location , jsfunction-scroll-to-top : jsfunction-scroll-to-top , jsfunction-click-put-info : jsfunction-click-put-info , jsfunction-ballot-click-oval : jsfunction-ballot-click-oval , jsfunction-ballot-initialize : jsfunction-ballot-initialize , jsfunction-ballot-encode-rankings : jsfunction-ballot-encode-rankings } js-statement-end
+<new_line>
+
+combee *** finish defining "nhn" namespace *** comenn
+} ( ) ) js-statement-end
+<new_line>
+
+javascript-script-end
+<new_line>
