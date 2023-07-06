@@ -1,0 +1,4 @@
+ambee put-into-phrase latitude-integer  ambee numeric-integer ambee numeric-add 10000000000 ambee numeric-multiply ambee latitude-decimal amenn 10000000 amenn amenn amenn  amenn
+ambee put-into-phrase longitude-integer  ambee numeric-integer ambee numeric-add 10000000000 ambee numeric-multiply ambee longitude-decimal amenn 10000000 amenn amenn amenn  amenn
+ambee copy-zero-pad-left-to-length latitude-integer latitude-integer 11 amenn
+ambee copy-zero-pad-left-to-length longitude-integer longitude-integer 11 amenn

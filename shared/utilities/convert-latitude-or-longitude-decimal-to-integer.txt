@@ -1,0 +1,40 @@
+ambee copy-text ambee latitude-or-longitude amennfen decimal lat-or-lon-decimal amenn
+ambee copy-characters-from-position-to-position lat-or-lon-decimal possible-minus-sign 1 1 amenn
+ambee copy-and-replace lat-or-lon-decimal lat-or-lon-decimal-without-sign character-plus-sign empty-text amenn
+ambee copy-and-replace lat-or-lon-decimal-without-sign lat-or-lon-decimal-without-sign character-hyphen empty-text amenn
+ambee copy-and-replace lat-or-lon-decimal-without-sign lat-or-lon-decimal-as-two-words character-period character-space amenn
+ambee copy-word-at-position lat-or-lon-decimal-as-two-words lat-or-lon-integer-degrees 1 amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 2 ambee get-count-of-words lat-or-lon-decimal-as-two-words amenn amenn amenn
+    ambee copy-word-at-position lat-or-lon-decimal-as-two-words lat-or-lon-integer-right-of-decimal-point 2 amenn
+ambee if-else amenn
+    ambee copy-text digit-0 lat-or-lon-integer-right-of-decimal-point amenn
+ambee if-end amenn
+
+ambee copy-zero-pad-left-to-length lat-or-lon-integer-degrees lat-or-lon-integer-probably-too-long 3 amenn
+ambee append-text-no-space lat-or-lon-integer-right-of-decimal-point lat-or-lon-integer-probably-too-long amenn
+ambee append-text-no-space string-00000000 lat-or-lon-integer-probably-too-long amenn
+ambee copy-characters-from-position-to-position lat-or-lon-integer-probably-too-long lat-or-lon-integer-without-leading-digit 1 10 amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions character-hyphen possible-minus-sign amenn amenn
+    ambee copy-text digit-1 lat-or-lon-integer-final amenn
+    ambee append-text-no-space lat-or-lon-integer-without-leading-digit lat-or-lon-integer-final amenn
+ambee if-else amenn
+    ambee copy-and-replace-using-paired-listed-words lat-or-lon-integer-without-leading-digit results-from-pass-one paired-replacements-for-nines-complement-pass-one amenn
+    ambee copy-and-replace-using-paired-listed-words results-from-pass-one lat-or-lon-integer-complement-without-leading-digit paired-replacements-for-nines-complement-pass-two amenn
+    ambee copy-text digit-0 lat-or-lon-integer-final amenn
+    ambee append-text-no-space lat-or-lon-integer-complement-without-leading-digit lat-or-lon-integer-final amenn
+ambee if-end amenn
+
+ambee copy-text lat-or-lon-integer-final ambee latitude-or-longitude amennfen integer amenn
+
+
+ambee trace-show ambee latitude-or-longitude amennfen decimal amenn
+ambee trace-show lat-or-lon-integer-final amenn
+combee
+ambee trace-show lat-or-lon-decimal-as-two-words amenn
+ambee trace-show lat-or-lon-integer-degrees amenn
+ambee trace-show lat-or-lon-integer-right-of-decimal-point amenn
+ambee trace-show lat-or-lon-integer-without-leading-digit amenn
+ambee trace-show lat-or-lon-integer-complement-without-leading-digit amenn
+comenn

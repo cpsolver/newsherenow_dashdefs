@@ -1,0 +1,6 @@
+combee ***
+ambee generate-list-of-all-dashrep-phrases list-of-all-phrase-names amenn
+ambee put-into-phrase output-filename  output_all_definitions.txt  amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee write-dashrep-definitions-listed-in-phrase-to-file list-of-all-phrase-names ambee output-filename amenn amenn
+*** comenn

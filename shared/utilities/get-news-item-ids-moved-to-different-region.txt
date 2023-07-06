@@ -1,0 +1,16 @@
+ambee clear-phrase list-of-news-ids-in-different-regions amenn
+ambee copy-text path-to-news-moved-info dashrep-path-prefix-for-file-reading amenn
+ambee copy-text filename-news-moved-to-different-region source-filename amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee source-filename amenn amenn amenn
+ambee copy-from-columns-in-file-to-named-phrases ambee source-filename amenn pattern-prefix-and-column-names-for-different-region-info list-of-news-ids-in-different-regions amenn
+ambee if-end amenn
+
+
+ambee trace-show filename-news-moved-to-different-region amenn
+ambee trace-show source-filename amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show list-of-news-ids-in-different-regions amenn
+ambee trace-show pattern-prefix-and-column-names-for-different-region-info amenn
+combee ***
+*** comenn

@@ -1,0 +1,15 @@
+combee ***
+ambee trace-show long-text amenn
+*** comenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase long-text amenn amenn
+ambee generate-unique-id-from-long-text-case-not-empty amenn
+ambee if-else amenn
+ambee put-into-phrase unique-id-from-long-text  0  amenn
+ambee if-end amenn
+
+
+combee ***
+ambee trace-show unique-id-from-long-text amenn
+*** comenn
