@@ -1,0 +1,1 @@
+region-ids-containing-news-just-moved-elsewhere.txt

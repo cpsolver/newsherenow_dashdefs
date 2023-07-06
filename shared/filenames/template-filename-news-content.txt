@@ -1,0 +1,1 @@
+news_in_region_ no-space region-id no-space .txt no-space

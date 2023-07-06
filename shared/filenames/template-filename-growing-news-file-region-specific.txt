@@ -1,0 +1,1 @@
+temp-news-from-task hyphen-here task-number hyphen-here region hyphen-here region-id no-space .txt
