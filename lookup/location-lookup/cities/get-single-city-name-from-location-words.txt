@@ -1,0 +1,9 @@
+ambee trace-show location-words-grouped amenn
+
+
+ambee put-into-phrase count-of-matching-city-names  0  amenn
+ambee clear-phrase list-of-pointers-to-info-for-matching-city-names amenn
+ambee clear-phrase city-info-line amenn
+ambee generate-counts-from-integer-to-integer 1 ambee get-count-of-words location-words-grouped amenn list-of-pointers-to-location-word-groups amenn
+
+ambee get-single-city-name-from-location-words-case-state-unknown amenn

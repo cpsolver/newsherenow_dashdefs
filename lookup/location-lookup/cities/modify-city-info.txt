@@ -1,0 +1,43 @@
+ambee trace-show-where amenn
+
+
+combee *** soon_todo: verify changes here *** comenn
+
+
+ambee copy-and-replace city-name-with-underscores city-name character-underscore character-space amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions state-or-province-uppercase two-question-marks amenn amenn
+ambee copy-lowercase-only state-or-province-uppercase state-or-province amenn
+ambee if-else amenn
+ambee clear-phrase state-or-province-uppercase amenn
+ambee clear-phrase state-or-province amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions country-code-uppercase two-question-marks amenn amenn
+ambee copy-lowercase-only country-code-uppercase country-code amenn
+ambee if-else amenn
+ambee clear-phrase country-code-uppercase amenn
+ambee clear-phrase country-code amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists list-of-country-codes-uppercase-for-which-to-display-state-or-province country-code-uppercase country-code-if-display-state-or-province amenn
+
+ambee copy-text city-name city-name-and-country-or-state amenn
+
+ambee if-no-begin ambee yes-if-any-yes ambee yes-or-no-empty-phrase state-or-province-uppercase amenn ambee yes-or-no-empty-phrase country-code-if-display-state-or-province amenn amenn amenn
+ambee append-text state-or-province-uppercase city-name-and-country-or-state amenn
+ambee if-else amenn
+ambee append-text country-code-uppercase city-name-and-country-or-state amenn
+ambee if-end amenn
+
+
+ambee trace-show city-info-line amenn
+ambee trace-show city-name amenn
+ambee trace-show city-name-and-country-or-state amenn
+ambee trace-show city-name-found amenn
+ambee trace-show state-or-province amenn
+ambee trace-show state-or-province-uppercase amenn
+ambee trace-show country-code-uppercase amenn
+ambee trace-show country-code amenn
+ambee trace-show latitude-integer amenn
+ambee trace-show longitude-integer amenn

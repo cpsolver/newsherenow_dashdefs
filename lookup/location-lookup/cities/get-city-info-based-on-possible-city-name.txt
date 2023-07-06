@@ -1,0 +1,29 @@
+ambee trace-show-where amenn
+
+
+ambee point-to-needed-city-info-file amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show file-name-with-city-name-info amenn
+
+
+ambee copy-text possible-city-name possible-city-name-terminated-with-space amenn
+ambee append-text-no-space character-ampersand possible-city-name-terminated-with-space amenn
+ambee copy-and-replace possible-city-name-terminated-with-space possible-city-name-terminated-with-space character-ampersand character-space amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase file-name-with-city-name-info amenn amenn
+ambee find-line-in-file-that-begins-with-text ambee file-name-with-city-name-info amenn possible-city-name-terminated-with-space city-info-line amenn
+ambee if-end amenn
+
+
+ambee trace-show possible-city-name-terminated-with-space amenn
+ambee trace-show city-info-line amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase city-info-line amenn amenn
+
+ambee trace-show city-info-line amenn
+
+ambee handle-found-city-info amenn
+ambee if-end amenn

@@ -1,0 +1,25 @@
+ambee trace-show-where amenn
+ambee trace-show city-info-line amenn
+
+
+ambee copy-text possible-city-name city-name-found amenn
+ambee copy-lowercase-only city-name-found city-name-found amenn
+ambee copy-without-extra-spaces city-info-line city-info-line amenn
+
+
+ambee trace-show city-info-line amenn
+
+
+ambee copy-words-from-position-to-position city-info-line state-or-province-uppercase 2 2  amenn
+ambee copy-words-from-position-to-position city-info-line country-code-uppercase 3 3  amenn
+ambee copy-words-from-position-to-position city-info-line latitude-integer 4 4  amenn
+ambee copy-words-from-position-to-position city-info-line longitude-integer 5 5  amenn
+combee *** ignore node ID in sixth word *** comenn
+ambee copy-words-from-position-to-position city-info-line city-name-with-underscores 7 7  amenn
+
+
+
+combee *** soon_todo: verify changes here *** comenn
+
+
+ambee modify-city-info amenn

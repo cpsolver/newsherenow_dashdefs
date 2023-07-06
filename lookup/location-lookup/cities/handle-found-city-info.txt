@@ -1,0 +1,21 @@
+ambee trace-show-where amenn
+ambee trace-show city-info-line amenn
+
+
+ambee get-info-from-city-info-line amenn
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+
+
+combee *** maybe: future_todo: if country code is not state in U.S. or province in Canada, also get first "cityname us_", and get that state/province abbreviation, and offer as suggestion; examples: charlestown RI rather than charlestown on Nevis Island in Carribean; georgetown TX rather than georgetown in south america *** comenn
+
+
+ambee trace-show state-or-province-uppercase amenn
+ambee trace-show two-question-marks amenn
+ambee trace-show country-code-uppercase amenn
+ambee trace-show city-name-found amenn
+ambee trace-show state-or-province-uppercase amenn
+ambee trace-show city-name amenn
+ambee trace-show city-name-and-country-or-state amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn

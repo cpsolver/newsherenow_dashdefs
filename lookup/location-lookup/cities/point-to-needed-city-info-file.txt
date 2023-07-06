@@ -1,0 +1,28 @@
+ambee trace-show-where amenn
+
+
+ambee expand-text path-to-city-name-info dashrep-path-prefix-for-file-reading amenn
+ambee copy-and-replace-using-paired-listed-words possible-city-name alpha-category characters-paired-replacements-for-generating-alpha-category amenn
+ambee copy-and-replace alpha-category alpha-category character-hyphen empty-text amenn
+ambee put-into-phrase string-100  100 amenn
+ambee append-text-no-space string-100 alpha-category amenn
+ambee copy-characters-from-position-to-position alpha-category alpha-category 1 3 amenn
+
+
+ambee trace-show alpha-category amenn
+
+
+ambee put-into-phrase file-name-with-city-name-info  cities_category_ nospay ambee alpha-category amenn nospay .txt amenn
+
+
+ambee trace-show file-name-with-city-name-info amenn
+
+
+ambee if-no-begin ambee yes-or-no-file-exists ambee file-name-with-city-name-info amenn amenn amenn
+
+
+ambee trace-show file-name-with-city-name-info amenn
+
+
+ambee clear-phrase file-name-with-city-name-info amenn
+ambee if-end amenn

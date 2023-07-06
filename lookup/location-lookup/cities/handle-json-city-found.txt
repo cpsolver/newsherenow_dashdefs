@@ -1,0 +1,6 @@
+ambee trace-show location-name amenn
+ambee trace-show city-name amenn
+
+
+ambee copy-and-replace city-name city-name character-underscore character-space amenn
+ambee handle-json-location-found amenn
