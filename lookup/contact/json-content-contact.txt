@@ -1,0 +1,11 @@
+code-open-quote selectext-id-yes-no-contact-added code-close-quote no-space ,"contents", no-space code-open-quote selectext-yes code-close-quote ,
+
+code-open-quote selectext-id-contact-email-added code-close-quote no-space ,"contents", no-space code-open-quote email-address code-close-quote ,
+
+code-open-quote selectext-id-contact-message-added code-close-quote no-space ,"contents", no-space code-open-quote contact-message code-close-quote ,
+
+code-open-quote selectext-id-contact-url-added code-close-quote no-space ,"contents", no-space code-open-quote supplied-url code-close-quote ,
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-addedcontactmessage code-close-quote ,
+
+code-open-quote selectext-id-nav-tab-current code-close-quote no-space ,"contents", no-space code-open-quote code-close-quote ,

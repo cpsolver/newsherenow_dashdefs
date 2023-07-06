@@ -1,0 +1,30 @@
+contact hyphen-here emailaddress hyphen-here begin
+new-line
+email-address
+new-line
+contact hyphen-here emailaddress hyphen-here end
+new-line
+contact hyphen-here suppliedurl hyphen-here begin
+new-line
+supplied-url
+new-line
+contact hyphen-here suppliedurl hyphen-here end
+new-line
+contact hyphen-here message hyphen-here begin
+new-line
+contact-message
+new-line
+contact hyphen-here message hyphen-here end
+new-line
+contact hyphen-here date hyphen-here time hyphen-here begin
+new-line
+time-year hyphen-here time-month-name hyphen-here time-day-of-month time-hour no-space : no-space time-minute
+new-line
+contact hyphen-here date hyphen-here time hyphen-here end
+new-line
+contact hyphen-here ipaddress hyphen-here begin
+new-line
+input-ip-address
+new-line
+contact hyphen-here ipaddress hyphen-here end
+new-line

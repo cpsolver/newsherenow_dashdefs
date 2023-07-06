@@ -1,0 +1,9 @@
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-contact-email combee *** need space here *** comenn  amenn email-address character-hyphen hyphen-translation-safe amenn
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-contact-message combee *** need space here *** comenn  amenn contact-message character-hyphen hyphen-translation-safe amenn
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-contact-url combee *** need space here *** comenn  amenn supplied-url character-hyphen hyphen-translation-safe amenn
+ambee copy-word-at-position list-of-month-names-to-use-in-contact-messages time-month-name ambee time-month-number amenn amenn
+ambee expand-text template-for-contact-message-added new-contact-message amenn
+ambee put-into-phrase target-filename  contact-messages.txt  amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-writing  ambee path-to-contact-message-folder amenn  amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-reading  ambee dashrep-path-prefix-for-file-writing amenn  amenn
+ambee copy-from-phrase-append-to-file new-contact-message ambee target-filename amenn amenn
