@@ -1,0 +1,1 @@
+Puede buscar los nombres de las calles en una intersecci&#243;n cercana y usar esa intersecci&#243;n en su lugar. (No es necesario usar la intersecci&#243;n correcta).

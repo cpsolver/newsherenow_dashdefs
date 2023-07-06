@@ -1,0 +1,1 @@
+Sugerencia: puede ingresar una abreviatura de dos letras en el estado de los EE. UU. Esto es &#250;til para encontrar ciudades m&#225;s peque&#241;as, como Kent OH en lugar de Kent WA, y Vancouver WA en lugar de la ciudad m&#225;s grande de Vancouver en Canad&#225;.

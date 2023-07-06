@@ -1,0 +1,1 @@
+S&#237;, las entidades HTML est&#225;n permitidas, pero a&#250;n no se puede predecir c&#243;mo se interpretar&#225;n.

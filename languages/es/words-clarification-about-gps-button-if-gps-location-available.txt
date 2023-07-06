@@ -1,0 +1,1 @@
+Si su ubicaci&#243;n GPS est&#225; disponible, entonces aparecer&#225; un bot&#243;n para usarla despu&#233;s de que haga clic en la pesta&#241;a DONDE.

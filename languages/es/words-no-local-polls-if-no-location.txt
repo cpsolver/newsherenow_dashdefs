@@ -1,0 +1,1 @@
+Las encuestas locales no se pueden mostrar hasta que se haya especificado una ubicaci&#243;n.

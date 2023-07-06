@@ -1,0 +1,5 @@
+Los negocios enumerados en la p&#225;gina word-nav-tab-biz son los restaurantes de la vecindad, las panader&#237;as, las charcuter&#237;as, las tiendas del t&#233;, y los caf&#233 m&#225;s cercanos.
+sentence-next
+Tambi&#233;n se incluyen las librer&#237;as independientes y las ferreter&#237;as pose&#237;das familia.
+sentence-next
+&#201;stos los negocios de la vecindad de la no-cadena aparecen aqu&#237; gratis, sin coste para ellas (o a usted).

@@ -1,0 +1,1 @@
+Es posible que una de las dos calles, o el nombre del vecindario, no est&#233; en los datos de Open Street Map.

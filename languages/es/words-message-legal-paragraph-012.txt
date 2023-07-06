@@ -1,0 +1,1 @@
+Este sitio web utiliza el cifrado SSL (Secure Sockets Layer) para ayudar a proteger su privacidad cada vez que la informaci&#243;n fluye entre su computadora y nuestros servidores. Sin embargo, si est&#225; usando una computadora compartida con otras personas, el cifrado SSL no protege su privacidad de las otras personas que usan esa computadora.

@@ -1,0 +1,1 @@
+Los datos de Open Stree Map est&#225;n destinados a cartograf&#237;a (creaci&#243;n de mapas), por lo que los datos no siempre son lo suficientemente completos como para identificar cada intersecci&#243;n. (Espec&#237;ficamente, el nombre de la calle que se muestra en el Mapa de calles abierto puede no coincidir con el nombre de la calle que se usa en esa intersecci&#243;n).

@@ -1,0 +1,1 @@
+Ups! No se permiten s&#237;mbolos como el punto y coma (;) y los guiones bajos (). Solo se permiten comas (,) y guiones (-)

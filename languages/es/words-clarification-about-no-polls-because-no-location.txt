@@ -1,0 +1,1 @@
+Debe especificar una ubicaci&#243;n antes de que se puedan mostrar las encuestas.

@@ -1,0 +1,1 @@
+No se puede encontrar una intersecci&#243;n cerca de la latitud y longitud suministradas. La causa de esta falla es desconocida. &#191;Su ubicaci&#243;n GPS funciona con otros sitios web? Si es as&#237;, utilice la p&#225;gina de contacto para informar de este error e incluya los nombres de las calles que se cruzan m&#225;s cercanas.

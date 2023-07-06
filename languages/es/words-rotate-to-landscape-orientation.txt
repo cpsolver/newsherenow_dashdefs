@@ -1,0 +1,1 @@
+Se detecta un ancho de pantalla estrecho, por lo que el mapa no es de tama&#241;o completo.

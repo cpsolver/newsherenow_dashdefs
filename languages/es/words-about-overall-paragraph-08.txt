@@ -1,0 +1,7 @@
+&#191;Por qu&#233; necesitamos su ayuda que promueve este webapp?
+sentence-next
+Porque los webapps no aparecen en tiendas del app, as&#237; que nosotros no puede pedirle un grado de cinco estrellas.
+sentence-next
+Y porque Google no enviar&#225; cualquier persona a este webapp (incluso si buscan para &#8220; no-space words-news-here-now-lowercase no-space &#8221;) porque no mostramos los anuncios de Google.
+sentence-next
+Y debido a que los anuncios en Facebook solo son asequibles cuando est&#225;n dirigidos a un peque&#241;o grupo espec&#237;fico de personas, pero tenemos que llegar a casi todos los miembros de cada gran ciudad.

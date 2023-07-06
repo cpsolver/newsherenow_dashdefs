@@ -1,0 +1,1 @@
+Para alternar entre la informaci&#243;n de ubicaci&#243;n, los listados de negocios y las noticias, simplemente haga clic en la pesta&#241;a open-quote word-nav-tab-here close-quote o open-quote word-nav-tab-biz close-quote o open-quote word-nav-tab-news close-quote no-space .

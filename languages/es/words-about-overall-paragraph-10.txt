@@ -1,0 +1,7 @@
+&#191;Quiera aprender m&#225;s?
+sentence-next
+Como se explica en &#8220; no-space words-button-to-about-website-page no-space ,&#8221; este webapp/sitio web fue creado por un desarrollador de software que quiso un reemplazo moderno para la distribuci&#243;n de las noticias de la vecindad que ocurr&#237;an en plazas, en la comunidad que recolectaba lugares tales como iglesias y pasillos del granero, y en peri&#243;dicos impresos.
+sentence-next
+Est&#225; libre porque, adem&#225;s de no necesitar la tinta y el papel, utiliza una nueva lengua de la programaci&#243;n inform&#225;tica que reduzca dram&#225;ticamente el coste de correr este peri&#243;dico.
+sentence-next
+Y la historia detr&#225;s de este peri&#243;dico revela otras maneras en las que puedes aumentar la prosperidad econ&#243;mica de su vecindad.
