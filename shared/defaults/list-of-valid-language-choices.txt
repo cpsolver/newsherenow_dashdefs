@@ -1,0 +1,6 @@
+en
+es
+pt
+fr
+de
+ja

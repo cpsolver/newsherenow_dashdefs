@@ -1,0 +1,1 @@
+target-region-id-for-moved-news-id

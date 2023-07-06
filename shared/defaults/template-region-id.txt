@@ -1,0 +1,3 @@
+ambee copy-characters-from-position-to-position latitude-integer latitude-first-four-digits 1 4 amenn
+ambee copy-characters-from-position-to-position longitude-integer longitude-first-four-digits 1 4 amenn
+no-space latitude-first-four-digits no-space _ no-space longitude-first-four-digits no-space
