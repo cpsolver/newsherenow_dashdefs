@@ -1,0 +1,2 @@
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-loc-map-center combee *** need space here *** comenn  amenn supplied-latitude-longitude amenn
+combee *** reminder: do not convert to latitude-integer and longitude-integer because that is done by another phrase *** comenn

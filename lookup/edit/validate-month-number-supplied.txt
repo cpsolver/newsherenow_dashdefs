@@ -1,0 +1,15 @@
+ambee copy-words-found-in-both-lists input fenambee  combee *** need space here *** comenn selectext-id-user-supplied-month-number combee *** need space here *** comenn  amenn numbers-1-through-12 news-item-month amenn
+ambee if-yes-begin ambee yes-or-no-empty-phrase news-item-month amenn amenn
+ambee put-into-phrase news-item-month  0  amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists input fenambee  combee *** need space here *** comenn selectext-id-calendar-year combee *** need space here *** comenn  amenn year-numbers-for-validation news-item-year amenn
+ambee if-yes-begin ambee yes-or-no-empty-phrase news-item-year amenn amenn
+ambee put-into-phrase news-item-year  0  amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+
+ambee trace-show news-item-month amenn
+ambee trace-show news-item-year amenn

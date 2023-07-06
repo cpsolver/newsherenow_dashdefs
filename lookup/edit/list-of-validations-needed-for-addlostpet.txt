@@ -1,0 +1,13 @@
+get-url-full
+validate-url-full-is-unique-or-duplicate-is-deleted
+get-latitude-longitude-map-center
+validate-supplied-latitude-longitude
+get-region-id-from-supplied-latitude-longitude
+get-street-and-cross-street-ids
+get-street-names-based-on-first-second-street-ids
+validate-street-names-not-empty
+find-single-specific-intersection-based-on-street-ids
+edit-generate-news-update-info-from-template
+append-news-update-to-news-file
+save-loc-lat-lon-for-neigh-news-url-full
+validate-neigh-news-url-uses-approved-domain-name

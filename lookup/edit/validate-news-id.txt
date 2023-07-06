@@ -1,0 +1,12 @@
+combee *** reminder: for neigh-type news, the news id is a URL; for police news it is a different format that includes hyphens (or hyphen entities) *** comenn
+
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-news-id combee *** need space here *** comenn  amenn news-id amenn
+ambee copy-and-replace news-id news-id html-entity-hyphen character-hyphen amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase news-id amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee clear-phrase news-id amenn
+ambee if-end amenn
+
+
+ambee trace-show news-id amenn

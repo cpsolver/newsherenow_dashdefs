@@ -1,0 +1,13 @@
+get-latitude-longitude-map-center
+validate-supplied-latitude-longitude
+get-current-region-id-for-news-item
+save-old-location
+validate-neighborhood-name
+find-neighborhood-info-based-on-neighborhood-name
+validate-found-neighborhood-name
+get-street-and-cross-street-names-at-new-location
+save-new-location
+validate-news-id
+validate-get-news-info-from-current-file
+add-possible-json-content-geolocate-info
+geolocate-actually-move-news-item-to-new-location

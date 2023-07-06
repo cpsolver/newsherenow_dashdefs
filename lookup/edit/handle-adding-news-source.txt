@@ -1,0 +1,21 @@
+ambee split-epoch-seconds-into-named-components ambee get-current-time-in-epoch-seconds amenn amenn
+ambee copy-zero-pad-left-to-length time-minute time-minute-padded 2  amenn
+ambee copy-zero-pad-left-to-length time-second time-second-padded 2  amenn
+ambee expand-text template-for-added-news-source new-news-source amenn
+ambee expand-text template-filename-new-news-source target-filename amenn
+ambee expand-text template-path-to-new-news-source dashrep-path-prefix-for-file-writing amenn
+ambee copy-from-phrase-append-to-file new-news-source ambee target-filename amenn amenn
+ambee copy-text dashrep-path-prefix-for-file-writing dashrep-path-prefix-for-file-reading amenn
+
+ambee expand-text template-writecheck-line writecheck-line amenn
+ambee find-line-in-file-that-begins-with-text ambee target-filename amenn writecheck-line found-writecheck-line-if-not-empty amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase found-writecheck-line-if-not-empty amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-writing amenn
+ambee trace-show target-filename amenn
+ambee trace-show new-news-source amenn
+ambee trace-show found-writecheck-line-if-not-empty amenn

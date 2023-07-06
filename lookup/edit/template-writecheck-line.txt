@@ -1,0 +1,1 @@
+writecheck input-ip-address template-update-time

@@ -1,0 +1,9 @@
+ambee copy-text latitude-integer latitude-at-new-location amenn
+ambee copy-text longitude-integer longitude-at-new-location amenn
+ambee put-into-phrase region-id-at-new-location  ambee get-characters-from-position-to-position latitude-at-new-location 1 4 amenn nospay _ nospay ambee get-characters-from-position-to-position longitude-at-new-location 1 4 amenn amenn
+ambee copy-text region-id-at-new-location region-id amenn
+
+
+ambee trace-show region-id-at-new-location amenn
+ambee trace-show latitude-at-new-location amenn
+ambee trace-show longitude-at-new-location amenn

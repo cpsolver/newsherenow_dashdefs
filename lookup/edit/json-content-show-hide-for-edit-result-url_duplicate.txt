@@ -1,0 +1,2 @@
+code-open-quote selectext-group-id-show-hide-url-duplicate code-close-quote no-space ,"show", no-space code-open-close-quote ,
+code-open-quote selectext-id-loc-lat-lon-only code-close-quote no-space ,"contents", no-space code-open-quote loc-lat-lon-for-duplicate-url code-close-quote ,

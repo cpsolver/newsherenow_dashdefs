@@ -1,0 +1,12 @@
+entry_begin
+new-line
+uniqueid news-id
+new-line
+edited yes
+new-line
+newlat latitude-integer
+new-line
+newlon longitude-integer
+new-line
+entry_end
+new-line

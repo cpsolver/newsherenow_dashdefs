@@ -1,0 +1,1 @@
+time-hour no-space character-colon no-space time-minute-padded no-space character-colon no-space time-second-padded

@@ -1,0 +1,30 @@
+ambee trace-show-where amenn
+ambee trace-show region-id-at-old-location amenn
+
+
+ambee copy-text region-id-at-old-location region-id amenn
+ambee edit-ensure-lat9-news-folder-exists-else-create-it amenn
+ambee expand-text template-path-to-news dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-news-content news-source-filename amenn
+ambee copy-text string-uniqueid dashrep-gather-tag-unique amenn
+ambee copy-text news-id dashrep-gather-tag-matching-id amenn
+ambee clear-phrase selected-entry-from-tagged-file amenn
+ambee gather-from-tagged-file-one-entry ambee news-source-filename amenn selected-entry-from-tagged-file amenn
+ambee put-into-phrase count-of-characters-in-selected-entry  ambee get-count-of-characters selected-entry-from-tagged-file amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare ambee count-of-characters-in-selected-entry amenn 200  amenn amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee put-into-phrase selected-entry-from-tagged-file  temporary placeholder content  amenn
+ambee if-end amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show news-source-filename amenn
+ambee trace-show dashrep-gather-tag-unique amenn
+ambee trace-show dashrep-gather-tag-matching-id amenn
+ambee trace-show selected-entry-from-tagged-file amenn
+ambee trace-show region-id amenn
+ambee trace-show news-id amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show news-source-filename amenn
+ambee trace-show selected-entry-from-tagged-file amenn

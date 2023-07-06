@@ -1,0 +1,5 @@
+selectext-yardsale
+selectext-estatesale
+selectext-blockparty
+selectext-lostpet
+selectext-specialmarket

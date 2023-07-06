@@ -1,0 +1,36 @@
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-street-id combee *** need space here *** comenn  amenn first-street-id amenn
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-cross-street-id combee *** need space here *** comenn  amenn second-street-id amenn
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-yes-or-empty-swap-street-names combee *** need space here *** comenn  amenn yes-or-empty-swap-street-names amenn
+
+
+ambee trace-show input-selectext_id_yes_or_empty_swap_street_names amenn
+
+
+ambee trace-show yes-or-empty-swap-street-names amenn
+
+
+ambee copy-and-replace yes-or-empty-swap-street-names yes-or-empty-swap-street-names character-hyphen character-underscore amenn
+
+
+ambee trace-show yes-or-empty-swap-street-names amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase yes-or-empty-swap-street-names amenn amenn
+ambee copy-text first-street-id temporary-storage amenn
+ambee copy-text second-street-id first-street-id amenn
+ambee copy-text temporary-storage second-street-id amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase first-street-id amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase second-street-id amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+
+ambee trace-show first-street-id amenn
+ambee trace-show second-street-id amenn
+ambee trace-show yes-or-empty-swap-street-names amenn
+ambee trace-show temporary-storage amenn

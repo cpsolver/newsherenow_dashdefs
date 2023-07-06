@@ -1,0 +1,26 @@
+ambee copy-text loc-lat-lon-for-url fenambee url-full amenn supplied-latitude-longitude amenn
+ambee get-region-id-from-supplied-latitude-longitude amenn
+ambee edit-ensure-lat9-news-folder-exists-else-create-it amenn
+ambee expand-text template-path-to-news dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-news-content news-source-filename amenn
+ambee put-into-phrase dashrep-gather-tag-unique  uniqueid  amenn
+ambee clear-phrase list-of-news-ids amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show news-source-filename amenn
+
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee news-source-filename amenn amenn amenn
+ambee gather-tagged-info-from-file ambee news-source-filename amenn list-of-news-ids amenn
+ambee if-end amenn
+
+
+ambee trace-show list-of-news-ids amenn
+
+
+ambee copy-words-found-in-both-lists url-full list-of-news-ids not-empty-if-duplicate-news-item-found amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase not-empty-if-duplicate-news-item-found amenn amenn
+ambee validate-duplicate-is-deleted-case-duplicate-item-found amenn
+ambee if-end amenn

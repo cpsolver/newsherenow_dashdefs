@@ -1,0 +1,9 @@
+ambee put-into-phrase loc-lat-lon-for-supplied-url  ambee latitude-at-center amenn nospay _ nospay ambee longitude-at-center amenn amenn
+ambee copy-text path-to-neigh-news-urls-unique dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-filename-neigh-news-urls-unique filename-neigh-news-urls-unique amenn
+ambee expand-text template-content-saved-loc-lat-lon-for-full-url content-full-url-and-loc-lat-lon amenn
+ambee copy-from-phrase-append-to-file content-full-url-and-loc-lat-lon ambee filename-neigh-news-urls-unique amenn amenn
+
+
+ambee trace-show filename-neigh-news-urls-unique amenn
+ambee trace-show content-full-url-and-loc-lat-lon amenn

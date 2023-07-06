@@ -1,0 +1,23 @@
+ambee expand-text template-list-of-valid-neigh-news-types-selectext-versions list-of-valid-neigh-news-types-possibly-shortened amenn
+ambee put-into-phrase string-selectext-hyphen  selectext amenn
+ambee append-text-no-space character-hyphen string-selectext-hyphen amenn
+ambee copy-and-replace template-list-of-valid-neigh-news-types-selectext-versions list-of-valid-neigh-news-types string-selectext-hyphen empty-line amenn
+ambee copy-words-found-in-both-lists input fenambee  combee *** need space here *** comenn selectext-id-button-value-for-group combee *** need space here *** comenn amenn nospay __ nospay ambee  combee *** need space here *** comenn selectext-event-type combee *** need space here *** comenn amenn list-of-valid-neigh-news-types-possibly-shortened validated-neigh-news-type-possibly-shortened amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words ambee get-count-of-words template-list-of-valid-neigh-news-types-selectext-versions amenn ambee get-count-of-words list-of-valid-neigh-news-types-possibly-shortened amenn amenn amenn
+ambee put-into-phrase neigh-news-type  invalid amenn
+ambee if-end amenn
+
+ambee put-into-phrase pointer-to-neigh-news-type  ambee get-position-of-word validated-neigh-news-type-possibly-shortened list-of-valid-neigh-news-types-possibly-shortened amenn amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee pointer-to-neigh-news-type amenn amenn amenn
+ambee copy-word-at-position list-of-valid-neigh-news-types neigh-news-type ambee pointer-to-neigh-news-type amenn amenn
+ambee if-else amenn
+ambee put-into-phrase neigh-news-type  invalid amenn
+ambee if-end amenn
+
+
+ambee trace-show list-of-valid-neigh-news-types-possibly-shortened amenn
+ambee trace-show list-of-valid-neigh-news-types amenn
+ambee trace-show validated-neigh-news-type-possibly-shortened amenn
+ambee trace-show neigh-news-type amenn

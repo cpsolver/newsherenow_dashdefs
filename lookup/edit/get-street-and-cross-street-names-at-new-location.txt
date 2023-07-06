@@ -1,0 +1,2 @@
+combee *** soon_todo: get street and cross-street names at new location, based on lat lon *** comenn
+combee *** need to add street names to: template-geolocate-move-news-item *** comenn

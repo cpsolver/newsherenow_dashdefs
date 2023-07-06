@@ -1,0 +1,7 @@
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-geolocate-neighborhood-name combee *** need space here *** comenn  amenn neighborhood-name character-hyphen character-underscore amenn
+ambee copy-without-extra-spaces neighborhood-name neighborhood-name amenn
+ambee copy-and-replace neighborhood-name neighborhood-name character-space character-underscore amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase neighborhood-name amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn

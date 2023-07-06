@@ -1,0 +1,7 @@
+ambee copy-text url-full long-text amenn
+ambee generate-unique-id-from-long-text amenn
+ambee copy-text unique-id-from-long-text news-id-for-special-event amenn
+
+
+ambee trace-show url-full amenn
+ambee trace-show news-id-for-special-event amenn

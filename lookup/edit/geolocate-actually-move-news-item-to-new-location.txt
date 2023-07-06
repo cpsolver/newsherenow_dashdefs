@@ -1,0 +1,36 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text region-id-at-old-location region-id amenn
+ambee edit-ensure-lat9-news-folder-exists-else-create-it amenn
+ambee copy-text region-id-at-new-location region-id amenn
+ambee edit-ensure-lat9-news-folder-exists-else-create-it amenn
+ambee copy-text region-id-at-old-location region-id amenn
+ambee expand-text template-path-to-news path-to-news-source-file amenn
+ambee expand-text template-filename-news-content news-source-filename amenn
+ambee copy-text region-id-at-new-location region-id amenn
+ambee expand-text template-path-to-news path-to-news-target-file amenn
+ambee expand-text template-filename-news-content news-target-filename amenn
+ambee expand-text template-geolocate-move-news-item entry-to-append-for-geolocate-move amenn
+
+
+ambee trace-show path-to-news-source-file amenn
+ambee trace-show news-source-filename amenn
+ambee trace-show path-to-news-target-file amenn
+ambee trace-show news-target-filename amenn
+ambee trace-show selected-entry-from-tagged-file amenn
+ambee trace-show entry-to-append-for-geolocate-move amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions region-id-at-old-location region-id-at-new-location amenn amenn
+ambee copy-text path-to-news-target-file dashrep-path-prefix-for-file-writing amenn
+ambee copy-from-phrase-append-to-file entry-to-append-for-geolocate-move ambee news-target-filename amenn amenn
+ambee if-else amenn
+ambee copy-text path-to-news-target-file dashrep-path-prefix-for-file-writing amenn
+ambee copy-from-phrase-append-to-file selected-entry-from-tagged-file ambee news-target-filename amenn amenn
+ambee copy-from-phrase-append-to-file entry-to-append-for-geolocate-move ambee news-target-filename amenn amenn
+combee *** reminder: also need to update location in file at old region, for use until that file is compressed to remove old copy *** comenn
+ambee copy-text path-to-news-source-file dashrep-path-prefix-for-file-writing amenn
+ambee copy-from-phrase-append-to-file entry-to-append-for-geolocate-move ambee news-source-filename amenn amenn
+ambee update-region-id-for-move-across-region-boundary amenn
+ambee if-end amenn

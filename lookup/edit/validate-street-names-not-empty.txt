@@ -1,0 +1,7 @@
+ambee if-yes-begin ambee yes-or-no-empty-phrase first-street-name amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase second-street-name amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn

@@ -1,0 +1,18 @@
+entry_begin
+new-line
+uniqueid url-full
+new-line
+city city-name
+new-line
+lat latitude-integer
+new-line
+lon longitude-integer
+new-line
+url url-full
+new-line
+source input-ip-address template-update-time
+new-line
+entry_end
+new-line
+template-writecheck-line
+new-line

@@ -1,0 +1,8 @@
+validate-delete-confirmation-code
+get-supplied-latitude-longitude-from-loc-item
+validate-supplied-latitude-longitude
+get-region-id-from-supplied-latitude-longitude
+validate-news-id
+assign-current-region-id-as-region-id-at-old-location
+validate-get-news-info-from-current-file
+delete-news-item-from-news-file

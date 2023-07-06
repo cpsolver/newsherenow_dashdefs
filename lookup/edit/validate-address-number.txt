@@ -1,0 +1,20 @@
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-user-supplied-address-number combee *** need space here *** comenn  amenn address-number amenn
+ambee copy-and-replace-using-paired-listed-words address-number string-should-be-nines digits-paired-replacements-to-9s amenn
+ambee copy-text string-should-be-nines characters-in-list amenn
+ambee convert-characters-in-list-into-list-of-characters amenn
+ambee copy-words-unique-only list-of-characters string-should-be-9 amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions digit-9 string-should-be-9 amenn amenn
+combee ***
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+*** comenn
+ambee put-into-phrase address-number  ???  amenn
+ambee if-end amenn
+
+
+combee ***
+ambee trace-show digits-paired-replacements-to-9s amenn
+ambee trace-show string-should-be-nines amenn
+ambee trace-show list-of-characters amenn
+ambee trace-show address-number amenn
+*** comenn

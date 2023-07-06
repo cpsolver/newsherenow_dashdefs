@@ -1,0 +1,17 @@
+get-latitude-longitude-map-center
+validate-supplied-latitude-longitude
+get-current-region-id-for-news-item
+save-old-location
+validate-street-names
+get-region-ids-to-search
+geolocate-get-street-ids-based-on-street-name
+geolocate-get-street-ids-based-on-cross-street-name
+put-street-and-cross-street-ids-into-street-ids
+have-street-ids-get-intersection-ids
+validate-have-single-intersection-id-for-geolocate
+get-street-and-cross-street-names-based-on-intersection-id
+save-new-location
+validate-news-id
+validate-get-news-info-from-current-file
+add-possible-json-content-geolocate-info
+geolocate-actually-move-news-item-to-new-location

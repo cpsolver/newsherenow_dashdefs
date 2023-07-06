@@ -1,0 +1,18 @@
+entry_begin
+new-line
+uniqueid news-id
+new-line
+edited yes
+new-line
+delete yes
+new-line
+entry_end
+new-line
+
+
+combee ***
+delete_id news-id
+new-line
+delete_source input-ip-address template-update-time
+new-line
+*** comenn

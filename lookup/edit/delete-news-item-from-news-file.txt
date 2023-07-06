@@ -1,0 +1,9 @@
+ambee expand-text template-filename-news-content target-filename amenn
+ambee expand-text template-path-to-news dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-delete-news-item content-delete-news-item amenn
+ambee copy-from-phrase-append-to-file content-delete-news-item ambee target-filename amenn amenn
+
+
+ambee trace-show dashrep-path-prefix-for-file-writing amenn
+ambee trace-show target-filename amenn
+ambee trace-show content-delete-news-item amenn

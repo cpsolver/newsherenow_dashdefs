@@ -1,0 +1,25 @@
+ambee if-no-begin ambee yes-or-no-empty-phrase input fenambee  combee *** need space here *** comenn selectext-id-user-supplied-day-of-month combee *** need space here *** comenn  amenn amenn amenn
+combee *** next line copies input instead of inserting user-supplied text into Dashrep code *** comenn
+ambee numeric-vector-integers input fenambee  combee *** need space here *** comenn selectext-id-user-supplied-day-of-month combee *** need space here *** comenn  amenn news-item-day-of-month amenn
+ambee if-else amenn
+ambee put-into-phrase news-item-day-of-month  0  amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee news-item-day-of-month amenn 0  amenn amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee news-item-month amenn amenn amenn
+ambee put-into-phrase maximum-days-in-month  ambee days-in-month-number fenambee news-item-month amenn amenn  amenn
+ambee if-else amenn
+ambee put-into-phrase maximum-days-in-month  0  amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words less ambee numeric-equal-greater-less-compare ambee news-item-day-of-month amenn ambee maximum-days-in-month amenn amenn amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+
+ambee trace-show news-item-day-of-month amenn
+ambee trace-show maximum-days-in-month amenn
+ambee trace-show news-item-day-of-month amenn

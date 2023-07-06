@@ -1,0 +1,7 @@
+ambee get-news-item-ids-moved-to-different-region amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase new-region-id-for-news-id fenambee news-id amenn amenn amenn
+ambee put-into-phrase region-id  ambee get-characters-from-position-to-position latitude-integer 1 4 amenn nospay _ nospay ambee get-characters-from-position-to-position longitude-integer 1 4 amenn amenn
+ambee if-else amenn
+ambee copy-text new-region-id-for-news-id fenambee news-id amenn region-id amenn
+ambee if-end amenn

@@ -1,0 +1,2 @@
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-loc-source combee *** need space here *** comenn  amenn supplied-latitude-longitude amenn
+ambee validate-supplied-latitude-longitude amenn

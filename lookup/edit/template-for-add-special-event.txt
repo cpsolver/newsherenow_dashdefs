@@ -1,0 +1,36 @@
+combee *** soon_todo: fix bug, when added multnomahvillage event, "lat9__" folder was generated *** comenn
+entry_begin
+new-line
+newstype neigh
+new-line
+uniqueid news-id-for-special-event
+new-line
+combee *** the name "input-ip-address" is a special assignment by the CGI code *** comenn
+source input-ip-address template-update-time
+new-line
+neighnewstype neigh-news-type
+new-line
+adr address-number
+new-line
+street first-street-name
+new-line
+crossstreet second-street-name
+new-line
+lat latitude-at-center
+new-line
+lon longitude-at-center
+new-line
+url url-full
+new-line
+datetime news-item-year news-item-month news-item-day-of-month news-item-day-of-week-number 17 0
+new-line
+duration duration-days
+new-line
+compartime comparison-minutes-since-begin-year-2000
+new-line
+description news-item-description
+new-line
+entry_end
+new-line
+template-writecheck-line
+new-line

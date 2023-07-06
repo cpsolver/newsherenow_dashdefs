@@ -1,0 +1,28 @@
+ambee trace-show validated-json-lookup-request amenn
+
+
+ambee split-epoch-seconds-into-named-components ambee get-current-time-in-epoch-seconds amenn amenn
+ambee copy-zero-pad-left-to-length time-minute time-minute-padded 2  amenn
+ambee copy-zero-pad-left-to-length time-second time-second-padded 2  amenn
+ambee calculate-calendar-info amenn
+ambee put-into-phrase update-success-or-validation-error-type  success  amenn
+ambee use-handler-with-each-word-in-phrase handle-do-one-validation-of-user-input list-of-validations-needed-for fenambee validated-json-lookup-request amenn amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase latitude-integer amenn amenn
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+ambee if-end amenn
+
+ambee calculate-hour-based-on-longitude amenn
+ambee copy-words-found-in-both-lists update-success-or-validation-error-type list-of-valid-edit-results-except-error update-success-or-validation-error-type amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase update-success-or-validation-error-type amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee copy-text json-content-show-hide-for-edit-result fenambee update-success-or-validation-error-type amenn json-content-show-hide-for-edit-result amenn
+ambee copy-text json-content-edit-request-response json-content amenn
+ambee finish-handling-json-lookup-request amenn
+
+
+ambee check-elapsed-time amenn

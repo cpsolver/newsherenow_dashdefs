@@ -1,0 +1,21 @@
+ambee get-domain-name-from-url-full amenn
+ambee copy-words-found-only-in-first-list domain-name list-of-blocked-domain-names approved-domain-name amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase approved-domain-name amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists domain-name list-of-popular-domain-names-no-need-to-log popular-domain-name amenn
+
+ambee if-yes-begin ambee yes-if-all-yes ambee yes-or-no-empty-phrase popular-domain-name amenn ambee yes-or-no-opposite ambee yes-or-no-empty-phrase approved-domain-name amenn amenn amenn amenn
+ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+ambee copy-from-phrase-append-to-file domain-name ambee filename-list-of-domain-names-not-popular amenn amenn
+ambee trace-show filename-list-of-domain-names-not-popular amenn
+ambee if-end amenn
+
+
+ambee trace-show url-full amenn
+ambee trace-show domain-name amenn
+ambee trace-show list-of-blocked-domain-names amenn
+ambee trace-show list-of-popular-domain-names-no-need-to-log amenn
+ambee trace-show approved-domain-name amenn

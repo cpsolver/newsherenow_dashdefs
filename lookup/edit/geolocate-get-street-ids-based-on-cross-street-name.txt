@@ -1,0 +1,10 @@
+ambee put-into-phrase street-name-number  2  amenn
+ambee get-street-ids-based-on-one-street-name amenn
+ambee copy-text street-ids street-ids-for-cross-street amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase street-ids-for-cross-street amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  geo_not_found  amenn
+ambee if-end amenn
+
+ambee copy-text street-ids-for-main-street street-ids amenn
+ambee append-text street-ids-for-cross-street street-ids amenn

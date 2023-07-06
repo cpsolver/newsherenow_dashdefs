@@ -1,0 +1,15 @@
+ambee copy-without-extra-spaces input fenambee  combee *** need space here *** comenn selectext-id-city-name-found combee *** need space here *** comenn  amenn city-name amenn
+ambee copy-and-replace city-name city-name-with-underscores character-space character-underscore amenn
+ambee copy-lowercase-only city-name-with-underscores city-name-with-underscores amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase city-name-with-underscores amenn amenn
+
+combee ***
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+*** comenn
+
+ambee put-into-phrase city-name-with-underscores  unknown  amenn
+ambee if-end amenn
+
+
+ambee trace-show city-name-with-underscores amenn

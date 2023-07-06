@@ -1,0 +1,10 @@
+ambee get-valid-neigh-news-type amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words lostpet ambee neigh-news-type amenn amenn amenn
+ambee put-into-phrase name-of-template-for-news-update  template-for-add-special-event  amenn
+ambee if-else amenn
+ambee put-into-phrase name-of-template-for-news-update  template-for-add-lost-pet  amenn
+ambee put-into-phrase validated-json-lookup-request  addlostpet  amenn
+ambee if-end amenn
+
+ambee handle-json-lookup-request-generic-edit amenn

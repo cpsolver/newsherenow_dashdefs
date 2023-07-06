@@ -1,0 +1,3 @@
+news-id
+region-id-at-new-location
+<new_line>

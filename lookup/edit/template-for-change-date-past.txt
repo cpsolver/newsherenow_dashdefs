@@ -1,0 +1,19 @@
+entry_begin
+new-line
+uniqueid news-id
+new-line
+edited yes
+new-line
+combee *** the name "input-ip-address" is a special assignment by the CGI code *** comenn
+source input-ip-address template-update-time
+new-line
+newdatetime news-item-year news-item-month news-item-day-of-month news-item-day-of-week-number
+new-line
+newnewstype police
+new-line
+newduration duration-days
+new-line
+entry_end
+new-line
+template-writecheck-line
+new-line

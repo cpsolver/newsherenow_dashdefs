@@ -1,0 +1,12 @@
+validate-month-number-supplied
+validate-day-of-month-number-supplied
+edit-calculate-day-of-week
+validate-duration-supplied
+validate-news-id
+get-supplied-latitude-longitude-from-loc-item
+validate-supplied-latitude-longitude
+get-current-region-id-for-news-item
+save-old-location
+validate-get-news-info-from-current-file
+edit-generate-news-update-info-from-template
+handle-appending-news-update-info

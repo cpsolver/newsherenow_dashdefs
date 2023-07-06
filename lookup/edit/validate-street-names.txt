@@ -1,0 +1,19 @@
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-geolocate-street-name combee *** need space here *** comenn  amenn street-name-1 character-hyphen character-underscore amenn
+ambee copy-without-extra-spaces street-name-1 street-name-1  amenn
+ambee copy-and-replace street-name-1 street-name-1 character-space character-underscore amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase street-name-1  amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+ambee copy-and-replace input fenambee  combee *** need space here *** comenn selectext-id-geolocate-cross-street-name combee *** need space here *** comenn  amenn street-name-2 character-hyphen character-underscore amenn
+ambee copy-without-extra-spaces street-name-2 street-name-2  amenn
+ambee copy-and-replace street-name-2 street-name-2 character-space character-underscore amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase street-name-2  amenn amenn
+ambee put-into-phrase update-success-or-validation-error-type  error  amenn
+ambee if-end amenn
+
+
+ambee trace-show street-name-1 amenn
+ambee trace-show street-name-2 amenn

@@ -1,0 +1,14 @@
+ambee copy-text path-to-news dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-entry-for-news-in-different-region entry-for-news-in-different-region amenn
+ambee copy-text filename-news-moved-to-different-region target-filename amenn
+ambee copy-from-phrase-append-to-file entry-for-news-in-different-region ambee target-filename amenn amenn
+
+combee *** future_todo: verify new code works and data is used: *** comenn
+ambee copy-text path-to-news dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-region-ids-containing-news-just-moved-elsewhere target-filename amenn
+ambee copy-from-phrase-append-to-file region-id-at-old-location ambee target-filename amenn amenn
+
+
+ambee trace-show entry-for-news-in-different-region amenn
+ambee trace-show target-filename amenn
+ambee trace-show dashrep-path-prefix-for-file-writing amenn

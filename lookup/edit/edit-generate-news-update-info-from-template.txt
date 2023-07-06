@@ -1,0 +1,6 @@
+ambee calculate-comparison-minutes-since-begin-year-2000-based-on-current-time amenn
+ambee expand-text ambee name-of-template-for-news-update amenn content-news-update-to-append amenn
+
+
+ambee trace-show comparison-minutes-since-begin-year-2000 amenn
+ambee trace-show content-news-update-to-append amenn
