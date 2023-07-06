@@ -1,0 +1,3 @@
+Content hyphen-here type: application/json  <new_line>
+<new_line>
+{ "idAtrVal" : [ "unusedZeroItem","idServerError","contents","yes","unusedNoTrailingComma" ] }  <new_line>

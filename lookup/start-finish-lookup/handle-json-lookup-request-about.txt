@@ -1,0 +1,18 @@
+ambee copy-words-found-in-both-lists input fenambee  combee *** need space here *** comenn selectext-id-language combee *** need space here *** comenn  amenn list-of-valid-language-choices language-choice amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase language-choice amenn amenn
+ambee copy-text language-choice-en language-choice amenn
+ambee if-end amenn
+
+ambee copy-text path-to-dashdef dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-json-content-page-about-expanded filename-json-content-page-about-expanded amenn
+ambee copy-from-file-to-phrase ambee filename-json-content-page-about-expanded amenn json-content-about-without-content-type amenn
+ambee expand-text content-type-json standard-output amenn
+ambee append-text-no-space json-content-about-without-content-type standard-output amenn
+
+
+ambee trace-show language-choice amenn
+ambee trace-show list-of-valid-language-choices amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show template-filename-json-content-page-about-expanded amenn
+ambee trace-show filename-json-content-page-about-expanded amenn

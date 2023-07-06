@@ -1,0 +1,15 @@
+code-open-quote selectext-id-page-segment underscore-double-here selectext-busymessage code-close-quote no-space ,"display","block",
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-busymessage code-close-quote ,
+
+code-open-quote selectext-id-post-json-action code-close-quote no-space ,"contents", no-space code-open-quote selectext-busymessage code-close-quote ,
+
+code-open-quote selectext-id-nav-tab-current code-close-quote no-space ,"contents","" ,
+
+code-open-quote selectext-id-working-gif-gohere code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-working-gif-gps code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-working-gif-tab-biz code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-working-gif-tab-news code-close-quote no-space ,"display","none",

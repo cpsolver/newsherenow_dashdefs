@@ -1,0 +1,84 @@
+ambee trace-show-where amenn
+
+
+ambee put-into-phrase dashrep-endless-loop-counter-limit  900000000  amenn
+ambee put-into-phrase yes-or-no-access-granted-and-request-valid  yes  amenn
+ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epoch-seconds amenn  amenn
+ambee split-epoch-seconds-into-named-components-for-zero-meridian ambee epoch-seconds-starting-time amenn amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-reading  serverpathtotopfolder/dashdef/  amenn
+ambee copy-text dashrep-path-prefix-for-file-reading dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-list-of-valid-json-lookup-requests list-of-valid-json-lookup-requests-possibly-shortened amenn
+ambee put-into-phrase string-selectext-hyphen  selectext  amenn
+ambee append-text-no-space character-hyphen string-selectext-hyphen amenn
+ambee copy-and-replace template-list-of-valid-json-lookup-requests list-of-valid-json-lookup-requests string-selectext-hyphen empty-line amenn
+ambee copy-words-found-in-both-lists input fenambee  combee *** need space here *** comenn selectext-cgi-json-lookup-request combee *** need space here *** comenn  amenn list-of-valid-json-lookup-requests-possibly-shortened validated-json-lookup-request-possibly-shortened amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words ambee get-count-of-words template-list-of-valid-json-lookup-requests amenn ambee get-count-of-words list-of-valid-json-lookup-requests-possibly-shortened amenn amenn amenn
+ambee put-into-phrase yes-or-no-access-granted-and-request-valid  no  amenn
+ambee if-end amenn
+
+ambee put-into-phrase pointer-to-request-type  ambee get-position-of-word validated-json-lookup-request-possibly-shortened list-of-valid-json-lookup-requests-possibly-shortened amenn  amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee pointer-to-request-type amenn amenn amenn
+ambee copy-word-at-position list-of-valid-json-lookup-requests validated-json-lookup-request ambee pointer-to-request-type amenn amenn
+ambee if-else amenn
+ambee clear-phrase validated-json-lookup-request amenn
+ambee put-into-phrase yes-or-no-access-granted-and-request-valid  no  amenn
+ambee if-end amenn
+
+
+ambee trace-show validated-json-lookup-request amenn
+
+
+combee *** reminder: attempt to use "selectext-cgi-user-id" did not work, so switched back to using "user-id" *** comenn
+ambee copy-words-found-in-both-lists input-user-id list-of-valid-user-ids valid-user-id amenn
+
+combee *** reminder: "input-ip-address" is a special phrase name *** comenn
+ambee copy-words-found-in-both-lists input-ip-address list-of-blocked-ip-addresses blocked-ip-address-if-not-empty amenn
+
+ambee if-yes-begin ambee yes-or-no-access-granted-and-request-valid amenn amenn
+ambee put-into-phrase yes-or-no-access-granted-and-request-valid  ambee no-if-any-no ambee yes-or-no-opposite ambee yes-or-no-empty-phrase valid-user-id amenn amenn ambee yes-or-no-opposite ambee yes-or-no-empty-phrase validated-json-lookup-request amenn amenn ambee yes-or-no-empty-phrase blocked-ip-address-if-not-empty amenn amenn  amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists input-version compatibility-version-number validated-version-number amenn
+
+
+ambee trace-show input-raw-cgi-string amenn
+ambee trace-show input-version amenn
+ambee trace-show compatibility-version-number amenn
+ambee trace-show template-list-of-valid-json-lookup-requests amenn
+ambee trace-show list-of-valid-json-lookup-requests amenn
+ambee trace-show list-of-valid-json-lookup-requests-possibly-shortened amenn
+ambee trace-show validated-json-lookup-request-possibly-shortened amenn
+ambee trace-show pointer-to-request-type amenn
+ambee trace-show validated-version-number amenn
+ambee trace-show validated-json-lookup-request amenn
+
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase validated-version-number amenn amenn
+ambee put-into-phrase validated-json-lookup-request  versionmismatch  amenn
+ambee put-into-phrase yes-or-no-access-granted-and-request-valid  yes  amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists input-version compatibility-version-number-sandbox not-empty-if-sandbox-version amenn
+combee **** older version:
+ambee copy-words-found-in-both-lists input-user-id user-id-sandbox-version not-empty-if-sandbox-version amenn
+**** comenn
+
+
+ambee trace-show input-user-id amenn
+ambee trace-show list-of-valid-user-ids amenn
+ambee trace-show valid-user-id amenn
+ambee trace-show blocked-ip-address-if-not-empty amenn
+ambee trace-show yes-or-no-access-granted-and-request-valid amenn
+ambee trace-show validated-json-lookup-request amenn
+ambee trace-show not-empty-if-sandbox-version amenn
+ambee trace-show input-version amenn
+ambee trace-show compatibility-version-number-sandbox amenn
+
+
+ambee if-yes-begin ambee yes-or-no-access-granted-and-request-valid amenn amenn
+ambee handle-json-lookup-request fenambee validated-json-lookup-request amenn amenn
+ambee if-else amenn
+ambee handle-json-lookup-request-unrecognized amenn
+ambee if-end amenn

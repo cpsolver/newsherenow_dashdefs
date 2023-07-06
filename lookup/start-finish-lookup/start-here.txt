@@ -1,0 +1,10 @@
+ambee get-cgi-information amenn
+ambee check-if-lookup-access-granted amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions string-yes yes-or-no-access-granted-and-request-valid amenn amenn
+ambee handle-do-json-request amenn
+ambee do-after-sending-json-response amenn
+ambee if-else amenn
+ambee expand-text template-json-response-indicate-error json-response-indicate-error amenn
+ambee put-into-phrase dashrep-compiled-code-output-phrase-name json-response-indicate-error amenn
+ambee if-end amenn
