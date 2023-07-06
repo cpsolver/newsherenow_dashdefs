@@ -1,0 +1,23 @@
+ambee shorten-possible-postal-code-if-canadian amenn
+ambee put-into-phrase postal-code-first-two-characters  ambee get-characters-from-position-to-position possible-postal-code 1 2 amenn amenn
+ambee put-into-phrase postal-code-remaining-characters  ambee get-characters-from-position-to-position possible-postal-code 3 99 amenn amenn
+ambee append-text-no-space character-space postal-code-remaining-characters amenn
+ambee put-into-phrase file-name-with-postal-code-info  postal_codes_category_ nospay ambee postal-code-first-two-characters amenn nospay .txt amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-reading  ambee folder-containing-postal-code-files amenn amenn
+ambee find-line-in-file-that-begins-with-text ambee file-name-with-postal-code-info amenn postal-code-remaining-characters postal-code-info-line amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase postal-code-info-line amenn amenn
+ambee get-info-from-postal-code-info-line amenn
+ambee if-else amenn
+ambee clear-phrase postal-code-found amenn
+ambee clear-phrase city-name-found amenn
+ambee clear-phrase city-name amenn
+
+
+ambee trace-show postal-code-info-line amenn
+ambee trace-show postal-code-found amenn
+ambee trace-show city-name-found amenn
+ambee trace-show city-name amenn
+
+
+ambee if-end amenn

@@ -1,0 +1,26 @@
+ambee clear-phrase city-name-found amenn
+ambee copy-uppercase-only possible-postal-code postal-code amenn
+ambee copy-text postal-code postal-code-found amenn
+ambee copy-words-from-position-to-position postal-code-info-line latitude-integer 2 2  amenn
+ambee copy-words-from-position-to-position postal-code-info-line longitude-integer 3 3  amenn
+ambee copy-words-from-position-to-position postal-code-info-line city-name-with-underscores 4 4  amenn
+ambee copy-words-from-position-to-position postal-code-info-line state-abbreviation-capitalized 5 5  amenn
+ambee copy-and-replace city-name-with-underscores city-name character-underscore character-space amenn
+ambee copy-text city-name city-name-and-country-or-state amenn
+ambee append-text state-abbreviation-capitalized city-name-and-country-or-state amenn
+ambee put-into-phrase country-code-uppercase  US  amenn
+ambee put-into-phrase country-code  us  amenn
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+
+
+ambee trace-show postal-code-info-line amenn
+ambee trace-show postal-code amenn
+ambee trace-show postal-code-found amenn
+ambee trace-show city-name amenn
+ambee trace-show city-name-and-country-or-state amenn
+ambee trace-show city-name-found amenn
+ambee trace-show state-abbreviation-capitalized amenn
+ambee trace-show country-code amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
