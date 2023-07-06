@@ -1,0 +1,1 @@
+Impossible de trouver une intersection &#224; proximit&#233; de la latitude et de la longitude fournies. La cause de cet &#233;chec est inconnue. Votre position GPS fonctionne-t-elle avec d&#39;autres sites Web? Si tel est le cas, veuillez utiliser la page de contact pour signaler cette erreur et inclure le nom des rues les plus en intersection.

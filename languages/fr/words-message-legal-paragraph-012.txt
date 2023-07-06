@@ -1,0 +1,1 @@
+Ce site utilise le cryptage SSL (Secure Sockets Layer) pour prot&#233;ger votre confidentialit&#233;, chaque fois que des informations circulent entre votre ordinateur et nos serveurs. Toutefois, si vous utilisez un ordinateur partag&#233; avec d&#39;autres personnes, le cryptage SSL ne prot&#232;ge pas votre vie priv&#233;e des autres personnes qui l&#39;utilisent.

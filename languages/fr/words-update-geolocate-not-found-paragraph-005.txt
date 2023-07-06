@@ -1,0 +1,1 @@
+Les donn&#233;es Open Stree Map sont destin&#233;es &#224; la cartographie (cartographie), afin que les donn&#233;es ne soient pas toujours suffisamment compl&#232;tes pour identifier chaque intersection. (Plus pr&#233;cis&#233;ment, le nom de rue affich&#233; sur Open Street Map pourrait ne pas correspondre au nom de rue utilis&#233; &#224; cette intersection.)

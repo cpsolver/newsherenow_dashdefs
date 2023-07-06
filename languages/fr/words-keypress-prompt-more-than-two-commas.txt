@@ -1,0 +1,1 @@
+Ooops! Trop de virgules, seuls les &#233;l&#233;ments situ&#233;s &#224; gauche de la troisi&#232;me virgule seront utilis&#233;s

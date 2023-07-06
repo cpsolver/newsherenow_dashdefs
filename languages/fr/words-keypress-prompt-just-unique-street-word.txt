@@ -1,0 +1,1 @@
+Astuce: au lieu de saisir des noms de rue complets, tels que &#8220;dolphin way, southwest 5th street&#8221;, essayez uniquement les mots les plus uniques et les plus significatifs, tels que &#8220;dolphin, southwest 5th&#8221;.

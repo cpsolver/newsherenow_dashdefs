@@ -1,0 +1,7 @@
+Pourquoi faites avons-nous besoin de votre aide favorisant ce webapp ?
+sentence-next
+Puisque les webapps n&#39;apparaissent pas dans des magasins d&#39;APP, ainsi nous ne peut pas te demander une estimation cinq &#233;toiles.
+sentence-next
+Et parce que Google n&#39;enverra pas n&#39;importe qui &#224; ce webapp (m&#234;me si ils recherchent &#171; words-news-here-now-lowercase &#187;) parce que nous ne montrons pas des annonces de Google.
+sentence-next
+Et parce que les annonces sur Facebook ne sont abordables que lorsqu'elles sont cibl&#233;es sur un petit groupe sp&#233;cifique de personnes, mais nous devons atteindre presque tout le monde dans chaque grande ville.

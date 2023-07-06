@@ -1,0 +1,1 @@
+Oups, une erreur s&#39;est produite et le changement demand&#233; n&#39;a pas &#233;t&#233; apport&#233;. Un rapport de cette erreur a &#233;t&#233; envoy&#233; &#224; l&#39;administrateur du site. La pr&#233;vention des erreurs futures telles que celle-ci est maintenant inscrite sur la liste des t&#226;ches de l&#39;administrateur.

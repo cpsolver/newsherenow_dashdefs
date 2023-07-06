@@ -1,0 +1,1 @@
+Une largeur d&#39;&#233;cran &#233;troite est d&#233;tect&#233;e, la carte n&#39;est donc pas en pleine taille.

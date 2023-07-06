@@ -1,0 +1,1 @@
+Les recherches impliquant des codes postaux utilisent des donn&#233;es provenant de www.GeoNames.org. Certains gouvernements (comme le Canada) n&#39;autorisent pas l&#39;utilisation publique de tous les caract&#232;res dans leurs codes postaux. Dans ce cas, seuls les premiers caract&#232;res sont utilis&#233;s.

@@ -1,0 +1,1 @@
+Les sondages locaux ne peuvent pas &#234;tre affich&#233;s tant qu&#39;un emplacement n&#39;a pas &#233;t&#233; sp&#233;cifi&#233;.

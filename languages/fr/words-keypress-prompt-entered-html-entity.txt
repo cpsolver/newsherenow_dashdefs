@@ -1,0 +1,1 @@
+Oui, les entit&#233;s HTML sont autoris&#233;es, mais leur interpr&#233;tation n&#39;est pas encore pr&#233;visible.

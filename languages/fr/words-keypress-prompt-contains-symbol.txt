@@ -1,0 +1,1 @@
+Ooops! Les symboles tels que les points-virgules (;) et les underscores () ne sont pas autoris&#233;s. Seules les virgules (,) et les traits d&#39;union (-) sont autoris&#233;s

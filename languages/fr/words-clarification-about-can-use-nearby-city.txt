@@ -1,0 +1,1 @@
+Pensez &#233;galement &#224; utiliser un nom de ville &#224; proximit&#233; avec les m&#234;mes noms de rue. Par exemple, italics-begin fort worth, chestnut, 23 italics-end et italics-begin dallas, chestnut, 23 italics-end vont au m&#234;me croisement. (Les limites sont ignor&#233;es.)

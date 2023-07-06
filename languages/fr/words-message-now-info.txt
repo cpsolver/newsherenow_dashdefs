@@ -1,0 +1,8 @@
+Il s&#8217;agit de l&#8217;heure standard estim&#233;e &#224; cet endroit.
+sentence-next
+L&#8217;heure r&#233;elle &#224; cet endroit est inconnue car
+ce site Web ne permet pas de suivre
+limites de fuseau horaire choisies politiquement
+ou open-quote r&#233;glages de l&#8217;heure d&#8217;&#233;t&#233; close-quote no-space .
+sentence-next
+Les nouvelles sont mises &#224; jour r&#233;guli&#232;rement, mais pas instantan&#233;ment.

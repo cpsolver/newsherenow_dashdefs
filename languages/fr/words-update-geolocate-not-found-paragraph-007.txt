@@ -1,0 +1,1 @@
+Vous pouvez rechercher les noms de rue &#224; une intersection proche et utiliser cette intersection &#224; la place. (L&#39;utilisation de l&#39;intersection correcte n&#39;est pas requise.)

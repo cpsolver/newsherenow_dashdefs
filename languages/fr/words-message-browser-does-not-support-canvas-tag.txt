@@ -1,0 +1,1 @@
+Votre navigateur ne supporte pas la balise canvas.

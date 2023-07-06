@@ -1,0 +1,1 @@
+Les exemples montrent ce qui peut &#234;tre saisi dans la bo&#238;te. Apr&#232;s avoir cliqu&#233; sur un exemple de bouton, vous pouvez revenir ici (dans l&#39;onglet WHERE) pour voir comment l&#39;emplacement a &#233;t&#233; sp&#233;cifi&#233;.

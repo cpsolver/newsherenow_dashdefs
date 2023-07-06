@@ -1,0 +1,1 @@
+Affichez l&#39;emplacement de cet &#233;v&#233;nement planifi&#233; &#224; l&#39;aide de la vue satellite Apple ou Google.
