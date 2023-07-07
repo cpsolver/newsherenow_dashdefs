@@ -1,0 +1,100 @@
+combee *** reminder: selection here is done using the "show" and "hide" pseudo-attributes, but they only apply to class names, not id names *** comenn
+combee *** reminder: id names (that can be shortened) are needed here even though they are not specified elsewhere in the code *** comenn
+
+combee *** success *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-group-id-show-hide-yes-updated specify-end
+specify-id selectext-id-show-hide-yes-updated specify-end
+
+heading-level-1-begin
+words-update-heading-success
+heading-level-1-end
+
+paragraph-begin
+words-update-change-has-been-made
+paragraph-end
+
+paragraph-begin
+words-update-thanks-for-updating-news
+paragraph-end
+
+div-end
+
+combee *** geolocate not found *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-group-id-show-hide-geolocate-not-found specify-end
+specify-id selectext-id-show-hide-geolocate-not-found specify-end
+
+heading-level-1-begin
+words-update-heading-geolocate-not-found
+heading-level-1-end
+
+paragraphs-update-geolocate-not-found
+
+div-end
+
+combee *** new domain name *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-group-id-show-hide-new-domain specify-end
+specify-id selectext-id-show-hide-new-domain specify-end
+
+heading-level-1-begin
+words-update-heading-domain-not-yet-approved
+heading-level-1-end
+
+paragraph-begin
+words-update-domain-not-yet-approved-paragraph-001
+paragraph-next
+words-update-domain-not-yet-approved-paragraph-002
+paragraph-next
+words-update-domain-not-yet-approved-paragraph-003
+
+paragraph-end
+
+div-end
+
+combee *** duplicate URL *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-group-id-show-hide-url-duplicate specify-end
+specify-id selectext-id-show-hide-url-duplicate specify-end
+
+heading-level-1-begin
+words-update-heading-url-already-used
+heading-level-1-end
+
+paragraph-begin
+words-update-url-already-used
+paragraph-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-latlonloc javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-go-to-duplicate-news-item specify-end
+words-button-go-to-location-of-duplicate-news-item
+button-end
+
+div-end
+
+combee *** error *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-group-id-show-hide-not-updated specify-end
+specify-id selectext-id-show-hide-not-updated specify-end
+
+heading-level-1-begin
+words-update-heading-error
+heading-level-1-end
+
+paragraph-begin
+words-update-error-news-not-updated
+paragraph-end
+
+paragraph-begin
+words-update-error-updating-news
+paragraph-end
+
+div-end

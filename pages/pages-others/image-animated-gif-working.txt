@@ -1,0 +1,22 @@
+image-here
+
+specify-css-class
+class-style-animated-gif-working
+specify-end
+
+combee ****
+reminder: height and width cannot be applied to img tag using class name and stylesheet
+**** comenn
+specify-style
+width:40px;
+no-space
+height:40px;
+specify-end
+
+specify-image-url
+url-prefix-for-image-in-image-folder animated_gif_working.gif
+specify-end
+
+specify-alternate-text
+working ...
+specify-end

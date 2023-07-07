@@ -1,0 +1,99 @@
+heading-level-1-begin specify-style style-centered-text specify-end words-contact-us-heading heading-level-1-end
+heading-level-2-begin specify-style style-centered-text specify-end words-contact-us-tagline heading-level-2-end
+
+vertical-gap-tiny
+
+paragraph-begin
+words-contact-us-send-email
+paragraph-end
+
+vertical-gap-tiny
+
+combee
+older, form based version:
+
+paragraph-begin
+specify-id selectext-id-contact-message-empty specify-end
+specify-style style-hide specify-end
+words-contact-message-empty
+paragraph-end
+
+div-begin
+specify-style style-centered-block-or-image no-space width:450px; no-space
+
+margin hyphen-here left:auto;
+no-space
+margin hyphen-here right:auto;
+
+specify-end
+
+div-begin specify-style style-text-align-left specify-end
+
+form-item-title-begin words-your-email form-item-title-end
+
+form-text-entry
+specify-css-class selectext-need-for-contact-message underscore-double-here selectext-value specify-end
+specify-id selectext-id-contact-email specify-end
+specify-size style-value-length-of-form-input-line specify-end
+specify-maxlength 150 specify-end
+specify-name selectext-email-address specify-end
+specify-value specify-end
+specify-text-entry-tip <words_not_interpreted_input_prompt_optional_email> specify-end
+specify-tab-index 1 specify-end
+
+vertical-gap-tiny
+
+form-item-title-begin words-your-message-used-in-contact-page form-item-title-end
+
+form-text-entry-multi-line-begin
+specify-css-class selectext-need-for-contact-message underscore-double-here selectext-textarea specify-end
+specify-id selectext-id-contact-message specify-end
+specify-width style-width-of-form-input-line specify-end
+specify-maxlength 20000 specify-end
+specify-rows 10 specify-end
+specify-cols 50 specify-end
+specify-wrap off specify-end
+specify-name selectext-contact-message specify-end
+specify-text-entry-tip <words_not_interpreted_input_prompt_contact_message> specify-end
+specify-tab-index 2 specify-end
+form-text-entry-multi-line-end
+
+vertical-gap-tiny
+
+form-item-title-begin words-supplied-url form-item-title-end
+
+form-text-entry
+specify-css-class selectext-need-for-contact-message underscore-double-here selectext-value specify-end
+specify-id selectext-id-contact-url specify-end
+specify-size style-value-length-of-form-input-line specify-end
+specify-maxlength 150 specify-end
+specify-name selectext-contact-url specify-end
+specify-value specify-end
+specify-text-entry-tip <words_not_interpreted_input_prompt_optional_url> specify-end
+specify-tab-index 1 specify-end
+
+vertical-gap-tiny
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-id selectext-id-button-send-contact-message specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-contactmessagesend javascript-handle-click-button-end specify-end
+words-contact-us-button
+button-end
+vertical-gap-tiny
+no-space <new_line> no-space
+
+paragraph-begin
+words-contact-us-instructions
+paragraph-end
+
+comenn
+
+
+paragraph-begin
+words-contact-us-postal-address
+paragraph-end
+
+div-end
+
+div-end

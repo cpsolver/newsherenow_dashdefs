@@ -1,0 +1,53 @@
+vertical-gap-tiny
+
+heading-level-2-begin
+
+characters-span-begin
+specify-id selectext-id-day-of-week specify-end
+no-space
+characters-span-end
+
+word-between-day-of-week-and-year
+
+characters-span-begin
+specify-id selectext-id-year specify-end
+no-space
+characters-span-end
+
+word-between-year-and-month
+
+characters-span-begin
+specify-id selectext-id-month-name specify-end
+no-space
+characters-span-end
+
+word-between-month-and-day
+
+characters-span-begin
+specify-id selectext-id-day-of-month specify-end
+no-space
+characters-span-end
+
+word-between-day-of-month-and-time
+
+characters-span-begin
+specify-id selectext-id-hour specify-end
+no-space
+characters-span-end
+
+word-between-hour-and-minute
+
+characters-span-begin
+specify-id selectext-id-minute specify-end
+no-space
+characters-span-end
+
+words-hour-date-is-estimated-in-parentheses
+
+heading-level-2-end
+
+vertical-gap-tiny
+
+paragraph-begin
+words-message-now-info
+paragraph-end

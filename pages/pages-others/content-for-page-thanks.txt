@@ -1,0 +1,31 @@
+heading-level-1-begin words-page-title-thanks heading-level-1-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-01
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-02
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-10
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-03
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-04
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-thanks specify-end
+words-credits-and-thanks-paragraph-05
+paragraph-end
