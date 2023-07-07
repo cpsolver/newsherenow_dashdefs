@@ -1,0 +1,76 @@
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-ask-where selectext-show-hide underscore-double-here selectext-have-location specify-end
+specify-style style-hide specify-end
+specify-id selectext-id-div-page-back specify-end
+
+paragraph-begin
+words-message-page-back-paragraph-01
+paragraph-end
+
+side-by-side-floating-begin
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-loc-saved specify-end
+specify-id selectext-id-button-have-location underscore-double-here 1 specify-end
+specify-style style-hide specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-locsaved underscore-double-here 1 javascript-handle-click-button-end specify-end
+words-get-news-at
+characters-span-begin
+specify-css-class selectext-save-in-browser selectext-group-saved-name-prefix specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 1 specify-end
+no-space
+characters-span-end
+button-end
+
+side-by-side-floating-middle-not-last
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-loc-saved specify-end
+specify-id selectext-id-button-have-location underscore-double-here 2 specify-end
+specify-style style-hide specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-locsaved underscore-double-here 2 javascript-handle-click-button-end specify-end
+words-get-news-at
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 2 specify-end
+no-space
+characters-span-end
+button-end
+
+side-by-side-floating-middle-not-last
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-loc-saved specify-end
+specify-id selectext-id-button-have-location underscore-double-here 3 specify-end
+specify-style style-hide specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-locsaved underscore-double-here 3 javascript-handle-click-button-end specify-end
+words-get-news-at
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 3 specify-end
+no-space
+characters-span-end
+button-end
+
+side-by-side-floating-middle-last
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-loc-saved class-style-color-background-lighter specify-end
+specify-id selectext-id-button-delete-saved specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-deletesaved javascript-handle-click-button-end specify-end
+words-button-delete-saved-locations
+button-end
+
+side-by-side-floating-end
+
+div-end
+
+<new_line>
+
+vertical-gap-tiny
+
+paragraph-begin
+non-breaking-space
+paragraph-end
+
+<new_line>

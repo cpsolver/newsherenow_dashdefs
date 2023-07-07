@@ -1,0 +1,51 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-osm-map-tiles-needed amenn amenn
+ambee copy-from-phrase-append-to-file list-of-osm-map-tiles-needed ambee filename-list-of-needed-map-tiles amenn amenn
+ambee if-end amenn
+
+ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+ambee copy-text elapsed-time line-of-info-for-log-file amenn
+ambee append-text input-raw-cgi-string line-of-info-for-log-file amenn
+ambee copy-from-phrase-append-to-file line-of-info-for-log-file log-of-cgi-info.txt amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase yes-or-no-intersection-just-found amenn amenn
+ambee put-into-phrase yes-or-no-intersection-just-found  no  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase city-name-with-underscores amenn amenn
+ambee put-into-phrase yes-or-no-intersection-just-found  no  amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase state-or-province-uppercase amenn amenn
+ambee copy-text two-question-marks state-or-province-uppercase amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase country-code-uppercase amenn amenn
+ambee copy-text two-question-marks country-code-uppercase amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-intersection-just-found amenn amenn
+ambee copy-words-found-only-in-first-list location-words character-question-mark location-words-without-question-marks amenn
+ambee copy-and-replace location-words-without-question-marks location-words-with-underscores-and-commas character-space character-comma amenn
+ambee expand-text template-info-for-intersection-just-found output-line-of-info-for-intersection-just-found amenn
+
+
+ambee trace-show output-line-of-info-for-intersection-just-found amenn
+
+
+ambee copy-text path-to-file-containing-locations-previously-found dashrep-path-prefix-for-file-writing amenn
+
+combee
+ToDo: re-enable when location bugs have been fixed:
+ambee copy-from-phrase-append-to-file output-line-of-info-for-intersection-just-found ambee filename-for-locations-previously-found amenn amenn
+comenn
+
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase not-empty-if-sandbox-version amenn amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-writing  ambee path-to-dashdef amenn  amenn
+ambee write-all-definitions-to-output-file amenn
+ambee if-end amenn
