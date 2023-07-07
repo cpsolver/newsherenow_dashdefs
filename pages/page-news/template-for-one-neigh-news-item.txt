@@ -1,0 +1,78 @@
+div-begin
+specify-css-class selectext-news-item-container class-style-news-item-container class-style-rectangle-rounded-medium class-style-color-rectangle-background specify-end
+specify-begin-special-news-id selectext-container specify-end
+specify-style style-hide specify-end
+
+combee ***
+note: all content is inserted by javascript code, based on info sent via json format
+*** comenn
+
+paragraph-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-padding-large class-style-font-title-readable specify-end
+combee *** following style did not override h2 default when used as class *** comenn
+specify-style style-news-title style-centered-text style-cursor-hand specify-end
+specify-begin-special-news-id selectext-needed-internally specify-end
+specify-javascript-click-goes-to-page-map
+no-space
+characters-span-begin
+specify-begin-special-news-id selectext-title specify-end
+characters-span-end
+one-space
+characters-span-begin
+specify-css-class class-style-item-has-website specify-end
+specify-style style-inline specify-end
+one-space
+word-string-indicating-item-has-website
+characters-span-end
+no-space
+paragraph-end
+
+div-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-rectangle-rounded-medium class-style-color-rectangle-background-lighter specify-end
+specify-style style-cursor-hand specify-end
+specify-javascript-click-goes-to-page-map
+specify-begin-special-news-id selectext-colorize-distance specify-end
+
+paragraph-begin
+specify-css-class class-style-font-size-paragraph-medium class-style-margin-none class-style-padding-none specify-end
+characters-span-begin
+specify-begin-special-news-id selectext-adr specify-end
+specify-style style-inline specify-end
+characters-span-end
+one-space
+characters-span-begin
+specify-begin-special-news-id selectext-street specify-end
+specify-style style-inline specify-end
+characters-span-end
+line-break
+word-character-open-parenthesis no-space word-near-before-cross-street
+characters-span-begin
+specify-begin-special-news-id selectext-crossstreet specify-end
+specify-style style-inline specify-end
+characters-span-end
+no-space word-character-close-parenthesis
+line-break
+characters-span-begin
+specify-begin-special-news-id selectext-kilometers specify-end
+specify-style style-inline specify-end
+characters-span-end
+one-space
+characters-span-begin
+specify-begin-special-news-id selectext-closest-farthest specify-end
+specify-style style-inline specify-end
+characters-span-end
+paragraph-end
+
+div-end
+
+paragraph-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-font-size-paragraph-medium class-style-rectangle-rounded-medium class-style-color-rectangle-background-lighter specify-end
+specify-style style-cursor-hand specify-end
+specify-begin-special-news-id selectext-when specify-end
+specify-javascript-click-goes-to-page-map
+no-space
+paragraph-end
+
+hidden-paragraph-storage-for-one-news-item
+
+div-end

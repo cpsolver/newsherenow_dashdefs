@@ -1,0 +1,38 @@
+ambee put-into-phrase news-type  polls  amenn
+ambee put-into-phrase number-of-rows  2  amenn
+ambee put-into-phrase number-of-columns  3  amenn
+ambee put-into-phrase grid-name  polls  amenn
+ambee put-into-phrase grid-name-for-css-class  polls  amenn
+ambee put-into-phrase grid-style-type  polls  amenn
+ambee put-into-phrase grid-item-count  ambee numeric-multiply ambee number-of-columns amenn ambee number-of-rows amenn  amenn  amenn
+ambee generate-counts-from-integer-to-integer 1 ambee grid-item-count amenn list-of-counts-for-generating-news-item-placeholders amenn
+ambee generate-news-item-placeholders-for-one-news-type amenn
+
+ambee put-into-phrase number-of-columns  3  amenn
+ambee put-into-phrase number-of-rows  3  amenn
+ambee put-into-phrase grid-item-count  ambee numeric-multiply ambee number-of-columns amenn ambee number-of-rows amenn  amenn  amenn
+ambee generate-counts-from-integer-to-integer 1 ambee grid-item-count amenn list-of-counts-for-generating-news-item-placeholders amenn
+
+ambee put-into-phrase news-type  neigh  amenn
+ambee copy-text news-type grid-name amenn
+ambee copy-text news-type grid-style-type amenn
+ambee copy-text grid-style-type grid-name-for-css-class amenn
+ambee generate-news-item-placeholders-for-one-news-type amenn
+
+ambee put-into-phrase news-type  police  amenn
+ambee copy-text news-type grid-name amenn
+ambee copy-text news-type grid-style-type amenn
+ambee copy-text grid-style-type grid-name-for-css-class amenn
+ambee generate-news-item-placeholders-for-one-news-type amenn
+
+ambee put-into-phrase news-type  sched  amenn
+ambee copy-text news-type grid-name amenn
+ambee copy-text news-type grid-style-type amenn
+ambee copy-text grid-style-type grid-name-for-css-class amenn
+ambee generate-news-item-placeholders-for-one-news-type amenn
+
+ambee put-into-phrase news-type  deleted  amenn
+ambee copy-text news-type grid-name amenn
+ambee copy-text news-type grid-style-type amenn
+ambee copy-text grid-style-type grid-name-for-css-class amenn
+ambee generate-news-item-placeholders-for-one-news-type amenn

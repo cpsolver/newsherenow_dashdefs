@@ -1,0 +1,25 @@
+div-begin
+specify-css-class class-style-box-around-one-news-type specify-end
+specify-id selectext-box-around-news-type-<news_type> specify-end
+
+heading-level-2-begin
+specify-css-class class-style-news-type-title specify-end
+title-for-news-type-<news_type>
+heading-level-2-end
+
+div-begin
+specify-id selectext-id-div-news-type underscore-double-here <news_type> specify-end
+
+news-grid-type-<news_type>
+
+div-end
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here specify-end
+specify-id selectext-id-no-news-of-type underscore-double-here <news_type> specify-end
+specify-style style-hide specify-end
+words-no-news-here-of-news-type-<news_type>
+paragraph-end
+
+div-end
+vertical-gap-tiny

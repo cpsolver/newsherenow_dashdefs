@@ -1,0 +1,3 @@
+paragraph-begin
+button to get news (have location)
+paragraph-end

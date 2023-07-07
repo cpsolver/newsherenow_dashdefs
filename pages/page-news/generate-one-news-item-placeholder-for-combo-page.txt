@@ -1,0 +1,3 @@
+ambee generate-current-grid-row-column-identifier amenn
+ambee expand-text template-for-one fenambee news-type amennfen news-item contents-grid-named fenambee news-type amennfen row fenambee row-number amennfen column fenambee column-number amenn amenn
+ambee count-next-row-and-column-number amenn

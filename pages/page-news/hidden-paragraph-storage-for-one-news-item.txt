@@ -1,0 +1,47 @@
+paragraph-begin
+specify-css-class class-style-margin-none class-style-padding-none specify-end
+specify-style style-hide specify-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-colortime specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-color-distance specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-intersection specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-kilometers-hundredths specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-datetime specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-loc specify-end
+characters-span-end
+
+combee ***
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-sourceloc specify-end
+characters-span-end
+*** comenn
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-newsid specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-website specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-news underscore-double-here current-grid-row-column-identifier underscore-double-here selectext-neighnewstype specify-end
+characters-span-end
+
+paragraph-end

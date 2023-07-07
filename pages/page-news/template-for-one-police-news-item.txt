@@ -1,0 +1,103 @@
+div-begin specify-css-class selectext-news-item-container class-style-rectangle-rounded-medium class-style-color-rectangle-background class-style-news-div specify-end
+specify-begin-special-news-id selectext-container specify-end
+specify-style style-hide style-cursor-hand specify-end
+specify-javascript-click-goes-to-page-map
+
+combee ***
+note: all content is inserted by javascript code, based on info sent via json format
+*** comenn
+
+paragraph-begin specify-css-class class-style-news-title selectext-news-item-info class-style-padding-large class-style-font-title-readable specify-end
+combee ***
+todo: trying again ...
+following news-title style did not override h2 default when used as class 
+specify-style style-news-title specify-end
+*** comenn
+specify-begin-special-news-id selectext-title specify-end
+title-value-for-unique-id-empty
+paragraph-end
+
+paragraph-begin specify-css-class selectext-news-item-info class-style-news-keywords specify-end
+specify-begin-special-news-id selectext-keywords specify-end
+keywords-value-for-unique-id-empty
+paragraph-end
+
+paragraph-begin specify-css-class selectext-news-item-info class-style-rectangle-rounded-medium class-style-font-size-paragraph-medium class-style-color-rectangle-background-lighter specify-end
+specify-begin-special-news-id selectext-where specify-end
+news-item-where
+paragraph-end
+
+paragraph-begin specify-css-class selectext-news-item-info class-style-rectangle-rounded-medium class-style-font-size-paragraph-medium class-style-color-rectangle-background-lighter specify-end
+specify-begin-special-news-id selectext-when specify-end
+news-item-when
+paragraph-end
+
+combee ****
+reminder: although no longer support full description on grid page,
+still need full description stored here for copy to info page
+**** comenn
+div-begin
+specify-style style-hide specify-end
+specify-begin-special-news-id selectext-div-description-full specify-end
+combee ****
+specify-css-class class-style-color-rectangle-background-lighter class-style-rectangle-rounded-medium selectext-description-full specify-end
+**** comenn
+paragraph-begin
+specify-begin-special-news-id selectext-description specify-end
+combee ****
+specify-css-class selectext-news-item-info class-style-font-size-paragraph-medium specify-end
+**** comenn
+paragraph-end
+combee ****
+vertical-gap
+button-begin
+specify-css-class class-style-button-clickable specify-end
+words-button-show-short-description
+button-end
+**** comenn
+div-end
+
+div-begin
+specify-css-class class-style-color-rectangle-background-lighter class-style-rectangle-rounded-medium selectext-short-description specify-end
+specify-begin-special-news-id selectext-div-description-short specify-end
+paragraph-begin
+specify-style style-show specify-end
+no-space
+characters-span-begin
+specify-css-class selectext-news-item-info class-style-font-size-paragraph-medium specify-end
+specify-begin-special-news-id selectext-short-description-nofade specify-end
+characters-span-end
+no-space
+characters-span-begin
+specify-begin-special-news-id selectext-short-description-fade-4 specify-end
+specify-style style-opacity-fade-4 specify-end
+characters-span-end
+no-space
+characters-span-begin
+specify-begin-special-news-id selectext-short-description-fade-3 specify-end
+specify-style style-opacity-fade-3 specify-end
+characters-span-end
+no-space
+characters-span-begin
+specify-begin-special-news-id selectext-short-description-fade-2 specify-end
+specify-style style-opacity-fade-2 specify-end
+characters-span-end
+no-space
+characters-span-begin
+specify-begin-special-news-id selectext-short-description-fade-1 specify-end
+specify-style style-opacity-fade-1 specify-end
+characters-span-end
+no-space
+paragraph-end
+
+div-end
+
+paragraph-begin
+specify-begin-special-news-id selectext-keywordcodes specify-end
+specify-style style-hide specify-end
+keywords-value-for-unique-id-empty
+paragraph-end
+
+hidden-paragraph-storage-for-one-news-item
+
+div-end

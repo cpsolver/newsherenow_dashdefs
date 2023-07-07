@@ -1,0 +1,5 @@
+ambee generate-grid-full amenn
+ambee reset-count-next-row-and-column-number amenn
+ambee use-handler-with-each-word-in-phrase generate-one-news-item-placeholder-for-combo-page list-of-counts-for-generating-news-item-placeholders amenn
+ambee copy-and-replace content-news-type-begin content-news-type fenambee news-type amennfen begin placeholder-bracketed-news-type news-type amenn
+ambee copy-and-replace content-news-type-end content-news-type fenambee news-type amennfen end placeholder-bracketed-news-type news-type amenn

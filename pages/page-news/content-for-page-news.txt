@@ -1,0 +1,67 @@
+heading-level-1-begin
+words-heading-neighborhood-news
+heading-level-1-end
+
+heading-level-2-begin
+specify-css-class class-style-location-name selectext-group-copy specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-page-news specify-end
+combee *** default words, will be changed before these words are un-hidden *** comenn
+words-police-blotter
+heading-level-2-end
+
+div-begin
+specify-css-class class-style-rectangle-around-news-items specify-end
+specify-id selectext-id-rectangle-around-news-items specify-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-above-map-tiles class-style-wink specify-end
+specify-id selectext-id-click-button-for-detailed-news specify-end
+words-click-news-button-for-details
+paragraph-end
+
+div-begin specify-id selectext-id-news-type underscore-double-here selectext-yardsales specify-end
+specify-style style-show specify-end
+content-news-type-neigh-begin
+generated-grid-floating-named-neigh
+content-news-type-neigh-end
+div-end
+
+vertical-gap
+
+div-begin specify-id selectext-id-news-type underscore-double-here selectext-police specify-end
+specify-style style-show specify-end
+content-news-type-police-begin
+generated-grid-floating-named-police
+content-news-type-police-end
+div-end
+
+vertical-gap
+
+div-begin specify-id selectext-id-news-type underscore-double-here selectext-policesched specify-end
+specify-style style-show specify-end
+content-news-type-sched-begin
+generated-grid-floating-named-sched
+content-news-type-sched-end
+div-end
+
+combee **** todo: when deleted news items code works, un-hide this code:
+
+vertical-gap
+
+div-begin specify-id selectext-id-news-type underscore-double-here selectext-deleteditems specify-end
+specify-style style-hide specify-end
+content-news-type-deleted-begin
+generated-grid-floating-named-deleted
+content-news-type-deleted-end
+vertical-gap
+div-end
+
+**** comenn
+
+new-line
+
+vertical-clear
+
+div-end
+
+paragraph-begin words-copyright-for-copyrighted-news paragraph-end

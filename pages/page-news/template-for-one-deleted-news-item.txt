@@ -1,0 +1,32 @@
+div-begin
+specify-css-class selectext-news-item-container class-style-news-item-container class-style-rectangle-rounded-medium class-style-color-rectangle-background specify-end
+specify-begin-special-news-id selectext-container specify-end
+specify-style style-hide specify-end
+
+combee ***
+note: all content is inserted by javascript code, based on info sent via json format
+*** comenn
+
+combee *** future_todo: deleted items category; must accomodate both neigh news and police news *** comenn
+
+paragraph-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-padding-large class-style-font-title-readable specify-end
+combee *** following style did not override h2 default when used as class *** comenn
+specify-style style-news-title style-centered-text specify-end
+specify-begin-special-news-id selectext-title specify-end
+paragraph-end
+
+paragraph-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-padding-large specify-end
+specify-begin-special-news-id selectext-url specify-end
+paragraph-end
+
+paragraph-begin
+specify-css-class combee *** selectext-news-item-info *** comenn class-style-padding-large specify-end
+specify-style style-hide specify-end
+specify-begin-special-news-id selectext-neigh-news-type specify-end
+paragraph-end
+
+div-end
+
+div-end

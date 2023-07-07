@@ -1,0 +1,11 @@
+div-end
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here specify-end
+specify-id selectext-id-no-news-of-type underscore-double-here <news_type> specify-end
+specify-style style-hide specify-end
+words-no-news-here-of-news-type-<news_type>
+paragraph-end
+
+div-end
+vertical-gap-tiny

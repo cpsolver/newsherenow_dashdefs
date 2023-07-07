@@ -1,0 +1,8 @@
+news-row-begin
+div-begin specify-style style-inline no-space style-news-item-first-and-last specify-end
+characters-span-begin specify-style style-no-wrap specify-end
+words-end-of-news-sources
+characters-span-end
+div-end
+new-line
+news-row-end

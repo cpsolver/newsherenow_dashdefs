@@ -1,0 +1,2 @@
+div-begin specify-style style-horizontal-inline-aligned-left no-space line-height:40px; specify-end
+new-line

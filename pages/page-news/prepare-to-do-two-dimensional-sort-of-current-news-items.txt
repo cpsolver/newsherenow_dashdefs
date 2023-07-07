@@ -1,0 +1,14 @@
+ambee copy-text word-to-use-in-handler news-id amenn
+
+
+ambee trace-show distance-to-news-id fenambee news-id amenn amenn
+ambee trace-show compartime-value-for-unique-id fenambee news-id amenn amenn
+
+
+ambee append-text distance-to-news-id fenambee news-id amenn list-of-distance-values-for-current-news-type amenn
+ambee append-text compartime-value-for-unique-id fenambee news-id amenn list-of-compartime-values-for-current-news-type amenn
+
+
+combee ***
+determine closest and farthest by both time and distance.
+*** comenn

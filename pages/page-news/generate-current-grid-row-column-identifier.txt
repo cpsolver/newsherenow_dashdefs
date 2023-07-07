@@ -1,0 +1,6 @@
+ambee copy-text prefix-letter-for-grid-letter current-grid-row-column-identifier amenn
+ambee append-text-no-space news-type-combo-letter-for-news-type fenambee news-type amenn current-grid-row-column-identifier amenn
+ambee append-text-no-space prefix-letter-for-row-number current-grid-row-column-identifier amenn
+ambee append-text-no-space row-number current-grid-row-column-identifier amenn
+ambee append-text-no-space prefix-letter-for-column-number current-grid-row-column-identifier amenn
+ambee append-text-no-space column-number current-grid-row-column-identifier amenn
