@@ -1,0 +1,6 @@
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-cal-day underscore-double-here ambee calendar-position-number amenn specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-cal-day javascript-click-put-info-middle ambee calendar-position-number amenn javascript-click-put-info-end specify-end
+question-mark
+button-end

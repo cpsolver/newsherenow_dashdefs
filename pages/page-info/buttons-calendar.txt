@@ -1,0 +1,95 @@
+side-by-side-begin
+
+div-begin
+specify-css-class class-style-calendar-background-one-month specify-end
+
+paragraph-begin
+specify-css-class class-style-calendar-month-name specify-end
+specify-id selectext-id-month-name-one specify-end
+combee ***
+month name supplied by Javascript code
+*** comenn
+paragraph-end
+
+table-begin
+specify-css-class class-style-grid-table-calendar specify-end
+specify-id selectext-id-grid underscore-double-here selectext-calendar specify-end
+<new_line>
+
+combee *** The buttons in both months must be within the same button group name *** comenn
+ambee put-into-phrase grid-name  calendar  amenn
+ambee put-into-phrase grid-style-type  calendar  amenn
+
+ambee put-into-phrase row-number  100  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  1  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  2  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  3  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  4  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  5  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  6  amenn
+ambee calendar-one-row amenn
+
+table-end
+<new_line>
+
+div-end
+<new_line>
+
+side-by-side-middle-last
+
+div-begin
+specify-css-class class-style-calendar-background-one-month specify-end
+
+paragraph-begin
+specify-css-class class-style-calendar-month-name specify-end
+specify-id selectext-id-month-name-two specify-end
+combee ***
+month name supplied by Javascript code
+*** comenn
+paragraph-end
+
+table-begin
+specify-css-class class-style-grid-table-calendar specify-end
+specify-id selectext-id-grid underscore-double-here selectext-calendar specify-end
+<new_line>
+
+ambee put-into-phrase row-number  101  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  7  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  8  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  9  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  10  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  11  amenn
+ambee calendar-one-row amenn
+<new_line>
+ambee put-into-phrase row-number  12  amenn
+ambee calendar-one-row amenn
+
+table-end
+<new_line>
+
+div-end
+<new_line>
+
+side-by-side-end

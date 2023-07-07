@@ -1,0 +1,5 @@
+ambee copy-text word-to-use-in-handler column-number amenn
+ambee put-into-phrase row-number  100  amenn
+ambee expand-text template-calendar-day-of-week-name contents-grid-named-calendar-row-100-column fenambee column-number amenn amenn
+ambee put-into-phrase row-number  101  amenn
+ambee expand-text template-calendar-day-of-week-name contents-grid-named-calendar-row-101-column fenambee column-number amenn amenn

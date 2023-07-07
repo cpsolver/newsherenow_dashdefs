@@ -1,0 +1,1049 @@
+combee ***
+content for all items here are supplied by Javascript code
+*** comenn
+
+
+combee *** location *** comenn
+
+heading-level-2-begin
+
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent selectext-group-copy specify-end
+specify-id selectext-id-intersection-only-name underscore-double-here selectext-page-info specify-end
+specify-style style-show specify-end
+no-space
+characters-span-end
+
+no-space
+
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addnewssource selectext-need-for-geolocate selectext-group-copy specify-end
+specify-id selectext-id-city-name-and-country-or-state underscore-double-here selectext-page-info specify-end
+specify-style style-show specify-end
+no-space
+characters-span-end
+
+no-space
+
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname selectext-show-hide underscore-double-here selectext-editdatepast selectext-show-hide underscore-double-here selectext-editdatefuture selectext-show-hide underscore-double-here selectext-editdelete specify-end
+specify-id selectext-id-page-info-news-title specify-end
+specify-style style-show specify-end
+no-space
+characters-span-end
+
+heading-level-2-end
+
+<new_line>
+
+
+combee *** heading, type of action *** comenn
+
+heading-level-1-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit specify-end
+specify-style style-show specify-end
+words-heading-edit-news-item
+heading-level-1-end
+
+vertical-gap
+
+<new_line>
+
+
+combee *** future_todo: remove this when fully debugged: show note about possible bugs when moving news items *** comenn
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname specify-end
+specify-id selectext-id-page-info-note-possible-bugs specify-end
+specify-style style-show specify-end
+Note: This part of the website might still have a few bugs because the code here has not yet been rigorously tested and debugged.
+paragraph-end
+
+
+combee *** row of buttons begin, choose special event type *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-type-of-special-event
+paragraph-end
+
+side-by-side-begin
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-yardsale specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-event-type javascript-click-put-info-middle selectext-yardsale javascript-click-put-info-end specify-end
+words-special-event-type-yard-sale
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-estatesale specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-event-type javascript-click-put-info-middle selectext-estatesale javascript-click-put-info-end specify-end
+words-special-event-type-estate-sale
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-blockparty specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-event-type javascript-click-put-info-middle selectext-blockparty javascript-click-put-info-end specify-end
+words-special-event-type-block-party
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-lostpet specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-event-type javascript-click-put-info-middle selectext-lostpet javascript-click-put-info-end specify-end
+words-special-event-type-lost-pet
+button-end
+side-by-side-middle-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-specialmarket specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-event-type javascript-click-put-info-middle selectext-specialmarket javascript-click-put-info-end specify-end
+words-special-event-type-special-market
+button-end
+side-by-side-end
+
+paragraph-begin
+words-list-of-acceptable-kinds-of-special-markets
+paragraph-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons begin, choose edit type: geolocate or change date or delete *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit selectext-hide-if underscore-double-here selectext-geolocbystreets selectext-hide-if underscore-double-here selectext-geolocbyname selectext-hide-if underscore-double-here selectext-editdatepast selectext-hide-if underscore-double-here selectext-editdatefuture selectext-hide-if underscore-double-here selectext-editdelete specify-end
+specify-style style-show specify-end
+
+side-by-side-begin
+
+<new_line>
+
+
+combee *** button, start to geolocate by intersection *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-type specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-geolocbystreets javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-geolocate-intersection specify-end
+words-button-geo-locate-news-item
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+side-by-side-middle-not-last
+
+<new_line>
+
+
+combee *** button "addintersection" to news item *** comenn
+
+combee *** for now, hide this button *** comenn
+
+combee ***
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-type specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-addintersection javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-add-intersection specify-end
+words-add-intersection-news-police
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+*** comenn
+
+side-by-side-middle-not-last
+
+<new_line>
+
+
+combee *** change date *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-type specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-editdatefuture javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-change-date specify-end
+words-button-edit-date
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+side-by-side-middle-last
+
+<new_line>
+
+
+combee *** button to choose to "delete" news item *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-edit specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-type specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-editdelete javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-delete-news-item specify-end
+words-button-delete-news-item
+button-end
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons end *** comenn
+
+side-by-side-end
+
+<new_line>
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons begin, choose geolocate by intersection or by neighborhood name *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbyname selectext-show-hide underscore-double-here selectext-geolocbystreets specify-end
+specify-style style-show specify-end
+
+side-by-side-begin
+
+<new_line>
+
+
+combee *** button, switch to geolocate by neighborhood name *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-hide-if underscore-double-here selectext-geolocbyname specify-end
+specify-style style-hide specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-switch specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-geolocbyname javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-geolocate-by-neighborhood specify-end
+words-button-geolocate-by-neighborhood
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+side-by-side-middle-last
+
+<new_line>
+
+
+combee *** button, switch to geolocate by intersection *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbyname selectext-hide-if underscore-double-here selectext-geolocbystreets specify-end
+specify-style style-hide specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-switch specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-geolocbystreets javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-switch-geolocate-intersection specify-end
+words-button-geolocate-by-intersection
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons end *** comenn
+
+side-by-side-end
+
+<new_line>
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons begin, choose past date or future date *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatepast selectext-show-hide underscore-double-here selectext-editdatefuture specify-end
+specify-style style-show specify-end
+
+side-by-side-begin
+
+<new_line>
+
+
+combee *** button, switch to past date *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatefuture selectext-hide-if underscore-double-here selectext-editdatepast specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-switch specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-editdatepast javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-switch-to-past-date specify-end
+words-button-change-date-past
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+side-by-side-middle-last
+
+<new_line>
+
+
+combee *** button, switch to future date *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatepast selectext-hide-if underscore-double-here selectext-editdatefuture specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-edit-switch specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-editdatefuture javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-switch-to-future-date specify-end
+words-button-change-date-future
+button-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+
+combee *** row of buttons end *** comenn
+
+side-by-side-end
+
+<new_line>
+
+div-end
+
+<new_line>
+
+
+combee *** request URL *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent selectext-show-hide underscore-double-here selectext-addnewssource specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+words-request-url-for-special-event
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addnewssource specify-end
+specify-style style-show specify-end
+words-request-url-for-news-source
+characters-span-end
+paragraph-end
+
+div-begin
+specify-style style-show style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-edit underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name supplied hyphen-here url specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-user-supplied-url specify-end
+div-end
+
+paragraph-begin
+specify-style style-hide specify-end
+words-domain-name-within-url
+characters-span-begin
+specify-id selectext-id-domain-name-within-url specify-end
+characters-span-end
+paragraph-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-style style-user-error-message specify-end
+specify-id selectext-id-user-error-url specify-end
+words-invalid-user-supplied-url
+paragraph-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** request address/house number *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent selectext-show-for-event-type underscore-double-here selectext-event-type selectext-hide-for-event-type-and-value underscore-double-here selectext-event-type underscore-double-here selectext-lostpet specify-end
+specify-style style-hide specify-end
+
+paragraph-begin
+words-request-address-number
+characters-span-begin
+specify-css-class selectext-group-copy selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-id selectext-id-street-name-one underscore-double-here selectext-page-info specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-group-copy selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-id selectext-id-street-name-two underscore-double-here selectext-page-info specify-end
+no-space
+characters-span-end
+no-space
+paragraph-end
+
+div-begin
+specify-style style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-edit underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name supplied hyphen-here address hyphen-here number specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-user-supplied-address-number specify-end
+div-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-style style-user-error-message specify-end
+specify-id selectext-id-user-error-address-number specify-end
+words-invalid-address-number
+paragraph-end
+
+vertical-gap-tiny
+
+
+combee *** button, switch to other street name *** comenn
+
+div-begin
+specify-style style-align-left specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-swapstreet javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-swap-street-names specify-end
+words-button-switch-to-other-street-name
+button-end
+
+div-end
+
+vertical-gap
+
+div-end
+
+<new_line>
+
+
+combee *** calendar buttons to change date *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent selectext-show-hide underscore-double-here selectext-editdatepast selectext-show-hide underscore-double-here selectext-editdatefuture selectext-show-for-event-type underscore-double-here selectext-event-type selectext-hide-for-event-type-and-value underscore-double-here selectext-event-type underscore-double-here selectext-lostpet specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+words-request-calendar-start-day-for-special-event
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatepast selectext-hide-if underscore-double-here selectext-editdatefuture specify-end
+specify-style style-show specify-end
+words-request-calendar-start-day-for-news-police
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatefuture selectext-hide-if underscore-double-here selectext-editdatepast specify-end
+specify-style style-show specify-end
+words-request-calendar-start-day-for-news-police-scheduled
+characters-span-end
+no-space
+paragraph-end
+
+expanded-buttons-calendar
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** buttons to change duration *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent selectext-show-hide underscore-double-here selectext-notblockparty selectext-show-hide underscore-double-here selectext-editdatefuture selectext-hide-if underscore-double-here selectext-editdatepast selectext-show-for-event-type underscore-double-here selectext-event-type selectext-hide-for-event-type-and-value underscore-double-here selectext-event-type underscore-double-here selectext-lostpet specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+words-request-duration-of-special-event
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatefuture specify-end
+specify-style style-show specify-end
+words-request-duration-of-event-police-scheduled
+characters-span-end
+paragraph-end
+
+side-by-side-begin
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-day-count underscore-double-here 1 specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-day-count javascript-click-put-info-middle 1 javascript-click-put-info-end specify-end
+words-button-one-day
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-day-count underscore-double-here 2 specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-day-count javascript-click-put-info-middle 2 javascript-click-put-info-end specify-end
+words-button-two-days
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-day-count underscore-double-here 3 specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-day-count javascript-click-put-info-middle 3 javascript-click-put-info-end specify-end
+words-button-three-days
+button-end
+side-by-side-middle-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-not-highlighted specify-end
+specify-id selectext-id-button underscore-double-here selectext-day-count underscore-double-here 4 specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-day-count javascript-click-put-info-middle 4 javascript-click-put-info-end specify-end
+words-button-four-days
+button-end
+side-by-side-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** request street *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-hide-if underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-street-name
+paragraph-end
+
+div-begin
+specify-style style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-geolocate underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name supplied hyphen-here street specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-geolocate-street-name specify-end
+div-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-style style-user-error-message specify-end
+specify-id selectext-id-user-error-geo-loc-street-name specify-end
+words-invalid-geo-locate-street-name
+paragraph-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** request cross-street *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-hide-if underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-cross-street-name
+paragraph-end
+
+div-begin
+specify-style style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-geolocate underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name supplied hyphen-here crossstreet specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-geolocate-cross-street-name specify-end
+div-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-style style-user-error-message specify-end
+specify-id selectext-id-user-error-geo-loc-cross-street-name specify-end
+words-invalid-geo-locate-street-name
+paragraph-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** request neighborhood name *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbyname selectext-hide-if underscore-double-here selectext-geolocbystreets specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-neighborhood-name
+paragraph-end
+
+div-begin
+specify-style style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-geolocate underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name supplied hyphen-here neighborhood specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-geolocate-neighborhood-name specify-end
+div-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info specify-end
+specify-style style-user-error-message specify-end
+specify-id selectext-id-user-error-geo-loc-neighborhood specify-end
+words-invalid-geo-locate-neighborhood-name
+paragraph-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_addspecialevent" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-addspecialevent javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-add-special-event specify-end
+words-button-add-special-event-at-this-intersection
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_addnewssource" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-addnewssource specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-addnewssource javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-add-news-source specify-end
+words-button-add-news-source-at-this-city
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_editdatepast" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatepast selectext-hide-if underscore-double-here selectext-editdatefuture specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-editdatepast javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-edit-date-past specify-end
+words-button-edit-date
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_editdatefuture" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdatefuture selectext-hide-if underscore-double-here selectext-editdatepast specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-editdatefuture javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-edit-date-future specify-end
+words-button-edit-date-and-duration
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_geolocbystreets" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-hide-if underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-geolocbystreets javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-geolocate-by-streets specify-end
+words-button-move-news-item-to-this-intersection
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "do_geolocbyname" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbyname selectext-hide-if underscore-double-here selectext-geolocbystreets specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-geolocbyname javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-geolocate-by-name specify-end
+words-button-move-news-item-to-this-neighborhood
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** buttons to select reason for deletion request *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdelete selectext-hide-if underscore-double-here selectext-news specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-reason-for-delete-request
+paragraph-end
+
+side-by-side-begin
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-delete-reason underscore-double-here selectext-not-highlighted selectext-group-button-delete-reason specify-end
+specify-id selectext-id-button underscore-double-here selectext-delete-reason underscore-double-here selectext-nolocation specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-delete-reason javascript-click-put-info-middle selectext-nolocation javascript-click-put-info-end specify-end
+words-button-delete-reason-not-location-specific
+button-end
+side-by-side-middle-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-delete-reason underscore-double-here selectext-not-highlighted selectext-group-button-delete-reason specify-end
+specify-id selectext-id-button underscore-double-here selectext-delete-reason underscore-double-here selectext-cancelled specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-delete-reason javascript-click-put-info-middle selectext-cancelled javascript-click-put-info-end specify-end
+words-button-delete-reason-event-cancelled
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-delete-reason underscore-double-here selectext-not-highlighted selectext-show-hide underscore-double-here selectext-reason-irrelevant-for-police-news selectext-group-button-delete-reason specify-end
+specify-id selectext-id-button underscore-double-here selectext-delete-reason underscore-double-here selectext-nointerest specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-delete-reason javascript-click-put-info-middle selectext-nointerest javascript-click-put-info-end specify-end
+words-button-delete-reason-nointerest
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-delete-reason underscore-double-here selectext-not-highlighted selectext-show-hide underscore-double-here selectext-reason-irrelevant-for-police-news selectext-group-button-delete-reason specify-end
+specify-id selectext-id-button underscore-double-here selectext-delete-reason underscore-double-here selectext-unethical specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-delete-reason javascript-click-put-info-middle selectext-unethical javascript-click-put-info-end specify-end
+words-button-delete-reason-unethical
+button-end
+side-by-side-middle-not-last
+button-begin
+specify-css-class class-style-button-in-group underscore-double-here selectext-delete-reason underscore-double-here selectext-not-highlighted selectext-show-hide underscore-double-here selectext-reason-irrelevant-for-police-news selectext-group-button-delete-reason specify-end
+specify-id selectext-id-button underscore-double-here selectext-delete-reason underscore-double-here selectext-personal specify-end
+specify-javascript-onclick javascript-click-put-info-begin selectext-delete-reason javascript-click-put-info-middle selectext-personal javascript-click-put-info-end specify-end
+words-button-delete-reason-personal
+button-end
+side-by-side-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** request confirmation code *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-do underscore-double-here selectext-editdelete specify-end
+specify-style style-show specify-end
+
+paragraph-begin
+words-request-confirmation-code
+bold-begin
+characters-span-begin
+specify-id selectext-id-prompt-confirmation-code specify-end
+7932
+characters-span-end
+bold-end
+paragraph-end
+
+div-begin
+specify-style style-align-left specify-end
+form-text-entry
+specify-css-class selectext-group-user-supplied-info-value selectext-need-for-edit underscore-double-here selectext-value specify-end
+specify-size 50em specify-end
+specify-name confirmation hyphen-here code specify-end
+specify-value specify-end
+specify-tab-index 1 specify-end
+specify-id selectext-id-confirmation-code specify-end
+div-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** delete personal message *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-deletepersonal specify-end
+specify-style style-show specify-end
+specify-id selectext-id-delete-personal-message specify-end
+paragraphs-message-delete-reason-personal
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "delete" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-editdelete selectext-show-hide underscore-double-here selectext-deletepersonal specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-editdelete javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-delete specify-end
+words-button-confirm-delete-news-item
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** "cancel" button *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname selectext-show-hide underscore-double-here selectext-editdatepast selectext-show-hide underscore-double-here selectext-editdatefuture selectext-show-hide underscore-double-here selectext-editdelete selectext-show-hide underscore-double-here selectext-deletepersonal specify-end
+
+vertical-gap
+
+button-begin
+specify-css-class class-style-button-clickable specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-editcancel javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-cancel specify-end
+words-button-cancel-edit
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** news description *** comenn
+
+div-begin
+specify-css-class
+selectext-show-hide underscore-double-here selectext-item-on-page-info
+selectext-show-hide underscore-double-here selectext-news
+selectext-show-hide underscore-double-here selectext-event
+selectext-show-hide underscore-double-here selectext-geolocbystreets
+selectext-show-hide underscore-double-here selectext-geolocbyname
+selectext-show-hide underscore-double-here selectext-editdatepast
+selectext-show-hide underscore-double-here selectext-editdatefuture
+selectext-show-hide underscore-double-here selectext-editdelete
+selectext-show-hide underscore-double-here selectext-deletepersonal
+specify-end
+specify-style style-show specify-end
+
+vertical-gap
+
+heading-level-2-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-news class-style-font-title-readable specify-end
+specify-id selectext-id-page-info-news-title-at-bottom specify-end
+heading-level-2-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-font-size-paragraph-medium selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-intersection-known specify-end
+characters-span-begin
+specify-style style-opacity-fade-3 specify-end
+words-current-location
+characters-span-end
+one-space
+characters-span-begin
+specify-css-class selectext-group-id-street-name-on-page-info specify-end
+specify-id selectext-id-internally-needed-street-name-on-page-info specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+one-space
+characters-span-begin
+specify-style style-inline style-opacity-fade-3 specify-end
+words-between-street-names
+characters-span-end
+one-space
+characters-span-begin
+specify-css-class selectext-group-id-crossstreet-name-on-page-info specify-end
+specify-id selectext-id-internally-needed-crossstreet-name-on-page-info specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+no-space
+paragraph-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-font-size-paragraph-medium selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-news selectext-show-hide underscore-double-here selectext-event specify-end
+characters-span-begin
+specify-style style-opacity-fade-3 specify-end
+words-event-date
+characters-span-end
+one-space
+characters-span-begin
+specify-id selectext-id-page-info-news-item-date specify-end
+specify-style style-opacity-fade-none specify-end
+no-space
+characters-span-end
+no-space
+paragraph-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-font-size-paragraph-medium selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-news selectext-group-id-news-item-description specify-end
+specify-id selectext-id-internally-needed-description-full-on-page-info specify-end
+no-space
+paragraph-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-font-size-paragraph-medium selectext-show-hide underscore-double-here selectext-item-on-page-info selectext-show-hide underscore-double-here selectext-event specify-end
+characters-span-begin
+specify-css-class selectext-group-id-event-adr specify-end
+specify-id selectext-id-internally-needed-event-adr-on-page-info specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+characters-span-begin
+specify-css-class selectext-group-id-event-street specify-end
+specify-id selectext-id-internally-needed-event-street-on-page-info specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+line-break
+word-character-open-parenthesis no-space word-near-before-cross-street
+characters-span-begin
+specify-css-class selectext-group-id-event-crossstreet specify-end
+specify-id selectext-id-internally-needed-event-crossstreet-on-page-info specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+no-space word-character-close-parenthesis
+paragraph-end
+
+
+div-end
+
+<new_line>
+
+
+combee *** spacing below bottom item *** comenn
+
+vertical-gap
+
+<new_line>

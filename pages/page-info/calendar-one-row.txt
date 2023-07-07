@@ -1,0 +1,42 @@
+no-space
+table-row-begin specify-css-class class-style-grid-row fenambee grid-style-type amenn specify-end
+ambee put-into-phrase column-number  1  amenn
+ambee grid-one-cell amenn
+
+no-space
+table-cell-begin
+specify-css-class class-style-calendar-spacer-column specify-end
+no-space
+non-breaking-space
+no-space
+non-breaking-space
+no-space
+table-cell-end
+no-space
+
+ambee put-into-phrase column-number  2  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  3  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  4  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  5  amenn
+ambee grid-one-cell amenn
+ambee put-into-phrase column-number  6  amenn
+ambee grid-one-cell amenn
+
+no-space
+table-cell-begin
+specify-css-class class-style-calendar-spacer-column specify-end
+no-space
+non-breaking-space
+no-space
+non-breaking-space
+no-space
+table-cell-end
+no-space
+
+ambee put-into-phrase column-number  7  amenn
+ambee grid-one-cell amenn
+table-row-end
+no-space

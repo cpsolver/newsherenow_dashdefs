@@ -1,0 +1,6 @@
+ambee generate-counts-from-integer-to-integer 1 7 day-of-week-numbers-from-1-to-7  amenn
+ambee generate-counts-from-integer-to-integer 1 12 week-numbers-from-1-to-12  amenn
+ambee generate-every-pairwise-combination-of-words week-numbers-from-1-to-12 day-of-week-numbers-from-1-to-7 list-of-calendar-row-numbers list-of-calendar-column-numbers amenn
+ambee generate-counts-from-integer-to-integer 1 84 calendar-position-numbers-from-1-to-84  amenn
+ambee use-handler-with-each-word-in-phrase fill-one-calendar-position calendar-position-numbers-from-1-to-84  amenn
+ambee use-handler-with-each-word-in-phrase fill-one-day-of-week-name-calendar-position day-of-week-numbers-from-1-to-7  amenn

@@ -1,0 +1,9 @@
+paragraph-begin
+words-message-delete-reason-personal-paragraph-01
+paragraph-next
+words-message-delete-reason-personal-paragraph-02
+paragraph-next
+words-message-delete-reason-personal-paragraph-03
+paragraph-next
+words-message-delete-reason-personal-paragraph-04
+paragraph-end
