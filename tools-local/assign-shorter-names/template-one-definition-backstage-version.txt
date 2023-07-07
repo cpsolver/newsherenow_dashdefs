@@ -1,0 +1,7 @@
+no-space
+name-to-assign no-space :
+new-line
+shorter-name
+new-line
+four-hyphens
+new-line

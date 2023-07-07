@@ -1,0 +1,6 @@
+ambee copy-text word-to-use-in-handler second-letter amenn
+ambee copy-text first-letter shorter-name-two-letters amenn
+ambee append-text-no-space second-letter shorter-name-two-letters amenn
+ambee append-text shorter-name-two-letters list-of-two-letter-names amenn
+ambee append-text-no-space character-underscore list-of-two-letter-names amenn
+ambee use-handler-with-each-word-in-phrase generate-one-shorter-name-level-three list-of-letters-for-short-names-truncated amenn

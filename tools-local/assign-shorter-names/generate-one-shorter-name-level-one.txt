@@ -1,0 +1,2 @@
+ambee copy-text word-to-use-in-handler first-letter amenn
+ambee use-handler-with-each-word-in-phrase generate-one-shorter-name-level-two list-of-letters-for-short-names amenn
