@@ -1,1 +1,16 @@
-unused_*.*
+unused*.*
+*admin*.txt
+*access*.txt
+*validate*.txt
+*blocked*.txt
+*domain-names*.txt
+*executable*.txt
+*folders*.txt
+*/filenames*
+*/news/*.txt
+*/urls/*.txt
+*/user-ids/*.txt
+generate-unique-id*.txt
+/pages/page-combo/start-here.txt
+*cgi*.txt
+*handle-click-button.txt
