@@ -1,0 +1,63 @@
+jsfunction-adjust-heights js-equals function( ) {
+combee *** reminder: the appropriate segment must already be visible (non-hidden) because hidden elements cannot be measured *** comenn
+combee *** reminder: this code cannot adjust heights of navigation tabs because tabs are inline *** comenn
+combee **** reminder: widths are controlled by CSS code **** comenn
+
+    var jsvar-page-segment comma-sep jsvar-screen-width comma-sep jsvar-height-each-button comma-sep jsvar-height-maximum comma-sep jsvar-list-of-heights-adjust-heights comma-sep jsvar-name-of-class-style comma-sep jsvar-tallest-height js-statement-end
+
+combee *** determine which page segment is being displayed *** comenn
+    jsvar-page-segment js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-end js-statement-end
+
+combee *** adjust widths and heights on page map *** comenn
+    js-if jsvar-page-segment js-is-equal-to code-open-quote selectext-map code-close-quote js-then
+        jsfunction-do-map-tile-calculations no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-1 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-2 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-3 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-4 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-5 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-6 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-7 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-8 no-space () js-statement-end
+        jsfunction-draw-map-tile-at-position-9 no-space () js-statement-end
+        setTimeout( jsfunction-draw-shapes-over-map , 500 ) js-statement-end
+    js-if-end
+
+    jsvar-name-of-class-style js-equals code-open-close-quote js-statement-end
+
+combee *** specify buttons on page biz *** comenn
+    js-if jsvar-page-segment js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+        jsvar-name-of-class-style js-equals code-open-quote class-style-business-div code-close-quote js-statement-end
+        jsvar-height-maximum js-equals 250 js-statement-end
+    js-if-end
+
+combee *** specify buttons on page news *** comenn
+    js-if jsvar-page-segment js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+        jsvar-name-of-class-style js-equals code-open-quote class-style-news-div code-close-quote js-statement-end
+        jsvar-height-maximum js-equals 600 js-statement-end
+    js-if-end
+
+combee *** specify buttons on page polls *** comenn
+    js-if jsvar-page-segment js-is-equal-to code-open-quote selectext-polls code-close-quote js-then
+        jsvar-name-of-class-style js-equals code-open-quote class-style-poll-button code-close-quote js-statement-end
+        jsvar-height-maximum js-equals 300 js-statement-end
+    js-if-end
+
+combee *** measure screen width, if narrow, allow heights to be controlled by CSS code *** comenn
+    jsvar-screen-width js-equals parseInt( window.innerWidth ) js-statement-end
+
+combee *** if appropriate, adjust heights of buttons on current page *** comenn
+    js-if jsvar-name-of-class-style js-is-not-equal-to code-open-close-quote js-then
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin jsvar-name-of-class-style js-params-next "height" js-params-next code-open-close-quote js-params-end js-statement-end
+        js-if jsvar-screen-width js-is-less-than 991 js-then
+            return true js-statement-end
+        js-if-end
+        jsvar-list-of-heights-adjust-heights js-equals jsfunction-get-heights-of-visible-elements-of-class js-params-begin jsvar-name-of-class-style js-params-end js-statement-end
+        jsvar-tallest-height js-equals parseInt( Math.max.apply( null , jsvar-list-of-heights-adjust-heights ) ) js-statement-end
+        jsvar-height-each-button js-equals parseInt( Math.min.apply( null , [ jsvar-height-maximum , jsvar-tallest-height ] ) ) js-concat "px" js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin jsvar-name-of-class-style js-params-next "height" js-params-next jsvar-height-each-button js-params-end js-statement-end
+    js-if-end
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

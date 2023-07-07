@@ -1,0 +1,14 @@
+jsfunction-geo-location-get js-equals function( ) {
+    var jsvar-geolocation-options = { enableHighAccuracy: false, timeout: 7500, maximumAge: 0 } js-statement-end
+    js-if !navigator.geolocation js-then
+        jsfunction-geo-location-failed js-params-begin js-params-end js-statement-end
+        return code-open-close-quote js-statement-end
+    js-if-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-message-requesting-gps-access code-close-quote js-params-end js-statement-end
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-requesting-gps-access code-close-quote js-params-end js-statement-end
+    navigator.geolocation.getCurrentPosition( jsfunction-geo-location-got , jsfunction-geo-location-failed , jsvar-geolocation-options ) js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-previous-typed-location code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+    return code-open-close-quote js-statement-end
+} js-statement-end
+<new_line>

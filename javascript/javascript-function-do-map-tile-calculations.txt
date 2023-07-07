@@ -1,0 +1,51 @@
+jsfunction-do-map-tile-calculations js-equals function( ) {
+    var jsvar-tiled-area-width-scaled comma-sep jsvar-screen-width comma-sep jsvar-kiloscale comma-sep jsvar-yes-if-at-highest-zoom js-statement-end
+
+combee *** initialization *** comenn
+    jsvar-global-map-tile-width js-equals 256 js-statement-end
+    jsvar-screen-width js-equals parseInt( window.innerWidth ) js-statement-end
+    jsvar-global-yes-if-shapes-drawn-over-map js-equals code-open-quote no code-close-quote js-statement-end
+    jsvar-global-yes-if-all-map-tiles-downloaded js-equals code-open-quote no code-close-quote js-statement-end
+
+combee *** determine whether to scale the map-tile image, and by how much (if any) *** comenn
+    jsvar-kiloscale js-equals parseInt( ( 385 js-multiply jsvar-screen-width ) js-divide-by jsvar-global-map-tile-width ) js-statement-end
+    js-if jsvar-kiloscale > 1000 js-then
+        jsvar-kiloscale js-equals 1000 js-statement-end
+    js-if-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-kiloscale-for-map-tiles code-close-quote js-params-next jsvar-kiloscale js-params-end js-statement-end
+
+combee **** adjust canvas size **** comenn
+    jsvar-tiled-area-width-scaled js-equals parseInt( ( jsvar-global-map-tile-width js-multiply 2 js-multiply jsvar-kiloscale ) js-divide-by 1000 ) js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-map-canvas code-close-quote js-params-next "width" js-params-next ( jsvar-tiled-area-width-scaled js-concat "px" ) js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-map-canvas code-close-quote js-params-next "height" js-params-next ( jsvar-tiled-area-width-scaled js-concat "px" ) js-params-end js-statement-end
+
+combee **** calculate global values **** comenn
+    jsvar-global-map-size-scale js-equals jsvar-kiloscale js-divide-by 1000 js-statement-end
+    jsvar-global-map-tile-width-scaled js-equals parseInt( jsvar-global-map-tile-width js-multiply jsvar-global-map-size-scale ) js-statement-end
+    jsvar-global-width-at-map-tile-position-one js-equals parseInt( jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-map-tile-width underscore-here 1 code-close-quote js-params-end ) js-statement-end
+    jsvar-global-height-at-map-tile-position-one js-equals parseInt( jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-map-tile-height underscore-here 1 code-close-quote js-params-end ) js-statement-end
+
+
+    jslog-begin code-open-quote jsvar-kiloscale code-close-quote jslog-equal-sign jsvar-kiloscale jslog-end
+    jslog-begin code-open-quote jsvar-global-map-tile-width code-close-quote jslog-equal-sign jsvar-global-map-tile-width jslog-end
+    jslog-begin code-open-quote jsvar-global-map-tile-width-scaled code-close-quote jslog-equal-sign jsvar-global-map-tile-width-scaled jslog-end
+    jslog-begin code-open-quote jsvar-global-map-size-scale code-close-quote jslog-equal-sign jsvar-global-map-size-scale jslog-end
+    jslog-begin code-open-quote jsvar-screen-width code-close-quote jslog-equal-sign jsvar-screen-width jslog-end
+    jslog-begin code-open-quote map-tiles-full-width code-close-quote jslog-equal-sign map-tiles-full-width jslog-end
+    jslog-begin code-open-quote jsvar-tiled-area-width-scaled code-close-quote jslog-equal-sign jsvar-tiled-area-width-scaled jslog-end
+
+
+combee **** show or hide messages, and change cursor, depending on zoom level **** comenn
+    jsvar-yes-if-at-highest-zoom js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-if-at-highest-zoom code-close-quote js-params-end js-statement-end
+    js-if jsvar-yes-if-at-highest-zoom js-is-equal-to code-open-quote string-yes code-close-quote js-then
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-if-not-at-highest-zoom code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-if-at-highest-zoom code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-map-canvas code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote crosshair code-close-quote js-params-end js-statement-end
+    js-else
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-if-not-at-highest-zoom code-close-quote js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-if-at-highest-zoom code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-map-canvas code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote default code-close-quote js-params-end js-statement-end
+    js-if-end
+
+} js-statement-end
+<new_line>

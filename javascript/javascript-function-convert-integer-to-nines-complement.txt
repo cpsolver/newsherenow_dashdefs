@@ -1,0 +1,12 @@
+jsfunction-convert-integer-to-nines-complement js-equals function( selectext-string-integer ) {
+    var jsvar-converted-string comma-sep jsvar-character-pointer comma-sep jsvar-character-code-number comma-sep jsvar-nines-complement-digit comma-sep jsvar-string-length js-statement-end
+    jsvar-string-length js-equals selectext-string-integer no-space .length js-statement-end
+    jsvar-converted-string js-equals code-open-close-quote js-statement-end
+    js-for-loop-define jsvar-character-pointer js-equals 0 ; jsvar-character-pointer < jsvar-string-length ; jsvar-character-pointer ++ js-for-loop-start
+        jsvar-character-code-number js-equals selectext-string-integer no-space .charCodeAt( jsvar-character-pointer ) js-statement-end
+        jsvar-nines-complement-digit js-equals String.fromCharCode( 48 + 57 - jsvar-character-code-number ) js-statement-end
+        jsvar-converted-string js-equals jsvar-converted-string js-concat jsvar-nines-complement-digit js-statement-end
+    js-loop-end
+    return jsvar-converted-string js-statement-end
+} js-statement-end
+<new_line>

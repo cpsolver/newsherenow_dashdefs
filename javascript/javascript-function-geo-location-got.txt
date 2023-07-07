@@ -1,0 +1,22 @@
+jsfunction-geo-location-got js-equals function( jsvar-latitude-longitude ) {
+    var jsvar-latitude js-equals jsvar-latitude-longitude no-space .coords.latitude js-statement-end
+    var jsvar-longitude js-equals jsvar-latitude-longitude no-space .coords.longitude js-statement-end
+    var jsvar-accuracy js-equals jsvar-latitude-longitude no-space .coords.accuracy js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-latitude-from-gps code-close-quote js-params-next jsvar-latitude js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-longitude-from-gps code-close-quote js-params-next jsvar-longitude js-params-end js-statement-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-message-requesting-gps-access code-close-quote js-params-end js-statement-end
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-finding-location code-close-quote js-params-end js-statement-end
+
+combee **** todo: verify is working and not also needed elsewhere **** comenn
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-clear-poll-info code-close-quote js-params-next "contents" js-params-next code-open-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-poll-button code-close-quote js-params-end js-statement-end
+
+    jsfunction-geo-location-do-request no-space () js-statement-end
+
+    jslog-begin code-open-quote jsvar-latitude code-close-quote jslog-equal-sign jsvar-latitude jslog-end
+    jslog-begin code-open-quote jsvar-longitude code-close-quote jslog-equal-sign jsvar-longitude jslog-end
+    jslog-begin code-open-quote jsvar-accuracy code-close-quote jslog-equal-sign jsvar-accuracy jslog-end
+
+    return code-open-close-quote js-statement-end
+} js-statement-end
+<new_line>

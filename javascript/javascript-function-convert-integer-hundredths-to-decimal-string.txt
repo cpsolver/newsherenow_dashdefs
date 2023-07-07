@@ -1,0 +1,21 @@
+jsfunction-convert-integer-hundredths-to-decimal-string js-equals function( selectext-integer-hundredths ) {
+    var jsvar-pointer-to-period comma-sep jsvar-integer-hundredths-adjusted comma-sep jsvar-length-of-distance-hundredths comma-sep jsvar-displayed-distance js-statement-end
+    jsvar-integer-hundredths-adjusted js-equals selectext-integer-hundredths js-concat code-open-close-quote js-statement-end
+    jsvar-pointer-to-period js-equals jsvar-integer-hundredths-adjusted no-space .indexOf( "." , 0 ) js-statement-end
+    js-if jsvar-pointer-to-period > 0 js-then
+        jsvar-integer-hundredths-adjusted js-equals jsvar-integer-hundredths-adjusted no-space .substring( 0 , jsvar-pointer-to-period ) js-statement-end
+    js-if-end
+    jsvar-length-of-distance-hundredths js-equals jsvar-integer-hundredths-adjusted no-space .length js-statement-end
+    jsvar-displayed-distance js-equals "?" js-statement-end
+    js-if jsvar-length-of-distance-hundredths js-is-equal-to 0 js-then
+        jsvar-displayed-distance js-equals code-open-close-quote js-statement-end
+    js-else-if jsvar-length-of-distance-hundredths js-is-equal-to 1 js-then
+        jsvar-displayed-distance js-equals "0.1" js-statement-end
+    js-else-if jsvar-length-of-distance-hundredths js-is-equal-to 2 js-then
+        jsvar-displayed-distance js-equals "0." js-concat jsvar-integer-hundredths-adjusted no-space .substr( 0 , 1 ) js-statement-end
+    } else if ( jsvar-length-of-distance-hundredths > 2 ) {
+        jsvar-displayed-distance js-equals jsvar-integer-hundredths-adjusted no-space .substr( 0 , js-paren-begin jsvar-length-of-distance-hundredths - 2 js-paren-end ) js-concat "." js-concat jsvar-integer-hundredths-adjusted no-space .substring( js-paren-begin jsvar-length-of-distance-hundredths - 2 js-paren-end , js-paren-begin jsvar-length-of-distance-hundredths - 1 js-paren-end ) js-statement-end
+    js-if-end
+    return jsvar-displayed-distance js-statement-end
+} js-statement-end
+<new_line>

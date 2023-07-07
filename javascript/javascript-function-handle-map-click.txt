@@ -1,0 +1,123 @@
+jsfunction-handle-map-click js-equals function( jsvar-event-click ) {
+    var jsvar-x-coordinate-from-center comma-sep jsvar-y-coordinate-from-center comma-sep jsvar-x-coordinate-raw comma-sep jsvar-y-coordinate-raw comma-sep jsvar-location-loc-center comma-sep jsvar-lat-lon-loc comma-sep jsvar-latitude-integer-center comma-sep jsvar-longitude-integer-center comma-sep jsvar-scaled-pixels-per-degree-lat comma-sep jsvar-scaled-pixels-per-degree-lon comma-sep jsvar-latitude-offset-from-center comma-sep jsvar-longitude-offset-from-center comma-sep jsvar-latitude-new-number comma-sep jsvar-latitude-new-text comma-sep jsvar-longitude-new-number comma-sep jsvar-longitude-new-text comma-sep jsvar-number-of-digits comma-sep jsvar-zeros comma-sep jsvar-yes-if-at-highest-zoom comma-sep jsvar-return-value comma-sep jsvar-fudge-factor comma-sep jsvar-latitude-offset-from-center-adjusted comma-sep jsvar-longitude-offset-from-center-adjusted js-statement-end
+    jsvar-return-value js-equals code-open-close-quote js-statement-end
+
+combee **** ignore click if not at highest zoom level **** comenn
+    jsvar-yes-if-at-highest-zoom js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-if-at-highest-zoom code-close-quote js-params-end js-statement-end
+    js-if jsvar-yes-if-at-highest-zoom js-is-not-equal-to code-open-quote string-yes code-close-quote js-then
+        return jsvar-return-value js-statement-end
+    js-if-end
+
+combee **** get the pixels per integer degree, but exit if not valid value **** comenn
+    jsvar-scaled-pixels-per-degree-lat js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-pixels-per-degree-latitude code-close-quote js-params-end js-statement-end
+    jsvar-scaled-pixels-per-degree-lon js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-pixels-per-degree-longitude code-close-quote js-params-end js-statement-end
+    js-if js-paren-begin jsvar-scaled-pixels-per-degree-lat js-is-less-than pixels-per-integer-degree-latitude-at-zoom-12-rounded-down js-paren-end js-logical-and js-paren-begin jsvar-scaled-pixels-per-degree-lon js-is-greater-than pixels-per-integer-degree-latitude-at-zoom-12-rounded-up js-paren-end js-then
+        return jsvar-return-value js-statement-end
+    js-if-end
+
+    var jsvar-local-canvas js-equals document.getElementById(' no-space selectext-map-canvas no-space ') js-statement-end
+    jsvar-x-coordinate-raw js-equals jsvar-event-click no-space .offsetX js-statement-end
+    jsvar-y-coordinate-raw js-equals jsvar-event-click no-space .offsetY js-statement-end
+
+    jsvar-x-coordinate-from-center js-equals
+        parseInt(
+            jsvar-x-coordinate-raw
+            js-minus
+            jsvar-global-map-tile-width-scaled
+        )
+    js-statement-end
+
+    jsvar-y-coordinate-from-center js-equals
+        parseInt( 
+            jsvar-global-map-tile-width-scaled
+            js-minus
+            jsvar-y-coordinate-raw
+        )
+    js-statement-end
+
+    jsvar-location-loc-center js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+    jsvar-lat-lon-loc js-equals jsvar-location-loc-center no-space .split( code-open-quote underscore-here code-close-quote ) js-statement-end
+    jsvar-latitude-integer-center js-equals parseInt( jsvar-lat-lon-loc no-space [0] ) js-statement-end
+    jsvar-longitude-integer-center js-equals parseInt( jsvar-lat-lon-loc no-space [1] ) js-statement-end
+
+    jsvar-latitude-offset-from-center js-equals
+        parseInt(
+            js-paren-begin
+                js-paren-begin
+                    jsvar-y-coordinate-from-center
+                    js-divide-by
+                    jsvar-scaled-pixels-per-degree-lat
+                js-paren-end
+                js-divide-by
+                jsvar-global-map-size-scale
+            js-paren-end
+        )
+    js-statement-end
+
+    jsvar-longitude-offset-from-center js-equals
+        parseInt(
+            js-paren-begin
+                js-paren-begin
+                    jsvar-x-coordinate-from-center
+                    js-divide-by
+                    jsvar-scaled-pixels-per-degree-lon
+                js-paren-end
+                js-divide-by
+                jsvar-global-map-size-scale
+            js-paren-end
+        )
+    js-statement-end
+
+    jsvar-fudge-factor js-equals 0.73 js-statement-end
+    jsvar-latitude-offset-from-center-adjusted js-equals parseInt( jsvar-latitude-offset-from-center js-multiply jsvar-fudge-factor ) js-statement-end
+    jsvar-longitude-offset-from-center-adjusted js-equals parseInt( jsvar-longitude-offset-from-center js-multiply jsvar-fudge-factor ) js-statement-end
+
+    jsvar-latitude-new-number js-equals jsvar-latitude-offset-from-center-adjusted js-plus jsvar-latitude-integer-center js-statement-end
+    jsvar-longitude-new-number js-equals jsvar-longitude-offset-from-center-adjusted js-plus jsvar-longitude-integer-center js-statement-end
+
+    jsvar-latitude-new-text js-equals jsvar-latitude-new-number js-concat code-open-close-quote js-statement-end
+    jsvar-longitude-new-text js-equals jsvar-longitude-new-number js-concat code-open-close-quote js-statement-end
+    jsvar-zeros js-equals code-open-quote 00000000000 code-close-quote js-statement-end
+    jsvar-number-of-digits js-equals jsvar-latitude-new-text no-space .length js-statement-end
+
+    js-if jsvar-number-of-digits js-is-less-than 11 js-then
+        jsvar-latitude-new-text js-equals jsvar-zeros no-space .substr( 0 , ( 11 - jsvar-number-of-digits ) ) js-concat jsvar-latitude-new-text js-statement-end
+    js-if-end
+
+    jsvar-number-of-digits js-equals jsvar-longitude-new-text no-space .length js-statement-end
+
+    js-if jsvar-number-of-digits js-is-less-than 11 js-then
+        jsvar-longitude-new-text js-equals jsvar-zeros no-space .substr( 0 , ( 11 - jsvar-number-of-digits ) ) js-concat jsvar-longitude-new-text js-statement-end
+    js-if-end
+
+    jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-after-clicked-on-map code-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-hide-after-clicked-on-map code-close-quote js-params-end js-statement-end
+    jsvar-lat-lon-loc js-equals jsvar-latitude-new-text js-concat "_" js-concat jsvar-longitude-new-text js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-loc-lat-lon-only code-close-quote js-params-next jsvar-lat-lon-loc js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-latlonloc code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+    jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-latlonloc code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+
+
+    jslog-begin code-open-quote ******** code-close-quote jslog-equal-sign jsvar-global-map-size-scale jslog-end
+    jslog-begin code-open-quote jsvar-scaled-pixels-per-degree-lat code-close-quote jslog-equal-sign jsvar-scaled-pixels-per-degree-lat jslog-end
+    jslog-begin code-open-quote jsvar-scaled-pixels-per-degree-lon code-close-quote jslog-equal-sign jsvar-scaled-pixels-per-degree-lon jslog-end
+    jslog-begin code-open-quote jsvar-y-coordinate-from-center code-close-quote jslog-equal-sign jsvar-y-coordinate-from-center jslog-end
+    jslog-begin code-open-quote jsvar-x-coordinate-from-center code-close-quote jslog-equal-sign jsvar-x-coordinate-from-center jslog-end
+    jslog-begin code-open-quote jsvar-latitude-offset-from-center code-close-quote jslog-equal-sign jsvar-latitude-offset-from-center jslog-end
+    jslog-begin code-open-quote jsvar-longitude-offset-from-center code-close-quote jslog-equal-sign jsvar-longitude-offset-from-center jslog-end
+    jslog-begin code-open-quote jsvar-latitude-offset-from-center-adjusted code-close-quote jslog-equal-sign jsvar-latitude-offset-from-center-adjusted jslog-end
+    jslog-begin code-open-quote jsvar-longitude-offset-from-center-adjusted code-close-quote jslog-equal-sign jsvar-longitude-offset-from-center-adjusted jslog-end
+    jslog-begin code-open-quote jsvar-latitude-integer-center code-close-quote jslog-equal-sign jsvar-latitude-integer-center jslog-end
+    jslog-begin code-open-quote jsvar-longitude-integer-center code-close-quote jslog-equal-sign jsvar-longitude-integer-center jslog-end
+    jslog-begin code-open-quote jsvar-latitude-new-number code-close-quote jslog-equal-sign jsvar-latitude-new-number jslog-end
+    jslog-begin code-open-quote jsvar-longitude-new-number code-close-quote jslog-equal-sign jsvar-longitude-new-number jslog-end
+    jslog-begin code-open-quote jsvar-lat-lon-loc code-close-quote jslog-equal-sign jsvar-lat-lon-loc jslog-end
+    jslog-begin code-open-quote ******** code-close-quote jslog-equal-sign jsvar-global-map-size-scale jslog-end
+
+
+    return jsvar-return-value js-statement-end
+} js-statement-end
+<new_line>

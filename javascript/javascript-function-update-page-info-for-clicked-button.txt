@@ -1,0 +1,88 @@
+jsfunction-update-page-info-for-clicked-button js-equals function( jsvar-clicked-button-name ) {
+    var jsvar-list-of-heights comma-sep jsvar-box-width comma-sep jsvar-group-name comma-sep jsvar-number-of-buttons comma-sep jsvar-width-for-each-button comma-sep jsvar-height-for-each-button comma-sep jsvar-edit-info-type comma-sep jsvar-scale-width-to-extend js-statement-end
+    var jsvar-list-of-widths js-equals [0] js-statement-end
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-info code-close-quote js-params-end js-statement-end
+    jsfunction-scroll-to-top no-space () js-statement-end
+
+combee *** reminder: do not initialize the hiding of elements on the info page because they were hidden when the map page was updated, and some map-page updates later changed the info page *** comenn
+
+    jslog-begin code-open-quote jsvar-clicked-button-name code-close-quote jslog-equal-sign jsvar-clicked-button-name jslog-end
+
+combee *** hide at least some of the buttons that have just been used *** comenn
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-hide-if underscore-double-here code-close-quote js-concat jsvar-clicked-button-name js-params-end js-statement-end
+
+combee *** show needed elements on the info page *** comenn
+    jsfunction-show-elements-of-class js-params-begin js-paren-begin code-open-quote selectext-show-hide underscore-double-here code-close-quote js-concat jsvar-clicked-button-name js-paren-end js-params-end js-statement-end
+    jsvar-edit-info-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-edit-info-type code-close-quote js-params-end js-statement-end
+    jsfunction-show-elements-of-class js-params-begin js-paren-begin code-open-quote selectext-show-hide underscore-double-here code-close-quote js-concat jsvar-edit-info-type js-paren-end js-params-end js-statement-end
+
+combee *** hide elements on the working page and the updated page *** comenn
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-updated code-close-quote js-params-end js-statement-end
+
+combee *** handle special case of delete for personal reason *** comenn
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-deletepersonal code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-edit-request-type code-close-quote js-params-next "delete" js-params-end js-statement-end
+    js-else
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-edit-request-type code-close-quote js-params-next jsvar-clicked-button-name js-params-end js-statement-end
+    js-if-end
+
+combee *** initialize the grouped buttons *** comenn
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-highlighted code-close-quote js-params-next "class" js-params-next code-open-quote selectext-style-button underscore-double-here selectext-day-count underscore-double-here selectext-not-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-day-count underscore-double-here 1 code-close-quote js-params-next "class" js-params-next code-open-quote class-style-button-in-group underscore-double-here selectext-day-count underscore-double-here selectext-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-button-value-for-group underscore-double-here selectext-day-count code-close-quote js-params-next "1" js-params-end js-statement-end
+
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-highlighted code-close-quote js-params-next "class" js-params-next code-open-quote selectext-style-button underscore-double-here selectext-event-type underscore-double-here selectext-not-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-event-type underscore-double-here selectext-yardsale code-close-quote js-params-next "class" js-params-next code-open-quote class-style-button-in-group underscore-double-here selectext-event-type underscore-double-here selectext-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-button-value-for-group underscore-double-here selectext-event-type code-close-quote js-params-next code-open-quote selectext-yardsale code-close-quote js-params-end js-statement-end
+
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-button-value-for-group underscore-double-here selectext-delete-reason code-close-quote js-params-next "unknown" js-params-end js-statement-end
+    jsfunction-update-calendar js-params-begin jsvar-clicked-button-name js-params-end js-statement-end
+    js-if js-paren-begin jsvar-edit-info-type js-is-equal-to "police" js-paren-end js-logical-or js-paren-begin jsvar-edit-info-type js-is-equal-to "sched" js-paren-end js-then
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-reason-irrelevant-for-police-news code-close-quote js-params-end js-statement-end
+    js-else-if jsvar-edit-info-type js-is-equal-to "neigh" js-then
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-reason-irrelevant-for-police-news code-close-quote js-params-end js-statement-end
+    js-if-end
+
+combee *** adjust widths *** comenn
+    jsvar-box-width js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-width-of-content-numeric code-close-quote js-params-end js-statement-end
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote edit code-close-quote js-then
+        jsvar-group-name js-equals code-open-quote selectext-group-button-edit-type code-close-quote js-statement-end
+        jsvar-scale-width-to-extend js-equals 0.70 js-statement-end
+    js-else-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote editdatepast code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote editdatefuture code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote geolocbystreets code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote geolocbyname code-close-quote js-paren-end js-then
+        jsvar-group-name js-equals code-open-quote selectext-group-button-edit-switch code-close-quote js-statement-end
+        jsvar-scale-width-to-extend js-equals 0.650 js-statement-end
+    js-else-if jsvar-clicked-button-name js-is-equal-to code-open-quote delete code-close-quote js-then
+        jsvar-group-name js-equals code-open-quote selectext-group-button-delete-reason code-close-quote js-statement-end
+        jsvar-scale-width-to-extend js-equals 0.80 js-statement-end
+    js-else
+        jsvar-group-name js-equals code-open-close-quote js-statement-end
+    js-if-end
+    js-if jsvar-group-name js-then
+        jsvar-list-of-widths js-equals jsfunction-get-widths-of-visible-elements-of-class js-params-begin jsvar-group-name js-params-end js-statement-end
+    js-if-end
+    jsvar-number-of-buttons js-equals jsvar-list-of-widths no-space .length js-statement-end
+    js-if jsvar-number-of-buttons > 1 js-then
+
+combee ****
+        jsvar-width-for-each-button js-equals parseInt( js-paren-begin jsvar-box-width * jsvar-scale-width-to-extend js-paren-end / jsvar-number-of-buttons ) js-concat "px" js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin jsvar-group-name js-params-next "width" js-params-next jsvar-width-for-each-button js-params-end js-statement-end
+**** comenn
+
+        jsvar-list-of-heights js-equals jsfunction-get-heights-of-visible-elements-of-class js-params-begin jsvar-group-name js-params-end js-statement-end
+        jsvar-height-for-each-button js-equals parseInt( Math.max.apply( null , jsvar-list-of-heights ) ) js-concat "px" js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin jsvar-group-name js-params-next "height" js-params-next jsvar-height-for-each-button js-params-end js-statement-end
+
+combee ***
+        jslog-begin code-open-quote jsvar-box-width code-close-quote jslog-equal-sign jsvar-box-width jslog-end
+        jslog-begin code-open-quote jsvar-list-of-widths code-close-quote jslog-equal-sign jsvar-list-of-widths jslog-end
+        jslog-begin code-open-quote jsvar-number-of-buttons code-close-quote jslog-equal-sign jsvar-number-of-buttons jslog-end
+        jslog-begin code-open-quote jsvar-width-for-each-button code-close-quote jslog-equal-sign jsvar-width-for-each-button jslog-end
+        jslog-begin code-open-quote jsvar-list-of-heights code-close-quote jslog-equal-sign jsvar-list-of-heights jslog-end
+        jslog-begin code-open-quote jsvar-height-for-each-button code-close-quote jslog-equal-sign jsvar-height-for-each-button jslog-end
+*** comenn
+
+    js-if-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

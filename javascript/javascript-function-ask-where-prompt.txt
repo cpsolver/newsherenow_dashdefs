@@ -1,0 +1,131 @@
+jsfunction-ask-where-prompt js-equals function( jsvar-event-keyup ) {
+    var jsvar-input-text comma-sep jsvar-keypress-prompt-state comma-sep jsvar-keypress-code comma-sep jsvar-element-id comma-sep jsvar-return-value js-statement-end
+
+<new_line>
+    const jscon-re-words-prompt-postal-code-and-comma js-equals /^ *(([0-9]+([^ ,0-9a-zA-Z][0-9]*)?)|([a-zA-Z][a-zA-Z][0-9]+)|(md[^ ,0-9a-zA-Z][0-9]*)|([a-zA-Z][0-9]([a-zA-Z]([^,0-9a-zA-Z]?([0-9]([a-zA-Z][0-9]?)?)?)?)?)) *, *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-postal-code-partial js-equals /^ *(([0-9]+([^ ,0-9a-zA-Z][0-9]*)?)|([a-zA-Z][a-zA-Z][0-9]+)|(md[^ ,0-9a-zA-Z][0-9]*)|([a-zA-Z][0-9]([a-zA-Z]([^,0-9a-zA-Z]?([0-9]([a-zA-Z][0-9]?)?)?)?)?)) *$/ js-statement-end
+
+<new_line>
+    const jscon-re-words-prompt-more-than-two-commas js-equals /^ *[^ ,]+ *, *[a-z]{3,99} *, *[^ ,]+ *, *[^ ,]+ *,/i js-statement-end
+
+<new_line>
+    const jscon-re-words-prompt-city js-equals /^ *[^ ,\-0-9]+ *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-city-multi-word js-equals /^ *[^ ,\-0-9][^ ,]*( +[^ ,]+)+ *$/ js-statement-end
+
+<new_line>
+    const jscon-re-words-prompt-ready-for-street-have-city js-equals /^ *[^ ,\-0-9][^ ,]+( +[^ ,]+)* *, *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-entering-street-have-city js-equals /^ *[^ ,\-0-9][^ ,]+( +[^ ,]+)* *, *[^ ,]+ *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-ready-for-cross-street-have-city js-equals /^ *[^ ,\-0-9][^ ,]+( +[^ ,]+)* *, *[^ ,]+( +[^ ,]+)* *, *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-entering-cross-street-have-city js-equals /^ *[^ ,\-0-9][^ ,]+( +[^ ,]+)* *, *[^ ,]+( +[^ ,]+)* *, *[^ ,][^,]* *$/ js-statement-end
+
+<new_line>
+    const jscon-re-words-prompt-contains-period js-equals /\./ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-entered-html-entity js-equals /&#[0-9]+;/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-entered-uppercase-letter js-equals /.+[A-Z]/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-can-enter-state-abbreviation js-equals /^ *[^ ,\-0-9][^ ,]*( +[^ ,]+)+ *$/ js-statement-end
+<new_line>
+    const jscon-re-words-prompt-just-unique-street-word js-equals /^ *[^,]+,( *[^,]+,)? *[^ ,]+ +[^ ,]+/ js-statement-end
+
+<new_line>
+
+    js-if jsvar-event-keyup js-then
+        jsvar-keypress-code js-equals jsvar-event-keyup no-space .keyCode js-statement-end
+combee ***
+        jslog-begin code-open-quote jsvar-keypress-code code-close-quote jslog-equal-sign jsvar-keypress-code jslog-end
+*** comenn
+        js-if jsvar-keypress-code js-is-equal-to 13 js-then
+            jsfunction-handle-click-button js-params-begin code-open-quote selectext-gohere code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+            return true js-statement-end
+        js-if-end
+    js-if-end
+
+    jsvar-return-value js-equals jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-ask-where-keypress-prompt code-close-quote js-params-end js-statement-end
+    jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-end js-statement-end
+    jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-unrecognized code-close-quote js-statement-end
+
+<new_line>
+
+    js-if jsvar-input-text js-is-equal-to code-open-close-quote js-then
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-empty code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-postal-code-and-comma no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-postal-code-and-comma code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-postal-code-partial no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-postal-code-partial code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-more-than-two-commas no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-more-than-two-commas code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-entering-cross-street-have-city no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-entering-cross-street-have-city code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-ready-for-cross-street-have-city no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-ready-for-cross-street-have-city code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-entering-street-have-city no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-entering-street-have-city code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-ready-for-street-have-city no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-ready-for-street-have-city code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-city-multi-word no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-city-multi-word code-close-quote js-statement-end
+
+    } else if ( jscon-re-words-prompt-city no-space .test( jsvar-input-text ) ) {
+        jsvar-keypress-prompt-state js-equals code-open-quote selectext-id-keypress-prompt-city code-close-quote js-statement-end
+
+    js-if-end
+
+    jsvar-element-id js-equals jsvar-keypress-prompt-state js-statement-end
+
+<new_line>
+
+    jsvar-return-value js-equals jsfunction-show-element-with-id js-params-begin jsvar-element-id js-params-end js-statement-end
+
+<new_line>
+
+    js-if js-paren-begin jsvar-keypress-prompt-state !== code-open-quote selectext-id-keypress-prompt-postal-code-and-comma code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-keypress-prompt-state !== code-open-quote selectext-id-keypress-prompt-postal-code-partial code-close-quote js-paren-end js-then
+
+<new_line>
+
+        js-if jscon-re-words-prompt-contains-period no-space .test( jsvar-input-text ) js-then
+            jsvar-return-value js-equals jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-keypress-prompt-contains-period code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+        js-if-end
+        js-if jscon-re-words-prompt-entered-html-entity no-space .test( jsvar-input-text ) js-then
+            jsvar-return-value js-equals jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-keypress-prompt-entered-html-entity code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+        js-if-end
+        js-if jscon-re-words-prompt-entered-uppercase-letter no-space .test( jsvar-input-text ) js-then
+            jsvar-return-value js-equals jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-keypress-prompt-entered-uppercase-letter code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+        js-if-end
+        js-if jscon-re-words-prompt-just-unique-street-word no-space .test( jsvar-input-text ) js-then
+            jsvar-return-value js-equals jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-keypress-prompt-just-unique-street-word code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+        js-if-end
+
+<new_line>
+
+    js-if-end
+
+    return jsvar-return-value js-statement-end
+} js-statement-end
+<new_line>

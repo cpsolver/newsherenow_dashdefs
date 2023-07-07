@@ -1,0 +1,16 @@
+jsfunction-un-brighten-button js-equals function( ) {
+    var jsvar-button-clicked-element-name comma-sep jsvar-saved-class-for-button-to-brighten js-statement-end
+    jsvar-button-clicked-element-name js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-button-to-brighten code-close-quote js-params-next "contents" js-params-end js-statement-end
+    js-if jsvar-button-clicked-element-name js-is-equal-to code-open-close-quote js-then
+        return true js-statement-end
+    js-if-end
+    jsvar-saved-class-for-button-to-brighten js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-class-before-brighten code-close-quote js-params-next "contents" js-params-end js-statement-end
+    js-if jsvar-saved-class-for-button-to-brighten js-is-equal-to code-open-close-quote js-then
+        return true js-statement-end
+    js-if-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin jsvar-button-clicked-element-name js-params-next "class" js-params-next jsvar-saved-class-for-button-to-brighten js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-button-to-brighten code-close-quote js-params-next "contents" js-params-next code-open-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-class-before-brighten code-close-quote js-params-next "contents" js-params-next code-open-close-quote js-params-end js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

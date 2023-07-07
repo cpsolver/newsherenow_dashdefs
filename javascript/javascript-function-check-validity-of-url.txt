@@ -1,0 +1,14 @@
+jsfunction-check-validity-of-url js-equals function( selectext-url ) {
+    const jscon-re-validity-check js-equals /^[^ ]+$/ js-statement-end
+    js-if js-paren-begin selectext-url js-paren-end js-logical-and js-paren-begin jscon-re-validity-check no-space .test( selectext-url js-paren-end ) js-then
+
+combee ***
+        jslog-begin code-open-quote selectext-url code-close-quote jslog-equal-sign selectext-url jslog-end
+*** comenn
+
+        return true js-statement-end
+    js-if-end
+    jslog-begin code-open-quote selectext-url code-close-quote jslog-equal-sign selectext-url jslog-end
+    return false;
+} js-statement-end
+<new_line>

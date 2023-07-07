@@ -1,0 +1,67 @@
+jsfunction-update-biz-info js-equals function( ) {
+    var jsvar-string-kilometers-abbreviated comma-sep jsvar-elements-one-for-each-biz-item comma-sep jsvar-id-of-biz-item comma-sep jsvar-length-of-id-name comma-sep jsvar-prefix-string comma-sep jsvar-length-of-prefix-string comma-sep jsvar-suffix-string comma-sep jsvar-length-of-suffix-string comma-sep jsvar-pointer comma-sep jsvar-id-name-of-element comma-sep jsvar-distance-hundredths comma-sep jsvar-displayed-distance comma-sep jsvar-string-distance-unknown-in-paren comma-sep jsvar-displayed-where-info comma-sep jsvar-string-comma comma-sep jsvar-possible-string-closest-farthest-etc comma-sep jsvar-string-closest-in-paren comma-sep jsvar-string-farthest-in-paren comma-sep jsvar-miles-hundredths comma-sep jsvar-possible-displayed-miles comma-sep jsvar-block-or-none comma-sep jsvar-row-count comma-sep jsvar-column-count comma-sep jsvar-number-of-buttons comma-sep jsvar-number-of-columns comma-sep jsvar-tagline comma-sep jsvar-id-of-tagline comma-sep jsvar-country-code comma-sep jsvar-biz-type-in-target-lang comma-sep jsvar-string-open-parenthesis comma-sep jsvar-string-close-parenthesis comma-sep jsvar-website-url comma-sep jsvar-yes-if-show-miles js-statement-end
+    jsvar-prefix-string js-equals code-open-quote selectext-id-biz underscore-double-here code-close-quote js-statement-end
+    jsvar-length-of-prefix-string js-equals jsvar-prefix-string no-space .length js-statement-end
+    jsvar-suffix-string js-equals code-close-quote underscore-double-here selectext-bizname code-close-quote js-statement-end
+    jsvar-length-of-suffix-string js-equals jsvar-suffix-string no-space .length js-statement-end
+    jsvar-string-kilometers-abbreviated js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-km code-close-quote js-params-end js-statement-end
+    jsvar-string-miles-abbreviated js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-mi code-close-quote js-params-end js-statement-end
+    jsvar-string-distance-unknown-in-paren js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-distance-unknown-in-paren code-close-quote js-params-end js-statement-end
+    jsvar-string-comma js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-comma code-close-quote js-params-end js-statement-end
+    jsvar-string-open-parenthesis js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-character-open-parenthesis code-close-quote js-params-end js-statement-end
+    jsvar-string-close-parenthesis js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-character-close-parenthesis code-close-quote js-params-end js-statement-end
+    jsvar-string-closest-in-paren js-equals jsvar-string-open-parenthesis js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-closest code-close-quote js-params-end js-concat jsvar-string-close-parenthesis js-statement-end
+    jsvar-string-farthest-in-paren js-equals jsvar-string-open-parenthesis js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-farthest code-close-quote js-params-end js-concat jsvar-string-close-parenthesis js-statement-end
+    jsvar-elements-one-for-each-biz-item js-equals document.getElementsByClassName( code-open-quote class-style-business-title code-close-quote ) js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-group-id-item-has-website code-close-quote js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-group-id-biztype-shown code-close-quote js-params-next "contents" js-params-next code-open-close-quote js-params-end js-statement-end
+    js-for-loop-define jsvar-pointer js-equals 0 ; jsvar-pointer < jsvar-elements-one-for-each-biz-item no-space .length ; jsvar-pointer ++ js-for-loop-start
+        js-try
+            jsvar-id-name-of-element js-equals jsvar-elements-one-for-each-biz-item no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-id-name-of-element js-equals code-open-close-quote js-statement-end
+        js-if-end
+        jsvar-length-of-id-name js-equals jsvar-id-name-of-element no-space .length js-statement-end
+        js-if jsvar-length-of-id-name > 2 js-then
+            jsvar-id-of-biz-item js-equals jsvar-id-name-of-element no-space .substring( jsvar-length-of-prefix-string , js-paren-begin jsvar-length-of-id-name - jsvar-length-of-suffix-string js-paren-end ) js-statement-end
+            jsvar-distance-hundredths js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-kilometers-hundredths code-close-quote js-params-end js-statement-end
+            jsvar-displayed-distance js-equals jsfunction-convert-integer-hundredths-to-decimal-string js-params-begin jsvar-distance-hundredths js-params-end js-statement-end
+            js-if jsvar-displayed-distance js-is-equal-to code-open-close-quote js-then
+                jsvar-displayed-where-info js-equals jsvar-string-distance-unknown-in-paren js-statement-end
+            js-else
+                jsvar-id-of-element-with-percentage-value js-equals code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-color-distance code-close-quote js-statement-end
+                jsvar-percentage-value js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-of-element-with-percentage-value js-params-end js-statement-end
+                jsvar-possible-string-closest-farthest-etc js-equals code-open-close-quote js-statement-end
+                jsvar-country-code js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-country-code code-close-quote js-params-end js-statement-end
+                jsvar-yes-if-show-miles js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-if-show-miles code-close-quote js-params-end js-statement-end
+                js-if js-paren-begin jsvar-yes-if-show-miles js-is-equal-to code-open-quote string-yes code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-distance-hundredths js-paren-end js-then
+                    jsvar-miles-hundredths js-equals parseInt( parseInt( jsvar-distance-hundredths ) * 0.621371 ) js-concat code-open-close-quote js-statement-end
+                    jsvar-possible-displayed-miles js-equals " " js-concat jsvar-string-comma js-concat " " js-concat jsfunction-convert-integer-hundredths-to-decimal-string no-space js-paren-begin jsvar-miles-hundredths js-paren-end js-concat " " js-concat jsvar-string-miles-abbreviated js-statement-end
+                js-else
+                    jsvar-possible-displayed-miles js-equals code-open-close-quote js-statement-end
+                js-if-end
+                jsvar-displayed-where-info js-equals jsvar-displayed-distance js-concat " " js-concat jsvar-string-kilometers-abbreviated js-concat jsvar-possible-displayed-miles js-concat jsvar-possible-string-closest-farthest-etc js-statement-end
+            js-if-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-distance-displayed code-close-quote js-params-next jsvar-displayed-where-info js-params-end js-statement-end
+            jsvar-id-of-tagline js-equals code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-tagline code-close-quote js-statement-end
+            jsvar-tagline js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-of-tagline js-params-end js-statement-end
+            js-if jsvar-tagline no-space .length > 0 js-then
+                jsfunction-show-element-with-id js-params-begin jsvar-id-of-tagline js-params-end js-statement-end
+            js-else
+                jsfunction-hide-element-with-id js-params-begin jsvar-id-of-tagline js-params-end js-statement-end
+            js-if-end
+            jsvar-id-of-biztype js-equals code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-biztype code-close-quote js-statement-end
+            jsvar-biztype js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-biztype code-close-quote js-params-end js-statement-end
+            js-if jsvar-biztype no-space .length > 0 js-then
+                jsvar-biz-type-in-target-lang js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-biztype underscore-here code-close-quote js-concat jsvar-biztype js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-biztype-shown code-close-quote js-params-next jsvar-biz-type-in-target-lang js-params-end js-statement-end
+            js-if-end
+            jsvar-website-url js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-website code-close-quote js-params-end js-statement-end
+            js-if jsvar-website-url no-space .length > 3 js-then
+                jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-biz underscore-double-here code-close-quote js-concat jsvar-id-of-biz-item js-concat code-open-quote underscore-double-here selectext-has-website code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+            js-if-end
+        js-if-end
+    js-loop-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

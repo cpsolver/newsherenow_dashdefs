@@ -1,0 +1,19 @@
+jsfunction-geo-location-do-request js-equals function( ) {
+    var jsvar-latitude comma-sep jsvar-longitude js-statement-end
+    jsvar-latitude js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-latitude-from-gps code-close-quote js-params-end js-statement-end
+    jsvar-latitude js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-longitude-from-gps code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-news code-close-quote js-params-next code-open-quote selectext-no code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-biz code-close-quote js-params-next code-open-quote selectext-no code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+    jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-location code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-map code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-latlondecimal code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+    jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-latlondecimal code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+    return code-open-close-quote js-statement-end
+} js-statement-end
+<new_line>

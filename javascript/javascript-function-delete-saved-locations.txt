@@ -1,0 +1,14 @@
+jsfunction-delete-saved-locations js-equals function( ) {
+    var jsvar-storage-key js-statement-end
+    jsfunction-shift-saved-values-from-position-to-position js-params-begin "0" js-params-next "1" js-params-end js-statement-end
+    jsfunction-shift-saved-values-from-position-to-position js-params-begin "0" js-params-next "2" js-params-end js-statement-end
+    jsfunction-shift-saved-values-from-position-to-position js-params-begin "0" js-params-next "3" js-params-end js-statement-end
+    jsfunction-save-values-in-browser no-space ( ) js-statement-end
+    jsfunction-get-values-from-browser no-space ( ) js-statement-end
+    js-if window.localStorage js-then
+        localStorage.clear( ) js-statement-end
+    js-if-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-count-of-saved-locations code-close-quote js-params-next "0" js-params-end js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

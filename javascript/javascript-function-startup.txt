@@ -1,0 +1,59 @@
+startup js-equals function( ) {
+    var jsvar-value-to-copy comma-sep jsvar-redirect-request js-statement-end
+    jsfunction-hide-page-segments-except js-params-begin code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+    jsfunction-move-focus-to-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-end js-statement-end
+
+combee **** show the default keypress prompt **** comenn
+    jsfunction-ask-where-prompt no-space js-params-begin no-space js-params-end js-statement-end
+
+combee *** get the map image *** comenn
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-map-density code-close-quote js-params-next "src" js-params-next code-open-quote url-prefix-for-image-in-image-folder filename-map-showing-coverage no-space " js-params-end js-statement-end
+
+combee *** initialize the variable that accesses the canvas where map tiles are displayed *** comenn
+    jsvar-global-canvas js-equals document.getElementById(' no-space selectext-map-canvas no-space ').getContext('2d') js-statement-end
+    javascript-inline-clear-map-tiles-area
+
+combee *** specify page segment to be ask where *** comenn
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-where code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+
+combee *** hide the nav tabs that are location specific *** comenn
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-map code-close-quote js-params-end js-statement-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-biz code-close-quote js-params-end js-statement-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-news code-close-quote js-params-end js-statement-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-polls code-close-quote js-params-end js-statement-end
+
+combee *** adjust heights *** comenn
+    jsfunction-adjust-heights no-space js-params-begin no-space js-params-end js-statement-end
+
+combee *** get a possible specific request from the element "selectext-id-redirect-text" ; if the specific request is the placeholder value then specify an empty request ; reminder: the placeholder value cannot appear here as a single text string or else it will be replaced when the do_redirect occurs *** comenn
+    jsvar-redirect-request js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-end js-statement-end
+    js-if jsvar-redirect-request js-is-equal-to code-open-quote [redir code-close-quote js-concat code-open-quote ecthere] code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-next code-open-quote server-request-category-static code-close-quote js-params-end js-statement-end
+        jsvar-redirect-request js-equals code-open-close-quote js-statement-end
+    js-if-end
+
+combee *** handle a /gps or /osm request *** comenn
+    js-if js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote gps code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote osm code-close-quote js-paren-end js-then
+        jsfunction-handle-click-button js-params-begin code-open-quote selectext-gps code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+        return true js-statement-end
+    js-if-end
+
+combee *** todo: jump to a specific business or news item *** comenn
+
+combee *** reminder: the code for special requests above must include return statements *** comenn
+
+combee *** if the specific request is not empty, assume it is a location, such as a postal code or city name, and jump to that location *** comenn
+    js-if jsvar-redirect-request js-is-not-equal-to code-open-close-quote js-then
+
+        jslog-begin code-open-quote jsvar-redirect-request code-close-quote jslog-equal-sign jsvar-redirect-request jslog-end
+
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next jsvar-redirect-request js-params-end js-statement-end
+        jsfunction-handle-click-button js-params-begin code-open-quote selectext-gohere code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+        return true js-statement-end
+    js-if-end
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

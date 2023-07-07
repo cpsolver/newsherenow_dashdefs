@@ -1,0 +1,148 @@
+jsfunction-update-calendar js-equals function( jsvar-clicked-button-name ) {
+    var jsvar-location-name comma-sep jsvar-form-component-elements comma-sep jsvar-pointer comma-sep jsvar-id-name-of-element comma-sep jsvar-pointer-to-string comma-sep jsvar-component-of-element-id-name comma-sep jsvar-calendar-position-number comma-sep jsvar-past-or-future comma-sep jsvar-year comma-sep jsvar-day-of-week-abbreviated comma-sep jsvar-possible-max-width comma-sep jsvar-button-width comma-sep jsvar-month-number-current comma-sep jsvar-day-of-month-current comma-sep jsvar-day-of-month comma-sep jsvar-last-day-of-month-plus-one comma-sep jsvar-month-name comma-sep jsvar-month-number-calendar-one comma-sep jsvar-month-number-calendar-two comma-sep jsvar-start-day-of-week-calendar-one comma-sep jsvar-start-day-of-week-calendar-two comma-sep jsvar-days-in-month-calendar-one comma-sep jsvar-days-in-month-calendar-two comma-sep jsvar-hour-current-local-estimated comma-sep jsvar-hour-current-at-zero-meridian comma-sep jsvar-max-width comma-sep jsvar-calendar-position-number-today comma-sep jsvar-day-of-week-number js-statement-end
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdatepast code-close-quote js-then
+        jsvar-past-or-future js-equals code-open-quote selectext-past code-close-quote js-statement-end
+    js-else-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdatefuture code-close-quote js-then
+        jsvar-past-or-future js-equals code-open-quote selectext-future code-close-quote js-statement-end
+    js-else
+        jsvar-past-or-future js-equals code-open-quote selectext-future code-close-quote js-statement-end
+    js-if-end
+    jsvar-day-of-month-current js-equals parseInt( jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-day-of-month code-close-quote ) js-params-end js-statement-end
+    js-if jsvar-past-or-future js-is-equal-to code-open-quote selectext-past code-close-quote js-then
+        jsvar-year js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-previous-month-year-number code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-year-for-month-one code-close-quote js-params-next jsvar-year js-params-end js-statement-end
+        jsvar-year js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-current-month-year-number code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-year-for-month-two code-close-quote js-params-next jsvar-year js-params-end js-statement-end
+        jsvar-month-number-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-previous-month-number code-close-quote js-params-end js-statement-end
+        jsvar-month-number-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-number code-close-quote js-params-end js-statement-end
+        jsvar-month-number-current js-equals jsvar-month-number-calendar-two js-statement-end
+        jsvar-start-day-of-week-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-previous-month-start-day-of-week-number code-close-quote js-params-end js-statement-end
+        jsvar-start-day-of-week-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-current-start-day-of-week-number code-close-quote js-params-end js-statement-end
+        jsvar-days-in-month-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-previous-month-days-in-month code-close-quote js-params-end js-statement-end
+        jsvar-days-in-month-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-current-days-in-month code-close-quote js-params-end js-statement-end
+    js-else-if jsvar-past-or-future js-is-equal-to code-open-quote selectext-future code-close-quote js-then
+        jsvar-year js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-current-month-year-number code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-year-for-month-one code-close-quote js-params-next jsvar-year js-params-end js-statement-end
+        jsvar-year js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-next-month-year-number code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-year-for-month-two code-close-quote js-params-next jsvar-year js-params-end js-statement-end
+        jsvar-month-number-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-number code-close-quote js-params-end js-statement-end
+        jsvar-month-number-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-next-month-number code-close-quote js-params-end js-statement-end
+        jsvar-month-number-current js-equals jsvar-month-number-calendar-one js-statement-end
+        jsvar-start-day-of-week-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-current-start-day-of-week-number code-close-quote js-params-end js-statement-end
+        jsvar-start-day-of-week-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-next-month-start-day-of-week-number code-close-quote js-params-end js-statement-end
+        jsvar-days-in-month-calendar-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-current-days-in-month code-close-quote js-params-end js-statement-end
+        jsvar-days-in-month-calendar-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-next-month-days-in-month code-close-quote js-params-end js-statement-end
+    js-if-end
+    js-if jsvar-past-or-future js-is-equal-to code-open-quote selectext-past code-close-quote js-then
+        jsvar-calendar-position-number-today js-equals jsvar-day-of-month-current + parseInt( jsvar-start-day-of-week-calendar-two ) - 40 js-statement-end
+    js-else
+        jsvar-calendar-position-number-today js-equals jsvar-day-of-month-current + parseInt( jsvar-start-day-of-week-calendar-one ) js-statement-end
+    js-if-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-user-supplied-cal-day code-close-quote js-params-next jsvar-calendar-position-number-today js-params-end js-statement-end
+
+    jslog-begin code-open-quote jsvar-start-day-of-week-calendar-one code-close-quote jslog-equal-sign jsvar-start-day-of-week-calendar-one jslog-end
+    jslog-begin code-open-quote jsvar-start-day-of-week-calendar-two code-close-quote jslog-equal-sign jsvar-start-day-of-week-calendar-two jslog-end
+    jslog-begin code-open-quote jsvar-day-of-month-current code-close-quote jslog-equal-sign jsvar-day-of-month-current jslog-end
+    jslog-begin code-open-quote jsvar-calendar-position-number-today code-close-quote jslog-equal-sign jsvar-calendar-position-number-today jslog-end
+combee ***
+*** comenn
+
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-one-month-number code-close-quote js-params-next jsvar-month-number-calendar-one js-params-end js-statement-end
+    jsvar-month-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-name underscore-here code-close-quote js-concat jsvar-month-number-calendar-one js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-month-name-one code-close-quote js-params-next jsvar-month-name js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-calendar-two-month-number code-close-quote js-params-next jsvar-month-number-calendar-two js-params-end js-statement-end
+    jsvar-month-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-name underscore-here code-close-quote js-concat jsvar-month-number-calendar-two js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-month-name-two code-close-quote js-params-next jsvar-month-name js-params-end js-statement-end
+    jsvar-max-width js-equals 20 js-statement-end
+    jsvar-form-component-elements js-equals document.getElementsByClassName( code-open-quote class-style-calendar-day-of-week code-close-quote ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-form-component-elements no-space .length; jsvar-pointer ++ js-for-loop-start
+        js-try
+            jsvar-id-name-of-element js-equals jsvar-form-component-elements no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-id-name-of-element js-equals code-open-close-quote js-statement-end
+        js-if-end
+        js-if jsvar-id-name-of-element js-then
+            jsvar-component-of-element-id-name js-equals jsvar-id-name-of-element no-space .split( code-open-quote underscore-double-here code-close-quote ) js-statement-end
+            jsvar-calendar-position-number js-equals jsvar-component-of-element-id-name no-space [2] js-statement-end
+            jsvar-day-of-week-number js-equals parseInt( jsvar-calendar-position-number ) - 1 js-statement-end
+            js-if jsvar-day-of-week-number js-is-equal-to 0 js-then
+                jsvar-day-of-week-number js-equals 7 js-statement-end
+            js-if-end
+            jsvar-day-of-week-abbreviated js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-cal-day-of-week underscore-here code-close-quote js-concat parseInt( jsvar-day-of-week-number ) js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-id-name-of-element js-params-next jsvar-day-of-week-abbreviated js-params-end js-statement-end
+
+combee ****
+            jsvar-possible-max-width js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin jsvar-id-name-of-element js-params-next "width" js-params-end js-statement-end
+            js-if jsvar-possible-max-width > jsvar-max-width js-then
+                jsvar-max-width js-equals jsvar-possible-max-width js-statement-end
+            js-if-end
+**** comenn
+
+        js-if-end
+    js-loop-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-cal-day underscore-double-here 1 code-close-quote js-params-next "??" js-params-end js-statement-end
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-cal-day underscore-double-here 1 code-close-quote js-params-end js-statement-end
+
+combee ****
+    jsvar-possible-max-width js-equals parseInt( jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-cal-day underscore-double-here 1 code-close-quote js-params-end ) js-statement-end
+
+    js-if jsvar-possible-max-width > jsvar-max-width js-then
+        jsvar-max-width js-equals jsvar-possible-max-width js-statement-end
+    js-if-end
+    jsvar-button-width js-equals js-paren-begin jsvar-max-width * 1.7 js-paren-end js-concat "px" js-statement-end
+**** comenn
+
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-highlighted code-close-quote js-params-next "class" js-params-next code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote js-params-next "contents" js-params-next "?" js-params-end js-statement-end
+    jsfunction-show-elements-of-class js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote js-params-end js-statement-end
+
+combee ****
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote js-params-next "width" js-params-next jsvar-button-width js-params-end js-statement-end
+**** comenn
+
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote js-params-end js-statement-end
+
+    jsvar-form-component-elements js-equals document.getElementsByClassName( code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-not-highlighted code-close-quote ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-form-component-elements no-space .length; jsvar-pointer ++ js-for-loop-start
+        js-try
+            jsvar-id-name-of-element js-equals jsvar-form-component-elements no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-id-name-of-element js-equals code-open-close-quote js-statement-end
+            jslog-begin code-open-quote cannot get name of calendar element code-close-quote jslog-end
+        js-if-end
+        js-if jsvar-id-name-of-element js-then
+            jsvar-component-of-element-id-name js-equals jsvar-id-name-of-element no-space .split( code-open-quote underscore-double-here code-close-quote ) js-statement-end
+            jsvar-calendar-position-number js-equals jsvar-component-of-element-id-name no-space [2] js-statement-end
+            js-if jsvar-calendar-position-number < 43 js-then
+                jsvar-day-of-month js-equals jsvar-calendar-position-number - jsvar-start-day-of-week-calendar-one js-statement-end
+                jsvar-last-day-of-month-plus-one js-equals parseInt( jsvar-days-in-month-calendar-one ) + 1 js-statement-end
+
+                jslog-begin code-open-quote jsvar-calendar-position-number code-close-quote jslog-equal-sign jsvar-calendar-position-number jslog-end
+                jslog-begin code-open-quote jsvar-day-of-month code-close-quote jslog-equal-sign jsvar-day-of-month jslog-end
+combee ***
+*** comenn
+
+                js-if js-paren-begin jsvar-day-of-month > 0 js-paren-end js-logical-and js-paren-begin jsvar-day-of-month < jsvar-last-day-of-month-plus-one js-paren-end js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-id-name-of-element js-params-next jsvar-day-of-month js-params-end js-statement-end
+                    js-if js-paren-begin jsvar-past-or-future js-is-equal-to code-open-quote selectext-past code-close-quote js-paren-end js-logical-or js-paren-begin js-paren-begin jsvar-past-or-future js-is-equal-to code-open-quote selectext-future code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-day-of-month > ( jsvar-day-of-month-current - 2 js-paren-end js-paren-end ) js-then
+                        jsfunction-show-element-with-id js-params-begin jsvar-id-name-of-element js-params-end js-statement-end
+                    js-if-end
+                js-if-end
+            js-else
+                jsvar-day-of-month js-equals jsvar-calendar-position-number - jsvar-start-day-of-week-calendar-two - 42 js-statement-end
+                jsvar-last-day-of-month-plus-one js-equals parseInt( jsvar-days-in-month-calendar-two ) + 1 js-statement-end
+                js-if js-paren-begin jsvar-day-of-month > 0 js-paren-end js-logical-and js-paren-begin jsvar-day-of-month < jsvar-last-day-of-month-plus-one js-paren-end js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-id-name-of-element js-params-next jsvar-day-of-month js-params-end js-statement-end
+                    js-if js-paren-begin js-paren-begin jsvar-past-or-future js-is-equal-to code-open-quote selectext-past code-close-quote js-paren-end js-logical-and js-paren-begin js-paren-begin jsvar-day-of-month - 0 js-paren-end <= jsvar-day-of-month-current js-paren-end js-paren-end js-logical-or js-paren-begin jsvar-past-or-future js-is-equal-to code-open-quote selectext-future code-close-quote js-paren-end js-then
+                        jsfunction-show-element-with-id js-params-begin jsvar-id-name-of-element js-params-end js-statement-end
+                    js-if-end
+                js-if-end
+            js-if-end
+        js-if-end
+    js-loop-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-button underscore-double-here selectext-cal-day underscore-double-here code-close-quote js-concat jsvar-calendar-position-number-today js-params-next "class" js-params-next code-open-quote class-style-button-in-group underscore-double-here selectext-cal-day underscore-double-here selectext-highlighted code-close-quote js-params-end js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

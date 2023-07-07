@@ -1,0 +1,58 @@
+combee **** todo: no longer needed? **** comenn
+
+jsfunction-show-hide-saved-locations js-equals function( ) {
+    var jsvar-loc-user-saved-1 comma-sep jsvar-loc-user-saved-2 comma-sep jsvar-loc-user-saved-3 comma-sep jsvar-number-of-buttons comma-sep jsvar-height-each-button comma-sep jsvar-padding-left-right comma-sep jsvar-length-of-location-name-longest comma-sep jsvar-location-name js-statement-end
+    var jsvar-list-of-heights-loc-saved js-equals [0] js-statement-end
+    var jsvar-list-of-location-name-lengths js-equals [0,0,0] js-statement-end
+    jsvar-loc-user-saved-1 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 1 code-close-quote js-params-end js-statement-end
+    jsvar-loc-user-saved-2 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 2 code-close-quote js-params-end js-statement-end
+    jsvar-loc-user-saved-3 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 3 code-close-quote js-params-end js-statement-end
+
+combee ***
+    jslog-begin code-open-quote jsvar-loc-user-saved-1 code-close-quote jslog-equal-sign jsvar-loc-user-saved-1 jslog-end
+    jslog-begin code-open-quote jsvar-loc-user-saved-2 code-close-quote jslog-equal-sign jsvar-loc-user-saved-2 jslog-end
+    jslog-begin code-open-quote jsvar-loc-user-saved-3 code-close-quote jslog-equal-sign jsvar-loc-user-saved-3 jslog-end
+*** comenn
+
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-button-have-location underscore-double-here 2 code-close-quote js-params-end js-statement-end
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-button-have-location underscore-double-here 3 code-close-quote js-params-end js-statement-end
+    js-if jsvar-loc-user-saved-1 js-then
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-button-have-location underscore-double-here 1 code-close-quote js-params-end js-statement-end
+        jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-button-delete-saved code-close-quote js-params-end js-statement-end
+        jsvar-list-of-location-name-lengths no-space [ 0 ] js-equals jsvar-location-name no-space .length js-statement-end
+        jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 1 code-close-quote js-params-end js-statement-end
+        jsvar-list-of-location-name-lengths no-space [ 1 ] js-equals jsvar-location-name no-space .length js-statement-end
+    js-if-end
+    js-if jsvar-loc-user-saved-2 js-then
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-button-have-location underscore-double-here 2 code-close-quote js-params-end js-statement-end
+        jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 2 code-close-quote js-params-end js-statement-end
+        jsvar-list-of-location-name-lengths no-space [ 2 ] js-equals jsvar-location-name no-space .length js-statement-end
+    js-if-end
+    js-if jsvar-loc-user-saved-3 js-then
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-button-have-location underscore-double-here 3 code-close-quote js-params-end js-statement-end
+        jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name underscore-double-here selectext-loc-saved underscore-double-here 3 code-close-quote js-params-end js-statement-end
+        jsvar-list-of-location-name-lengths no-space [ 3 ] js-equals jsvar-location-name no-space .length js-statement-end
+    js-if-end
+    jsvar-length-of-location-name-longest js-equals parseInt( Math.max.apply( null , jsvar-list-of-location-name-lengths ) ) js-statement-end
+
+combee ***
+    jslog-begin code-open-quote jsvar-length-of-location-name-longest code-close-quote jslog-equal-sign jsvar-length-of-location-name-longest jslog-end
+**** comenn
+
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-loc-saved code-close-quote js-params-next "height" js-params-next code-open-close-quote js-params-end js-statement-end
+    jsvar-list-of-heights-loc-saved js-equals jsfunction-get-heights-of-visible-elements-of-class js-params-begin code-open-quote class-style-button-loc-saved code-close-quote js-params-end js-statement-end
+    jsvar-height-maximum js-equals 30 js-statement-end
+    jsvar-height-maximum js-equals parseInt( Math.max.apply( null , jsvar-list-of-heights-loc-saved ) ) js-statement-end
+    jsvar-height-each-button js-equals jsvar-height-maximum js-concat "px" js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-button-loc-saved code-close-quote js-params-next "height" js-params-next jsvar-height-each-button js-params-end js-statement-end
+
+    jslog-begin code-open-quote jsvar-list-of-heights-loc-saved code-close-quote jslog-equal-sign jsvar-list-of-heights-loc-saved jslog-end
+    jslog-begin code-open-quote jsvar-height-maximum code-close-quote jslog-equal-sign jsvar-height-maximum jslog-end
+    jslog-begin code-open-quote jsvar-height-each-button code-close-quote jslog-equal-sign jsvar-height-each-button jslog-end
+    jslog-begin code-open-quote jsvar-list-of-heights-loc-saved code-close-quote jslog-equal-sign jsvar-list-of-heights-loc-saved jslog-end
+combee ***
+**** comenn
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

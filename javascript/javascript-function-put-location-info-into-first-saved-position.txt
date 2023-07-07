@@ -1,0 +1,32 @@
+jsfunction-put-location-info-into-first-saved-position js-equals function( ) {
+    var jsvar-loc-user-saved-1 comma-sep jsvar-loc-user-saved-2 comma-sep jsvar-loc-user-saved-3 comma-sep jsvar-elements-to-be-saved comma-sep jsvar-pointer comma-sep jsvar-element-name comma-sep jsvar-components-of-element-name comma-sep jsvar-name-id-only comma-sep jsvar-value-to-copy comma-sep jsvar-do-nothing comma-sep jsvar-loc-user js-statement-end
+    jsvar-loc-user js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+    jsvar-loc-user-saved-1 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 1 code-close-quote js-params-end js-statement-end
+    jsvar-loc-user-saved-2 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 2 code-close-quote js-params-end js-statement-end
+    jsvar-loc-user-saved-3 js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 3 code-close-quote js-params-end js-statement-end
+    js-if jsvar-loc-user js-is-equal-to jsvar-loc-user-saved-1 js-then
+        jsvar-do-nothing ++ js-statement-end
+    js-else-if jsvar-loc-user js-is-equal-to jsvar-loc-user-saved-2 js-then
+        jsfunction-shift-saved-values-from-position-to-position js-params-begin "1" js-params-next "2" js-params-end js-statement-end
+    js-else
+        jsfunction-shift-saved-values-from-position-to-position js-params-begin "2" js-params-next "3" js-params-end js-statement-end
+        jsfunction-shift-saved-values-from-position-to-position js-params-begin "1" js-params-next "2" js-params-end js-statement-end
+    js-if-end
+    var jsvar-elements-to-be-saved js-equals document.getElementsByClassName( code-open-quote selectext-group-saved-name-prefix code-close-quote ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-elements-to-be-saved no-space .length; jsvar-pointer ++ js-for-loop-start
+        jsvar-element-name js-equals code-open-close-quote js-statement-end
+        js-try
+            jsvar-element-name js-equals jsvar-elements-to-be-saved no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-element-name js-equals code-open-close-quote js-statement-end
+        js-if-end
+        js-if jsvar-element-name js-then
+            jsvar-components-of-element-name js-equals jsvar-element-name no-space .split( code-open-quote underscore-double-here code-close-quote ) js-statement-end
+            jsvar-name-id-only js-equals jsvar-components-of-element-name no-space [0] js-statement-end
+            jsvar-value-to-copy js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-name-id-only js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-name-id-only js-concat code-open-quote underscore-double-here selectext-loc-saved underscore-double-here 1 code-close-quote js-paren-end js-params-next jsvar-value-to-copy js-params-end js-statement-end
+        js-if-end
+    js-loop-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

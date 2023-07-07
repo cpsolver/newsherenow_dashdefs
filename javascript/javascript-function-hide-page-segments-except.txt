@@ -1,0 +1,31 @@
+jsfunction-hide-page-segments-except js-equals function( jsvar-page-segment-to-show ) {
+    var jsvar-id-element-name js-statement-end
+    jsfunction-un-brighten-button js-params-begin js-params-end js-statement-end
+
+combee **** if empty request, do nothing **** comenn
+    js-if jsvar-page-segment-to-show no-space .length js-is-equal-to 0 js-then
+        return true js-statement-end
+    js-if-end
+
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-page-segment-any code-close-quote js-params-end js-statement-end
+    jsvar-id-element-name js-equals code-open-quote selectext-id-page-segment underscore-double-here code-close-quote js-concat jsvar-page-segment-to-show js-statement-end
+    js-try
+        jsfunction-show-element-with-id js-params-begin jsvar-id-element-name js-params-end js-statement-end
+
+combee **** if invalid request, show "about" page **** comenn
+    js-catch
+        jsvar-id-element-name js-equals code-open-quote selectext-id-page-segment underscore-double-here code-close-quote js-concat selectext-about js-statement-end
+        jsfunction-show-element-with-id js-params-begin jsvar-id-element-name js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-about code-close-quote js-params-end js-statement-end
+        jslog-begin code-open-quote cannot show element code-close-quote js-concat jsvar-id-element-name jslog-end
+        return true js-statement-end
+    js-if-end
+
+combee *** show "now" page segment if page is biz or news *** comenn
+    js-if js-paren-begin jsvar-page-segment-to-show js-is-equal-to code-open-quote selectext-news code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-page-segment-to-show js-is-equal-to code-open-quote selectext-biz code-close-quote js-paren-end js-then
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-now code-close-quote js-params-end js-statement-end
+    js-if-end
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

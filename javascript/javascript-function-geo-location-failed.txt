@@ -1,0 +1,8 @@
+jsfunction-geo-location-failed js-equals function( jsvar-error-code ) {
+    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-show-hide-button-use-gps-location code-close-quote js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gps code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-if-gps-available code-close-quote js-params-end js-statement-end
+    jslog-begin code-open-quote jsvar-error-code code-close-quote jslog-equal-sign jsvar-error-code jslog-end
+    return code-open-close-quote js-statement-end
+} js-statement-end
+<new_line>

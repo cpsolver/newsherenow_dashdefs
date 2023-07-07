@@ -1,0 +1,117 @@
+jsfunction-draw-shapes-over-map js-equals function( ) {
+    var jsvar-tile-number comma-sep jsvar-y-if-have-tile comma-sep jsvar-lat-lon-loc comma-sep jsvar-location-loc-item comma-sep jsvar-location-loc-center comma-sep jsvar-latitude-integer-item comma-sep jsvar-latitude-integer-center comma-sep jsvar-latitude-integer-offset comma-sep jsvar-longitude-integer-item comma-sep jsvar-longitude-integer-center comma-sep jsvar-longitude-integer-offset comma-sep jsvar-scaled-pixels-per-degree-lat comma-sep jsvar-scaled-pixels-per-degree-lon comma-sep jsvar-pixels-right-of-center comma-sep jsvar-pixels-above-center comma-sep jsvar-plus-or-minus-x comma-sep jsvar-plus-or-minus-y comma-sep jsvar-yes-or-no-flip-x-and-y comma-sep jsvar-farthest-pixel-position-from-center comma-sep jsvar-x-center comma-sep jsvar-y-center comma-sep jsvar-circle-radius comma-sep jsvar-scale-circle-radius comma-sep jsvar-scale-value comma-sep jsvar-gradient comma-sep jsvar-color-gradient-full comma-sep jsvar-color-gradient-middle comma-sep jsvar-color-gradient-transparent comma-sep jsvar-browser-agent comma-sep jsvar-color-semi-transparent comma-sep jsvar-count comma-sep jsvar-circle-radius-incremental-size comma-sep jsvar-transparency-value comma-sep jsvar-circle-radius-default-in-pixels js-statement-end
+
+    js-if jsvar-global-yes-if-shapes-drawn-over-map js-is-equal-to code-open-quote yes code-close-quote js-then
+        return true js-statement-end
+    js-if-end
+    jsvar-global-yes-if-shapes-drawn-over-map js-equals code-open-quote yes code-close-quote js-statement-end
+
+combee ***
+    const jscon-re-mozilla js-equals /mozilla/ js-statement-end
+Firefox browser does not support transparency in gradient, so check browser type,
+but ignore result because gradient is simulated using multiple concentric circles
+    jsvar-browser-agent js-equals typeof navigator.userAgent js-statement-end
+    jslog-begin code-open-quote jsvar-browser-agent code-close-quote jslog-equal-sign jsvar-browser-agent jslog-end
+*** comenn
+
+    jsvar-location-loc-item js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-item code-close-quote js-params-end js-statement-end
+    jsvar-lat-lon-loc js-equals jsvar-location-loc-item no-space .split( code-open-quote underscore-here code-close-quote ) js-statement-end
+    jsvar-latitude-integer-item js-equals jsvar-lat-lon-loc no-space [0] js-statement-end
+    jsvar-longitude-integer-item js-equals jsvar-lat-lon-loc no-space [1] js-statement-end
+
+    jsvar-location-loc-center js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+    jsvar-lat-lon-loc js-equals jsvar-location-loc-center no-space .split( code-open-quote underscore-here code-close-quote ) js-statement-end
+    jsvar-latitude-integer-center js-equals jsvar-lat-lon-loc no-space [0] js-statement-end
+    jsvar-longitude-integer-center js-equals jsvar-lat-lon-loc no-space [1] js-statement-end
+
+    jsvar-latitude-integer-offset js-equals jsvar-latitude-integer-item - jsvar-latitude-integer-center js-statement-end
+    jsvar-longitude-integer-offset js-equals jsvar-longitude-integer-item - jsvar-longitude-integer-center js-statement-end
+
+combee *** reminder: server changes pixels-per-degree values based on zoom level *** comenn
+
+    jsvar-scaled-pixels-per-degree-lat js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-pixels-per-degree-latitude code-close-quote js-params-end js-statement-end
+    jsvar-scaled-pixels-per-degree-lon js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-pixels-per-degree-longitude code-close-quote js-params-end js-statement-end
+
+    jsvar-pixels-above-center js-equals parseInt( jsvar-latitude-integer-offset js-multiply jsvar-scaled-pixels-per-degree-lat ) js-statement-end
+    jsvar-pixels-right-of-center js-equals parseInt( jsvar-longitude-integer-offset js-multiply jsvar-scaled-pixels-per-degree-lon ) js-statement-end
+
+    js-if jsvar-pixels-above-center < 0 js-then
+        jsvar-plus-or-minus-y js-equals -1 js-statement-end
+    js-else
+        jsvar-plus-or-minus-y js-equals 1 js-statement-end
+    js-if-end
+    js-if jsvar-pixels-right-of-center < 0 js-then
+        jsvar-plus-or-minus-x js-equals -1 js-statement-end
+    js-else
+        jsvar-plus-or-minus-x js-equals 1 js-statement-end
+    js-if-end
+
+    jsvar-farthest-pixel-position-from-center js-equals 262 js-statement-end
+    jsvar-scale-value js-equals 1.0 js-statement-end
+    jsvar-scale-circle-radius js-equals 1.0 js-statement-end
+    js-if js-paren-begin jsvar-plus-or-minus-y js-multiply jsvar-pixels-above-center js-paren-end < js-paren-begin jsvar-plus-or-minus-x js-multiply jsvar-pixels-right-of-center js-paren-end js-then
+        js-if js-paren-begin jsvar-plus-or-minus-x js-multiply jsvar-pixels-right-of-center js-paren-end > jsvar-farthest-pixel-position-from-center js-then
+            jsvar-scale-value js-equals js-paren-begin jsvar-farthest-pixel-position-from-center + 20 js-paren-end / js-paren-begin jsvar-plus-or-minus-x js-multiply jsvar-pixels-right-of-center js-paren-end js-statement-end
+            jsvar-scale-circle-radius js-equals 3.0 js-statement-end
+        js-if-end
+    js-else
+        js-if js-paren-begin jsvar-plus-or-minus-y js-multiply jsvar-pixels-above-center js-paren-end > jsvar-farthest-pixel-position-from-center js-then
+            jsvar-scale-value js-equals js-paren-begin jsvar-farthest-pixel-position-from-center + 20 js-paren-end / js-paren-begin jsvar-plus-or-minus-y js-multiply jsvar-pixels-above-center js-paren-end js-statement-end
+            jsvar-scale-circle-radius js-equals 3.0 js-statement-end
+        js-if-end
+    js-if-end
+
+    jsvar-circle-radius-default-in-pixels js-equals 30 js-statement-end
+    jsvar-circle-radius js-equals parseInt( jsvar-circle-radius-default-in-pixels js-multiply jsvar-scale-circle-radius ) js-statement-end
+
+    jsvar-pixels-above-center js-equals parseInt( jsvar-scale-value js-multiply jsvar-pixels-above-center ) js-statement-end
+    jsvar-pixels-right-of-center js-equals parseInt( jsvar-scale-value js-multiply jsvar-pixels-right-of-center ) js-statement-end
+
+    jsvar-x-center js-equals 256 js-plus jsvar-pixels-right-of-center js-statement-end
+combee *** reminder: pixel position is measured downward, not upward *** comenn
+    jsvar-y-center js-equals 256 - jsvar-pixels-above-center js-statement-end
+
+    jsvar-global-canvas no-space .strokeStyle js-equals "rgb( 200 , 200 , 200 )" js-statement-end
+    jsvar-global-canvas no-space .lineWidth js-equals 0 js-statement-end
+
+combee ***
+Firefox browser does not support transparency in gradient, so using workaround, transparency in concentric circles (to simulate gradient).
+Also, detection of Firefox browser did not work.
+*** comenn
+
+    jsvar-circle-radius-incremental-size js-equals parseInt( jsvar-circle-radius / 14 ) js-statement-end
+    jsvar-transparency-value js-equals 0.07 js-statement-end
+    js-for-loop-define jsvar-count = 1 ; jsvar-count <= 9 ; jsvar-count ++ js-for-loop-start
+        jsvar-color-semi-transparent = "rgba( 180,0,0," js-concat jsvar-transparency-value no-space .toString() js-concat ")" js-statement-end
+        jsvar-global-canvas no-space .fillStyle js-equals jsvar-color-semi-transparent js-statement-end
+        jsvar-global-canvas no-space .beginPath( ) js-statement-end
+        jsvar-global-canvas no-space .arc( ( jsvar-x-center js-multiply jsvar-global-map-size-scale ) , ( jsvar-y-center js-multiply jsvar-global-map-size-scale ) , ( jsvar-circle-radius js-multiply jsvar-global-map-size-scale ) , 0 , 6.29 , true ) js-statement-end
+        jsvar-global-canvas no-space .closePath( ) js-statement-end
+        jsvar-global-canvas no-space .fill( ) js-statement-end
+        jsvar-circle-radius js-equals parseInt( jsvar-circle-radius - jsvar-circle-radius-incremental-size ) js-statement-end
+        jsvar-transparency-value js-equals jsvar-transparency-value + 0.01 js-statement-end
+    js-loop-end
+
+
+combee ***
+    jslog-begin code-open-quote jsvar-global-yes-if-shapes-drawn-over-map 1 code-close-quote jslog-equal-sign jsvar-global-yes-if-shapes-drawn-over-map jslog-end
+    jslog-begin code-open-quote jsvar-global-yes-if-shapes-drawn-over-map 2 code-close-quote jslog-equal-sign jsvar-global-yes-if-shapes-drawn-over-map jslog-end
+    jslog-begin code-open-quote jsvar-latitude-integer-item code-close-quote jslog-equal-sign jsvar-latitude-integer-item jslog-end
+    jslog-begin code-open-quote jsvar-longitude-integer-item code-close-quote jslog-equal-sign jsvar-longitude-integer-item jslog-end
+    jslog-begin code-open-quote jsvar-scale-value code-close-quote jslog-equal-sign jsvar-scale-value jslog-end
+    jslog-begin code-open-quote jsvar-circle-radius-default-in-pixels code-close-quote jslog-equal-sign jsvar-circle-radius-default-in-pixels jslog-end
+    jslog-begin code-open-quote jsvar-circle-radius code-close-quote jslog-equal-sign jsvar-circle-radius jslog-end
+    jslog-begin code-open-quote jsvar-latitude-integer-offset code-close-quote jslog-equal-sign jsvar-latitude-integer-offset jslog-end
+    jslog-begin code-open-quote jsvar-longitude-integer-offset code-close-quote jslog-equal-sign jsvar-longitude-integer-offset jslog-end
+    jslog-begin code-open-quote jsvar-pixels-above-center code-close-quote jslog-equal-sign jsvar-pixels-above-center jslog-end
+    jslog-begin code-open-quote jsvar-pixels-right-of-center code-close-quote jslog-equal-sign jsvar-pixels-right-of-center jslog-end
+*** comenn
+
+
+combee ***
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+*** comenn
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

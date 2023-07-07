@@ -1,0 +1,30 @@
+jsfunction-convert-loc-to-lat-lon-decimal js-equals function( selectext-string-loc ) {
+    var jsvar-lat-lon-loc comma-sep jsvar-latitude-integer comma-sep jsvar-longitude-integer comma-sep jsvar-latitude-decimal comma-sep jsvar-longitude-decimal js-statement-end
+
+    const jscon-re-digits-underscore-digits js-equals /^ *[0-9]+_[0-9]+ *$/ js-statement-end
+
+    js-if !( jscon-re-digits-underscore-digits no-space .test( selectext-string-loc ) ) js-then
+        return false js-statement-end
+    js-if-end
+
+    jsvar-lat-lon-loc js-equals selectext-string-loc no-space .split( code-open-quote underscore-here code-close-quote ) js-statement-end
+    jsvar-latitude-integer js-equals jsvar-lat-lon-loc no-space [0] js-statement-end
+    jsvar-longitude-integer js-equals jsvar-lat-lon-loc no-space [1] js-statement-end
+    js-if jsvar-latitude-integer no-space .substr( 0 , 1 ) js-is-equal-to "1" js-then
+        jsvar-latitude-decimal js-equals jsvar-latitude-integer no-space .substr( 1 , 3 ) js-concat "." js-concat jsvar-latitude-integer no-space .substr( 4 ) js-statement-end
+    js-else
+        jsvar-latitude-integer js-equals jsfunction-convert-integer-to-nines-complement js-params-begin jsvar-latitude-integer js-params-end js-statement-end
+        jsvar-latitude-decimal js-equals "-" js-concat jsvar-latitude-integer no-space .substr( 1 , 3 ) js-concat "." js-concat jsvar-latitude-integer no-space .substr( 4 ) js-statement-end
+    js-if-end
+    js-if jsvar-longitude-integer no-space .substr( 0 , 1 ) js-is-equal-to "1" js-then
+        jsvar-longitude-decimal js-equals jsvar-longitude-integer no-space .substr( 1 , 3 ) js-concat "." js-concat jsvar-longitude-integer no-space .substr( 4 ) js-statement-end
+    js-else
+        jsvar-longitude-integer js-equals jsfunction-convert-integer-to-nines-complement js-params-begin jsvar-longitude-integer js-params-end js-statement-end
+        jsvar-longitude-decimal js-equals "-" js-concat jsvar-longitude-integer no-space .substr( 1 , 3 ) js-concat "." js-concat jsvar-longitude-integer no-space .substr( 4 ) js-statement-end
+    js-if-end
+
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-latitude-decimal code-close-quote js-params-next jsvar-latitude-decimal js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-longitude-decimal code-close-quote js-params-next jsvar-longitude-decimal js-params-end js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

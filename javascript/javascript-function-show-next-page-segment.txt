@@ -1,0 +1,35 @@
+jsfunction-show-next-page-segment js-equals function( ) {
+    var jsvar-page-segment comma-sep jsvar-nav-tab-name comma-sep jsvar-yes-if-got-biz comma-sep jsvar-yes-if-got-news comma-sep jsvar-yes-if-got-polls comma-sep jsvar-location-loc js-statement-end
+
+combee *** Delay has expired, so un-brighten the clicked button *** comenn
+    jsfunction-un-brighten-button js-params-begin js-params-end js-statement-end
+
+combee *** Show the appropriate segment *** comenn
+    jsvar-page-segment js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-end js-statement-end
+    js-if jsvar-page-segment js-is-equal-to code-open-close-quote js-then
+        return true js-statement-end
+    js-if-end
+    jsfunction-hide-page-segments-except js-params-begin jsvar-page-segment js-params-end js-statement-end
+
+combee *** Scroll to top *** comenn
+    jsfunction-scroll-to-top no-space () js-statement-end
+
+combee *** Adjust heights *** comenn
+    jsfunction-adjust-heights js-params-begin js-params-end js-statement-end
+
+combee *** Show the appropriate navigation tab *** comenn
+    jsvar-nav-tab-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-end js-statement-end
+    jslog-begin code-open-quote jsvar-nav-tab-name code-close-quote jslog-equal-sign jsvar-nav-tab-name jslog-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-not-highlighted code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here code-close-quote js-concat jsvar-nav-tab-name js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-end js-statement-end
+    jsvar-nav-tab-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-next code-close-quote js-params-end js-statement-end
+    js-if jsvar-nav-tab-name js-is-not-equal-to code-open-close-quote js-then
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here code-close-quote js-concat jsvar-nav-tab-name js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-end js-statement-end
+    js-if-end
+
+combee *** Finish up *** comenn
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-next code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

@@ -1,0 +1,214 @@
+jsfunction-update-news-info js-equals function( ) {
+    var jsvar-location-name comma-sep jsvar-id-of-news-item comma-sep jsvar-elements-to-update comma-sep jsvar-language-code comma-sep jsvar-string-closest comma-sep jsvar-string-farthest comma-sep jsvar-string-newest comma-sep jsvar-string-oldest comma-sep jsvar-string-noon comma-sep jsvar-string-midnight comma-sep jsvar-string-distance-unknown-in-paren comma-sep jsvar-string-date-unknown comma-sep jsvar-string-time-unknown comma-sep jsvar-string-no-keywords comma-sep jsvar-string-kilometers-abbreviated comma-sep jsvar-string-miles-abbreviated comma-sep jsvar-prefix-string comma-sep jsvar-length-of-prefix-string comma-sep jsvar-suffix-string comma-sep jsvar-length-of-suffix-string comma-sep jsvar-elements-one-for-each-news-item comma-sep jsvar-pointer comma-sep jsvar-id-name-of-element comma-sep jsvar-length-of-id-name comma-sep jsvar-intersection-name comma-sep jsvar-distance-hundredths comma-sep jsvar-displayed-distance comma-sep jsvar-distance-unit-km-or-mi comma-sep jsvar-id-of-element-with-percentage-value comma-sep jsvar-displayed-where-info comma-sep jsvar-color-time-value comma-sep jsvar-color-distance-value comma-sep jsvar-possible-string-closest-farthest-etc comma-sep jsvar-percentage-value comma-sep jsvar-full-description comma-sep jsvar-length-of-short-description comma-sep jsvar-length-of-short-description comma-sep jsvar-pointer-to-space-near-end-of-short comma-sep jsvar-list-of-keywords comma-sep jsvar-list-of-keywords-as-text comma-sep jsvar-keyword-at-pointer comma-sep jsvar-keyword-pointer comma-sep jsvar-one-keyword-in-english comma-sep jsvar-one-keyword-in-target-lang comma-sep jsvar-generated-keywords-list comma-sep jsvar-time-of-event-components comma-sep jsvar-date-time-component comma-sep jsvar-year comma-sep jsvar-month-number comma-sep jsvar-month-name comma-sep jsvar-day-of-month comma-sep jsvar-day-of-week-name comma-sep jsvar-day-of-week-number comma-sep jsvar-date-of-event comma-sep jsvar-decimal-distance-string comma-sep jsvar-string-open-parenthesis comma-sep jsvar-string-close-parenthesis comma-sep jsvar-string-yard-sale comma-sep jsvar-string-estate-sale comma-sep jsvar-string-block-party comma-sep jsvar-string-lost-pet comma-sep jsvar-string-special-market comma-sep jsvar-letter-news-type comma-sep jsvar-possible-displayed-miles comma-sep jsvar-miles-hundredths comma-sep jsvar-number-of-columns comma-sep jsvar-string-between-day-of-week-and-month-name comma-sep jsvar-string-intersection-name-unknown comma-sep jsvar-yes-if-show-miles comma-sep jsvar-year-number comma-sep jsvar-time-of-event comma-sep jsvar-neigh-news-type comma-sep jsvar-pointer-to-remainder-of-string comma-sep jsvar-length-of-full-description comma-sep jsvar-yes-no-hide-closest-farthest-for-news-neigh comma-sep jsvar-yes-no-hide-closest-farthest-for-news-police comma-sep jsvar-yes-no-hide-closest-farthest-for-news-sched comma-sep jsvar-yes-no-hide-closest-farthest-for-news-deleted js-statement-end
+
+    jsvar-string-between-day-of-week-and-month-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-string-between-day-of-week-and-month-name code-close-quote js-params-end js-statement-end
+    jsvar-string-open-parenthesis js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-character-open-parenthesis code-close-quote js-params-end js-statement-end
+    jsvar-string-close-parenthesis js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-character-close-parenthesis code-close-quote js-params-end js-statement-end
+    jsvar-language-code js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-language code-close-quote js-params-end js-statement-end
+    jsvar-string-closest js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-closest code-close-quote js-params-end js-statement-end
+    jsvar-string-farthest js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-farthest code-close-quote js-params-end js-statement-end
+    jsvar-string-newest js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-newest code-close-quote js-params-end js-statement-end
+    jsvar-string-oldest js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-word-oldest code-close-quote js-params-end js-statement-end
+    jsvar-string-distance-unknown-in-paren js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-distance-unknown-in-paren code-close-quote js-params-end js-statement-end
+    jsvar-string-intersection-name-unknown js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-intersection-name-unknown code-close-quote js-params-end js-statement-end
+    jsvar-string-date-unknown js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-date-unknown code-close-quote js-params-end js-statement-end
+    jsvar-string-no-keywords js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-no-keywords code-close-quote js-params-end js-statement-end
+    jsvar-string-kilometers-abbreviated js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-km code-close-quote js-params-end js-statement-end
+    jsvar-string-comma js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-comma code-close-quote js-params-end js-statement-end
+    jsvar-string-miles-abbreviated js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-mi code-close-quote js-params-end js-statement-end
+    jsvar-string-yard-sale js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-yard-sale code-close-quote js-params-end js-statement-end
+    jsvar-string-estate-sale js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-estate-sale code-close-quote js-params-end js-statement-end
+    jsvar-string-block-party js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-block-party code-close-quote js-params-end js-statement-end
+    jsvar-string-lost-pet js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-lost-pet code-close-quote js-params-end js-statement-end
+    jsvar-string-special-market js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-special-market code-close-quote js-params-end js-statement-end
+    jsvar-length-of-short-description js-equals parseFloat( jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-length-of-short-description code-close-quote ) js-params-end js-statement-end
+    jsvar-prefix-string js-equals code-open-quote selectext-id-news underscore-double-here code-close-quote js-statement-end
+    jsvar-length-of-prefix-string js-equals jsvar-prefix-string no-space .length js-statement-end
+    jsvar-suffix-string js-equals code-open-quote underscore-double-here selectext-container code-close-quote js-statement-end
+    jsvar-length-of-suffix-string js-equals jsvar-suffix-string no-space .length js-statement-end
+
+    jsvar-yes-no-hide-closest-farthest-for-news-neigh js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-hide-closest-farthest-for-news-neigh code-close-quote js-params-end js-statement-end
+    jsvar-yes-no-hide-closest-farthest-for-news-police js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-hide-closest-farthest-for-news-police code-close-quote js-params-end js-statement-end
+    jsvar-yes-no-hide-closest-farthest-for-news-sched js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-hide-closest-farthest-for-news-sched code-close-quote js-params-end js-statement-end
+    jsvar-yes-no-hide-closest-farthest-for-news-deleted js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-hide-closest-farthest-for-news-deleted code-close-quote js-params-end js-statement-end
+
+    jsfunction-update-copies-of-content no-space () js-statement-end
+
+    jsvar-elements-one-for-each-news-item js-equals document.getElementsByClassName( code-open-quote selectext-news-item-container code-close-quote ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-elements-one-for-each-news-item no-space .length; jsvar-pointer ++ js-for-loop-start
+        js-try
+            jsvar-id-name-of-element js-equals jsvar-elements-one-for-each-news-item no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-id-name-of-element js-equals code-open-close-quote js-statement-end
+        js-if-end
+        jsvar-length-of-id-name js-equals jsvar-id-name-of-element no-space .length js-statement-end
+        js-if jsvar-length-of-id-name > 2 js-then
+            jsvar-id-of-news-item js-equals jsvar-id-name-of-element no-space .substring( jsvar-length-of-prefix-string , js-paren-begin jsvar-length-of-id-name - jsvar-length-of-suffix-string js-paren-end ) js-statement-end
+            jsvar-letter-news-type js-equals jsvar-id-of-news-item no-space .substring( 1 , 2 ) js-statement-end
+
+            jsvar-distance-hundredths js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-kilometers-hundredths code-close-quote js-params-end js-statement-end
+            jsvar-displayed-distance js-equals jsfunction-convert-integer-hundredths-to-decimal-string js-params-begin jsvar-distance-hundredths js-params-end js-statement-end
+            jsvar-yes-if-show-miles js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-if-show-miles code-close-quote js-params-end js-statement-end
+            js-if js-paren-begin jsvar-yes-if-show-miles js-is-equal-to code-open-quote string-yes code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-distance-hundredths js-paren-end js-then
+                jsvar-miles-hundredths js-equals jsvar-distance-hundredths * 0.621371 js-statement-end
+                jsvar-possible-displayed-miles js-equals jsvar-string-comma js-concat " " js-concat jsfunction-convert-integer-hundredths-to-decimal-string no-space js-paren-begin jsvar-miles-hundredths js-paren-end js-concat jsvar-string-miles-abbreviated js-statement-end
+            js-else
+                jsvar-possible-displayed-miles js-equals code-open-close-quote js-statement-end
+            js-if-end
+
+            jsvar-percentage-value js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-color-distance code-close-quote js-params-end js-statement-end
+
+            jsvar-possible-string-closest-farthest-etc js-equals code-open-close-quote js-statement-end
+            js-if js-paren-begin js-paren-begin jsvar-letter-news-type js-is-equal-to "N" js-paren-end js-logical-and js-paren-begin code-open-quote jsvar-yes-no-hide-closest-farthest-for-news-neigh code-close-quote js-is-equal-to code-open-quote selectext-yes code-close-quote js-paren-end js-paren-end js-logical-or js-paren-begin js-paren-begin jsvar-letter-news-type js-is-equal-to "P" js-paren-end js-logical-and js-paren-begin code-open-quote jsvar-yes-no-hide-closest-farthest-for-news-police code-close-quote js-is-equal-to code-open-quote selectext-yes code-close-quote js-paren-end js-paren-end js-logical-or js-paren-begin js-paren-begin jsvar-letter-news-type js-is-equal-to "S" js-paren-end js-logical-and js-paren-begin code-open-quote jsvar-yes-no-hide-closest-farthest-for-news-sched code-close-quote js-is-equal-to code-open-quote selectext-yes code-close-quote js-paren-end js-paren-end js-logical-or js-paren-begin js-paren-begin jsvar-letter-news-type js-is-equal-to "D" js-paren-end js-logical-and js-paren-begin code-open-quote jsvar-yes-no-hide-closest-farthest-for-news-deleted code-close-quote js-is-equal-to code-open-quote selectext-yes code-close-quote js-paren-end js-paren-end js-then
+                js-if jsvar-percentage-value no-space .length > 0 js-then
+                    js-if jsvar-percentage-value js-is-equal-to "0" js-then
+                        jsvar-possible-string-closest-farthest-etc js-equals " " js-concat jsvar-string-open-parenthesis js-concat jsvar-string-closest js-concat jsvar-string-close-parenthesis js-statement-end
+                    js-else-if jsvar-percentage-value js-is-equal-to "100" js-then
+                        jsvar-possible-string-closest-farthest-etc js-equals " " js-concat jsvar-string-open-parenthesis js-concat jsvar-string-farthest js-concat jsvar-string-close-parenthesis js-statement-end
+                    js-if-end
+                js-if-end
+            js-if-end
+
+            js-if jsvar-letter-news-type js-is-equal-to "N" js-then
+                jsvar-displayed-where-info js-equals jsvar-displayed-distance js-concat " " js-concat jsvar-string-kilometers-abbreviated js-concat jsvar-possible-string-closest-farthest-etc js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-kilometers code-close-quote js-params-next jsvar-displayed-where-info js-params-end js-statement-end
+            js-else
+                jsvar-intersection-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-intersection code-close-quote js-params-end js-statement-end
+                js-if jsvar-intersection-name js-is-equal-to code-open-close-quote js-then
+                    jsvar-intersection-name js-equals jsvar-string-intersection-name-unknown js-statement-end
+                js-if-end
+                js-if jsvar-displayed-distance js-is-equal-to code-open-close-quote js-then
+                    jsvar-displayed-where-info js-equals jsvar-intersection-name js-concat " " js-concat jsvar-string-distance-unknown-in-paren js-statement-end
+                js-else
+                    jsvar-displayed-where-info js-equals jsvar-intersection-name js-concat " " js-concat jsvar-string-open-parenthesis js-concat jsvar-displayed-distance js-concat " " js-concat jsvar-string-kilometers-abbreviated js-concat jsvar-possible-displayed-miles js-concat jsvar-string-close-parenthesis js-concat jsvar-possible-string-closest-farthest-etc js-statement-end
+                js-if-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-where code-close-quote js-params-next jsvar-displayed-where-info js-params-end js-statement-end
+            js-if-end
+
+            jsvar-time-of-event-components js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-datetime code-close-quote js-params-end js-statement-end
+            jsvar-date-time-component js-equals jsvar-time-of-event-components no-space .split( " " ) js-statement-end
+            jsvar-year-number js-equals jsvar-date-time-component no-space [0] js-statement-end
+            jsvar-month-number js-equals jsvar-date-time-component no-space [1] js-statement-end
+            jsvar-day-of-month js-equals jsvar-date-time-component no-space [2] js-statement-end
+            jsvar-day-of-week-number js-equals jsvar-date-time-component no-space [3] js-statement-end
+
+            js-if js-paren-begin jsvar-day-of-week-number js-is-equal-to "?" js-paren-end js-logical-or js-paren-begin jsvar-month-number js-is-equal-to "?" js-paren-end js-then
+                jsvar-date-of-event js-equals jsvar-string-open-parenthesis js-concat jsvar-string-date-unknown js-concat jsvar-string-close-parenthesis js-statement-end
+            js-else
+                jsvar-day-of-week-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-day-of-week underscore-here code-close-quote js-concat jsvar-day-of-week-number js-params-end js-statement-end
+                jsvar-month-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-name underscore-here code-close-quote js-concat jsvar-month-number js-params-end js-statement-end
+                jsvar-date-of-event js-equals jsvar-day-of-week-name js-concat jsvar-string-between-day-of-week-and-month-name js-concat jsvar-month-name js-concat " " js-concat jsvar-day-of-month js-statement-end
+            js-if-end
+            jsvar-id-of-element-with-percentage-value js-equals jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-colortime code-close-quote js-statement-end
+            jsvar-percentage-value js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-of-element-with-percentage-value js-params-end js-statement-end
+            jsvar-possible-string-closest-farthest-etc js-equals code-open-close-quote js-statement-end
+            js-if js-paren-begin jsvar-percentage-value no-space .length > 0 js-paren-end js-logical-and js-paren-begin jsvar-letter-news-type js-is-not-equal-to "N" js-paren-end js-then
+                js-if jsvar-percentage-value js-is-equal-to "0" js-then
+                    jsvar-possible-string-closest-farthest-etc js-equals " " js-concat jsvar-string-open-parenthesis js-concat jsvar-string-newest js-concat jsvar-string-close-parenthesis js-statement-end
+                js-else-if jsvar-percentage-value js-is-equal-to "100" js-then
+                    jsvar-possible-string-closest-farthest-etc js-equals " " js-concat jsvar-string-open-parenthesis js-concat jsvar-string-oldest js-concat jsvar-string-close-parenthesis js-statement-end
+                js-if-end
+            js-if-end
+
+            jsvar-time-of-event js-equals jsvar-date-of-event js-concat jsvar-possible-string-closest-farthest-etc js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-when code-close-quote js-params-next jsvar-time-of-event js-params-end js-statement-end
+
+            js-if jsvar-letter-news-type js-is-equal-to "N" js-then
+                jsvar-neigh-news-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-neighnewstype code-close-quote js-params-end js-statement-end
+                js-if jsvar-neigh-news-type js-is-equal-to "yardsale" js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next jsvar-string-yard-sale js-params-end js-statement-end
+                js-else-if jsvar-neigh-news-type js-is-equal-to "estatesale" js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next jsvar-string-estate-sale js-params-end js-statement-end
+                js-else-if jsvar-neigh-news-type js-is-equal-to "blockparty" js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next jsvar-string-block-party js-params-end js-statement-end
+                js-else-if jsvar-neigh-news-type js-is-equal-to "lostpet" js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next jsvar-string-lost-pet js-params-end js-statement-end
+                js-else-if jsvar-neigh-news-type js-is-equal-to "specialmarket" js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next jsvar-string-special-market js-params-end js-statement-end
+                js-else
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-title code-close-quote js-params-next "?" js-params-end js-statement-end
+                js-if-end
+            js-else
+                jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-4 code-close-quote js-paren-end js-params-next code-open-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-3 code-close-quote js-paren-end js-params-next code-open-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-2 code-close-quote js-paren-end js-params-next code-open-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-1 code-close-quote js-paren-end js-params-next code-open-close-quote js-params-end js-statement-end
+
+                jsvar-id-element-name js-equals jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-description code-close-quote js-statement-end
+                jsvar-full-description js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-element-name js-params-end js-statement-end
+                jsvar-length-of-full-description js-equals jsvar-full-description no-space .length js-statement-end
+
+               js-if jsvar-length-of-full-description < js-paren-begin jsvar-length-of-short-description + 50 js-paren-end js-then
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-nofade code-close-quote js-paren-end js-params-next jsvar-full-description js-params-end js-statement-end
+                js-else
+                    jsvar-pointer-to-remainder-of-string js-equals 0 js-statement-end
+                    jsvar-pointer-to-space-near-end-of-short js-equals jsvar-full-description no-space .substring( 0 , js-paren-begin jsvar-length-of-short-description - 40 js-paren-end ).lastIndexOf( " " ) js-statement-end
+combee ***
+                    jslog-begin code-open-quote jsvar-pointer-to-space-near-end-of-short code-close-quote jslog-equal-sign jsvar-pointer-to-space-near-end-of-short jslog-end
+*** comenn
+                    jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-nofade code-close-quote js-paren-end js-params-next jsvar-full-description no-space .substring( jsvar-pointer-to-remainder-of-string js-params-next jsvar-pointer-to-space-near-end-of-short ) js-params-end js-statement-end
+
+                    jsvar-pointer-to-remainder-of-string js-equals jsvar-pointer-to-space-near-end-of-short js-statement-end
+
+                    jsvar-pointer-to-space-near-end-of-short js-equals jsvar-full-description no-space .substring( 0 , js-paren-begin jsvar-length-of-short-description - 30 js-paren-end ).lastIndexOf( " " ) js-statement-end
+combee ***
+                    jslog-begin code-open-quote jsvar-pointer-to-space-near-end-of-short code-close-quote jslog-equal-sign jsvar-pointer-to-space-near-end-of-short jslog-end
+*** comenn
+                    js-if jsvar-pointer-to-remainder-of-string < jsvar-pointer-to-space-near-end-of-short js-then
+                        jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-4 code-close-quote js-paren-end js-params-next jsvar-full-description no-space .substring( jsvar-pointer-to-remainder-of-string js-params-next jsvar-pointer-to-space-near-end-of-short ) js-params-end js-statement-end
+                    js-if-end
+                    jsvar-pointer-to-remainder-of-string js-equals jsvar-pointer-to-space-near-end-of-short js-statement-end
+                    jsvar-pointer-to-space-near-end-of-short js-equals jsvar-full-description no-space .substring( 0 , js-paren-begin jsvar-length-of-short-description - 20 js-paren-end ).lastIndexOf( " " ) js-statement-end
+combee ***
+                    jslog-begin code-open-quote jsvar-pointer-to-space-near-end-of-short code-close-quote jslog-equal-sign jsvar-pointer-to-space-near-end-of-short jslog-end
+*** comenn
+                    js-if jsvar-pointer-to-remainder-of-string < jsvar-pointer-to-space-near-end-of-short js-then
+                        jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-3 code-close-quote js-paren-end js-params-next jsvar-full-description no-space .substring( jsvar-pointer-to-remainder-of-string js-params-next jsvar-pointer-to-space-near-end-of-short ) js-params-end js-statement-end
+                    js-if-end
+                    jsvar-pointer-to-remainder-of-string js-equals jsvar-pointer-to-space-near-end-of-short js-statement-end
+                    jsvar-pointer-to-space-near-end-of-short js-equals jsvar-full-description no-space .substring( 0 , js-paren-begin jsvar-length-of-short-description - 10 js-paren-end ).lastIndexOf( " " ) js-statement-end
+combee ***
+                    jslog-begin code-open-quote jsvar-pointer-to-space-near-end-of-short code-close-quote jslog-equal-sign jsvar-pointer-to-space-near-end-of-short jslog-end
+*** comenn
+                    js-if jsvar-pointer-to-remainder-of-string < jsvar-pointer-to-space-near-end-of-short js-then
+                        jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-2 code-close-quote js-paren-end js-params-next jsvar-full-description no-space .substring( jsvar-pointer-to-remainder-of-string js-params-next jsvar-pointer-to-space-near-end-of-short ) js-params-end js-statement-end
+                    js-if-end
+                    jsvar-pointer-to-remainder-of-string js-equals jsvar-pointer-to-space-near-end-of-short js-statement-end
+                    jsvar-pointer-to-space-near-end-of-short js-equals jsvar-full-description no-space .substring( 0 , jsvar-length-of-short-description ).lastIndexOf( " " ) js-statement-end
+combee ***
+                    jslog-begin code-open-quote jsvar-pointer-to-space-near-end-of-short code-close-quote jslog-equal-sign jsvar-pointer-to-space-near-end-of-short jslog-end
+*** comenn
+                    js-if jsvar-pointer-to-remainder-of-string < jsvar-pointer-to-space-near-end-of-short js-then
+                        jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-short-description-fade-1 code-close-quote js-paren-end js-params-next jsvar-full-description no-space .substring( jsvar-pointer-to-remainder-of-string js-params-next jsvar-pointer-to-space-near-end-of-short ) js-params-end js-statement-end
+                    js-if-end
+                js-if-end
+
+                jsvar-generated-keywords-list js-equals code-open-close-quote js-statement-end
+                jsvar-list-of-keywords-as-text js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-keywordcodes code-close-quote js-params-end js-statement-end
+                jsvar-list-of-keywords js-equals jsvar-list-of-keywords-as-text no-space .replace( /,/g , code-open-close-quote ) js-statement-end
+                jsvar-keyword-at-pointer js-equals jsvar-list-of-keywords no-space .split( " " ) js-statement-end
+                js-for-loop-define jsvar-keyword-pointer js-equals 0 ; jsvar-keyword-pointer < jsvar-keyword-at-pointer no-space .length ; jsvar-keyword-pointer ++ js-for-loop-start
+                    jsvar-one-keyword-in-english js-equals jsvar-keyword-at-pointer no-space [ jsvar-keyword-pointer ] js-statement-end
+                    js-if jsvar-one-keyword-in-english no-space .length > 1 js-then
+                        jsvar-one-keyword-in-target-lang js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-one-keyword-in-english js-params-end js-statement-end
+                        js-if jsvar-one-keyword-in-target-lang no-space .length > 1 js-then
+                            js-if jsvar-generated-keywords-list no-space .length > 1 js-then
+                                jsvar-generated-keywords-list += ", " js-statement-end
+                            js-if-end
+                            jsvar-generated-keywords-list += jsvar-one-keyword-in-target-lang no-space .replace( /_/g , " " ) js-statement-end
+                        js-if-end
+                    js-if-end
+                js-loop-end
+                js-if jsvar-generated-keywords-list no-space .length < 2 js-then
+                    jsvar-generated-keywords-list js-equals jsvar-string-no-keywords js-statement-end
+                js-if-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin jsvar-prefix-string js-concat jsvar-id-of-news-item js-concat code-open-quote underscore-double-here selectext-keywords code-close-quote js-params-next jsvar-generated-keywords-list js-params-end js-statement-end
+            js-if-end
+        js-if-end
+    js-loop-end
+    jsfunction-colorize-grid-items-of-type js-params-begin code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-description-full code-close-quote js-params-end js-statement-end
+    jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-short-description code-close-quote js-params-end js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

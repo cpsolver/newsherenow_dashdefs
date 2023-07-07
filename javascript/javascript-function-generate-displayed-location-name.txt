@@ -1,0 +1,59 @@
+jsfunction-generate-displayed-location-name js-equals function( ) {
+    var jsvar-location-name comma-sep jsvar-intersection-only-name comma-sep jsvar-city-name-and-possible-country-code comma-sep jsvar-words-unknown-city js-statement-end
+
+    var jsvar-city-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-city-name-and-country-or-state code-close-quote js-params-end js-statement-end
+    var jsvar-words-unknown-city js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-unknown-city code-close-quote js-params-end js-statement-end
+    var jsvar-postal-code js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-postal-code code-close-quote js-params-end js-statement-end
+    var jsvar-street-name-one js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-street-name-one code-close-quote js-params-end js-statement-end
+    var jsvar-street-name-two js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-street-name-two code-close-quote js-params-end js-statement-end
+    var jsvar-words-location-unknown js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-location-unknown code-close-quote js-params-end js-statement-end
+    var jsvar-words-middle-of-city-begin js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-middle-of-city-begin code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-middle-of-city-end js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-middle-of-city-end code-close-quote js-params-end js-statement-end
+    var jsvar-words-middle-of-postal-code-begin js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-middle-of-postal-code-begin code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-middle-of-postal-code-end js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-middle-of-postal-code-end code-close-quote js-params-end js-statement-end
+    var jsvar-words-before-postal-code-and-city js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-before-postal-code-and-city code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-between-postal-code-and-city js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-between-postal-code-and-city code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-after-postal-code-and-city js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-after-postal-code-and-city code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-before-intersection js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-before-intersection code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-between-street-names js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-between-street-names code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-after-street-names js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-after-street-names code-close-quote js-params-end js-statement-end
+    var jsvar-words-between-intersection-and-city js-equals " " js-concat jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-between-intersection-and-city code-close-quote js-params-end js-concat " " js-statement-end
+    var jsvar-words-after-intersection-and-city js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-words-after-intersection-and-city code-close-quote js-params-end js-statement-end
+
+    const jscon-re-non-empty js-equals /[^ ]/ js-statement-end
+    js-if jscon-re-non-empty no-space .test( jsvar-city-name ) js-then
+        jsvar-city-name js-equals jsvar-city-name js-statement-end
+    js-else
+        jsvar-city-name js-equals jsvar-words-unknown-city js-statement-end
+    js-if-end
+    jsvar-location-name js-equals jsvar-words-location-unknown js-statement-end
+    jsvar-city-name-and-possible-country-code js-equals jsvar-city-name js-statement-end
+
+    js-if js-paren-begin jscon-re-non-empty no-space .test( jsvar-street-name-one ) js-paren-end js-logical-and js-paren-begin jscon-re-non-empty no-space .test( jsvar-street-name-two ) js-paren-end js-then
+        jsvar-intersection-only-name js-equals jsvar-words-before-intersection js-concat jsvar-street-name-one js-concat jsvar-words-between-street-names js-concat jsvar-street-name-two js-statement-end
+        js-if jscon-re-non-empty no-space .test( jsvar-city-name ) js-then
+            jsvar-location-name js-equals jsvar-words-before-intersection js-concat jsvar-street-name-one js-concat jsvar-words-between-street-names js-concat jsvar-street-name-two js-concat jsvar-words-between-intersection-and-city js-concat jsvar-city-name-and-possible-country-code js-concat jsvar-words-after-intersection-and-city js-statement-end
+        js-else
+            jsvar-location-name js-equals jsvar-intersection-only-name js-statement-end
+        js-if-end
+    js-else-if jscon-re-non-empty no-space .test( jsvar-postal-code ) js-then
+        js-if jscon-re-non-empty no-space .test( jsvar-city-name ) js-then
+            jsvar-location-name js-equals jsvar-words-middle-of-postal-code-begin js-concat jsvar-postal-code js-concat jsvar-words-between-postal-code-and-city js-concat jsvar-city-name-and-possible-country-code js-concat jsvar-words-after-postal-code-and-city js-statement-end
+        js-else
+            jsvar-location-name js-equals jsvar-words-middle-of-postal-code-begin js-concat jsvar-postal-code js-concat jsvar-words-middle-of-postal-code-end js-statement-end
+        js-if-end
+    js-else-if jscon-re-non-empty no-space .test( jsvar-city-name ) js-then
+        jsvar-location-name js-equals jsvar-words-middle-of-city-begin js-concat jsvar-city-name-and-possible-country-code js-concat jsvar-words-middle-of-city-end js-statement-end
+
+    js-if-end
+
+combee ***
+    jsvar-location-name js-equals jsvar-location-name js-concat " {" js-concat jsvar-city-name js-concat "} {" js-concat jsvar-postal-code js-concat "} {" js-concat jsvar-street-name-one js-concat "} {" js-concat jsvar-street-name-two js-concat "}" js-statement-end
+*** comenn
+
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-location-name code-close-quote js-params-next jsvar-location-name js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-intersection-only-name code-close-quote js-params-next jsvar-intersection-only-name js-params-end js-statement-end
+    jsfunction-update-copies-of-content no-space ( ) js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

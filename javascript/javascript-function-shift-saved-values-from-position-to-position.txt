@@ -1,0 +1,29 @@
+jsfunction-shift-saved-values-from-position-to-position js-equals function( selectext-from-position , selectext-to-position ) {
+    var jsvar-first-position-elements comma-sep jsvar-pointer comma-sep jsvar-id-element-name comma-sep prefix comma-sep jsvar-value-to-move comma-sep jsvar-count-of-saved-locations js-statement-end
+    jsvar-first-position-elements js-equals document.getElementsByClassName( code-open-quote selectext-group-saved-name-prefix code-close-quote ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-first-position-elements no-space .length; jsvar-pointer ++ js-for-loop-start
+        jsvar-id-element-name js-equals code-open-close-quote js-statement-end
+        js-try
+            jsvar-id-element-name js-equals jsvar-first-position-elements no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+combee ***
+            jslog-begin code-open-quote one of the elements in the group named code-close-quote js-concat jsvar-group-saved-name-prefix js-concat " does not have an id name" jslog-end
+*** comenn
+        js-if-end
+        js-if jsvar-id-element-name js-then
+            prefix js-equals jsvar-id-element-name no-space .substr( 0 , js-paren-begin jsvar-id-element-name no-space .length - 1 js-paren-end ) js-statement-end
+            js-if selectext-from-position js-is-equal-to "0" js-then
+                jsvar-value-to-move js-equals code-open-close-quote js-statement-end
+            js-else
+                jsvar-value-to-move js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin prefix js-concat selectext-from-position js-params-end js-statement-end
+            js-if-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin js-paren-begin prefix js-concat selectext-to-position js-paren-end js-params-next jsvar-value-to-move js-params-end js-statement-end
+        js-if-end
+    js-loop-end
+    jsvar-count-of-saved-locations js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-count-of-saved-locations code-close-quote js-params-end js-statement-end
+    js-if parseInt( selectext-to-position ) > parseInt( jsvar-count-of-saved-locations ) js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-count-of-saved-locations code-close-quote js-params-next selectext-to-position js-params-end js-statement-end
+    js-if-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

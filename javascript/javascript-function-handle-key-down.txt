@@ -1,0 +1,6 @@
+jsfunction-handle-key-down js-equals function( ) {
+    var jsvar-return-value js-statement-end
+    jsvar-return-value js-equals "abc" js-statement-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

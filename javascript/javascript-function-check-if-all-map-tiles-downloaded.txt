@@ -1,0 +1,17 @@
+jsfunction-check-if-all-map-tiles-downloaded js-equals function( ) {
+    var jsvar-count-tiles-downloaded comma-sep jsvar-tile-number comma-sep jsvar-y-if-have-tile js-statement-end
+    jsvar-count-tiles-downloaded js-equals 0 js-statement-end
+    js-for-loop-define jsvar-tile-number js-equals 1 ; jsvar-tile-number < 10 ; jsvar-tile-number ++ js-for-loop-start
+        jsvar-y-if-have-tile js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here code-close-quote js-concat jsvar-tile-number js-params-end js-statement-end
+        js-if jsvar-y-if-have-tile js-is-equal-to code-open-quote y code-close-quote js-then
+            jsvar-count-tiles-downloaded js-equals jsvar-count-tiles-downloaded js-plus 1 js-statement-end
+        js-if-end
+    js-loop-end
+    js-if jsvar-count-tiles-downloaded js-is-less-than-or-equal-to 8 js-then
+        jsvar-global-yes-if-all-map-tiles-downloaded js-equals code-open-quote no code-close-quote js-statement-end
+    js-else
+        jsvar-global-yes-if-all-map-tiles-downloaded js-equals code-open-quote yes code-close-quote js-statement-end
+    js-if-end
+    return 0 js-statement-end
+} js-statement-end
+<new_line>

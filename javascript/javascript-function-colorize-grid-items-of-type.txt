@@ -1,0 +1,147 @@
+jsfunction-colorize-grid-items-of-type js-equals function( jsvar-grid-type ) {
+    var jsvar-return-value comma-sep jsvar-id-name-of-outer-element comma-sep jsvar-id-name-of-element-to-colorize comma-sep jsvar-class-name comma-sep jsvar-id-name-prefix comma-sep jsvar-id-name-suffix comma-sep jsvar-length-of-id-name-suffix comma-sep jsvar-id-of-element-with-percentage-value comma-sep jsvar-element-selected comma-sep jsvar-outer-elements comma-sep jsvar-percentage-value comma-sep jsvar-string-existing-content comma-sep jsvar-component-of-outer-element-id-name comma-sep jsvar-identifier-by-grid-row-column comma-sep jsvar-letter-news-type comma-sep jsvar-id-prefix-element-to-update comma-sep jsvar-id-of-element-with-closest-farthest-text comma-sep jsvar-length-of-outer-element-name comma-sep jsvar-hue-value comma-sep jsvar-luminance-value comma-sep jsvar-item-name comma-sep jsvar-biztype comma-sep jsvar-item-id js-statement-end
+
+    const jscon-saturation-value js-equals "100" js-statement-end
+    const jscon-hue-for-closest js-equals hue-for-closest-news-or-biz-item js-statement-end
+    const jscon-hue-for-newest js-equals hue-for-newest-news-or-biz-item js-statement-end
+    const jscon-hue-offset-for-farthest js-equals hue-offset-for-farthest-news-or-biz-item js-statement-end
+    const jscon-hue-offset-for-oldest js-equals hue-offset-for-oldest-news-or-biz-item js-statement-end
+    const jscon-luminance-for-closest js-equals luminance-for-closest-news-or-biz-item js-statement-end
+    const jscon-luminance-for-newest js-equals luminance-for-newest-news-or-biz-item js-statement-end
+    const jscon-luminance-offset-for-farthest js-equals luminance-offset-for-farthest-news-or-biz-item js-statement-end
+    const jscon-luminance-offset-for-oldest js-equals luminance-offset-for-oldest-news-or-biz-item js-statement-end
+
+    js-if jsvar-grid-type js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+        jsvar-class-name js-equals code-open-quote class-style-business-div code-close-quote js-statement-end
+        jsvar-id-prefix-element-to-update js-equals code-open-quote selectext-id-biz underscore-double-here code-close-quote js-statement-end
+        jsvar-item-id js-equals code-open-quote selectext-bizname code-close-quote js-statement-end
+    js-else-if jsvar-grid-type js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+        jsvar-class-name js-equals code-open-quote selectext-news-item-container code-close-quote js-statement-end
+        jsvar-id-prefix-element-to-update js-equals code-open-quote selectext-id-news underscore-double-here code-close-quote js-statement-end
+        jsvar-item-id js-equals code-open-quote selectext-title code-close-quote js-statement-end
+    js-else
+        jslog-begin code-open-quote invalid jsvar-grid-type code-close-quote jslog-equal-sign jsvar-grid-type jslog-end
+        return false js-statement-end
+    js-if-end
+
+combee ***
+    jslog-begin code-open-quote jsvar-id-prefix-element-to-update code-close-quote jslog-equal-sign jsvar-id-prefix-element-to-update jslog-end
+*** comenn
+
+    jsvar-outer-elements js-equals document.getElementsByClassName( jsvar-class-name ) js-statement-end
+    js-for-loop-define jsvar-pointer = 0 ; jsvar-pointer < jsvar-outer-elements no-space .length; jsvar-pointer ++ js-for-loop-start
+        js-try
+            jsvar-id-name-of-outer-element js-equals jsvar-outer-elements no-space [ jsvar-pointer ].id js-statement-end
+        js-catch
+            jsvar-id-name-of-outer-element js-equals code-open-close-quote js-statement-end
+        js-if-end
+
+combee ***
+        jslog-begin code-open-quote jsvar-id-name-of-outer-element code-close-quote jslog-equal-sign jsvar-id-name-of-outer-element jslog-end
+*** comenn
+
+        jsvar-block-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin jsvar-id-name-of-outer-element js-params-next "display" js-params-end js-statement-end
+
+combee ***
+        jslog-begin code-open-quote jsvar-block-or-none code-close-quote jslog-equal-sign jsvar-block-or-none jslog-end
+*** comenn
+
+        js-if jsvar-block-or-none js-is-equal-to "none" js-then
+
+combee ***
+todo: globally replace "one-space" tokens with "character-space"
+*** comenn
+
+combee ***
+            jslog-begin jsvar-id-name-of-outer-element js-concat code-open-quote one-space is hidden, so not colorized code-close-quote jslog-end
+*** comenn
+
+        js-else
+
+            jsvar-length-of-outer-element-name js-equals jsvar-id-name-of-outer-element no-space .length js-statement-end
+
+combee ***
+            jslog-begin code-open-quote jsvar-length-of-outer-element-name code-close-quote jslog-equal-sign jsvar-length-of-outer-element-name jslog-end
+*** comenn
+
+            js-if jsvar-length-of-outer-element-name > 10 js-then
+
+                jsvar-component-of-outer-element-id-name js-equals jsvar-id-name-of-outer-element no-space .split( code-open-quote underscore-double-here code-close-quote ) js-statement-end
+                jsvar-identifier-by-grid-row-column js-equals jsvar-component-of-outer-element-id-name no-space [1] js-statement-end
+                jsvar-item-name js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin js-paren-begin jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here  code-close-quote js-concat jsvar-item-id js-paren-end js-params-next "contents"  js-params-end js-statement-end
+
+combee ***
+                jslog-begin code-open-quote jsvar-item-name code-close-quote jslog-equal-sign jsvar-item-name jslog-end
+*** comenn
+
+                js-if jsvar-item-name no-space .length > 0 js-then
+
+                    jsvar-letter-news-type js-equals jsvar-identifier-by-grid-row-column no-space .substring( 1 , 2 ) js-statement-end
+                    jsvar-id-of-element-with-percentage-value js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-color-distance code-close-quote js-statement-end
+
+                    jsvar-percentage-value js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-of-element-with-percentage-value js-params-end js-statement-end
+
+combee ***
+                    jslog-begin code-open-quote jsvar-percentage-value code-close-quote jslog-equal-sign jsvar-percentage-value jslog-end
+*** comenn
+
+                    jsvar-id-of-element-with-closest-farthest-text js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-closest-farthest code-close-quote js-statement-end
+
+                    js-if jsvar-percentage-value no-space .length > 0 js-then
+                        jsvar-hue-value js-equals jscon-hue-for-closest js-concat js-paren-begin js-paren-begin jscon-hue-offset-for-farthest * jsvar-percentage-value js-paren-end / 100.0 js-paren-end js-statement-end
+                        jsvar-luminance-value js-equals jscon-luminance-for-closest js-concat js-paren-begin js-paren-begin jscon-luminance-offset-for-farthest * jsvar-percentage-value js-paren-end / 100.0 js-paren-end js-statement-end
+                        jsvar-value-after-update js-equals "hsl(" js-concat jsvar-hue-value no-space .toFixed() js-concat "," js-concat jscon-saturation-value js-concat "%," js-concat jsvar-luminance-value no-space .toFixed() js-concat "%)" js-statement-end
+
+                        jsvar-id-name-of-element-to-colorize js-equals jsvar-id-name-of-outer-element js-statement-end
+                        js-if jsvar-grid-type js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+                            js-if jsvar-letter-news-type js-is-equal-to "N" js-then
+                                jsvar-id-name-of-element-to-colorize js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-colorize-distance code-close-quote js-statement-end
+                            js-else
+                                jsvar-id-name-of-element-to-colorize js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-where code-close-quote js-statement-end
+                            js-if-end
+                        js-if-end
+                        jsfunction-update-attribute-of-html-element-with-id js-params-begin jsvar-id-name-of-element-to-colorize js-params-next "background-color" js-params-next jsvar-value-after-update js-params-end js-statement-end
+                    js-else
+
+combee ***
+                        jslog-begin code-open-quote distance value not found code-close-quote jslog-end
+*** comenn
+
+                    js-if-end
+
+                    js-if jsvar-grid-type js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+                        jsvar-biztype js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-biztype code-close-quote js-params-end js-statement-end
+                        js-if js-paren-begin jsvar-biztype js-is-not-equal-to code-open-quote deli code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-biztype js-is-not-equal-to code-open-quote cafe code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-biztype js-is-not-equal-to code-open-quote restaurant code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-biztype js-is-not-equal-to code-open-quote bakery code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-biztype js-is-not-equal-to code-open-quote coffee_shop code-close-quote js-paren-end js-then
+                            jsvar-value-after-update js-equals code-open-quote hsl( no-space hue-biz-non-eating no-space , no-space saturation-biz-non-eating no-space %, no-space luminance-biz-non-eating no-space %) code-close-quote js-statement-end
+                            jsfunction-update-attribute-of-html-element-with-id js-params-begin jsvar-id-name-of-element-to-colorize js-params-next "background-color" js-params-next jsvar-value-after-update js-params-end js-statement-end
+                        js-if-end
+                    js-else-if jsvar-grid-type js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+                        jsvar-id-of-element-with-percentage-value js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-colortime code-close-quote js-statement-end
+                        jsvar-percentage-value js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin jsvar-id-of-element-with-percentage-value js-params-end js-statement-end
+                        js-if jsvar-percentage-value no-space .length > 0 js-then
+                            jsvar-hue-value js-equals jscon-hue-for-newest js-concat js-paren-begin js-paren-begin jscon-hue-offset-for-oldest * jsvar-percentage-value js-paren-end / 100.0 js-paren-end js-statement-end
+                            jsvar-luminance-value js-equals jscon-luminance-for-newest js-concat js-paren-begin js-paren-begin jscon-luminance-offset-for-oldest * jsvar-percentage-value js-paren-end / 100.0 js-paren-end js-statement-end
+                            jsvar-value-after-update js-equals "hsl(" js-concat jsvar-hue-value no-space .toFixed() js-concat "," js-concat jscon-saturation-value js-concat "%," js-concat jsvar-luminance-value no-space .toFixed() js-concat "%)" js-statement-end
+                            jsvar-id-name-of-element-to-colorize js-equals jsvar-id-prefix-element-to-update js-concat jsvar-identifier-by-grid-row-column js-concat code-open-quote underscore-double-here selectext-when code-close-quote js-statement-end
+                            jsfunction-update-attribute-of-html-element-with-id js-params-begin jsvar-id-name-of-element-to-colorize js-params-next "background-color" js-params-next jsvar-value-after-update js-params-end js-statement-end
+                        js-else
+
+combee ***
+                            jslog-begin code-open-quote time value not found code-close-quote jslog-end
+*** comenn
+
+                        js-if-end
+                    js-if-end
+                js-if-end
+            js-else
+
+combee ***
+                jslog-begin code-open-quote id of element unknown code-close-quote jslog-end
+*** comenn
+
+            js-if-end
+        js-if-end
+    js-loop-end
+    return true js-statement-end
+} js-statement-end
+<new_line>

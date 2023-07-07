@@ -1,0 +1,46 @@
+jsfunction-update-now-info js-equals function( ) {
+    var jsvar-day-of-week-name comma-sep jsvar-month-name comma-sep jsvar-minute comma-sep jsvar-hour comma-sep jsvar-lat-lon comma-sep jsvar-time-zones-away js-statement-end
+    var jsvar-day-of-week-number js-equals "0" js-statement-end
+    var jsvar-month-of-year-number js-equals "1" js-statement-end
+
+    jsvar-day-of-week-number js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-day-of-week-number code-close-quote js-params-end js-statement-end
+    jsvar-day-of-week-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-day-of-week underscore-here code-close-quote js-concat jsvar-day-of-week-number js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-day-of-week code-close-quote js-params-next "contents" js-params-next jsvar-day-of-week-name js-params-end js-statement-end
+
+    jsvar-month-of-year-number js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-number code-close-quote js-params-end js-statement-end
+    jsvar-month-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-month-name underscore-here code-close-quote js-concat jsvar-month-of-year-number js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-month-name code-close-quote js-params-next "contents" js-params-next jsvar-month-name js-params-end js-statement-end
+
+    jsvar-lat-lon js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+    jsvar-hour js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-hour code-close-quote js-params-end js-statement-end
+
+
+combee ***
+    jslog-begin code-open-quote jsvar-lat-lon and jsvar-hour code-close-quote jslog-equal-sign jsvar-lat-lon js-concat " " js-concat jsvar-hour jslog-end
+*** comenn
+
+    js-if jsvar-hour no-space .length > 0 js-then
+        jsvar-time-zones-away js-equals parseInt( 0.5 js-concat js-paren-begin js-paren-begin jsvar-lat-lon no-space .substr( 12 , 4 js-paren-end - 1000 js-paren-end / 15 ) ) js-statement-end
+
+
+combee ***
+        jslog-begin code-open-quote jsvar-time-zones-away code-close-quote jslog-equal-sign jsvar-time-zones-away jslog-end
+*** comenn
+
+        jsvar-hour js-equals jsvar-hour js-concat jsvar-time-zones-away js-statement-end
+        js-if jsvar-hour no-space .length js-is-equal-to 1 js-then
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hour code-close-quote js-params-next "contents" js-params-next jsvar-hour js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+    jsvar-minute js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-minute code-close-quote js-params-end js-statement-end
+    js-if jsvar-minute no-space .length js-is-equal-to 1 js-then
+        jsvar-minute js-equals "0" js-concat jsvar-minute js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-minute code-close-quote js-params-next "contents" js-params-next jsvar-minute js-params-end js-statement-end
+    js-if-end
+
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-now code-close-quote js-params-end js-statement-end
+
+    return true js-statement-end
+} js-statement-end
+<new_line>

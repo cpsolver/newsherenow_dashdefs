@@ -1,0 +1,20 @@
+jsfunction-log-json-response js-equals function( ) {
+    var jsvar-json-reply js-statement-end
+    jsvar-json-reply js-equals jsvar-global-http-request-object no-space .readyState js-statement-end
+
+combee ***
+    jslog-begin code-open-quote no-space jsvar-global-http-request-object readyState response: code-close-quote jslog-equal-sign jsvar-json-reply jslog-end
+*** comenn
+    jsvar-json-reply js-equals jsvar-global-http-request-object no-space .statusText js-statement-end
+
+combee ***
+    jslog-begin code-open-quote no-space jsvar-global-http-request-object error response: code-close-quote jslog-equal-sign jsvar-json-reply jslog-end
+*** comenn
+    jsvar-json-reply js-equals jsvar-global-http-request-object no-space .responseText js-statement-end
+
+combee ***
+    jslog-begin code-open-quote no-space jsvar-global-http-request-object response: code-close-quote jslog-equal-sign jsvar-json-reply jslog-end
+*** comenn
+    return true js-statement-end
+} js-statement-end
+<new_line>

@@ -1,0 +1,13 @@
+jsfunction-insert-sample-location js-equals function( selectext-sample-location-string ) {
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next selectext-sample-location-string js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-ask-where-keypress-prompt code-close-quote js-params-end js-statement-end
+combee ***
+    jsfunction-move-focus-to-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-end js-statement-end
+*** comenn
+    jsfunction-handle-click-button js-params-begin code-open-quote selectext-gohere code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+combee ***
+    jsfunction-remove-focus-from-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-end js-statement-end
+*** comenn
+    return true js-statement-end
+} js-statement-end
+<new_line>
