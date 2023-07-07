@@ -1,0 +1,1105 @@
+paragraph-begin
+specify-style style-hide specify-end
+
+combee *** user id, accessed by Javascript code *** comenn
+
+characters-span-begin
+specify-id selectext-id-user-id specify-end
+[useridhere]
+characters-span-end
+
+combee *** redirect text, accessed by Javascript code *** comenn
+
+characters-span-begin
+specify-id selectext-id-redirect-text specify-end
+[redirecthere]
+characters-span-end
+
+combee *** starting values supplied via cgi; reminder: after "cgi_in_" only two letters allowed *** comenn
+
+characters-span-begin
+specify-id selectext-id-cgi-input-request specify-end
+cgi_in_rq
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-where specify-end
+cgi_in_wh
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-latitude-decimal specify-end
+cgi_in_la
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-longitude-decimal specify-end
+cgi_in_lo
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-city specify-end
+cgi_in_ci
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-country specify-end
+cgi_in_co
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-news-id specify-end
+cgi_in_ni
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cgi-input-biz-id specify-end
+cgi_in_bi
+characters-span-end
+
+combee *** general values *** comenn
+
+characters-span-begin
+specify-id selectext-id-lookup-compatibility-version-number specify-end
+compatibility-version-number
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-server-request-category specify-end
+selectext-server-request-category
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-news selectext-need-for-about selectext-need-for-non-local-polls specify-end
+specify-id selectext-id-language specify-end
+language-choice
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-page-segment-current specify-end
+selectext-where
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-page-segment-previous specify-end
+selectext-where
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-page-segment-back specify-end
+selectext-where
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-nav-tab-current specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-nav-tab-next specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-width-of-content-numeric specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-button-to-brighten specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-class-before-brighten specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-load-status-about specify-end
+selectext-notavail
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-post-json-action specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-length-of-short-description specify-end
+250
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-character-open-parenthesis specify-end
+word-character-open-parenthesis
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-character-close-parenthesis specify-end
+word-character-close-parenthesis
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-comma specify-end
+word-character-comma
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-got-loc-saved specify-end
+selectext-no
+characters-span-end
+
+combee *** location variables *** comenn
+
+characters-span-begin
+specify-id selectext-id-location-name specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-loc-item specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-locsaved selectext-need-for-news selectext-need-for-biz selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-loc-map-center specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-loc-source specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-news selectext-need-for-latlonloc specify-end
+specify-id selectext-id-loc-lat-lon-only specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-country-code specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class specify-end
+specify-id selectext-id-city-name specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class specify-end
+specify-id selectext-id-city-name-and-country-or-state specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-city-name-found specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-neighborhood-name specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class specify-end
+specify-id selectext-id-postal-code specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-street-name-one specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-street-name-two specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-locsaved selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-street-id specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-locsaved selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-cross-street-id specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-intersection-only-name specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-latitude-decimal specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-longitude-decimal specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-pixels-per-degree-latitude specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-pixels-per-degree-longitude specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-previous-typed-location specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-if-show-miles specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-if-at-highest-zoom specify-end
+no-space
+characters-span-end
+
+combee *** saved location variables *** comenn
+
+characters-span-begin
+specify-id selectext-id-count-of-saved-locations specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser selectext-group-saved-name-prefix specify-end
+specify-id selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 1 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser selectext-group-saved-name-prefix specify-end
+specify-id selectext-id-country-code underscore-double-here selectext-loc-saved underscore-double-here 1 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser selectext-group-saved-name-prefix specify-end
+specify-id selectext-id-street-id underscore-double-here selectext-loc-saved underscore-double-here 1 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser selectext-group-saved-name-prefix specify-end
+specify-id selectext-id-cross-street-id underscore-double-here selectext-loc-saved underscore-double-here 1 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 2 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-country-code underscore-double-here selectext-loc-saved underscore-double-here 2 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-street-id underscore-double-here selectext-loc-saved underscore-double-here 2 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-cross-street-id underscore-double-here selectext-loc-saved underscore-double-here 2 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here 3 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-country-code underscore-double-here selectext-loc-saved underscore-double-here 3 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-street-id underscore-double-here selectext-loc-saved underscore-double-here 3 specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-save-in-browser specify-end
+specify-id selectext-id-cross-street-id underscore-double-here selectext-loc-saved underscore-double-here 3 specify-end
+no-space
+characters-span-end
+
+combee *** location strings *** comenn
+
+characters-span-begin
+specify-id selectext-id-words-middle-of-city-begin specify-end
+words-middle-of-city-begin
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-middle-of-city-end specify-end
+words-middle-of-city-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-middle-of-postal-code-begin specify-end
+words-middle-of-postal-code-begin
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-middle-of-postal-code-end specify-end
+words-middle-of-postal-code-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-before-postal-code-and-city specify-end
+words-before-postal-code-and-city
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-between-postal-code-and-city specify-end
+words-between-postal-code-and-city
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-after-postal-code-and-city specify-end
+words-after-postal-code-and-city
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-before-intersection specify-end
+words-before-intersection
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-between-street-names specify-end
+words-between-street-names
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-after-street-names specify-end
+words-after-street-names
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-between-intersection-and-city specify-end
+words-between-intersection-and-city-name
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-after-intersection-and-city specify-end
+words-after-intersection-and-city
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-location-unknown specify-end
+words-location-unknown
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-intersection-name-unknown specify-end
+words-click-to-geolocate-in-parentheses
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-unknown-city specify-end
+words-unknown-city-and-country
+characters-span-end
+
+combee *** news and business variables *** comenn
+
+characters-span-begin
+specify-id selectext-id-yes-no-got-news specify-end
+selectext-no
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-got-biz specify-end
+selectext-no
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-one-item-website specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-news-id specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-type-news-or-event specify-end
+no
+characters-span-end
+
+combee *** future_todo: have the server specify whether to omit "closest" and "newest" etc.; criteria: if only one item, or if all items are at the same distance or time *** comenn
+
+characters-span-begin
+specify-id selectext-id-yes-no-hide-closest-farthest-for-news-neigh specify-end
+selectext-no
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-hide-closest-farthest-for-news-police specify-end
+selectext-no
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-hide-closest-farthest-for-news-sched specify-end
+selectext-no
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-hide-closest-farthest-for-news-deleted specify-end
+selectext-yes
+characters-span-end
+
+combee *** news and business strings *** comenn
+
+characters-span-begin
+specify-id selectext-id-km specify-end
+word-kilometers-abbreviated
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-mi specify-end
+word-miles-abbreviated
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-closest specify-end
+word-closest
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-farthest specify-end
+word-farthest
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-distance-unknown-in-paren specify-end
+words-distance-unknown
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-newest specify-end
+word-newest
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-oldest specify-end
+word-oldest
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-noon specify-end
+word-noon
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-word-midnight specify-end
+word-midnight
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-date-unknown specify-end
+words-date-unknown
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-no-keywords specify-end
+( no-space
+words-no-keywords
+no-space )
+characters-span-end
+
+combee *** map variables *** comenn
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 1 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 2 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 3 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 4 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 5 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 6 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 7 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 8 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-url-map-tile underscore-here 9 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-map-tile-height underscore-here 1 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-map-tile-width underscore-here 1 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 1 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 2 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 3 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 4 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 5 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 6 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 7 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 8 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-have-map-tile underscore-here 9 specify-end
+empty-text
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-kiloscale-for-map-tiles specify-end
+empty-text
+characters-span-end
+
+combee *** date and time variables *** comenn
+
+characters-span-begin
+specify-id selectext-id-current-year-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-previous-month-year-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-current-month-year-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-next-month-year-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-calendar-year-for-month-one specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-calendar-year-for-month-two specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-calendar-year specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-previous-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-next-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-current-start-day-of-week-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-current-days-in-month specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-previous-month-start-day-of-week-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-previous-month-days-in-month specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-next-month-start-day-of-week-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-next-month-days-in-month specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-hour specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-hour-zero-meridian specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-minute specify-end
+no-space
+characters-span-end
+
+combee *** date and time strings *** comenn
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 1 specify-end
+word-day-of-week-number-1
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 2 specify-end
+word-day-of-week-number-2
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 3 specify-end
+word-day-of-week-number-3
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 4 specify-end
+word-day-of-week-number-4
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 5 specify-end
+word-day-of-week-number-5
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 6 specify-end
+word-day-of-week-number-6
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week underscore-here 7 specify-end
+word-day-of-week-number-7
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 1 specify-end
+word-calendar-day-of-week-number-1
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 2 specify-end
+word-calendar-day-of-week-number-2
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 3 specify-end
+word-calendar-day-of-week-number-3
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 4 specify-end
+word-calendar-day-of-week-number-4
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 5 specify-end
+word-calendar-day-of-week-number-5
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 6 specify-end
+word-calendar-day-of-week-number-6
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-cal-day-of-week underscore-here 7 specify-end
+word-calendar-day-of-week-number-7
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-day-of-week-unrecognized specify-end
+question-mark
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-number specify-end
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 1 specify-end
+word-for-month-number-1
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 2 specify-end
+word-for-month-number-2
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 3 specify-end
+word-for-month-number-3
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 4 specify-end
+word-for-month-number-4
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 5 specify-end
+word-for-month-number-5
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 6 specify-end
+word-for-month-number-6
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 7 specify-end
+word-for-month-number-7
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 8 specify-end
+word-for-month-number-8
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 9 specify-end
+word-for-month-number-9
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 10 specify-end
+word-for-month-number-10
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 11 specify-end
+word-for-month-number-11
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-month-name underscore-here 12 specify-end
+word-for-month-number-12
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-universal-time specify-end
+( no-space
+words-universal-time
+no-space )
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-string-between-hour-minutes specify-end
+no-space : no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-string-between-day-of-week-and-month-name specify-end
+no-space , one-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-string-between-minutes-and-date specify-end
+one-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-if-display-am-pm specify-end
+yes-if-display-hour-am-pm
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-string-am specify-end
+am
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-string-pm specify-end
+pm
+characters-span-end
+
+combee *** values selected or entered by user, or related *** comenn
+
+characters-span-begin
+combee *** always sent to server *** comenn
+specify-id selectext-id-json-request-type specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-table-position-identifier specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit selectext-need-for-geolocate specify-end
+specify-id selectext-id-edit-request-type specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-edit-info-type specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-geolocate specify-end
+specify-id selectext-id-geolocate-confirmed specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-button-value-for-group underscore-double-here selectext-day-count specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-button-value-for-group underscore-double-here selectext-event-type specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-user-supplied-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-user-supplied-day-of-month specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-button-value-for-group underscore-double-here selectext-cal-day specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-user-supplied-cal-day specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-calendar-one-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-calendar-two-month-number specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-button-value-for-group underscore-double-here selectext-delete-reason specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-edit specify-end
+specify-id selectext-id-yes-or-empty-swap-street-names specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-latlondecimal specify-end
+specify-id selectext-id-latitude-from-gps specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-css-class selectext-need-for-latlondecimal specify-end
+specify-id selectext-id-longitude-from-gps specify-end
+no-space
+characters-span-end
+
+combee *** special event types *** comenn
+
+characters-span-begin
+specify-id selectext-id-words-yard-sale specify-end
+words-special-event-type-yard-sale
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-estate-sale specify-end
+words-special-event-type-estate-sale
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-block-party specify-end
+words-special-event-type-block-party
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-lost-pet specify-end
+words-special-event-type-lost-pet
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-words-special-market specify-end
+words-special-event-type-special-market
+characters-span-end
+
+combee *** response to info sent *** comenn
+
+characters-span-begin
+specify-id selectext-id-yes-no-have-geo-relocated specify-end
+no-space
+characters-span-end
+
+characters-span-begin
+specify-id selectext-id-yes-no-have-added-yard-sale specify-end
+no-space
+characters-span-end
+
+combee *** poll or ballot related *** comenn
+
+characters-span-begin
+specify-id selectext-id-yes-if-jump-to-ballot specify-end
+no-space
+characters-span-end
+
+combee *** debug trace *** comenn
+
+characters-span-begin
+specify-id selectext-id-javascript-trace specify-end
+no-space
+characters-span-end
+
+combee *** controlled by server cgi script, which does not know selectext id names *** comenn
+
+characters-span-begin
+specify-id idServerError specify-end
+no-space
+characters-span-end
+
+combee *** biztype phrase strings *** comenn
+
+biztypes-shown-for-combo-page
+
+combee *** keyword phrase strings *** comenn
+
+characters-span-begin
+specify-css-class selectext-need-for-news specify-end
+specify-id selectext-id-load-status-keyword-phrases specify-end
+selectext-notavail
+characters-span-end
+
+keyword-placeholders-for-combo-page
+
+paragraph-end

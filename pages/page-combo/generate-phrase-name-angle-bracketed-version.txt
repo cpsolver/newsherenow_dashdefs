@@ -1,0 +1,3 @@
+ambee copy-and-replace phrase-name phrase-name-angle-bracketed-version character-hyphen character-underscore amenn
+ambee prepend-text-no-space open-angle-bracket phrase-name-angle-bracketed-version amenn
+ambee append-text-no-space close-angle-bracket phrase-name-angle-bracketed-version amenn

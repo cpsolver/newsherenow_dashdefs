@@ -1,0 +1,6 @@
+heading-level-1-begin
+words-message-oops-combo-page-javascript-error
+heading-level-1-end
+paragraph-begin
+words-message-oops-combo-page-javascript-error-instructions
+paragraph-end

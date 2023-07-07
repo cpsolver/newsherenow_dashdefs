@@ -1,0 +1,8 @@
+heading-level-2-begin
+Combo page generated
+heading-level-2-end
+
+paragraph-begin
+specify-style style-centered-text specify-end
+Ready to use
+paragraph-end

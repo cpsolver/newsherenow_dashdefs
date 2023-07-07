@@ -1,0 +1,3 @@
+ambee copy-text word-to-use-in-handler phrase-name amenn
+ambee copy-and-replace phrase-name placeholder-phrase-name character-hyphen character-underscore amenn
+ambee copy-text placeholder-phrase-name ambee phrase-name amenn amenn

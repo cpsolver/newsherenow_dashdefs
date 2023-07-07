@@ -1,0 +1,2 @@
+list-item-end
+no-space <new_line> no-space

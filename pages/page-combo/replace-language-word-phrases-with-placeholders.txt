@@ -1,0 +1,1 @@
+ambee use-handler-with-each-word-in-phrase replace-one-language-word-phrase-with-placeholder list-of-language-translation-items amenn

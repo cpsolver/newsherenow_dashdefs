@@ -1,0 +1,14 @@
+ambee if-yes-begin ambee yes-or-no-empty-phrase language-choice amenn amenn
+ambee copy-text language-choice-en language-choice amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions language-choice language-choice-en amenn amenn
+ambee get-foreign-words amenn
+ambee if-end amenn
+
+
+ambee trace-show language-choice amenn
+combee ****
+ambee trace-show language-choice-en amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+**** comenn

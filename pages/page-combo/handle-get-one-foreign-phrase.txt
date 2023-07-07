@@ -1,0 +1,14 @@
+ambee copy-text word-to-use-in-handler word-file-name amenn
+ambee copy-and-replace word-file-name phrase-name string-dot-txt empty-text amenn
+ambee copy-from-file-to-phrase ambee word-file-name amenn foreign-words amenn
+ambee copy-and-replace foreign-words foreign-words character-newline character-space amenn
+ambee copy-without-extra-spaces foreign-words foreign-words amenn
+ambee copy-text foreign-words ambee get-phrase-name-from-phrase phrase-name amenn amenn
+
+
+combee
+ambee trace-show ambee get-phrase-name-from-phrase phrase-name amenn amenn
+ambee trace-show word-file-name amenn
+ambee trace-show phrase-name amenn
+ambee trace-show foreign-words amenn
+comenn

@@ -1,0 +1,10 @@
+heading-level-2-begin
+words-still-loading-combo-page
+image-here
+specify-css-class class-style-working-gif-javascript-off class-style-animated-gif-working-tiny specify-end
+image-animated-gif-working-specify-tiny
+heading-level-2-end
+
+paragraph-begin
+words-message-javascript-is-off
+paragraph-end

@@ -1,0 +1,63 @@
+ambee put-into-phrase dashrep-endless-loop-counter-limit  90000000  amenn
+ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epoch-seconds amenn  amenn
+ambee split-epoch-seconds-into-named-components ambee get-current-time-in-epoch-seconds amenn amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions compatibility-version-number-sandbox compatibility-version-number amenn amenn
+ambee get-language-choice-from-file amenn
+ambee if-else amenn
+ambee copy-text language-choice-sandbox language-choice amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions language-choice language-choice-en amenn amenn
+ambee copy-text style-show style-hide-unless-foreign-language amenn
+ambee if-end amenn
+
+
+ambee trace-show language-choice amenn
+ambee trace-show language-choice-en amenn
+
+
+ambee possibly-get-foreign-words amenn
+ambee if-needed-change-text-direction-right-to-left amenn
+ambee generate-css-stylesheet amenn
+ambee set-color-values amenn
+ambee expand-text template-filename-map-showing-coverage filename-map-showing-coverage amenn
+ambee fill-calendar-positions-with-placeholders amenn
+ambee expand-text buttons-calendar expanded-buttons-calendar amenn
+ambee generate-business-item-placeholders amenn
+ambee generate-news-item-placeholders amenn
+ambee generate-keyword-phrases-for-combo-page amenn
+ambee generate-ballot-oval-placeholders amenn
+ambee generate-json-content-for-page-about amenn
+ambee generate-biztypes-shown amenn
+ambee generate-poll-results-rows amenn
+ambee generate-buttons-to-foreign-languages amenn
+ambee expand-text javascript-code-all expanded-javascript-code-all amenn
+
+ambee check-elapsed-time amenn
+
+ambee copy-text content-for-page-combo content-in-standard-page amenn
+ambee expand-text browser-version-of-web-page-combo web-framework-generated-web-page amenn
+
+ambee check-elapsed-time amenn
+
+ambee put-into-phrase dashrep-path-prefix-for-file-writing  ambee path-to-dashdef amenn  amenn
+ambee expand-text template-filename-generated-combo-page output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file web-framework-generated-web-page ambee output-filename amenn amenn
+
+ambee check-elapsed-time amenn
+
+combee ***
+when needed, generates list of unused phrases:
+ambee generate-phrase-usage-counts list-of-phrase-name-usage-counts amenn
+ambee trace-show list-of-phrase-name-usage-counts amenn
+ambee copy-words-found-only-in-first-list list-of-phrase-names-in-pages-folder list-of-phrase-name-usage-counts list-of-phrase-names-not-used amenn
+ambee copy-words-unique-only list-of-phrase-names-not-used list-of-phrase-names-not-used amenn
+ambee copy-words-sort-alphabetic list-of-phrase-names-not-used list-of-phrase-names-not-used amenn
+ambee trace-show list-of-phrase-names-not-used amenn
+*** comenn
+
+ambee write-all-definitions-to-output-file amenn
+
+ambee check-elapsed-time amenn

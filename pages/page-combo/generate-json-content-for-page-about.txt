@@ -1,0 +1,6 @@
+ambee copy-text path-to-dashdef dashrep-path-prefix-for-file-reading amenn
+ambee copy-text path-to-dashdef dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-json-expanded-about-text expanded-language-specific-json-content-about amenn
+ambee expand-text template-filename-json-content-page-about-expanded filename-json-content-page-about-expanded amenn
+ambee delete-file ambee filename-json-content-page-about-expanded amenn amenn
+ambee copy-from-phrase-append-to-file expanded-language-specific-json-content-about ambee filename-json-content-page-about-expanded amenn amenn

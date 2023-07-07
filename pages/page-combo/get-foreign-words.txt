@@ -1,0 +1,4 @@
+ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+ambee generate-list-of-files-in-current-read-directory list-of-word-file-names amenn
+ambee copy-without-extra-spaces list-of-word-file-names list-of-word-file-names amenn
+ambee use-handler-with-each-word-in-phrase handle-get-one-foreign-phrase list-of-word-file-names amenn
