@@ -1,0 +1,21 @@
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-show-when-poll-download-done code-close-quote js-params-next "display" js-params-next "block" js-params-end js-statement-end
+jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-hide-when-poll-download-done code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-status code-close-quote js-params-end js-statement-end
+
+jslog-begin code-open-quote jsvar-value-from-element code-close-quote jslog-equal-sign jsvar-value-from-element jslog-end
+
+combee **** in next line, use raw word "open" without selectext because it is specified in the poll data, not in other Dashrep code **** comenn
+js-if jsvar-value-from-element js-is-equal-to code-open-quote open code-close-quote js-then
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-show-if-poll-open code-close-quote js-params-next "display" js-params-next "block" js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-hide-if-poll-open code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-ballot code-close-quote js-params-end js-statement-end
+js-else
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-show-if-poll-closed code-close-quote js-params-next "display" js-params-next "block" js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-hide-if-poll-closed code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+js-if-end
+jsfunction-ballot-initialize js-params-begin js-params-end js-statement-end
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-poll code-close-quote js-params-next code-open-quote selectext-yes code-close-quote js-params-end js-statement-end
+jsfunction-show-next-page-segment js-params-begin js-params-end js-statement-end
+jsfunction-scroll-to-top no-space ( ) js-statement-end

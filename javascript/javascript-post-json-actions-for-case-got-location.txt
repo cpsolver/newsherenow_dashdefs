@@ -1,0 +1,155 @@
+    var jsvar-yes-or-no comma-sep jsvar-edit-request-type comma-sep jsvar-inline-or-none js-statement-end
+combee *** reminder: this is not a full function, and its variables are declared elsewhere *** comenn
+combee *** reminder: if page segment is hidden, heights of rectangles yield zero heights *** comenn
+
+combee *** In case they are still hidden, reveal the location specific nav tabs *** comenn
+    jsvar-inline-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-map code-close-quote js-params-next code-open-quote display code-close-quote js-params-end js-statement-end
+
+    jslog-begin code-open-quote jsvar-inline-or-none code-close-quote jslog-equal-sign jsvar-inline-or-none jslog-end
+
+    js-if jsvar-inline-or-none js-is-equal-to code-open-quote none code-close-quote js-then
+
+        jslog-begin code-open-quote jsvar-inline-or-none code-close-quote jslog-equal-sign jsvar-inline-or-none jslog-end
+
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-map code-close-quote js-params-next code-open-quote display code-close-quote js-params-next code-open-quote inline code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-biz code-close-quote js-params-next code-open-quote display code-close-quote js-params-next code-open-quote inline code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-news code-close-quote js-params-next code-open-quote display code-close-quote js-params-next code-open-quote inline code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-polls code-close-quote js-params-next code-open-quote display code-close-quote js-params-next code-open-quote inline code-close-quote js-params-end js-statement-end
+    js-if-end
+    jsfunction-do-map-tile-calculations no-space ( ) js-statement-end
+
+combee **** define the functions that draw each tile when each has been downloaded **** comenn
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 1 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 1.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 1 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 1.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 1 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 2 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 2.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 2 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 2.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 2 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 3 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 3.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 3 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 3.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 3 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 4 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 4.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 4 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 4.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 4 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 5 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 5.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 5 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 5.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 5 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 6 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 6.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 6 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 6.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 6 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 7 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 7.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 7 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 7.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 7 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 8 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 8.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 8 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 8.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 8 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 9 code-close-quote js-params-next "contents" js-params-next "n" js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 9.src js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-url-map-tile underscore-here 9 code-close-quote js-params-end js-statement-end
+    jsfunction-map-tile-image underscore-here 9.onload js-equals function() {
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-have-map-tile underscore-here 9 code-close-quote js-params-next "contents" js-params-next "y" js-params-end js-statement-end
+        jsfunction-check-if-all-map-tiles-downloaded no-space ( ) js-statement-end
+        js-if jsvar-global-yes-if-all-map-tiles-downloaded js-is-equal-to code-open-quote yes code-close-quote js-then
+            jsfunction-adjust-heights no-space ( ) js-statement-end
+        js-if-end
+    } js-statement-end
+
+    jsfunction-generate-displayed-location-name no-space ( ) js-statement-end
+    jsfunction-update-page-map-for-info-type js-params-begin code-open-quote selectext-location code-close-quote js-params-end js-statement-end
+    jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-street-id code-close-quote js-params-end js-statement-end
+    js-if jsvar-value-from-element no-space .length > 0 js-then
+        jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-cross-street-id code-close-quote js-params-end js-statement-end
+        js-if jsvar-value-from-element no-space .length > 0 js-then
+            jsfunction-put-location-info-into-first-saved-position no-space ( ) js-statement-end
+            jsfunction-save-values-in-browser no-space ( ) js-statement-end
+        js-if-end
+    js-if-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-biz code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+
+combee ****
+    jsfunction-show-hide-saved-locations no-space ( ) js-statement-end
+**** comenn
+
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+    jsvar-yes-or-no js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-confirmed code-close-quote js-params-end js-statement-end
+    js-if jsvar-yes-or-no js-is-equal-to code-open-quote selectext-yes code-close-quote js-then
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-map code-close-quote js-params-end js-statement-end
+        jsvar-edit-request-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-edit-request-type code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here code-close-quote js-concat jsvar-edit-request-type js-params-end js-statement-end
+    js-if-end
+    jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+
+    jsfunction-scroll-to-top no-space ( ) js-statement-end
+    window.location.hash js-equals code-open-quote # code-close-quote js-concat jsvar-location-loc js-statement-end
+
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gohere code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-map code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+    jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-businesses code-close-quote js-params-end js-statement-end
+    jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-business-div code-close-quote js-params-end js-statement-end
+    jsvar-text-contents js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location-copy code-close-quote js-params-next jsvar-text-contents js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+    jsfunction-update-copies-of-content no-space () js-statement-end
+    jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-biz code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-biz code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-biz code-close-quote js-params-end js-statement-end
+    jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-biz code-close-quote js-params-end js-statement-end
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+    jsfunction-show-next-page-segment js-params-begin js-params-end js-statement-end

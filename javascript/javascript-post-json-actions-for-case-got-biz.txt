@@ -1,0 +1,34 @@
+combee ****
+target tab depends on if any local polls at that location.
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+**** comenn
+
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-biz code-close-quote js-params-next code-open-quote selectext-yes code-close-quote js-params-end js-statement-end
+jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-now code-close-quote js-params-end js-statement-end
+combee *** reminder: if page segment is hidden, heights of rectangles yield zero heights *** comenn
+
+jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-biz code-close-quote js-params-end js-statement-end
+
+jsfunction-colorize-grid-items-of-type js-params-begin code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+jsfunction-update-biz-info no-space ( ) js-statement-end
+jsfunction-update-now-info no-space ( ) js-statement-end
+jsfunction-scroll-to-top no-space ( ) js-statement-end
+
+combee ****
+target tab depends on if any local polls at that location.
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+**** comenn
+
+jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-biz code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-news code-close-quote js-params-end js-statement-end
+jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-news-item-container code-close-quote js-params-end js-statement-end
+jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name code-close-quote js-params-end js-statement-end
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location-copy code-close-quote js-params-next jsvar-location-name js-params-end js-statement-end
+combee *** check for a possible specific request from the element "selectext-id-redirect-text" *** comenn
+    jsvar-redirect-request js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-end js-statement-end
+combee *** handle /gps or /osm redirect *** comenn
+    js-if js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote gps code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote osm code-close-quote js-paren-end js-then
+        jsfunction-handle-click-button js-params-begin code-open-quote selectext-osmlink code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    js-if-end
+    jsfunction-show-next-page-segment js-params-begin js-params-end js-statement-end

@@ -1,0 +1,20 @@
+combee *** if a redirect request matches the poll ID in the first non-local poll button, then jump to that poll *** comenn
+
+combee ***
+
+todo: has bug, needs to show (un-hide) page segment
+
+    var jsvar-redirect-request comma-sep jsvar-poll-id js-statement-end
+    jsvar-redirect-request js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-end js-statement-end
+    jsvar-poll-id js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-id-at-row-column underscore-double-here no-space 1_1 code-close-quote js-params-end js-statement-end
+    js-if jsvar-poll-id js-is-equal-to jsvar-redirect-request js-then
+        jsfunction-handle-click-button js-params-begin code-open-quote selectext-id-poll-specific code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    js-if-end
+
+**** comenn
+
+combee *** todo: allow for other types of redirect requests, especially to specific news item *** comenn
+
+combee *** later, if needed, clear a redirect request to prevent an endless loop:
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+*** comenn

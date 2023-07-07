@@ -1,0 +1,3 @@
+jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-biz code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-not-highlighted code-close-quote js-params-end js-statement-end
+jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-news code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-not-highlighted code-close-quote js-params-end js-statement-end
+jsfunction-show-next-page-segment js-params-begin js-params-end js-statement-end

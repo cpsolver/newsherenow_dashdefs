@@ -1,0 +1,14 @@
+jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-not-highlighted code-close-quote js-params-end js-statement-end
+jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab underscore-double-here selectext-news code-close-quote js-params-next "class" js-params-next code-open-quote class-style-nav-tab-clickable-highlighted code-close-quote js-params-end js-statement-end
+jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-now code-close-quote js-params-end js-statement-end
+combee *** reminder: if page segment is hidden, heights of rectangles yield zero heights *** comenn
+jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-page-segment underscore-double-here selectext-news code-close-quote js-params-end js-statement-end
+jsfunction-update-news-info no-space ( ) js-statement-end
+jsfunction-update-now-info no-space ( ) js-statement-end
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-news code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+jsvar-text-contents js-equals code-open-close-quote js-statement-end
+jsvar-text-contents js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-end js-statement-end
+jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-previous-typed-location code-close-quote js-params-next jsvar-text-contents js-params-end js-statement-end
+jsfunction-show-next-page-segment js-params-begin js-params-end js-statement-end
+jsfunction-scroll-to-top no-space ( ) js-statement-end
