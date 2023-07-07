@@ -1,0 +1,1 @@
+serverpathtotopfolder/news/neigh_news_urls/

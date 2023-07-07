@@ -1,0 +1,17 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text path-to-lat9-news-folders dashrep-path-prefix-for-file-reading amenn
+ambee copy-text path-to-lat9-news-folders dashrep-path-prefix-for-file-writing amenn
+ambee put-into-phrase lat9-news-folder-name  lat9_ nospay ambee get-characters-from-position-to-position region-id 1 4 amenn amenn
+
+ambee if-no-begin ambee yes-or-no-folder-exists ambee lat9-news-folder-name amenn amenn amenn
+ambee create-empty-sub-folder ambee lat9-news-folder-name amenn amenn
+ambee if-end amenn
+
+
+ambee trace-show lat9-news-folder-name amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show dashrep-path-prefix-for-file-writing amenn
+combee ***
+*** comenn
