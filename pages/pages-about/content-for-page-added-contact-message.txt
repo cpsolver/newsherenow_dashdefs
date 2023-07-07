@@ -1,0 +1,33 @@
+heading-level-2-begin
+words-following-contact-message-sent
+heading-level-2-end
+
+paragraph-begin
+words-email-address-capitalized no-space :
+paragraph-end
+
+paragraph-begin
+specify-id selectext-id-contact-email-added specify-end
+specify-style style-bold specify-end
+email-address
+paragraph-end
+
+paragraph-begin
+words-contact-message-capitalized no-space :
+paragraph-end
+
+paragraph-begin
+specify-id selectext-id-contact-message-added specify-end
+specify-style style-bold specify-end
+contact-message
+paragraph-end
+
+paragraph-begin
+words-supplied-url-capitalized no-space :
+paragraph-end
+
+paragraph-begin
+specify-id selectext-id-contact-url-added specify-end
+specify-style style-bold specify-end
+supplied-url
+paragraph-end

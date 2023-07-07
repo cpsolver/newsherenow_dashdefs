@@ -1,0 +1,6 @@
+button-begin
+specify-css-class class-style-button-clickable class-style-button-about-subpage selectext-group-button-about specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-thanks javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-thanks specify-end
+words-button-to-thanks-page
+button-end

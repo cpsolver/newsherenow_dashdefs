@@ -1,0 +1,42 @@
+combee **** next few lines are modified version of side-by-side-floating-begin **** comenn
+div-begin
+specify-css-class class-style-page-about-float-visible specify-end
+specify-style style-float-left specify-end
+<new_line>
+
+
+combee ****
+reminder: a descriptive long style name did not work
+**** comenn
+div-begin
+specify-css-class class-style-page-about-visible-text class-style-padding-none class-style-margin-none specify-end
+words-about-overall-paragraphs-all
+div-end
+
+combee ****
+reminder: the default side-by-side code does not work here because need no float here
+**** comenn
+div-end
+<new_line>
+div-begin
+specify-css-class class-style-buttons-to-about-subpages specify-end
+
+side-by-side-floating-begin
+button-to-about-faq
+side-by-side-floating-middle-not-last
+button-to-about-website-page
+side-by-side-floating-middle-not-last
+button-to-about-legal
+side-by-side-floating-middle-not-last
+button-to-about-thanks
+side-by-side-floating-middle-last
+button-to-about-contact
+side-by-side-floating-end
+
+side-by-side-floating-end
+
+vertical-gap-tiny
+
+paragraph-begin
+non-breaking-space
+paragraph-end

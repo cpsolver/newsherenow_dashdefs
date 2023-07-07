@@ -1,0 +1,79 @@
+heading-level-1-begin
+specify-css-class class-style-about-visible-heading specify-end
+words-about-overall-heading-01
+heading-level-1-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-01
+paragraph-end
+
+heading-level-1-begin
+specify-css-class class-style-about-visible-heading specify-end
+words-about-overall-heading-02
+heading-level-1-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-02
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-03
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-04
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-05
+paragraph-end
+
+heading-level-1-begin
+specify-css-class class-style-about-visible-heading specify-end
+words-about-overall-heading-03
+heading-level-1-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-06
+paragraph-end
+
+heading-level-1-begin
+specify-css-class class-style-about-visible-heading specify-end
+words-about-overall-heading-04
+heading-level-1-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-07
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-08
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-09
+paragraph-end
+
+heading-level-1-begin
+specify-css-class class-style-about-visible-heading specify-end
+words-about-overall-heading-05
+heading-level-1-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-10
+paragraph-end
+
+paragraph-long-begin
+specify-css-class class-style-about-visible-paragraph specify-end
+words-about-overall-paragraph-11
+paragraph-end

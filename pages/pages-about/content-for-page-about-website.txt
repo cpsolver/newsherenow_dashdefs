@@ -1,0 +1,327 @@
+heading-level-1-begin
+words-heading-about-website
+heading-level-1-end
+
+vertical-gap-tiny
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-translation-errors specify-end
+specify-style style-hide-unless-foreign-language specify-end
+words-message-about-translation-errors
+paragraph-end
+
+combee *** first paragraphs, always available *** comenn
+
+paragraph-long-begin
+words-message-about-website-paragraph-010
+paragraph-end
+
+div-begin specify-style style-centered-block-or-image specify-end
+specify-id selectext-id-getting-about-website specify-end
+
+heading-level-1-begin
+words-heading-getting-about
+heading-level-1-end
+
+image-animated-gif-working
+div-end
+
+div-begin
+specify-id selectext-id-downloaded-paragraphs-about-website specify-end
+specify-style style-hide specify-end
+
+combee *** remaining paragraphs, downloaded when "about" tab clicked *** comenn
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-020 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-030 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-040 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-050 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-060 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-070 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-080 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-090 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-100 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-110 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-120 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-130 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-140 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-150 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-155 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-157 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-160 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-170 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-180 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-190 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-200 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-210 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-220 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-230 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-240 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-250 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-260 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-270 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-280 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-290 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-300 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-310 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-320 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-322 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-330 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-332 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-340 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-350 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-360 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-370 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-380 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-390 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-400 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-410 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-420 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-website-430 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-440 specify-end
+no-space
+paragraph-end
+
+combee ***
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-450 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-460 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-470 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-480 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-490 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-500 specify-end
+no-space
+paragraph-end
+*** comenn
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-website-900 specify-end
+words-richard-fobes
+line-break
+words-author-of
+italics-begin words-book-title-cpst italics-end
+words-published-in-10-languages-in-parentheses
+word-and
+italics-begin words-book-title-ehu italics-end
+line-break
+words-twitter-cpsolver
+paragraph-end
+
+div-end
+
+vertical-gap-tiny

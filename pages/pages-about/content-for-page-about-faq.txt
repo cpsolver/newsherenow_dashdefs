@@ -1,0 +1,253 @@
+heading-level-1-begin
+words-heading-about-faq
+heading-level-1-end
+
+vertical-gap-tiny
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-translation-errors specify-end
+specify-style style-hide-unless-foreign-language specify-end
+words-message-about-translation-errors
+paragraph-end
+
+vertical-gap-tiny
+
+combee *** first paragraphs, always available *** comenn
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+words-message-about-faq-paragraph-013
+heading-level-2-end
+
+paragraph-long-begin
+words-message-about-faq-paragraph-014
+paragraph-end
+
+div-begin specify-style style-centered-block-or-image specify-end
+specify-id selectext-id-getting-about-faq specify-end
+
+heading-level-1-begin
+words-heading-getting-about
+heading-level-1-end
+
+image-animated-gif-working
+div-end
+
+div-begin
+specify-id selectext-id-downloaded-paragraphs-about-faq specify-end
+specify-style style-hide specify-end
+
+combee *** following paragraphs shown when "about" tab clicked *** comenn
+combee *** questions already have text initialized in order to be findable by search engines *** comenn
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-015 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-016 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-030 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-031 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-040 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-041 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-042 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-043 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-044 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-045 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-050 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-051 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-052 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-053 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-054 specify-end
+no-space
+paragraph-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-055 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-056 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-057 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-058 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-059 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-003 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-004 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-005 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-006 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-007 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-008 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-009 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-010 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-011 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-012 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-017 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-018 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-019 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-020 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-021 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-022 specify-end
+no-space
+paragraph-end
+
+heading-level-2-begin
+specify-css-class class-style-heading-about specify-end
+specify-id selectext-id-paragraph-about-faq-023 specify-end
+no-space
+heading-level-2-end
+
+paragraph-long-begin
+specify-id selectext-id-paragraph-about-faq-024 specify-end
+no-space
+paragraph-end
+
+div-end
+
+vertical-gap-tiny

@@ -1,0 +1,6 @@
+button-begin
+specify-css-class class-style-button-clickable class-style-button-about-subpage selectext-group-button-about class-style-wink specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-aboutfaq javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-about-faq specify-end
+words-button-to-faq
+button-end
