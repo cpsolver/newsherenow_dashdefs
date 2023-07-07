@@ -1,0 +1,41 @@
+heading-level-1-begin
+specify-css-class class-style-businesses-page-title specify-end
+words-heading-neighborhood-businesses
+heading-level-1-end
+
+heading-level-2-begin
+specify-css-class class-style-location-name selectext-group-copy specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-page-biz specify-end
+no-space
+heading-level-2-end
+
+div-begin
+specify-css-class class-style-rectangle-around-businesses specify-end
+specify-id selectext-id-rectangle-around-businesses specify-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-above-map-tiles class-style-wink specify-end
+specify-id selectext-id-click-button-for-details-about-business specify-end
+words-click-business-button-for-details
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-message-no-news-here specify-end
+specify-id selectext-id-no-news-of-type-biz specify-end
+specify-style style-hide specify-end
+words-no-businesses-here
+paragraph-end
+
+generated-grid-floating-named-biz
+
+vertical-clear
+
+div-end
+
+paragraph-begin
+words-business-legend
+paragraph-end
+
+paragraph-begin
+words-credits-business-info
+paragraph-end

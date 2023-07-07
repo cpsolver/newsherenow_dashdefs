@@ -1,0 +1,11 @@
+ambee copy-text number-of-columns-for-biz-display number-of-columns amenn
+ambee copy-text number-of-rows-for-biz-display number-of-rows amenn
+ambee put-into-phrase grid-name  biz  amenn
+ambee put-into-phrase grid-name-for-css-class  biz amenn
+ambee put-into-phrase grid-style-type  biz amenn
+ambee generate-grid-full amenn
+ambee put-into-phrase grid-item-count  ambee numeric-multiply ambee number-of-columns amenn ambee number-of-rows amenn amenn  amenn
+ambee put-into-phrase maximum-number-of-businesses-to-list  ambee numeric-multiply ambee number-of-columns amenn ambee number-of-rows amenn amenn  amenn
+ambee generate-counts-from-integer-to-integer 1 ambee maximum-number-of-businesses-to-list amenn list-of-counts-for-generating-biz-item-placeholders amenn
+ambee reset-count-next-row-and-column-number amenn
+ambee use-handler-with-each-word-in-phrase generate-one-biz-item-placeholder-for-combo-page list-of-counts-for-generating-biz-item-placeholders amenn

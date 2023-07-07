@@ -1,0 +1,79 @@
+div-begin
+specify-css-class class-style-business-div specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-div specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn javascript-handle-click-button-end specify-end
+
+heading-level-3-begin
+specify-css-class class-style-business-title class-style-font-title-readable specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-bizname specify-end
+no-space
+heading-level-3-end
+
+paragraph-begin
+specify-css-class class-style-business-distance-displayed specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-distance-displayed specify-end
+specify-style style-show specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+no-space
+specify-css-class class-style-business-biztype-shown specify-end
+specify-style style-show specify-end
+characters-span-begin
+specify-css-class selectext-group-id-biztype-shown class-style-business-biztype specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-biztype-shown specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+one-space
+characters-span-begin
+specify-css-class class-style-item-has-website selectext-group-id-item-has-website specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-has-website specify-end
+specify-style style-inline specify-end
+one-space
+word-string-indicating-item-has-website
+characters-span-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-business-tagline specify-end
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-tagline specify-end
+specify-style style-hide specify-end
+no-space
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-margin-none class-style-padding-none specify-end
+specify-style style-hide specify-end
+characters-span-begin
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-kilometers-hundredths specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-color-distance specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-loc specify-end
+specify-style style-hide specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-website specify-end
+specify-style style-hide specify-end
+no-space
+characters-span-end
+no-space
+characters-span-begin
+specify-id selectext-id-biz underscore-double-here gBr nospay ambee row-number amenn nospay c nospay ambee column-number amenn underscore-double-here selectext-biztype specify-end
+specify-style style-hide specify-end
+no-space
+characters-span-end
+paragraph-end
+
+div-end
