@@ -1,0 +1,167 @@
+table-row-begin
+<new_line>
+
+
+combee ***
+if needed:
+melbourne, corrigan, athol
+*** comenn
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+vancouver, 41st avenue, cambie street
+location-example-part-2
+vancouver, 41st avenue, cambie street
+location-example-part-3
+vancouver, 41st avenue, cambie street
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+winnipeg, mcgregor, lansdowne
+location-example-part-2
+winnipeg, mcgregor, lansdowne
+location-example-part-3
+winnipeg, mcgregor, lansdowne
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+toronto, mccowan, finch
+location-example-part-2
+toronto, mccowan, finch
+location-example-part-3
+toronto, mccowan, finch
+location-example-part-4
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+seattle, 24th avenue, 65th street
+location-example-part-2
+seattle, 24th avenue, 65th street
+location-example-part-3
+seattle, 24th avenue, 65th street
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+cleveland, ridgeview boulevard, center ridge
+location-example-part-2
+cleveland, ridgeview boulevard, center ridge
+location-example-part-3
+cleveland, ridgeview boulevard, center ridge
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+boston, lexington, cedar
+location-example-part-2
+boston, lexington, cedar
+location-example-part-3
+boston, lexington, cedar
+location-example-part-4
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+aubervilliers
+location-example-part-2
+aubervilliers
+location-example-part-3
+Paris
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+saint louis mo, shackelford, mullanphy
+location-example-part-2
+saint louis mo, shackelford, mullanphy
+location-example-part-3
+saint louis, shackelford, mullanphy
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+new york, 116th street, 101st avenue
+location-example-part-2
+new york, 116th street, 101st avenue
+location-example-part-3
+new york, 116th street, 101st avenue
+location-example-part-4
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+san diego, west broadway, front street
+location-example-part-2
+san diego, west broadway, front street
+location-example-part-3
+san diego, west broadway, front street
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+austin tx, guadalupe, 5th
+location-example-part-2
+austin tx, guadalupe, 5th
+location-example-part-3
+austin tx, guadalupe, 5th
+location-example-part-4
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+miami, east 41st street, east 4th avenue
+location-example-part-2
+miami, east 41st street, east 4th avenue
+location-example-part-3
+miami, east 41st street, east 4th avenue
+location-example-part-4
+table-cell-end
+<new_line>
+
+
+
+table-row-end
+<new_line>

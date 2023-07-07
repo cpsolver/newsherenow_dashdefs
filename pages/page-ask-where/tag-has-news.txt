@@ -1,0 +1,4 @@
+line-break
+characters-span-begin specify-css-class class-style-font-size-paragraph-tiny specify-end
+( no-space words-has-news no-space )
+characters-span-end

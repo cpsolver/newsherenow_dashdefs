@@ -1,0 +1,13 @@
+image-here
+specify-id selectext-id-map-density specify-end
+specify-css-class class-style-map-density specify-end
+
+combee ***
+Previously:
+Let javascript code supply real URL, to prevent delay while waiting for image to download
+*** comenn
+specify-image-url url-prefix-for-image-in-image-folder filename-map-showing-coverage specify-end
+
+specify-alternate-text words-alternate-text-density-map specify-end
+
+no-space

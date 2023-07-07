@@ -1,0 +1,6 @@
+image-here
+specify-id selectext-id-map-density-as-logo specify-end
+specify-css-class class-style-map-density-as-logo specify-end
+specify-image-url url-prefix-for-image-in-image-folder filename-map-showing-coverage specify-end
+specify-alternate-text words-alternate-text-density-map specify-end
+no-space

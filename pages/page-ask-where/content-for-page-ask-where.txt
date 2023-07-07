@@ -1,0 +1,182 @@
+div-begin
+specify-css-class class-style-main-input-form specify-end
+specify-id selectext-id-main-input-form specify-end
+
+heading-level-1-begin specify-css-class class-style-heading-where-is-here specify-end words-where-is-here heading-level-1-end
+
+<new_line>
+
+paragraph-begin
+specify-css-class class-style-if-gps-available-message selectext-show-hide underscore-double-here selectext-item-on-page-ask-where specify-end
+specify-id selectext-id-message-if-gps-available specify-end
+specify-style style-hide specify-end
+words-clarification-about-gps-button-if-gps-location-available
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ask-where-message selectext-show-hide underscore-double-here selectext-item-on-page-ask-where specify-end
+specify-id selectext-id-message-no-location-no-map specify-end
+specify-style style-hide specify-end
+words-clarification-about-no-map-because-no-location
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ask-where-message selectext-show-hide underscore-double-here selectext-item-on-page-ask-where specify-end
+specify-id selectext-id-message-no-location-no-biz specify-end
+specify-style style-hide specify-end
+words-clarification-about-no-businesses-because-no-location
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ask-where-message selectext-show-hide underscore-double-here selectext-item-on-page-ask-where specify-end
+specify-id selectext-id-message-no-location-no-news specify-end
+specify-style style-hide specify-end
+words-clarification-about-no-news-because-no-location
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-ask-where-message selectext-show-hide underscore-double-here selectext-item-on-page-ask-where specify-end
+specify-id selectext-id-message-no-location-no-polls specify-end
+specify-style style-hide specify-end
+words-clarification-about-no-polls-because-no-location
+paragraph-end
+
+<new_line>
+
+div-begin
+specify-id selectext-id-show-hide-button-use-gps-location specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-color-button-go-here class-style-wink class-style-font-size-3 specify-end
+specify-id selectext-id-button-use-gps-location specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-gps javascript-handle-click-button-end specify-end
+words-button-use-gps-location
+image-here
+specify-style style-hide specify-end
+specify-css-class class-style-working-gif-gps class-style-animated-gif-working-tiny specify-end
+specify-id selectext-id-working-gif-gps specify-end
+image-animated-gif-working-specify-tiny
+button-end
+no-space
+<new_line>
+no-space
+
+div-end
+
+<new_line>
+
+vertical-gap
+
+<new_line>
+
+div-begin
+specify-css-class class-style-main-input-form-subdiv class-style-centered-block-or-image specify-end
+specify-id selectext-id-main-input-form-subdiv specify-end
+
+side-by-side-floating-begin
+
+vertical-gap
+
+form-text-entry
+specify-css-class selectext-need-for-location underscore-double-here selectext-value specify-end
+specify-id selectext-id-input-location specify-end
+
+
+combee ***
+size specification is not compatible with flexible width, but default is too short
+*** comenn
+specify-size style-value-length-of-form-input-line specify-end
+
+
+specify-name requested hyphen-here here specify-end specify-value specify-end specify-tab-index 1 specify-end specify-text-entry-tip <words_not_interpreted_input_prompt_ask_where> specify-end specify-autofocus-begin-end specify-javascript-onkeyup jsfunction-ask-where-prompt no-space ( event ) specify-end specify-javascript-onkeydown jsfunction-handle-key-down no-space ( ) specify-end
+
+side-by-side-floating-middle-last
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-go-here class-style-font-size-3 specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-gohere javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-go-here specify-end
+html-entity-leftwards-arrow
+words-go-here-button
+image-here
+specify-style style-hide specify-end
+specify-css-class class-style-working-gif-gohere class-style-animated-gif-working-tiny specify-end
+specify-id selectext-id-working-gif-gohere specify-end
+image-animated-gif-working-specify-tiny
+button-end
+no-space
+<new_line>
+no-space
+
+side-by-side-floating-end
+
+div-end
+
+vertical-clear
+
+div-begin
+specify-css-class class-style-main-input-form-subdiv class-style-centered-block-or-image specify-end
+specify-id selectext-id-keypress-prompts specify-end
+
+keypress-prompts-for-location-entry
+
+div-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-ask-where class-style-ask-where-message-bottom specify-end
+specify-id selectext-id-message-requesting-gps-access specify-end
+specify-style style-hide specify-end
+words-requesting-access-to-gps-location
+paragraph-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-ask-where class-style-ask-where-message-bottom specify-end
+specify-id selectext-id-message-finding-location specify-end
+specify-style style-hide specify-end
+words-message-finding-location
+paragraph-end
+
+vertical-gap-tiny
+
+div-end
+
+<new_line>
+
+div-begin
+specify-css-class class-style-centered-block-or-image class-style-examples-and-map specify-end
+specify-id selectext-id-examples-and-map specify-end
+
+side-by-side-floating-begin
+
+heading-level-3-begin
+specify-css-class class-style-heading-for-examples-and-map specify-end
+word-examples-capitalized no-space :
+heading-level-3-end
+location-examples
+
+side-by-side-floating-middle-not-last
+
+paragraph-begin
+no-space
+non-breaking-space
+no-space
+non-breaking-space
+no-space
+non-breaking-space
+paragraph-end
+
+side-by-side-floating-middle-last
+
+density-map
+
+<new_line>
+
+side-by-side-floating-end
+
+vertical-clear
+vertical-gap-tiny
+
+paragraph-begin words-on-where-page-below-map paragraph-end
+
+div-end

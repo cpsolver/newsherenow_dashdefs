@@ -1,0 +1,184 @@
+table-begin specify-style style-table-no-borders specify-end
+specify-id selectext-id-table-examples specify-end
+table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+portland, hawthorne, 20th
+location-example-part-2
+Portland OR
+tag-has-news
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+nyc, 116th street, 101st avenue
+location-example-part-2
+New York
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+london, fleetwood, hamilton
+location-example-part-2
+London
+location-example-part-3
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+vancouver bc
+location-example-part-2
+Vancouver BC
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+winnipeg, mcgregor, lansdowne
+location-example-part-2
+Winnipeg
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+toronto, dawes, pitt
+location-example-part-2
+Toronto
+location-example-part-3
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+buenos aires, arenales, libertad
+location-example-part-2
+Buenos Aires
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+lagos, kusimo street, brown road
+location-example-part-2
+Lagos
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+sydney, penshurst, victoria
+location-example-part-2
+Sydney
+location-example-part-3
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+seattle, ballard
+location-example-part-2
+words-location-example-seattle-ballard
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+97005
+location-example-part-2
+words-postal-code-sample
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+kyoto
+location-example-part-2
+Kyoto
+location-example-part-3
+table-cell-end
+<new_line>
+
+
+
+table-row-end table-row-begin
+<new_line>
+
+
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+vancouver wa, northeast 44th street, northeast 54th avenue
+location-example-part-2
+Vancouver WA
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+saint louis mo, derhake road, washington street
+location-example-part-2
+Saint Louis MO
+location-example-part-3
+table-cell-end
+<new_line>
+
+table-cell-begin specify-css-class class-style-location-example specify-end
+location-example-part-1
+portland me
+location-example-part-2
+Portland ME
+location-example-part-3
+table-cell-end
+<new_line>
+
+
+
+table-row-end
+<new_line>
+
+
+combee ***
+location-examples-for-testing
+*** comenn
+
+
+table-end
+<new_line>

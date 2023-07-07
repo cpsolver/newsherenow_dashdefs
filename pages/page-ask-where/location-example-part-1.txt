@@ -1,0 +1,3 @@
+button-begin
+specify-css-class class-style-button-clickable class-style-button-location-example selectext-group-button-location-example specify-end
+specify-javascript-onclick return nhn. no-space jsfunction-insert-sample-location no-space (' no-space
