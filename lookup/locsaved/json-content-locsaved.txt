@@ -1,0 +1,19 @@
+code-open-quote selectext-id-yes-no-got-loc-saved code-close-quote no-space ,"contents", no-space code-open-quote selectext-yes code-close-quote ,
+
+code-open-quote selectext-id-yes-no-got-news code-close-quote no-space ,"contents", no-space code-open-quote selectext-yes code-close-quote ,
+
+code-open-quote selectext-id-yes-no-got-biz code-close-quote no-space ,"contents", no-space code-open-quote selectext-no code-close-quote ,
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-news code-close-quote ,
+
+code-open-quote selectext-id-nav-tab-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-news code-close-quote ,
+
+code-open-quote selectext-id-working-gif-tab-map code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-working-gif-gohere code-close-quote no-space ,"display","none",
+
+json-content-date-time
+
+json-content-map
+
+json-content-keyword-phrases-if-needed

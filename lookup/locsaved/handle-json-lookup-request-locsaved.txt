@@ -1,0 +1,37 @@
+ambee trace-show-where amenn
+
+
+ambee get-location-latitude-longitude-loc-version amenn
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+ambee calculate-calendar-info amenn
+ambee copy-lowercase-only input fenambee  combee *** need space here *** comenn selectext-id-street-id combee *** need space here *** comenn  amenn first-street-id amenn
+ambee copy-without-extra-spaces first-street-id first-street-id amenn
+ambee copy-and-replace first-street-id first-street-id character-space character-underscore amenn
+ambee copy-lowercase-only input fenambee  combee *** need space here *** comenn selectext-id-cross-street-id combee *** need space here *** comenn  amenn second-street-id amenn
+ambee copy-without-extra-spaces second-street-id second-street-id amenn
+ambee copy-and-replace second-street-id second-street-id character-space character-underscore amenn
+ambee copy-text first-street-id street-ids-for-locsaved amenn
+ambee append-text second-street-id street-ids-for-locsaved amenn
+ambee copy-lowercase-only input fenambee  combee *** need space here *** comenn selectext-id- combee *** need space here *** comenn  amenn first-street-id amenn
+ambee copy-without-extra-spaces first-street-id first-street-id amenn
+
+
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+ambee trace-show street-ids-for-locsaved amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 2 ambee get-count-of-words street-ids-for-locsaved amenn amenn amenn
+ambee get-street-names-based-on-first-second-street-ids amenn
+ambee get-region-id-from-supplied-latitude-longitude amenn
+ambee find-single-specific-intersection-based-on-street-ids amenn
+ambee if-else amenn
+ambee clear-phrase intersection-id amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase intersection-id amenn amenn
+ambee handle-locsaved-location-found amenn
+ambee if-else amenn
+ambee handle-locsaved-location-not-found amenn
+ambee if-end amenn

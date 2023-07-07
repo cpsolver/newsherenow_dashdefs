@@ -1,0 +1,47 @@
+code-open-quote selectext-id-yes-no-location-not-found code-close-quote no-space ,"contents", no-space code-open-quote yes",
+
+code-open-quote selectext-id-page-segment-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-where code-close-quote ,
+
+code-open-quote selectext-id-nav-tab-current code-close-quote no-space ,"contents", no-space code-open-quote selectext-where code-close-quote ,
+
+code-open-quote selectext-id-post-json-action code-close-quote no-space ,"contents", no-space code-open-quote selectext-location-not-found code-close-quote ,
+
+code-open-quote selectext-id-keypress-prompt-city-not-found code-close-quote no-space ,"display", no-space code-open-quote none code-close-quote ,
+
+code-open-quote selectext-id-keypress-prompt-postal-code-not-found code-close-quote no-space ,"display", no-space code-open-quote none code-close-quote ,
+
+code-open-quote selectext-id-keypress-prompt-location-words-not-recognized code-close-quote no-space ,"display", no-space code-open-quote none code-close-quote ,
+
+code-open-quote selectext-id-keypress-prompt-saved-location-not-found code-close-quote no-space ,"display", no-space code-open-quote block code-close-quote ,
+
+code-open-quote selectext-id-location-name code-close-quote no-space ,"display","none",
+
+code-open-quote selectext-id-location-name code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-city-name code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-city-name-and-country-or-state code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-city-name-found code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-country-code code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-yes-if-show-miles code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-yes-if-at-highest-zoom code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-postal-code code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-street-name-one code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-street-name-two code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-street-id code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-cross-street-id code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-latitude-decimal code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-longitude-decimal code-close-quote no-space ,"contents","",
+
+code-open-quote selectext-id-working-gif-gohere code-close-quote no-space ,"display","none",

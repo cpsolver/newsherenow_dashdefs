@@ -1,0 +1,18 @@
+ambee trace-show-where amenn
+
+
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-at-center amenn
+
+
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+ambee determine-map-tile-filenames amenn
+
+
+ambee trace-show back-from-determine-map-tile-filenames amenn
+
+
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+ambee copy-text json-content-locsaved json-content-news amenn
