@@ -1,0 +1,6 @@
+button-begin
+specify-css-class class-style-button-clickable selectext-group-button-language selectext-button-to-language-list specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-to-foreign-languages-list javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-to-other-languages specify-end
+list-of-display-names-of-available-languages
+button-end

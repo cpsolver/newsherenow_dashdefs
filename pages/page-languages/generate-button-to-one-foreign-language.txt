@@ -1,0 +1,24 @@
+ambee copy-text word-to-use-in-handler language-choice amenn
+ambee copy-text word-language-name fenambee language-choice amenn word-language-name-for-language-choice amenn
+ambee copy-text word-language-name-for-language-choice word-language-name-for-displayed-list amenn
+ambee copy-text character-comma possible-character-comma amenn
+ambee expand-text side-by-side-floating-middle-not-last expanded-side-by-side-floating-middle amenn
+ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+ambee copy-from-file-to-phrase http-www-news-here-now-language-specific.txt http-www-to-foreign-language amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions language-choice language-choice-not-foreign amenn amenn
+ambee expand-text side-by-side-floating-middle-last expanded-side-by-side-floating-middle amenn
+ambee clear-phrase possible-character-comma amenn
+ambee clear-phrase word-language-name-for-displayed-list amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase generated-buttons-to-foreign-languages amenn amenn
+ambee clear-phrase expanded-side-by-side-floating-middle amenn
+ambee if-else amenn
+ambee append-text-no-space possible-character-comma list-of-display-names-of-available-languages amenn
+ambee if-end amenn
+
+ambee append-text word-language-name-for-displayed-list list-of-display-names-of-available-languages amenn
+ambee append-text-no-space expanded-side-by-side-floating-middle generated-buttons-to-foreign-languages amenn
+ambee expand-text template-button-to-other-language button-to-current-language amenn
+ambee append-text-no-space button-to-current-language generated-buttons-to-foreign-languages amenn

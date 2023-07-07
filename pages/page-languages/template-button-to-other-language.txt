@@ -1,0 +1,9 @@
+link-begin
+specify-link-url http-www-to-foreign-language specify-end
+specify-open-link-in-new-browser-page
+button-begin
+specify-css-class class-style-button-clickable class-style-button-language selectext-group-button-language specify-end
+specify-id selectext-id-button-to-language underscore-double-here language-choice specify-end
+word-language-name-for-language-choice
+button-end
+link-end

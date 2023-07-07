@@ -1,0 +1,5 @@
+ambee copy-text language-choice language-choice-not-foreign amenn
+ambee copy-words-found-only-in-first-list list-of-languages-accessible language-choice-not-foreign list-of-languages amenn
+ambee append-text language-choice-not-foreign list-of-languages amenn
+ambee use-handler-with-each-word-in-phrase generate-button-to-one-foreign-language list-of-languages amenn
+ambee copy-text language-choice-not-foreign language-choice amenn

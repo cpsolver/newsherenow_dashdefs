@@ -1,0 +1,13 @@
+vertical-gap-tiny
+heading-level-2-begin
+words-heading-page-languages
+heading-level-2-end
+
+side-by-side-floating-begin
+generated-buttons-to-foreign-languages
+side-by-side-floating-end
+vertical-gap-tiny
+
+paragraph-begin
+words-message-page-languages-footnote
+paragraph-end
