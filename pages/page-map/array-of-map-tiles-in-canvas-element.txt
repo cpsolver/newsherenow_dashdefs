@@ -1,0 +1,32 @@
+combee **** reminder: this surrounding div is needed to get correct zero offset measurements for left and top edges of canvas, without including margin and padding of outer "parent"; it must use "relative" positioning, not default "static" positioning, in order to be the parent of the canvas **** comenn
+div-begin
+specify-id selectext-id-canvas-surrounding-div specify-end
+specify-style
+style-position-relative
+no-space
+style-margin-none
+no-space
+style-padding-none
+border:1px solid #b2d2ff;
+specify-end
+
+canvas-begin
+specify-id selectext-map-canvas specify-end
+specify-javascript-onclick jsfunction-handle-map-click no-space ( event ) specify-end
+specify-style
+style-border-none
+style-cursor-default
+specify-end
+combee **** reminder: the following height and width are used for writing into canvas,
+and the possibly different style based width and height determine the displayed size,
+which can be different! **** comenn
+specify-width 512px specify-end
+specify-height 512px specify-end
+words-message-browser-does-not-support-canvas-tag
+canvas-end
+
+combee ***
+b2d2ff = blue background
+*** comenn
+
+div-end

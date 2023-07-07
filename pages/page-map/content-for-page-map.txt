@@ -1,0 +1,428 @@
+combee *** heading for location selected *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-location specify-end
+specify-style style-show specify-end
+
+heading-level-2-begin
+specify-css-class class-style-location-name selectext-group-copy selectext-hide-after-clicked-on-map specify-end
+specify-id selectext-id-location-name underscore-double-here selectext-page-map specify-end
+specify-style style-show specify-end
+no-space
+heading-level-2-end
+
+<new_line>
+
+div-end
+
+<new_line>
+
+
+combee *** heading for news item or business *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-news selectext-show-hide underscore-double-here selectext-event selectext-show-hide underscore-double-here selectext-biz specify-end
+specify-style style-show specify-end
+
+<new_line>
+
+heading-level-1-begin
+specify-css-class class-style-map-news-biz-title specify-end
+specify-id selectext-id-page-map-news-title specify-end
+specify-style style-show specify-end
+no-space
+heading-level-1-end
+
+heading-level-2-begin
+specify-css-class class-style-map-page-biz-type specify-end
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-biz specify-end
+specify-id selectext-id-biz-type specify-end
+no-space
+characters-span-end
+heading-level-2-end
+
+heading-level-2-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-event specify-end
+characters-span-begin
+specify-css-class selectext-group-id-event-adr specify-end
+specify-id selectext-id-internally-needed-event-adr-on-page-map specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+characters-span-begin
+specify-css-class selectext-group-id-event-street specify-end
+specify-id selectext-id-internally-needed-event-street-on-page-map specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+line-break
+word-character-open-parenthesis no-space word-near-before-cross-street
+characters-span-begin
+specify-css-class selectext-group-id-event-crossstreet specify-end
+specify-id selectext-id-internally-needed-event-crossstreet-on-page-map specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+no-space word-character-close-parenthesis
+heading-level-2-end
+
+heading-level-2-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-intersection-known specify-end
+characters-span-begin
+specify-style style-inline style-opacity-fade-3 specify-end
+word-near-before-street-name
+characters-span-end
+characters-span-begin
+specify-css-class selectext-group-id-street-name-on-page-map specify-end
+specify-id selectext-id-internally-needed-intersection-street-on-page-map specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+one-space
+characters-span-begin
+specify-style style-inline style-opacity-fade-3 specify-end
+words-between-street-names
+characters-span-end
+one-space
+characters-span-begin
+specify-css-class selectext-group-id-crossstreet-name-on-page-map specify-end
+specify-id selectext-id-internally-needed-intersection-crossstreet-on-page-map specify-end
+specify-style style-inline specify-end
+no-space
+characters-span-end
+heading-level-2-end
+
+combee *** full description for news item *** comenn
+
+paragraph-begin
+specify-css-class class-style-map-news-description selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-news selectext-group-id-news-item-description specify-end
+specify-id selectext-id-internally-needed-description-full-on-page-map specify-end
+specify-style style-padding-large specify-end
+paragraph-end
+
+<new_line>
+
+div-end
+
+<new_line>
+
+
+combee *** buttons begin list *** comenn
+
+side-by-side-floating-begin
+
+vertical-gap
+
+
+combee *** button to OSM *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map specify-end
+specify-id selectext-id-show-hide-button-link-to-osm specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-osmlink javascript-handle-click-button-end specify-end
+no-space
+characters-span-begin
+specify-css-class class-style-item-has-website specify-end
+specify-style style-inline specify-end
+word-string-osm
+characters-span-end
+non-breaking-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-location class-style-wink specify-end
+specify-id selectext-id-button-to-osm specify-end
+specify-style style-show specify-end
+words-explore-open-street-map-location
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-biz class-style-wink specify-end
+specify-style style-show specify-end
+words-explore-open-street-map-business
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+words-explore-open-street-map-special-event
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-news selectext-show-hide underscore-double-here selectext-event selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+words-explore-open-street-map-news-police
+characters-span-end
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button to website, or message no website *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-event specify-end
+specify-id selectext-id-show-hide-button-go-to-website specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-style style-show specify-end
+specify-id selectext-id-button-to-website specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-websitelink javascript-handle-click-button-end specify-end
+characters-span-begin
+specify-css-class class-style-item-has-website specify-end
+specify-style style-inline specify-end
+word-string-indicating-item-has-website
+characters-span-end
+non-breaking-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-biz class-style-wink specify-end
+words-button-go-to-website-biz
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-event class-style-wink specify-end
+words-button-go-to-website-special-event
+characters-span-end
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map specify-end
+specify-id selectext-id-show-hide-message-no-website specify-end
+specify-style style-hide specify-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-no-website specify-end
+words-button-no-website-biz
+paragraph-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button add special event *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-locationintersection specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-addspecialevent javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-add-special-event specify-end
+words-button-add-special-event-at-this-intersection
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button add news source *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-locationcity specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-addnewssource javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-add-news-source specify-end
+words-button-add-news-source-at-this-city
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button edit or delete news item *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-news selectext-show-hide underscore-double-here selectext-event specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-edit javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-edit-news-item specify-end
+words-button-edit-news-item
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button to satellite view *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map specify-end
+specify-id selectext-id-show-hide-button-link-to-satellite-view specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-satellitelink javascript-handle-click-button-end specify-end
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-location specify-end
+specify-id selectext-id-button-to-satellite-view specify-end
+specify-style style-show specify-end
+words-explore-satellite-view-location
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-biz specify-end
+specify-style style-show specify-end
+words-explore-satellite-view-business
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-addspecialevent specify-end
+specify-style style-show specify-end
+words-explore-satellite-view-special-event
+characters-span-end
+no-space
+characters-span-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-news selectext-show-hide underscore-double-here selectext-event selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+words-explore-satellite-view-news-police
+characters-span-end
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button, actually change news location by intersection *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-geolocbystreets specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-geolocbystreets javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-change-news-location-by-intersection specify-end
+words-change-intersection-news-police
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button, actually change news location by neighborhood name *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-do underscore-double-here selectext-geolocbyname javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-change-news-location-by-neighborhood specify-end
+words-change-intersection-news-police
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** button not this intersection *** comenn
+
+div-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname selectext-show-hide underscore-double-here selectext-addspecialevent selectext-show-hide underscore-double-here selectext-geolocbystreets selectext-show-hide underscore-double-here selectext-geolocbyname specify-end
+specify-style style-show specify-end
+
+button-begin
+specify-css-class class-style-button-clickable class-style-button-on-map-page specify-end
+specify-javascript-onclick javascript-handle-click-button-begin selectext-notthisintersection javascript-handle-click-button-end specify-end
+specify-id selectext-id-button-not-this-intersection specify-end
+words-button-not-this-intersection
+button-end
+
+vertical-gap
+div-end
+
+<new_line>
+
+
+combee *** map *** comenn
+
+side-by-side-floating-middle-last
+
+div-begin
+specify-css-class class-style-rectangle-around-map-tiles specify-end
+specify-id selectext-id-rectangle-around-map-tiles specify-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-above-map-tiles selectext-show-if-at-highest-zoom selectext-hide-after-clicked-on-map class-style-wink specify-end
+combee **** following id is used by low-level function even though id never appears elsewhere **** comenn
+specify-id selectext-id-message-click-on-map specify-end
+specify-style style-show specify-end
+words-click-on-map
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-above-map-tiles selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-after-clicked-on-map specify-end
+combee **** following id is used by low-level function even though id never appears elsewhere **** comenn
+specify-id selectext-id-message-clicked-on-map class-style-animated-gif-working-tiny specify-end
+specify-style style-show specify-end
+words-clicked-on-map
+image-here
+image-animated-gif-working-specify-tiny
+paragraph-end
+
+paragraph-begin
+specify-css-class class-style-paragraph-above-map-tiles selectext-show-if-not-at-highest-zoom specify-end
+combee **** following id is used by low-level function even though id never appears elsewhere **** comenn
+specify-id selectext-id-message-zoomed-map-available-soon specify-end
+words-zoomed-map-available-soon
+paragraph-end
+
+array-of-map-tiles-in-canvas-element
+div-end
+
+side-by-side-floating-end
+
+<new_line>
+
+vertical-clear
+vertical-gap-tiny
+
+combee *** copyright *** comenn
+
+paragraph-begin
+words-copyright-open-street-map
+paragraph-end
+
+paragraph-begin
+specify-css-class selectext-show-hide underscore-double-here selectext-item-on-page-map selectext-show-hide underscore-double-here selectext-page-map-search-specific specify-end
+words-copyright-postal-codes
+paragraph-end
+
+<new_line>
