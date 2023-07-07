@@ -1,0 +1,13 @@
+ambee trace-show-where amenn
+
+
+ambee calculate-calendar-info amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-latitude-from-gps combee *** need space here *** comenn amenn supplied-latitude-decimal amenn
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-longitude-from-gps combee *** need space here *** comenn amenn supplied-longitude-decimal amenn
+ambee copy-and-replace supplied-latitude-decimal supplied-latitude-decimal character-hyphen-as-numbered-html-entity character-hyphen amenn
+ambee copy-and-replace supplied-longitude-decimal supplied-longitude-decimal character-hyphen-as-numbered-html-entity character-hyphen amenn
+ambee put-into-phrase latitude-integer  ambee numeric-integer ambee numeric-add 10000000000 ambee numeric-multiply ambee supplied-latitude-decimal amenn 10000000 amenn amenn amenn  amenn
+ambee put-into-phrase longitude-integer  ambee numeric-integer ambee numeric-add 10000000000 ambee numeric-multiply ambee supplied-longitude-decimal amenn 10000000 amenn amenn amenn  amenn
+ambee copy-zero-pad-left-to-length latitude-integer latitude-integer 11 amenn
+ambee copy-zero-pad-left-to-length longitude-integer longitude-integer 11 amenn
+ambee handle-json-latlonloc-calculations amenn
