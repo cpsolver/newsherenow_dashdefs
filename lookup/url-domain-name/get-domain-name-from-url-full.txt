@@ -1,0 +1,51 @@
+ambee trace-show-where amenn
+ambee trace-show url-full amenn
+
+
+ambee copy-without-extra-spaces url-full url-full amenn
+ambee copy-text url-full url-pattern amenn
+ambee put-into-phrase position-of-question-mark  ambee get-position-of-matching-text character-question-mark url-pattern amenn  amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee position-of-question-mark amenn amenn amenn
+ambee put-into-phrase url-pattern  ambee get-characters-from-position-to-position url-pattern 1 ambee numeric-minus ambee position-of-question-mark amenn 1  amenn amenn  amenn
+ambee if-end amenn
+
+
+ambee trace-show position-of-question-mark amenn
+ambee trace-show url-pattern amenn
+
+
+ambee copy-and-replace url-pattern url-pattern string-https string-http-placeholder amenn
+ambee trace-show url-pattern amenn
+ambee copy-and-replace url-pattern url-pattern string-http-placeholder string-http amenn
+ambee trace-show url-pattern amenn
+ambee copy-and-replace url-pattern url-pattern string-http-colon-slash-slash empty-text amenn
+ambee trace-show url-pattern amenn
+ambee put-into-phrase position-of-string-www-dot  ambee get-position-of-matching-text string-www-dot url-pattern amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 1 ambee position-of-string-www-dot amenn amenn amenn
+ambee put-into-phrase url-pattern  ambee get-characters-from-position-to-position url-pattern 5 999  amenn  amenn
+ambee if-end amenn
+
+ambee trace-show position-of-string-www-dot amenn
+ambee trace-show url-pattern amenn
+ambee copy-text url-pattern domain-name amenn
+ambee trace-show domain-name amenn
+ambee copy-and-replace-using-paired-listed-words url-pattern url-pattern characters-paired-replacements-to-a-s amenn
+ambee trace-show url-pattern amenn
+ambee copy-and-replace-using-paired-listed-words url-pattern url-pattern digits-paired-replacements-to-9s  amenn
+ambee trace-show url-pattern amenn
+ambee put-into-phrase character-a  a  amenn
+ambee copy-and-replace url-pattern url-pattern digit-9 character-a  amenn
+ambee trace-show url-pattern amenn
+ambee put-into-phrase string-a-period-a  a.a  amenn
+ambee copy-and-replace url-pattern url-pattern-different-if-valid string-a-period-a empty-text amenn
+ambee trace-show url-pattern-different-if-valid amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions url-pattern url-pattern-different-if-valid amenn amenn
+ambee clear-phrase domain-name amenn
+ambee if-end amenn
+
+
+ambee trace-show url-full amenn
+ambee trace-show domain-name amenn
