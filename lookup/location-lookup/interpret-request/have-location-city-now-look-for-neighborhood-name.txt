@@ -1,0 +1,21 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase first-street-name amenn
+ambee clear-phrase second-street-name amenn
+
+ambee copy-text location-words-in-group-2 neighborhood-name amenn
+ambee copy-text location-words-in-group-3 empty-string-if-neighborhood-name-present amenn
+
+ambee copy-text latitude-at-center city-or-postal-code-latitude-at-center amenn
+ambee copy-text longitude-at-center city-or-postal-code-longitude-at-center amenn
+
+ambee if-yes-begin ambee no-if-any-no ambee yes-or-no-opposite ambee yes-or-no-empty-phrase neighborhood-name amenn amenn ambee yes-or-no-empty-phrase empty-string-if-neighborhood-name-present amenn amenn amenn
+ambee find-neighborhood-info-based-on-neighborhood-name amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase neighborhood-name amenn amenn
+ambee use-named-neighborhood-as-location amenn
+ambee if-else amenn
+ambee use-city-or-postal-code-as-location amenn
+ambee if-end amenn

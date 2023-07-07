@@ -1,0 +1,68 @@
+ambee trace-show-where amenn
+ambee trace-show location-words amenn
+
+
+ambee put-into-phrase count-of-location-word-groups-separated-by-commas  ambee get-count-of-words location-words amenn amenn
+ambee copy-word-at-position location-words location-words-in-first-group 1  amenn
+ambee clear-phrase location-words-in-second-group amenn
+ambee clear-phrase location-words-in-third-group amenn
+
+
+ambee trace-show count-of-location-word-groups-separated-by-commas amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee count-of-location-word-groups-separated-by-commas amenn 1 amenn amenn amenn
+ambee copy-word-at-position location-words location-words-in-second-group 2 amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee count-of-location-word-groups-separated-by-commas amenn 2 amenn amenn amenn
+ambee copy-word-at-position location-words location-words-in-third-group 3 amenn
+ambee if-end amenn
+
+ambee clear-phrase location-words-in-second-group-after-replace-state-name amenn
+
+combee *** if there is no third group of words, check for a state or province name in the second group of words *** comenn
+ambee if-yes-begin ambee yes-or-no-empty-phrase location-words-in-third-group amenn amenn
+ambee copy-and-replace-using-paired-listed-words location-words-in-second-group location-words-in-second-group-after-replace-state-name paired-list-for-replacing-state-province-names-with-abbreviations amenn
+ambee copy-lowercase-only location-words-in-second-group-after-replace-state-name location-words-in-second-group-after-replace-state-name amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words amenn
+ambee trace-show count-of-location-word-groups-separated-by-commas amenn
+ambee trace-show location-words-in-first-group amenn
+ambee trace-show location-words-in-second-group amenn
+ambee trace-show location-words-in-third-group amenn
+ambee trace-show location-words-in-second-group-after-replace-state-name amenn
+
+
+combee *** if the second group of words has a state or province name, (and there is no third group), append its two-letter abbreviation to the end of the first words, and include an underscore to connect them, and specify there is now just a first group of words *** comenn
+ambee if-yes-begin ambee yes-or-no-same-two-words 2 ambee get-count-of-characters location-words-in-second-group-after-replace-state-name amenn amenn amenn
+ambee copy-text location-words-in-first-group location-words amenn
+ambee append-text-no-space character-underscore location-words amenn
+ambee append-text-no-space location-words-in-second-group-after-replace-state-name location-words amenn
+ambee put-into-phrase count-of-location-word-groups-separated-by-commas 1 amenn
+ambee clear-phrase location-words-in-second-group amenn
+ambee clear-phrase location-words-in-third-group amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words amenn
+ambee trace-show count-of-location-word-groups-separated-by-commas amenn
+
+
+combee *** check if the first group of words has a state or province name *** comenn
+ambee copy-word-at-position location-words location-words-in-first-group 1  amenn
+ambee copy-and-replace-using-paired-listed-words location-words-in-first-group location-words-in-first-group-after-replace-state-name paired-list-for-replacing-state-province-names-with-abbreviations amenn
+ambee put-into-phrase length-of-unmodified-text  ambee get-count-of-characters location-words-in-first-group amenn  amenn
+ambee put-into-phrase length-of-modified-text  ambee get-count-of-characters location-words-in-first-group-after-replace-state-name amenn  amenn
+
+
+ambee trace-show location-words-in-first-group-after-replace-state-name amenn
+ambee trace-show length-of-unmodified-text amenn
+ambee trace-show length-of-modified-text amenn
+
+
+ambee if-no-begin ambee yes-or-no-same-two-words ambee length-of-unmodified-text amenn ambee length-of-modified-text amenn amenn amenn
+ambee replace-state-province-name-with-abbreviation-case-different-length amenn
+ambee if-end amenn

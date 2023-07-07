@@ -1,0 +1,11 @@
+ambee validate-supplied-latitude-longitude amenn
+ambee get-region-id-from-supplied-latitude-longitude amenn
+ambee find-intersection-closest-to-latitude-longitude-at-center amenn
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase first-street-id amenn amenn
+ambee handle-json-location-found amenn
+ambee if-else amenn
+ambee handle-location-lookup-case-request-is-unknown amenn
+ambee if-end amenn

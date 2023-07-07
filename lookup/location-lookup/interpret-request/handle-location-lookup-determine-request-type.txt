@@ -1,0 +1,55 @@
+ambee trace-show-where amenn
+
+
+ambee put-into-phrase count-of-location-words  ambee get-count-of-words location-words amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee count-of-location-words amenn 4  amenn amenn amenn
+ambee put-into-phrase count-of-location-words  4  amenn
+ambee if-end amenn
+
+ambee append-text dummy-location-words location-words amenn
+ambee copy-words-from-position-to-position location-words location-words 1 4  amenn
+
+
+ambee trace-show location-words amenn
+
+
+combee *** if one of the words is a two-letter word, assume it is a country code or state or province abbreviation, and identify its word position *** comenn
+ambee copy-and-replace location-words location-words-alpha-pattern letters-a-through-z character-a-repeated amenn
+ambee put-into-phrase string-aa  aa  amenn
+ambee put-into-phrase position-of-two-letter-abbreviation  ambee get-position-of-word string-aa location-words-alpha-pattern amenn  amenn
+
+combee *** split the words into separate phrases, and append any two-letter abbreviation to the end of the first phrase *** comenn
+ambee clear-phrase two-letter-abbreviation amenn
+ambee handle-two-letter-abbreviation-for-position fenambee zero-one-multiple ambee position-of-two-letter-abbreviation amenn amenn amenn
+
+combee *** if first group of words matches a postal-code pattern, use postal code instead of city name *** comenn
+ambee copy-and-replace-using-paired-listed-words location-words-in-group-1 pattern-of-possible-postal-code digits-paired-replacements-to-9s amenn
+ambee copy-and-replace-using-paired-listed-words pattern-of-possible-postal-code pattern-of-possible-postal-code digits-paired-replacements-to-a-s amenn
+ambee copy-words-found-in-both-lists list-of-valid-postal-code-patterns pattern-of-possible-postal-code not-empty-if-valid-postal-code-pattern amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase not-empty-if-valid-postal-code-pattern amenn amenn
+ambee put-into-phrase location-request-type  postal-code  amenn
+ambee copy-text location-words-in-group-1 possible-postal-code amenn
+ambee clear-phrase postal-code-or-empty amenn
+ambee if-else amenn
+ambee put-into-phrase location-request-type  city  amenn
+ambee clear-phrase postal-code amenn
+ambee if-end amenn
+
+combee *** if the first word has the pattern 99999999999_99999999999 then it is a loc type *** comenn
+ambee copy-and-replace-using-paired-listed-words location-words-in-group-1 latitude-longitude-9s-pattern digits-paired-replacements-to-9s amenn
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions latitude-longitude-9s-pattern string-99999999999_99999999999  amenn amenn
+ambee put-into-phrase location-request-type  loc  amenn
+ambee copy-text location-words-in-group-1 supplied-latitude-longitude amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase location-words-in-group-1 amenn amenn
+ambee put-into-phrase location-request-type  unknown  amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words amenn
+ambee trace-show location-words-in-group-1 amenn
+ambee trace-show location-words-in-group-2 amenn
+ambee trace-show location-words-in-group-3 amenn
+ambee trace-show location-request-type amenn

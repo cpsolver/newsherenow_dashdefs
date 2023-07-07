@@ -1,0 +1,14 @@
+ambee trace-show-where amenn
+
+
+ambee clear-phrase first-street-name amenn
+ambee clear-phrase second-street-name amenn
+ambee clear-phrase neighborhood-name amenn
+ambee copy-text latitude-at-center latitude-integer amenn
+ambee copy-text longitude-at-center longitude-integer amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase postal-code amenn amenn
+ambee handle-json-city-found amenn
+ambee if-else amenn
+ambee handle-json-postal-code-found amenn
+ambee if-end amenn

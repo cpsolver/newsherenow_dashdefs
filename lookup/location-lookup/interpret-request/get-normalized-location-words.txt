@@ -1,0 +1,51 @@
+ambee trace-show-where amenn
+
+
+ambee copy-text input fenambee  combee *** need space here *** comenn selectext-id-input-location combee *** need space here *** comenn  amenn location-words amenn
+
+combee *** remove extra spaces *** comenn
+ambee copy-without-extra-spaces location-words location-words amenn
+
+combee *** lowercase letters only *** comenn
+ambee copy-lowercase-only location-words location-words amenn
+
+combee *** avoid Dashrep-special characters *** comenn
+ambee expand-text template-list-of-replacements-to-remove-dashrep-special-characters list-of-replacements-to-remove-dashrep-special-characters amenn
+ambee copy-and-replace-using-paired-listed-words location-words location-words list-of-replacements-to-remove-dashrep-special-characters amenn
+
+
+ambee trace-show list-of-replacements-to-remove-dashrep-special-characters amenn
+ambee trace-show location-words amenn
+
+
+combee *** convert ampersands to commas; remember that html entities contain an ampersand; reminder: replace action removes space from search string *** comenn
+ambee copy-and-replace location-words location-words html-entity-ampersand character-comma amenn
+ambee copy-and-replace location-words location-words html-entity-ampersand character-comma amenn
+ambee copy-and-replace location-words location-words character-space placeholder-for-space amenn
+ambee put-into-phrase string-space-ampersand-space-equivalent  @&@  amenn
+ambee copy-and-replace location-words location-words string-space-ampersand-space-equivalent character-comma amenn
+ambee copy-without-extra-spaces location-words location-words amenn
+
+combee *** remove spaces adjacent to comma; reminder: replacement cannot contain subset of search string; reminder: replace action removes space from search string, unless the only character is a space *** comenn
+ambee copy-and-replace location-words location-words character-space placeholder-for-space amenn
+
+ambee copy-and-replace location-words location-words string-comma-space-equivalent character-space amenn
+ambee copy-and-replace location-words location-words character-space character-comma amenn
+
+ambee copy-and-replace location-words location-words string-space-comma-equivalent character-space amenn
+ambee copy-and-replace location-words location-words character-space character-comma amenn
+
+combee *** replace commas with spaces *** comenn
+ambee copy-and-replace location-words location-words character-comma character-space amenn
+
+combee *** replace remaining spaces with underscores; reminder: replace action removes space from search string *** comenn
+ambee copy-and-replace location-words location-words placeholder-for-space character-underscore amenn
+
+combee *** replace state or province name with abbreviation, such as "georgetown texas" to "georgetown tx" *** comenn
+ambee replace-state-province-name-with-abbreviation amenn
+
+combee *** remove extra spaces, just to be sure *** comenn
+ambee copy-without-extra-spaces location-words location-words amenn
+
+
+ambee trace-show location-words amenn

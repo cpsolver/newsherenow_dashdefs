@@ -1,0 +1,13 @@
+ambee trace-show-where amenn
+
+
+ambee put-into-phrase position-of-abbreviation-in-paired-list  ambee get-position-of-word state-province-abbreviation paired-list-for-replacing-state-province-names-with-abbreviations amenn  amenn
+
+
+ambee trace-show state-province-abbreviation amenn
+ambee trace-show position-of-abbreviation-in-paired-list amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee position-of-abbreviation-in-paired-list amenn 0  amenn amenn amenn
+ambee replace-state-province-name-with-abbreviation-case-abbrev-in-list amenn
+ambee if-end amenn

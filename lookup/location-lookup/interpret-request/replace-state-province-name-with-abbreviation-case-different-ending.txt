@@ -1,0 +1,13 @@
+ambee trace-show-where amenn
+
+
+ambee copy-characters-from-position-to-position state-province-abbreviation-with-possible-underscore possible-underscore 1 1  amenn
+
+
+ambee trace-show possible-underscore amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions possible-underscore character-underscore amenn amenn
+ambee copy-characters-from-position-to-position state-province-abbreviation-with-possible-underscore state-province-abbreviation 2 3  amenn
+ambee replace-state-province-name-with-abbreviation-case-underscore-found amenn
+ambee if-end amenn

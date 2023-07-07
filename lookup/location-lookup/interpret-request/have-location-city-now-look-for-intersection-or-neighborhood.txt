@@ -1,0 +1,13 @@
+ambee trace-show-where amenn
+ambee trace-show location-words-in-group-2 amenn
+ambee trace-show location-words-in-group-3 amenn
+
+
+ambee copy-text location-words-in-group-2 street-name-1 amenn
+ambee copy-text location-words-in-group-3 street-name-2 amenn
+ambee put-into-phrase yes-or-no-have-street-words  ambee yes-or-no-opposite ambee yes-if-any-yes ambee yes-or-no-empty-phrase street-name-1 amenn ambee yes-or-no-empty-phrase street-name-2 amenn amenn amenn  amenn
+ambee if-yes-begin ambee yes-or-no-have-street-words amenn amenn
+ambee have-street-names-get-street-ids amenn
+ambee if-else amenn
+ambee have-location-city-now-look-for-neighborhood-name amenn
+ambee if-end amenn

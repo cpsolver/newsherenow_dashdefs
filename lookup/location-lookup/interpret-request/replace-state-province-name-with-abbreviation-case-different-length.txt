@@ -1,0 +1,14 @@
+ambee trace-show-where amenn
+
+
+ambee copy-characters-from-position-to-position location-words-in-first-group-after-replace-state-name state-province-abbreviation-with-possible-underscore ambee numeric-minus ambee length-of-modified-text amenn 2  amenn ambee length-of-modified-text amenn amenn
+ambee copy-characters-from-position-to-position location-words-in-first-group original-last-three-characters ambee numeric-minus ambee length-of-unmodified-text amenn 2  amenn ambee length-of-unmodified-text amenn amenn
+
+
+ambee trace-show state-province-abbreviation-with-possible-underscore amenn
+ambee trace-show original-last-three-characters amenn
+
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions state-province-abbreviation-with-possible-underscore original-last-three-characters amenn amenn
+ambee replace-state-province-name-with-abbreviation-case-different-ending amenn
+ambee if-end amenn

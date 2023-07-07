@@ -1,0 +1,15 @@
+ambee trace-show-where amenn
+
+ambee copy-text path-to-list-united-states-region-ids dashrep-path-prefix-for-file-reading amenn
+ambee put-into-phrase input-filename  list-united-states-region-ids.txt  amenn
+ambee copy-from-file-to-phrase ambee input-filename amenn list-of-united-states-region-ids amenn
+ambee put-into-phrase position-of-region-id-if-found ambee get-position-of-matching-text region-id list-of-united-states-region-ids amenn amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee position-of-region-id-if-found amenn amenn amenn
+ambee copy-text string-yes yes-or-no-show-miles amenn
+ambee if-else amenn
+ambee copy-text string-no yes-or-no-show-miles amenn
+ambee if-end amenn
+
+
+ambee trace-show yes-or-no-show-miles amenn

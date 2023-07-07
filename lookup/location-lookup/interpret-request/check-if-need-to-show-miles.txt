@@ -1,0 +1,9 @@
+ambee copy-text string-no yes-or-no-show-miles amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase region-id amenn amenn
+ambee check-if-in-united-states amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions country-code-uppercase string-US amenn amenn
+ambee copy-text string-yes yes-or-no-show-miles amenn
+ambee if-end amenn

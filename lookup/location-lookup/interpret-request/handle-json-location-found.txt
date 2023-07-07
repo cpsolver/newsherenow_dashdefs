@@ -1,0 +1,21 @@
+ambee trace-show-where amenn
+
+
+ambee calculate-hour-based-on-longitude amenn
+ambee check-if-need-to-show-miles amenn
+ambee determine-map-tile-filenames amenn
+ambee calculate-scale-value-for-longitude-adjustment amenn
+combee *** reminder: map tiles have different pixels per degree in each direction *** comenn
+ambee copy-text pixels-per-integer-degree-latitude-at-zoom fenambee map-zoom-level amenn pixels-per-integer-degree-latitude amenn
+ambee put-into-phrase pixels-per-integer-degree-longitude ambee numeric-multiply ambee pixels-per-integer-degree-latitude amenn ambee scale-value-for-longitude-adjustment amenn amenn amenn
+
+
+ambee trace-show back-from-determine-map-tile-filenames amenn
+ambee trace-show pixels-per-integer-degree-latitude amenn
+ambee trace-show pixels-per-integer-degree-longitude amenn
+ambee trace-show scale-value-for-longitude-adjustment amenn
+ambee trace-show map-zoom-level amenn
+
+
+ambee copy-text json-content-map json-content amenn
+ambee finish-handling-json-lookup-request amenn

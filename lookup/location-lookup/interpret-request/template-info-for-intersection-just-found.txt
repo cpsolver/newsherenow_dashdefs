@@ -1,0 +1,9 @@
+location-words-with-underscores-and-commas
+int
+latitude-integer
+longitude-integer
+city-name-with-underscores
+state-or-province-uppercase
+country-code-uppercase
+first-street-id
+second-street-id

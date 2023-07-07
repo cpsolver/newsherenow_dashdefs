@@ -1,0 +1,27 @@
+ambee trace-show-where amenn
+
+
+ambee trace-show location-words amenn
+
+ambee copy-and-replace location-words location-words-with-commas character-space character-comma amenn
+ambee copy-word-at-position paired-list-for-replacing-state-province-names-with-abbreviations state-or-province-name ambee numeric-minus ambee position-of-abbreviation-in-paired-list amenn 1  amenn amenn
+ambee put-into-phrase length-of-state-or-province-name  ambee get-count-of-characters state-or-province-name amenn  amenn
+ambee copy-text location-words-in-first-group-after-replace-state-name location-words-revised amenn
+ambee put-into-phrase position-of-comma-in-original-location-words  ambee get-position-of-matching-text character-comma location-words-with-commas amenn  amenn
+ambee clear-phrase location-words-revised-suffix amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee position-of-comma-in-original-location-words amenn amenn amenn
+ambee copy-characters-from-position-to-position location-words-with-commas location-words-revised-suffix ambee position-of-comma-in-original-location-words amenn 9999  amenn
+ambee append-text-no-space location-words-revised-suffix location-words-revised amenn
+ambee if-end amenn
+
+ambee copy-and-replace location-words-revised location-words character-comma character-space amenn
+
+
+ambee trace-show state-or-province-name amenn
+ambee trace-show length-of-state-or-province-name amenn
+ambee trace-show position-of-comma-in-original-location-words amenn
+ambee trace-show location-words-in-first-group-after-replace-state-name amenn
+ambee trace-show location-words-revised-suffix amenn
+ambee trace-show location-words-revised amenn
+ambee trace-show location-words amenn

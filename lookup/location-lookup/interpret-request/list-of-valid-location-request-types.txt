@@ -1,0 +1,5 @@
+city
+postal-code
+loc
+loc-previously-found
+unknown

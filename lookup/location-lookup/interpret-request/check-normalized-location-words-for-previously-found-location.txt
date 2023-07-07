@@ -1,0 +1,26 @@
+ambee trace-show-where amenn
+
+
+ambee copy-and-replace location-words location-words-with-commas character-space character-comma amenn
+ambee copy-text location-words-with-commas location-words-plus-int-terminated-with-space amenn
+ambee put-into-phrase string-int  int  amenn
+ambee append-text string-int location-words-plus-int-terminated-with-space amenn
+ambee append-text-no-space character-ampersand location-words-plus-int-terminated-with-space amenn
+ambee copy-and-replace location-words-plus-int-terminated-with-space location-words-plus-int-terminated-with-space character-ampersand character-space amenn
+ambee copy-text path-to-file-containing-locations-previously-found dashrep-path-prefix-for-file-reading amenn
+ambee copy-text filename-for-locations-previously-found source-filename amenn
+ambee clear-phrase location-previously-found-info-line amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase source-filename amenn amenn
+ambee find-line-in-file-that-begins-with-text ambee source-filename amenn location-words-plus-int-terminated-with-space location-previously-found-info-line amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words amenn
+ambee trace-show location-words-with-commas amenn
+ambee trace-show location-previously-found-info-line amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase location-previously-found-info-line amenn amenn
+ambee put-into-phrase location-request-type  loc-previously-found  amenn
+ambee if-end amenn

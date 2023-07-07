@@ -1,0 +1,29 @@
+ambee trace-show-where amenn
+
+
+ambee copy-words-found-only-in-first-list location-words character-question-mark location-words-without-question-marks amenn
+ambee put-into-phrase count-of-location-word-groups-separated-by-commas  ambee get-count-of-words location-words-without-question-marks amenn amenn
+ambee copy-and-replace location-words-without-question-marks location-words-with-spaces character-underscore character-space amenn
+combee *** reminder: at this point location-words-with-spaces cannot contain a comma or underscore *** comenn
+ambee put-into-phrase count-of-location-words-with-spaces  ambee get-count-of-words location-words-with-spaces amenn amenn
+
+
+ambee trace-show location-words-with-spaces amenn
+ambee trace-show count-of-location-word-groups-separated-by-commas amenn
+ambee trace-show count-of-location-words-with-spaces amenn
+
+
+ambee copy-text count-of-location-word-groups-separated-by-commas possible-one-underscore-three amenn
+ambee append-text-no-space character-underscore possible-one-underscore-three amenn
+ambee append-text-no-space count-of-location-words-with-spaces possible-one-underscore-three amenn
+
+
+ambee trace-show possible-one-underscore-three amenn
+
+
+ambee if-yes-begin ambee yes-or-no-same-two-words 1_3 ambee possible-one-underscore-three amenn amenn amenn
+ambee check-for-three-word-city-else-insert-commas amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words-with-spaces amenn

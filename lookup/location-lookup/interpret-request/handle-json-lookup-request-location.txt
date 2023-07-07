@@ -1,0 +1,28 @@
+ambee calculate-calendar-info amenn
+ambee get-normalized-location-words amenn
+ambee clear-phrase location-request-type amenn
+
+combee
+ambee check-normalized-location-words-for-previously-found-location amenn
+comenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase location-request-type amenn amenn
+ambee handle-possible-case-of-missing-commas amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase location-request-type amenn amenn
+ambee handle-location-lookup-determine-request-type amenn
+ambee if-end amenn
+
+ambee copy-words-found-in-both-lists location-request-type list-of-valid-location-request-types valid-location-request-type amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase valid-location-request-type amenn amenn
+ambee put-into-phrase valid-location-request-type  unknown  amenn
+ambee if-end amenn
+
+
+ambee trace-show location-request-type amenn
+ambee trace-show valid-location-request-type amenn
+
+
+ambee handle-location-lookup-case-request-is fenambee valid-location-request-type amenn amenn

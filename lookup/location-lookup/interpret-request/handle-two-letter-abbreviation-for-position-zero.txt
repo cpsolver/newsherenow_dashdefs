@@ -1,0 +1,13 @@
+ambee copy-word-at-position location-words location-words-in-group-1 1  amenn
+ambee clear-phrase location-words-in-group-2 amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee count-of-location-words amenn 1  amenn amenn amenn
+ambee copy-word-at-position location-words location-words-in-group-2 2  amenn
+ambee if-end amenn
+
+ambee clear-phrase location-words-in-group-3 amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee count-of-location-words amenn 2  amenn amenn amenn
+ambee copy-word-at-position location-words location-words-in-group-3 3  amenn
+ambee if-end amenn
+

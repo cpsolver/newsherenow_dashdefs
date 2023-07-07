@@ -1,0 +1,21 @@
+ambee trace-show-where amenn
+
+
+ambee copy-and-replace location-words-with-spaces possible-city-name character-space character-underscore amenn
+ambee get-city-info-based-on-possible-city-name amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase city-info-line amenn amenn
+ambee copy-and-replace location-words-with-spaces location-words character-space character-comma amenn
+ambee clear-phrase possible-city-name amenn
+ambee clear-phrase city-info-line amenn
+ambee if-else amenn
+ambee copy-text possible-city-name location-words amenn
+ambee put-into-phrase location-request-type  city  amenn
+ambee if-end amenn
+
+
+ambee trace-show location-words-with-spaces amenn
+ambee trace-show possible-city-name amenn
+ambee trace-show city-info-line amenn
+ambee trace-show location-request-type amenn
+ambee trace-show location-words amenn

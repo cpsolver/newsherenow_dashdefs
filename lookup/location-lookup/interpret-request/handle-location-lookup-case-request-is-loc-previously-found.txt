@@ -1,0 +1,62 @@
+ambee trace-show-where amenn
+
+
+combee ***
+sequence of items in location-previously-found-info-line:
+location-words-with-underscores-and-commas
+int
+latitude-at-center
+longitude-at-center
+city-name-with-underscores
+state-or-province-uppercase
+country-code-uppercase
+first-street-id
+second-street-id
+*** comenn
+
+
+ambee copy-word-at-position location-previously-found-info-line latitude-integer-previously-found 3  amenn
+ambee copy-word-at-position location-previously-found-info-line longitude-integer-previously-found 4  amenn
+ambee copy-word-at-position location-previously-found-info-line city-name-with-underscores 5  amenn
+ambee copy-word-at-position location-previously-found-info-line state-or-province-uppercase 6  amenn
+ambee copy-word-at-position location-previously-found-info-line country-code-uppercase-previously-found 7  amenn
+ambee copy-word-at-position location-previously-found-info-line first-street-id 8  amenn
+ambee copy-word-at-position location-previously-found-info-line second-street-id 9  amenn
+
+ambee copy-word-at-position location-words city-name-found 1  amenn
+ambee copy-text country-code-uppercase-previously-found country-code-uppercase amenn
+ambee copy-text latitude-integer-previously-found latitude-integer amenn
+ambee copy-text longitude-integer-previously-found longitude-integer amenn
+ambee modify-city-info amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase country-code-uppercase amenn amenn
+ambee copy-text country-code-uppercase-previously-found country-code-uppercase amenn
+ambee copy-lowercase-only country-code-uppercase country-code amenn
+ambee if-end amenn
+
+ambee copy-text latitude-integer-previously-found latitude-integer amenn
+ambee copy-text longitude-integer-previously-found longitude-integer amenn
+ambee get-region-id-based-on-latitude-longitude-integer amenn
+ambee get-street-names-based-on-first-second-street-ids amenn
+ambee copy-text latitude-integer latitude-at-center amenn
+ambee copy-text longitude-integer longitude-at-center amenn
+
+
+ambee trace-show region-id amenn
+ambee trace-show latitude-integer amenn
+ambee trace-show latitude-at-center amenn
+ambee trace-show longitude-integer amenn
+ambee trace-show longitude-at-center amenn
+ambee trace-show city-name-found amenn
+ambee trace-show city-name amenn
+ambee trace-show city-name-with-underscores amenn
+ambee trace-show state-or-province-uppercase amenn
+ambee trace-show state-or-province amenn
+ambee trace-show country-code-uppercase amenn
+ambee trace-show country-code amenn
+ambee trace-show first-street-id amenn
+ambee trace-show second-street-id amenn
+
+
+ambee handle-single-intersection-found amenn
+ambee put-into-phrase yes-or-no-intersection-just-found  no  amenn

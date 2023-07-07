@@ -1,0 +1,13 @@
+ambee copy-text location-words-in-group-1 possible-city-name amenn
+
+
+ambee trace-show possible-city-name amenn
+
+
+ambee get-city-info-based-on-possible-city-name amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase city-info-line amenn amenn
+ambee have-location-city-now-look-for-intersection-or-neighborhood amenn
+ambee if-else amenn
+ambee handle-possible-city-name-not-found amenn
+ambee if-end amenn

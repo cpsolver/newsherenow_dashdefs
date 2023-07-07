@@ -1,0 +1,8 @@
+html-entity-comma character-comma
+html-entity-hyphen character-underscore
+html-entity-open-square-bracket character-underscore
+html-entity-close-square-bracket character-underscore
+html-entity-period character-period
+character-open-square-bracket character-underscore
+character-close-square-bracket character-underscore
+character-hyphen character-underscore

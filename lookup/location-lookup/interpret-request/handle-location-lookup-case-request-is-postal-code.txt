@@ -1,0 +1,6 @@
+ambee get-postal-code-info-based-on-possible-postal-code amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase postal-code amenn amenn
+ambee have-location-city-now-look-for-intersection-or-neighborhood amenn
+ambee if-else amenn
+ambee handle-postal-code-not-found amenn
+ambee if-end amenn
