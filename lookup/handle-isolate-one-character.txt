@@ -1,0 +1,2 @@
+ambee put-into-phrase next-character  ambee get-characters-from-position-to-position characters-in-list ambee word-to-use-in-handler amenn ambee word-to-use-in-handler amenn amenn  amenn
+ambee append-text next-character list-of-characters amenn

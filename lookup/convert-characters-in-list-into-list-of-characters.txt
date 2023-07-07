@@ -1,0 +1,3 @@
+ambee clear-phrase list-of-characters amenn
+ambee generate-counts-from-integer-to-integer 1 ambee get-count-of-characters characters-in-list amenn list-of-pointers-to-characters amenn
+ambee use-handler-with-each-word-in-phrase handle-isolate-one-character list-of-pointers-to-characters amenn
