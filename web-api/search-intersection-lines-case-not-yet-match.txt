@@ -1,0 +1,3 @@
+ambee if-no-begin ambee yes-or-no-same-two-words 0 ambee get-position-of-matching-text text-to-match linewise-input-line-from-file amenn amenn amenn
+    ambee copy-text linewise-input-line-from-file matching-intersection-line-info amenn
+ambee if-end amenn

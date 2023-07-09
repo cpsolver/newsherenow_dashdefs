@@ -1,13 +1,23 @@
-combee
-todo: get list of admin ids from file
-comenn
+ambee copy-text path-to-admin-key-ids dashrep-path-prefix-for-file-reading amenn
 
-ambee if-no-begin ambee yes-or-no-empty-phrase input-key amenn amenn
-    ambee copy-words-found-in-both-lists input-key list-of-admin-user-ids not-empty-if-valid-access-id amenn
+ambee if-yes-begin ambee yes-or-no-file-exists ambee filename-list-of-admin-key-ids amenn amenn amenn
+    ambee copy-from-file-to-phrase ambee filename-list-of-admin-key-ids amenn list-of-admin-user-ids amenn
 ambee if-else amenn
-    ambee clear-phrase not-empty-if-valid-access-id amenn
+    ambee put-into-phrase list-of-admin-user-ids tryit amenn
 ambee if-end amenn
+
+ambee copy-without-extra-spaces list-of-admin-user-ids list-of-admin-user-ids amenn
+ambee clear-phrase not-empty-if-valid-access-id amenn
+ambee copy-words-found-in-both-lists input-key list-of-admin-user-ids not-empty-if-valid-access-id amenn
 
 ambee if-yes-begin ambee yes-or-no-empty-phrase not-empty-if-valid-access-id amenn amenn
     ambee copy-text string-message-access_denied message-success-or-error amenn
 ambee if-end amenn
+
+
+combee
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show filename-list-of-admin-key-ids amenn
+ambee trace-show list-of-admin-user-ids amenn
+ambee trace-show not-empty-if-valid-access-id amenn
+comenn
