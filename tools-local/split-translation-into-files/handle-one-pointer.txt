@@ -1,0 +1,36 @@
+ambee copy-text word-to-use-in-handler pointer-to-definition-end-within-all-text amenn
+ambee clear-phrase text-containing-definition amenn
+ambee copy-characters-from-position-to-position text-translated text-containing-definition ambee pointer-to-definition-begin-within-all-text amenn ambee numeric-add ambee pointer-to-definition-end-within-all-text amenn 5 amenn amenn
+ambee put-into-phrase pointer-to-definition-begin  ambee get-position-of-matching-text string-match-definition-begin text-containing-definition amenn amenn
+ambee copy-characters-from-position-to-position text-containing-definition text-containing-definition ambee pointer-to-definition-begin amenn 99999 amenn
+ambee put-into-phrase pointer-to-definition-begin  ambee get-position-of-matching-text string-match-definition-begin text-containing-definition amenn amenn
+ambee put-into-phrase pointer-to-definition-middle  ambee get-position-of-matching-text string-match-definition-middle text-containing-definition amenn amenn
+ambee put-into-phrase pointer-to-definition-end  ambee get-position-of-matching-text string-match-definition-end text-containing-definition amenn amenn
+ambee copy-characters-from-position-to-position text-containing-definition name-of-phrase ambee numeric-add ambee pointer-to-definition-begin amenn 7 amenn ambee numeric-minus ambee pointer-to-definition-middle amenn 1 amenn amenn
+ambee clear-phrase phrase-definition amenn
+ambee copy-characters-from-position-to-position text-containing-definition phrase-definition ambee numeric-add 2 ambee pointer-to-definition-middle amenn amenn ambee numeric-minus ambee get-count-of-characters text-containing-definition amenn 6 amenn amenn
+ambee copy-text pointer-to-definition-end-within-all-text pointer-to-definition-begin-within-all-text amenn
+ambee copy-and-replace-using-paired-listed-words name-of-phrase name-of-phrase string-underscore-space-hyphen amenn
+ambee copy-without-extra-spaces phrase-definition phrase-definition amenn
+ambee copy-and-replace phrase-definition phrase-definition character-space character-underscore amenn
+ambee copy-and-replace-using-paired-listed-words phrase-definition phrase-definition replacements-restore-after-translation amenn
+ambee copy-and-replace phrase-definition phrase-definition character-underscore character-space amenn
+ambee copy-without-extra-spaces phrase-definition phrase-definition amenn
+ambee copy-text string-start-of-next-file output-line amenn
+ambee append-text path-to-local-destination output-line amenn
+ambee append-text-no-space name-of-phrase output-line amenn
+ambee append-text-no-space string-dot-txt output-line amenn
+ambee append-text-no-space character-newline output-line amenn
+ambee append-text-no-space phrase-definition output-line amenn
+ambee copy-from-phrase-append-to-file output-line ambee target-filename amenn amenn
+
+
+ambee trace-show pointer-to-definition-end-within-all-text amenn
+ambee trace-show pointer-to-definition-begin amenn
+ambee trace-show pointer-to-definition-middle amenn
+ambee trace-show pointer-to-definition-end amenn
+ambee trace-show text-containing-definition amenn
+ambee trace-show name-of-phrase amenn
+ambee trace-show phrase-definition amenn
+combee
+comenn

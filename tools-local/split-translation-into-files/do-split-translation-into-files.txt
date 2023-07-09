@@ -1,0 +1,28 @@
+ambee expand-text template-bracketed-start-of-next-file string-start-of-next-file amenn
+ambee expand-text template-source-filename source-filename amenn
+ambee expand-text template-target-filename target-filename amenn
+ambee copy-text path-to-local-language-translation-files dashrep-path-prefix-for-file-reading amenn
+ambee copy-text path-to-local-language-translation-files dashrep-path-prefix-for-file-writing amenn
+ambee delete-file ambee target-filename amenn amenn
+ambee clear-phrase text-translated amenn
+ambee copy-from-file-to-phrase ambee source-filename amenn text-translated amenn
+ambee copy-without-extra-spaces text-translated text-translated amenn
+ambee generate-positions-of-delimiter string-match-definition-end text-translated list-of-pointers-to-matching-string amenn
+ambee put-into-phrase pointer-to-definition-begin-within-all-text  1 amenn
+ambee use-handler-with-each-word-in-phrase handle-one-pointer list-of-pointers-to-matching-string amenn
+
+
+ambee trace-show template-bracketed-start-of-next-file amenn
+ambee trace-show string-start-of-next-file amenn
+combee ***
+ambee trace-show target-language amenn
+ambee trace-show source-filename amenn
+ambee trace-show target-filename amenn
+ambee trace-show text-translated amenn
+ambee trace-show string-match-definition-begin amenn
+ambee trace-show string-match-definition-middle amenn
+ambee trace-show string-match-definition-end amenn
+ambee trace-show list-of-pointers-to-matching-string amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show dashrep-path-prefix-for-file-writing amenn
+*** comenn
