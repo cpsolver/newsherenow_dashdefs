@@ -1,0 +1,13 @@
+[-put-into-phrase dashrep-path-prefix-for-file-reading  F:\NewsHereNowLocal\dashdef\ -]
+[-put-into-phrase dashrep-path-prefix-for-file-writing  F:\NewsHereNowLocal\dashdef\ -]
+[-get-definitions-from-file combined_dashdef_category_defaults.txt-]
+[-get-definitions-from-file combined_dashdef_category_lookup.txt-]
+[-get-definitions-from-file combined_dashdef_category_tools_local.txt-]
+[-put-into-phrase path-to-dashdef  F:\NewsHereNowLocal\dashdef\ -]
+[-put-into-phrase slash-or-backslash  \ -]
+[-execute-tool-request-calcmaptilenumbers-]
+
+
+.............
+
+reminder: comments are not filtered out of this Dashrep code

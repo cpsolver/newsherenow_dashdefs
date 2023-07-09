@@ -1,0 +1,10 @@
+ambee put-into-phrase map-zoom-level  6  amenn
+ambee generate-counts-from-integer-to-integer 1 32 list-of-x-map-position-numbers amenn
+ambee generate-counts-from-integer-to-integer 33 64 list-of-y-map-position-numbers amenn
+ambee use-handler-with-each-word-in-phrase handle-loop-first-number-in-pair list-of-x-map-position-numbers amenn
+
+ambee generate-counts-from-integer-to-integer 33 64 list-of-x-map-position-numbers amenn
+ambee generate-counts-from-integer-to-integer 1 32 list-of-y-map-position-numbers amenn
+ambee use-handler-with-each-word-in-phrase handle-loop-first-number-in-pair list-of-x-map-position-numbers amenn
+
+ambee trace-show output-lines amenn

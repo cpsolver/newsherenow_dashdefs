@@ -1,0 +1,4 @@
+ambee copy-text word-to-use-in-handler tile-y-number amenn
+ambee expand-text template-numbers-for-one-map-tile numbers-for-one-map-tile amenn
+ambee append-text-no-space numbers-for-one-map-tile output-lines amenn
+ambee append-new-line output-lines amenn

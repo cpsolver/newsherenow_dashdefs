@@ -1,0 +1,11 @@
+ambee put-into-phrase dashrep-endless-loop-counter-limit  90000000  amenn
+ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epoch-seconds amenn  amenn
+
+ambee generate-all-map-tile-numbers-at-low-zoom amenn
+
+combee ***
+ambee put-into-phrase map-zoom-level  10  amenn
+ambee step-1-get-business-lons-lats amenn
+then sort by lon using sort utility
+ambee step-3-convert-lons-lats-to-map-tile-numbers amenn
+*** comenn

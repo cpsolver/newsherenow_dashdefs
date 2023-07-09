@@ -1,0 +1,2 @@
+ambee copy-text word-to-use-in-handler tile-x-number amenn
+ambee use-handler-with-each-word-in-phrase handle-loop-second-number-in-pair list-of-y-map-position-numbers amenn

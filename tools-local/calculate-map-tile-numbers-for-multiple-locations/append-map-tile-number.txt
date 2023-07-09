@@ -1,0 +1,2 @@
+ambee expand-text template-numbers-for-one-map-tile numbers-for-one-map-tile amenn
+ambee append-text numbers-for-one-map-tile list-of-map-tile-numbers amenn
