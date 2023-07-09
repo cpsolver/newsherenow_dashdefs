@@ -1,0 +1,13 @@
+combee
+calling code:
+ambee copy-words-unique-only list-of-counts-encountered list-of-counts-encountered amenn
+ambee copy-words-sort-numeric list-of-counts-encountered list-of-counts-encountered amenn
+ambee use-handler-with-each-word-in-phrase handle-words-with-each-count list-of-positions amenn
+
+ambee copy-text word-to-use-in-handler position-of-word-in-unique-list amenn
+ambee copy-word-at-position list-of-unique-words unique-word ambee position-of-word-in-unique-list amenn amenn
+
+unique-word
+
+ambee append-text-no-space lines-with-count fenambee word-count amenn all-output-lines amenn
+comenn

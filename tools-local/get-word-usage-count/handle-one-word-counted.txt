@@ -1,0 +1,14 @@
+ambee numeric-increment position-of-word-in-unique-list amenn
+ambee copy-word-at-position list-of-pointers-to-unique-words pointer-to-unique-word ambee position-of-word-in-unique-list amenn amenn
+ambee copy-word-at-position list-of-words unique-word ambee pointer-to-unique-word amenn amenn
+ambee copy-word-at-position list-of-unique-word-counts word-count ambee position-of-word-in-unique-list amenn amenn
+ambee put-into-phrase word-length ambee get-count-of-characters unique-word amenn amenn
+ambee put-into-phrase word-length-truncated ambee numeric-minimum 99 ambee word-length amenn amenn amenn
+ambee copy-zero-pad-left-to-length word-length-truncated word-length-padded 2 amenn
+ambee copy-zero-pad-left-to-length word-count word-count-padded 7 amenn
+ambee copy-text word-count-padded output-line amenn
+ambee append-text-no-space word-length-padded output-line amenn
+ambee append-text word-length output-line amenn
+ambee append-text unique-word output-line amenn
+ambee append-text-no-space character-newline output-line amenn
+ambee append-text-no-space output-line all-output-lines amenn
