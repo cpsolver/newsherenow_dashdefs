@@ -1,0 +1,44 @@
+<START<delayed_underscore>OF<delayed_underscore>NEXT<delayed_underscore>FILE> localpathtotopfolder\VoteFair<delayed_hyphen_here>polls\poll<delayed_hyphen_here>specifications\poll<delayed_hyphen_here>specifications<delayed_hyphen_here><poll_id>.txt
+<delayed_new_line>
+entry_begin
+<delayed_new_line>
+uniqueid <poll_id>
+<delayed_new_line>
+version 2019sep20
+<delayed_new_line>
+datetime 2019 9 20 5 8 0
+<delayed_new_line>
+pollstatus open
+<delayed_new_line>
+statusdisplayed Now open for voting!
+<delayed_new_line>
+title Federal district <district_name> (<province_name>)
+<delayed_new_line>
+districtname <district_name> (<province_name>)
+<delayed_new_line>
+subtitle Rank the candidates in your riding to help prevent split results in yet another First Past The Post election
+<delayed_new_line>
+articlegen <article_gen>
+<delayed_new_line>
+resultslink news_here_now_poll_results_canada.html#<province_abbreviation>_<district_number>
+<delayed_new_line>
+questioncount 1
+<delayed_new_line>
+questioncounttext One question, candidate/party preferences
+<delayed_new_line>
+headline actual headline is generated from templates
+<delayed_new_line>
+article actual article is generated from templates
+<delayed_new_line>
+title<delayed_hyphen_here>question<delayed_hyphen_here>1 Federal district <district_name> (<province_name>)
+<delayed_new_line>
+subtitle<delayed_hyphen_here>question<delayed_hyphen_here>1 Federal district <district_name> (<province_name>)
+<delayed_new_line>
+choicetype<delayed_hyphen_here>question<delayed_hyphen_here>1 candidate/party
+<delayed_new_line>
+choicetypeplural<delayed_hyphen_here>question<delayed_hyphen_here>1 candidates/parties
+<delayed_new_line>
+choicecount<delayed_hyphen_here>question<delayed_hyphen_here>1 <choice_count>
+<delayed_new_line>
+<generated_choice_info>
+entry_end

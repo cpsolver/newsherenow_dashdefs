@@ -1,0 +1,24 @@
+ambee put-into-phrase dashrep-path-prefix-for-file-reading  localpathtotopfolder\VoteFair-polls\z_Canadian_electoral_district_data\  amenn
+ambee put-into-phrase dashrep-path-prefix-for-file-writing  localpathtotopfolder\VoteFair-polls\z_Canadian_electoral_district_data\  amenn
+
+ambee put-into-phrase filename-input  ManitobaDistrictNumbersNames.txt  amenn
+ambee put-into-phrase filename-input  Canadian_electoral_district_names.txt  amenn
+
+ambee put-into-phrase filename-output-main  output_from_convert_spreadsheet_to_dashdefs.txt  amenn
+ambee delete-file ambee filename-output-main amenn amenn
+ambee put-into-phrase province-abbreviation-quebec qc amenn
+ambee copy-text placeholder-for-delayed-new-line placeholder-for-space-delayed-new-line-space amenn
+ambee prepend-text-no-space character-space placeholder-for-space-delayed-new-line-space amenn
+ambee append-text-no-space character-space placeholder-for-space-delayed-new-line-space amenn
+
+ambee if-yes-begin ambee yes-or-no-file-exists ambee filename-input amenn amenn amenn
+ambee linewise-read-from-file-and-use-handler ambee filename-input amenn handle-one-spreadsheet-row amenn
+ambee if-end amenn
+
+
+ambee trace-show filename-input amenn
+ambee trace-show filename-output-main amenn
+
+
+ambee delete-file ambee filename-output-from-spreadsheet-list-of-poll-ids amenn amenn
+ambee copy-from-phrase-append-to-file list-of-poll-ids ambee filename-output-from-spreadsheet-list-of-poll-ids amenn amenn

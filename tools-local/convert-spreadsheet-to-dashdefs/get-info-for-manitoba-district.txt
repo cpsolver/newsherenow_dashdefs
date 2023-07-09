@@ -1,0 +1,6 @@
+
+
+ambee copy-text manitoba-district-name-for-id fenambee district-number-zero-padded amenn district-name amenn
+ambee put-into-phrase choice-count  4  amenn
+ambee expand-text template-poll-title-english poll-title amenn
+ambee expand-text template-poll-subtitle-english poll-subtitle amenn

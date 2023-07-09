@@ -1,0 +1,23 @@
+ambee put-into-phrase article-gen  generate-article-2019-canada-parl amenn
+ambee copy-word-at-position linewise-input-line-from-file district-name-english 2 amenn
+ambee copy-word-at-position linewise-input-line-from-file district-name-french 3 amenn
+ambee copy-word-at-position linewise-input-line-from-file full-district-number 1 amenn
+ambee copy-characters-from-position-to-position full-district-number province-number 1 2 amenn
+ambee copy-text canadian-province-for-federal-id fenambee province-number amenn province-abbreviation amenn
+ambee get-province-name-based-on-province-abbreviation amenn
+ambee put-into-phrase province-abbreviation-quebec  qc  amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions province-abbreviation province-abbreviation-quebec amenn amenn
+ambee copy-text district-name-english district-name amenn
+ambee if-else amenn
+ambee copy-text district-name-french district-name amenn
+ambee if-end amenn
+
+ambee copy-and-replace district-name district-name character-underscore character-space amenn
+ambee copy-characters-from-position-to-position full-district-number district-number 3 5 amenn
+ambee copy-text canadian-parties-in-province fenambee province-abbreviation amenn list-of-party-abbreviations-province-specific amenn
+ambee put-into-phrase choice-count  ambee get-count-of-words list-of-party-abbreviations-province-specific amenn  amenn
+
+
+ambee trace-show poll-id amenn
+ambee trace-show choice-count amenn

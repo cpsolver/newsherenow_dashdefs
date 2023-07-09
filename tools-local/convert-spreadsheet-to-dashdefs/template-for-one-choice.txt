@@ -1,0 +1,4 @@
+comment canadaparl_ no-space party-abbreviation no-space _ no-space province-abbreviation no-space _ no-space district-number
+<delayed_new_line>
+choicename<hyphen_here>question<hyphen_here> no-space question-number no-space <hyphen_here>choice<hyphen_here> no-space choice-number choice-name
+<delayed_new_line>

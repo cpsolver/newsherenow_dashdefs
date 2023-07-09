@@ -1,0 +1,57 @@
+combee **** reminder: expanding template caused endless loop **** comenn
+ambee clear-phrase poll-specifications amenn
+ambee clear-phrase generated-choice-info amenn
+ambee clear-phrase state-abbreviation amenn
+ambee clear-phrase province-abbreviation amenn
+ambee put-into-phrase question-number  1  amenn
+ambee put-into-phrase choice-count  0  amenn
+ambee put-into-phrase province-number  00  amenn
+ambee put-into-phrase province-abbreviation  ??  amenn
+ambee put-into-phrase province-name  ??  amenn
+ambee put-into-phrase state-name  ??  amenn
+ambee put-into-phrase district-number  00  amenn
+ambee put-into-phrase poll-id  unknown_poll_99999  amenn
+ambee put-into-phrase poll-number  99999  amenn
+
+ambee get-info-for-canadian-district amenn
+combee ****
+ambee get-info-for-manitoba-district amenn
+**** comenn
+
+ambee generate-counts-from-integer-to-integer 1 ambee choice-count amenn list-of-choice-numbers amenn
+ambee expand-text template-for-poll-id poll-id amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase district-number amenn amenn
+
+ambee use-handler-with-each-word-in-phrase handle-one-party-or-candidate-choice list-of-choice-numbers amenn
+combee ****
+ambee use-handler-with-each-word-in-phrase handle-one-choice-manitoba-district list-of-choice-numbers amenn
+**** comenn
+
+ambee copy-and-replace template-for-generated-poll-specifications poll-specifications placeholder-for-district-number district-number amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-poll-id poll-id amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-poll-number poll-number amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-province-abbreviation province-abbreviation amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-province-name province-name amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-district-name district-name amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-article-gen article-gen amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-poll-title poll-title amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-poll-subtitle poll-subtitle amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-choice-count choice-count amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-generated-choice-info generated-choice-info amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-character-underscore character-underscore amenn
+ambee copy-and-replace poll-specifications poll-specifications character-newline character-space amenn
+ambee copy-without-extra-spaces poll-specifications poll-specifications amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-delayed-hyphen character-hyphen amenn
+ambee copy-and-replace poll-specifications poll-specifications placeholder-for-space-delayed-new-line-space character-newline amenn
+
+combee
+if needed for debugging:
+ambee append-text-no-space character-newline poll-specifications amenn
+ambee append-text linewise-input-line-from-file poll-specifications amenn
+comenn
+
+ambee copy-from-phrase-append-to-file poll-specifications ambee filename-output-main amenn amenn
+ambee append-text-no-space poll-id list-of-poll-ids amenn
+ambee append-text-no-space character-newline list-of-poll-ids amenn
+ambee if-end amenn

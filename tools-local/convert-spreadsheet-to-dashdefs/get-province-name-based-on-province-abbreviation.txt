@@ -1,0 +1,4 @@
+ambee put-into-phrase pointer-to-province-abbreviation  ambee get-position-of-word province-abbreviation paired-province-abbreviations-and-province-names amenn  amenn
+ambee put-into-phrase pointer-to-province-name  ambee numeric-add 1 ambee pointer-to-province-abbreviation amenn amenn  amenn
+ambee copy-word-at-position paired-province-abbreviations-and-province-names province-name ambee pointer-to-province-name amenn amenn
+ambee copy-and-replace province-name province-name character-underscore character-space amenn

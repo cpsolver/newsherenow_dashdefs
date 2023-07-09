@@ -1,0 +1,2 @@
+ambee copy-word-at-position list-of-party-abbreviations-province-specific party-abbreviation ambee choice-number amenn amenn
+ambee copy-text canadian-party-name-for-party-abbreviation fenambee party-abbreviation amenn choice-name amenn

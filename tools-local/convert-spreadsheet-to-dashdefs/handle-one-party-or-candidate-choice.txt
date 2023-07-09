@@ -1,0 +1,9 @@
+ambee copy-text word-to-use-in-handler choice-number amenn
+
+ambee get-info-for-choice-party-or-candidate-canada amenn
+combee ****
+ambee get-info-for-choice-party-or-candidate-manitoba amenn
+**** comenn
+
+ambee expand-text template-for-one-choice poll-specifications-one-choice amenn
+ambee append-text poll-specifications-one-choice generated-choice-info amenn

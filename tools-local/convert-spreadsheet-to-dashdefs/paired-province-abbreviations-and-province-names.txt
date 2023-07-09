@@ -1,0 +1,13 @@
+ab Alberta
+bc British_Columbia
+mb Manitoba
+nl Newfoundland_and_Labrador
+nb New_Brunswick
+nt Northwest_Territories
+ns Nova_Scotia
+nu Nunavut
+on Ontario
+pe Prince_Edward_Island
+qc Quebec
+sk Saskatchewan
+yt Yukon
