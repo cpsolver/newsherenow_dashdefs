@@ -1,0 +1,8 @@
+ambee copy-text output-filename-path dashrep-path-prefix-for-file-writing amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee expand-text map-image-begin expanded-map-image-begin amenn
+ambee copy-from-phrase-append-to-file expanded-map-image-begin ambee output-filename amenn amenn
+ambee copy-text input-filename-path dashrep-path-prefix-for-file-reading amenn
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn
+ambee expand-text map-image-end expanded-map-image-end amenn
+ambee copy-from-phrase-append-to-file expanded-map-image-end ambee output-filename amenn amenn

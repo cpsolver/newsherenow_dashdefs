@@ -1,0 +1,38 @@
+ambee put-into-phrase dashrep-endless-loop-counter-limit  90000000  amenn
+ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epoch-seconds amenn  amenn
+
+ambee put-into-phrase input-filename  output_svg_registration_lats_lons.txt  amenn
+ambee put-into-phrase output-filename  output_map_registration_squares.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn
+
+ambee put-into-phrase input-filename  output_svg_density_data_postal_codes.txt  amenn
+ambee put-into-phrase output-filename  output_map_postal_codes.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn
+
+ambee put-into-phrase input-filename  output_svg_density_data_intersections.txt  amenn
+ambee put-into-phrase output-filename  output_map_intersections.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn
+
+ambee put-into-phrase input-filename  output_svg_density_data_city_names.txt  amenn
+ambee put-into-phrase output-filename  output_map_cities.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn
+
+ambee put-into-phrase input-filename  output_svg_density_data_businesses.txt  amenn
+ambee put-into-phrase output-filename  output_map_businesses.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn
+
+ambee put-into-phrase input-filename  output_joined_data_cities_businesses_intersections.txt  amenn
+ambee put-into-phrase output-filename  output_map_cities_businesses_intersections.svg  amenn
+ambee copy-text path-to-images-folder input-filename-path amenn
+ambee copy-text path-to-images-folder output-filename-path amenn
+ambee generate-one-map-using-input-output-filenames amenn

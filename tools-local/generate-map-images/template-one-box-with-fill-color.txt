@@ -1,0 +1,1 @@
+<rect x=" no-space x-position no-space " y=" no-space y-position no-space " width=" no-space width-value no-space " height=" no-space height-value no-space " style="fill: # no-space rgb-value no-space ; fill-opacity: no-space opacity-value no-space ;" />

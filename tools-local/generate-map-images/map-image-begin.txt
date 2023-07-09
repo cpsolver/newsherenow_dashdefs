@@ -1,0 +1,11 @@
+<?xml version="1.0"?> new-line
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22 hyphen-here rdf hyphen-here syntax hyphen-here ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1200px" height="650px" id="svgmap"> new-line
+<title>Mapped data density</title> new-line
+<desc>Mapped data density</desc> new-line
+<defs> new-line
+<style type="text/css"><![CDATA[ new-line
+text { fill: #000000; font hyphen-here weight: bold } new-line
+]]></style> new-line
+</defs> new-line
+<rect x="0" y="0" width="1200" height="650" style="fill: #b2d2ff;" /> new-line
+<rect x="0" y="0" width="1200" height="650" rx="20" ry="20" style="fill: #006aff;" /> new-line
