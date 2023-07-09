@@ -1,0 +1,878 @@
+jsfunction-handle-click-button js-equals function( jsvar-clicked-button-name , jsvar-element-to-brighten ) {
+    var jsvar-return-value comma-sep jsvar-user-id comma-sep jsvar-tab-previously-highlighted comma-sep jsvar-element-nav-tab comma-sep jsvar-id-element-name comma-sep jsvar-id-element-name-two comma-sep jsvar-button-clicked-element-name comma-sep jsvar-element-selected comma-sep jsvar-index-count comma-sep jsvar-location-loc comma-sep jsvar-news-location comma-sep jsvar-location-name comma-sep jsvar-yes-no-got-news comma-sep jsvar-yes-no-got-biz comma-sep jsvar-yes-no-got-polls comma-sep jsvar-class-style-for-tab comma-sep jsvar-saved-class-for-button-to-brighten comma-sep jsvar-requested-location-string comma-sep jsvar-requested-location-string-cgi-format comma-sep jsvar-requested-location-string-html-entity-format comma-sep jsvar-attribute-value comma-sep url comma-sep jsvar-contact-message comma-sep jsvar-link-string comma-sep jsvar-components-of-clicked-button-name comma-sep jsvar-form-component-elements comma-sep jsvar-pointer comma-sep jsvar-pointer-to-string comma-sep jsvar-substring-used-by comma-sep jsvar-latitude-integer comma-sep jsvar-longitude-integer comma-sep jsvar-edit-request-type comma-sep jsvar-supplied-url comma-sep jsvar-user-info-in-cgi-parameters comma-sep jsvar-news-description comma-sep jsvar-height-full-description comma-sep jsvar-height-short-description comma-sep jsvar-news-title comma-sep jsvar-input-text comma-sep jsvar-input-text-html-entity-format comma-sep jsvar-loc-source comma-sep jsvar-news-id comma-sep jsvar-pointer-digit comma-sep jsvar-letter-info-type comma-sep jsvar-edit-info-type comma-sep jsvar-news-date comma-sep jsvar-content-of-element comma-sep jsvar-show-or-hide comma-sep jsvar-item-name-id-suffix comma-sep jsvar-identifier-string comma-sep jsvar-info-type comma-sep jsvar-special-event-type comma-sep jsvar-object-reference comma-sep jsvar-load-status-about comma-sep jsvar-unused-timer-id comma-sep jsvar-block-or-none-url comma-sep jsvar-block-or-none-number comma-sep jsvar-block-or-none-street comma-sep jsvar-block-or-none-neighborhood comma-sep jsvar-biz-type comma-sep jsvar-page-segment-previous comma-sep jsvar-page-segment-to-show comma-sep jsvar-yes-no comma-sep jsvar-width-each-about-button comma-sep jsvar-value-from-element comma-sep jsvar-poll-id comma-sep jsvar-previous-typed-location comma-sep jsvar-url comma-sep jsvar-date-time comma-sep jsvar-epoch-seconds comma-sep jsvar-redirect-request comma-sep jsvar-osm-zoom-level comma-sep jsvar-class-name comma-sep jsvar-selectext js-statement-end
+
+<new_line>
+
+    const jscon-re-user-geo-name js-equals /^ *[^ ].+[^ ] *$/i js-statement-end
+    const jscon-re-user-supplied-url js-equals /^ *[^ ]+\.[^ ]+ *$/i js-statement-end
+
+<new_line>
+
+combee *** Declare regular expression constant; now allows empty number because some yard-sale ads specify map location without number. *** comenn
+    const jscon-re-user-address-number js-equals /^ *[0-9]* *$/i js-statement-end
+
+<new_line>
+
+combee *** When the index.html file is downloaded, the CPU is busy, so immediately hide everything except the ask-where segment, so that the user does not get confused by seeing the entire file. **** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-close-quote js-then
+        jsfunction-hide-page-segments-except js-params-begin code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** Identify which navigation tab is currently active. *** comenn
+
+    jsvar-tab-previously-highlighted js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+combee *** In the console running the sandbox version, log the clicked button name and the previously highlighted navigation tab. *** comenn
+
+    jslog-begin code-open-quote jsvar-clicked-button-name code-close-quote jslog-equal-sign jsvar-clicked-button-name jslog-end
+    jslog-begin code-open-quote jsvar-tab-previously-highlighted code-close-quote jslog-equal-sign jsvar-tab-previously-highlighted jslog-end
+
+<new_line>
+
+combee *** Handle a "refresh" request because an iPad needs to respond to an "onorientationchange" event. *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-refresh code-close-quote js-then
+        jsfunction-adjust-heights js-params-begin js-params-end js-statement-end
+        return true js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** Ensure the cursor is the normal pointer *** comenn
+
+    jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote default code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+combee *** Important: If a section of code has no "return" statement, then the code at the end of this subroutine also executes standard actions. *** comenn
+
+<new_line>
+
+combee *** If the hamburger menu is visible, close it regardless of which button was clicked. *** comenn
+
+    jsvar-class-name js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-list code-close-quote js-params-next "class" js-params-end js-statement-end
+
+    jslog-begin code-open-quote jsvar-class-name code-close-quote jslog-equal-sign jsvar-class-name jslog-end
+
+    js-if jsvar-class-name js-is-equal-to code-open-quote class-style-hamburger-menu-list-show code-close-quote js-then
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-list code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-list-hide code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-button-open code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-button-open-show code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-button-close code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-button-close-hide code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tabs-list code-close-quote js-params-next "class" js-params-next code-open-quote class-style-navigation-tabs-show code-close-quote js-params-end js-statement-end
+    js-else
+        js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-hamburger-menu-show code-close-quote js-then
+
+            jslog-begin code-open-quote jsvar-clicked-button-name code-close-quote jslog-equal-sign jsvar-clicked-button-name jslog-end
+
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-list code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-list-show code-close-quote js-params-end js-statement-end
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-button-open code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-button-open-hide code-close-quote js-params-end js-statement-end
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-hamburger-menu-button-close code-close-quote js-params-next "class" js-params-next code-open-quote class-style-hamburger-menu-button-close-show code-close-quote js-params-end js-statement-end
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tabs-list code-close-quote js-params-next "class" js-params-next code-open-quote class-style-navigation-tabs-hide code-close-quote js-params-end js-statement-end
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-button-to-other-languages code-close-quote js-params-end js-statement-end
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-website-tagline code-close-quote js-params-end js-statement-end
+            return true js-statement-end
+        js-if-end
+    js-if-end
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-hamburger-menu-hide code-close-quote js-then
+        return true js-statement-end
+    js-if-end
+
+    jslog-begin code-open-quote jsvar-clicked-button-name code-close-quote jslog-equal-sign jsvar-clicked-button-name jslog-end
+
+<new_line>
+
+combee *** Ignore a click of one of the bottom buttons if already displaying that page. *** comenn
+
+    js-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-legal code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-thanks code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-contact code-close-quote js-paren-end js-then
+        jsvar-block-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin js-paren-begin code-open-quote selectext-id-page-segment underscore-double-here code-close-quote js-concat jsvar-clicked-button-name js-paren-end js-params-next "display" js-params-end js-statement-end
+        js-if jsvar-block-or-none js-is-equal-to code-open-quote block code-close-quote js-then
+            return true js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** Save the previous page name, just in case it is needed. *** comenn
+
+    jsvar-page-segment-previous js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-end js-statement-end
+    jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-previous code-close-quote js-params-next jsvar-page-segment-previous js-params-end js-statement-end
+
+<new_line>
+
+combee **** If the clicked button name is not empty, save the name as the next page segment to show.  If the clicked button name is empty, the new page segment will be based on the existing content of the selectext-id-page-segment-current element. *** comenn
+
+    js-if jsvar-clicked-button-name js-is-not-equal-to code-open-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next jsvar-clicked-button-name js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = editcancel *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editcancel code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+        jsvar-edit-info-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-edit-info-type code-close-quote js-params-end js-statement-end
+        jsvar-identifier-string js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-table-position-identifier code-close-quote js-params-end js-statement-end
+        js-if jsvar-edit-info-type js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+            jsvar-clicked-button-name js-equals code-open-quote selectext-biz code-close-quote js-concat selectext-id-table-position-identifier js-statement-end
+        js-else-if jsvar-edit-info-type js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+            jsvar-clicked-button-name js-equals code-open-quote selectext-news code-close-quote js-concat selectext-id-table-position-identifier js-statement-end
+        js-else
+            jsvar-clicked-button-name js-equals code-open-quote selectext-map code-close-quote js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = back *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-back code-close-quote js-then
+        jsvar-selectext js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-end js-statement-end
+        js-if js-paren-begin jsvar-selectext js-is-equal-to code-open-quote selectext-biz code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-selectext js-is-equal-to code-open-quote selectext-news code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-selectext js-is-equal-to code-open-quote selectext-polls code-close-quote js-paren-end js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next jsvar-selectext js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote jsvar-selectext code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next jsvar-selectext js-params-end js-statement-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-back code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = deletesaved *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-deletesaved code-close-quote js-then
+        jsfunction-delete-saved-locations no-space () js-statement-end
+        jsvar-clicked-button-name js-equals code-open-quote selectext-where code-close-quote js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** If the second function parameter, namely jsvar-element-to-brighten, is not empty text, assume it refers to an HTML element that serves as a button, remove focus from that clicked button, make sure it has not already been brightened, save its "class" attribute and the element's ID, brighten it by appending the brighten class name. Later, after a delay, the extra brighten class name will be removed from that element. *** comenn
+
+    js-if jsvar-element-to-brighten js-then
+        js-try
+            jsvar-button-clicked-element-name js-equals jsvar-element-to-brighten no-space .id js-statement-end
+        js-catch
+            jsvar-button-clicked-element-name js-equals code-open-close-quote js-statement-end
+            jslog-begin code-open-quote jsvar-button-clicked-element-name code-close-quote jslog-equal-sign jsvar-button-clicked-element-name jslog-end
+        js-if-end
+    js-if-end
+    js-if jsvar-button-clicked-element-name js-is-not-equal-to code-open-close-quote js-then
+        jsfunction-remove-focus-from-element-with-id js-params-begin jsvar-button-clicked-element-name js-params-end js-statement-end
+        jsfunction-un-brighten-button js-params-begin js-params-end js-statement-end
+        jsvar-saved-class-for-button-to-brighten js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin jsvar-button-clicked-element-name js-params-next "class" js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-button-to-brighten code-close-quote js-params-next "contents" js-params-next jsvar-button-clicked-element-name js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-class-before-brighten code-close-quote js-params-next "contents" js-params-next jsvar-saved-class-for-button-to-brighten js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin jsvar-button-clicked-element-name js-params-next "class" js-params-next jsvar-saved-class-for-button-to-brighten js-concat code-open-quote one-space class-style-brighten code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** Split the clicked button name at the underscores. *** comenn
+
+    jsvar-components-of-clicked-button-name js-equals jsvar-clicked-button-name no-space .split( code-open-quote underscore-double-here code-close-quote ) js-statement-end
+
+    jslog-begin code-open-quote components of clicked button name code-close-quote jslog-equal-sign jsvar-components-of-clicked-button-name no-space [0] js-concat "  " js-concat jsvar-components-of-clicked-button-name no-space [1] js-concat "  " js-concat jsvar-components-of-clicked-button-name no-space [2] js-concat "  " js-concat jsvar-components-of-clicked-button-name no-space [3] jslog-end
+
+<new_line>
+
+combee *** Clear the geolocate confirmed status, unless this is the final "do_" pass. *** comenn
+
+    js-if !( jsvar-components-of-clicked-button-name no-space [1] js-is-equal-to code-open-quote selectext-do code-close-quote ) js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-confirmed code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** As the default, show the minimum age warning, but later/below hide it if showing the polls segment. *** comenn
+
+    jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-warning-minimum-age code-close-quote js-params-end js-statement-end
+
+<new_line>
+
+combee *** click = about *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-about code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-about code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-about code-close-quote js-params-end js-statement-end
+        jsvar-load-status-about js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-load-status-about code-close-quote js-params-end js-statement-end
+        js-if jsvar-load-status-about js-is-not-equal-to code-open-quote selectext-have code-close-quote js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-about code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-static code-close-quote js-params-end js-statement-end
+            jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-about code-close-quote js-params-end js-statement-end
+        js-if-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-about code-close-quote js-params-end js-statement-end
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-website-tagline code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = foreign languages list *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-to-foreign-languages-list code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-foreign code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = where or click = empty *** comenn
+
+    js-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-where code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-close-quote js-paren-end js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-get-values-from-browser no-space () js-statement-end
+        jsfunction-update-copies-of-content no-space () js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-ask-where code-close-quote js-params-end js-statement-end
+        jsfunction-show-hide-saved-locations no-space () js-statement-end
+        jsfunction-ask-where-prompt no-space () js-statement-end
+        jsfunction-move-focus-to-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gps code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-show-hide-button-use-gps-location code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = contact *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-contact code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-contact code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-contact-email code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-contact-message code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-contact-url code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+        jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-contact-message-empty code-close-quote js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-addcontactmessage code-close-quote js-params-end js-statement-end
+        jsfunction-move-focus-to-element-with-id js-params-begin code-open-quote selectext-id-contact-message code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = map *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-map code-close-quote js-then
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-map code-close-quote js-params-end js-statement-end
+        jsvar-location-loc js-equals code-open-close-quote js-statement-end
+        jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-loc-item code-close-quote js-params-next jsvar-location-loc js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-one-item-website code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+        js-if jsvar-location-loc no-space .length > 0 js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+            jsfunction-update-page-map-for-info-type js-params-begin code-open-quote selectext-location code-close-quote js-params-end js-statement-end
+            jsfunction-update-copies-of-content no-space () js-statement-end
+            jsvar-location-name js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-location-name code-close-quote js-params-end js-statement-end
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-map-canvas code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote default code-close-quote js-params-end js-statement-end
+        js-else
+
+combee *** todo: create function-show-message-need-location and use here and 3 other places (biz, news, polls); pass ID name as function argument *** comenn
+
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+            jsvar-block-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-map code-close-quote js-params-next "display" js-params-end js-statement-end
+            jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-ask-where code-close-quote js-params-end js-statement-end
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-map code-close-quote js-params-end js-statement-end
+            js-if js-paren-begin jsvar-tab-previously-highlighted js-is-equal-to code-open-quote selectext-where code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-block-or-none !== "none" js-paren-end js-then
+                jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-map code-close-quote js-params-end js-statement-end
+            js-if-end
+
+            jsfunction-show-hide-saved-locations no-space () js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = news or biz item , with "event" type being subset of "news" type *** comenn
+
+    js-if js-paren-begin jsvar-components-of-clicked-button-name no-space [0] js-is-equal-to code-open-quote selectext-id-news code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-components-of-clicked-button-name no-space [0] js-is-equal-to code-open-quote selectext-id-biz code-close-quote js-paren-end js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-map code-close-quote js-params-end js-statement-end
+        jsvar-identifier-string js-equals jsvar-components-of-clicked-button-name no-space [1] js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-table-position-identifier code-close-quote js-params-next jsvar-identifier-string js-params-end js-statement-end
+        jsvar-info-type js-equals code-open-quote selectext-biz code-close-quote js-statement-end
+        jsvar-letter-info-type js-equals jsvar-identifier-string no-space .substr( 1 , 1 ) js-statement-end
+        js-if jsvar-letter-info-type js-is-equal-to "N" js-then
+            jsvar-edit-info-type js-equals code-open-quote selectext-neigh code-close-quote js-statement-end
+            jsvar-info-type js-equals code-open-quote selectext-event code-close-quote js-statement-end
+            jsvar-item-name-id-suffix js-equals code-open-quote underscore-double-here selectext-title code-close-quote js-statement-end
+        js-else-if jsvar-letter-info-type js-is-equal-to "P" js-then
+            jsvar-edit-info-type js-equals code-open-quote selectext-police code-close-quote js-statement-end
+            jsvar-info-type js-equals code-open-quote selectext-news code-close-quote js-statement-end
+        js-else-if jsvar-letter-info-type js-is-equal-to "S" js-then
+            jsvar-edit-info-type js-equals code-open-quote selectext-sched code-close-quote js-statement-end
+            jsvar-info-type js-equals code-open-quote selectext-news code-close-quote js-statement-end
+        js-if-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-edit-info-type code-close-quote js-params-next jsvar-edit-info-type js-params-end js-statement-end
+        jsfunction-update-page-map-for-info-type js-params-begin jsvar-info-type js-params-end js-statement-end
+        js-if jsvar-info-type js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-next code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-next code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+        js-if-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next jsvar-info-type js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = go here *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-gohere code-close-quote js-then
+        jsvar-requested-location-string js-equals code-open-close-quote js-statement-end
+        jsvar-requested-location-string js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-end js-statement-end
+        js-if jsvar-requested-location-string no-space .length > 0 js-then
+            jsvar-previous-typed-location js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-previous-typed-location code-close-quote js-params-end js-statement-end
+            jsvar-yes-no-got-news js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-news code-close-quote js-params-end js-statement-end
+
+            jslog-begin code-open-quote jsvar-previous-typed-location code-close-quote jslog-equal-sign jsvar-previous-typed-location jslog-end
+            jslog-begin code-open-quote jsvar-yes-no-got-news code-close-quote jslog-equal-sign jsvar-yes-no-got-news jslog-end
+
+            js-if js-paren-begin jsvar-requested-location-string js-is-equal-to jsvar-previous-typed-location js-paren-end js-logical-and js-paren-begin jsvar-yes-no-got-news js-is-equal-to code-open-quote selectext-yes code-close-quote js-paren-end js-then
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+            js-else
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-news code-close-quote js-params-next code-open-quote selectext-no code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-biz code-close-quote js-params-next code-open-quote selectext-no code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+                jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-location code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location-copy code-close-quote js-params-next jsvar-requested-location-string js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gohere code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-map code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-biz code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-news code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-clear-poll-info code-close-quote js-params-next "contents" js-params-next code-open-close-quote js-params-end js-statement-end
+                jsfunction-hide-elements-of-class js-params-begin code-open-quote class-style-poll-button code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-location code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+                jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-location code-close-quote js-params-end js-statement-end
+                jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+                javascript-inline-clear-map-tiles-area
+            js-if-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+            jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-ask-where code-close-quote js-params-end js-statement-end
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-nothing-entered code-close-quote js-params-end js-statement-end
+            jsfunction-show-hide-saved-locations no-space () js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = gps button or /gps or /osm redirect *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-gps code-close-quote js-then
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gps code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+        jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-requesting-gps-access code-close-quote js-params-end js-statement-end
+        jsfunction-geo-location-get js-params-begin js-params-end js-statement-end
+        return true js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = contactmessagesend *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-contactmessagesend code-close-quote js-then
+        jsvar-element-selected js-equals document.getElementById( code-open-quote selectext-id-contact-message code-close-quote ) js-statement-end
+        jsvar-contact-message js-equals jsfunction-get-contents-from-html-textarea-element js-params-begin jsvar-element-selected js-params-end js-statement-end
+        js-if jsvar-contact-message no-space .length > 1 js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-working code-close-quote js-params-end js-statement-end
+            jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+            jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-addcontactmessage code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-contactmessagesend code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-news code-close-quote js-params-end js-statement-end
+            jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-contact-message code-close-quote js-params-end js-statement-end
+            jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-contact code-close-quote js-params-end js-statement-end
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-contact-message-empty code-close-quote js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = (show) news *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-news code-close-quote js-then
+        jsvar-yes-no-got-news js-equals code-open-quote selectext-no code-close-quote js-statement-end
+        jsvar-yes-no-got-news js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-news code-close-quote js-params-end js-statement-end
+        js-if jsvar-yes-no-got-news js-is-equal-to code-open-quote selectext-yes code-close-quote js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+            jsfunction-update-copies-of-content no-space () js-statement-end
+        js-else
+            jsvar-location-loc js-equals code-open-close-quote js-statement-end
+            jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+            js-if jsvar-location-loc no-space .length js-is-equal-to 0 js-then
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsvar-block-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-news code-close-quote js-params-next "display" js-params-end js-statement-end
+                jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-ask-where code-close-quote js-params-end js-statement-end
+                jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-news code-close-quote js-params-end js-statement-end
+                js-if js-paren-begin jsvar-tab-previously-highlighted js-is-equal-to code-open-quote selectext-where code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-block-or-none !== "none" js-paren-end js-then
+                    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-news code-close-quote js-params-end js-statement-end
+                js-if-end
+            js-else
+               jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+               jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-news code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+               jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-news code-close-quote js-params-end js-statement-end
+               jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-news code-close-quote js-params-end js-statement-end
+               jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+               return true js-statement-end
+            js-if-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = locsaved (get saved location 1 or 2 or 3 using saved two streed ids) *** comenn
+
+    js-if jsvar-components-of-clicked-button-name no-space [0] js-is-equal-to code-open-quote selectext-locsaved code-close-quote js-then
+        jsvar-pointer-digit js-equals jsvar-components-of-clicked-button-name no-space [1] js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+        jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center underscore-double-here selectext-loc-saved underscore-double-here code-close-quote js-concat jsvar-pointer-digit js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-next "contents" js-params-next jsvar-value-from-element js-params-end js-statement-end
+        jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-street-id underscore-double-here selectext-loc-saved underscore-double-here code-close-quote js-concat jsvar-pointer-digit js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-street-id code-close-quote js-params-next "contents" js-params-next jsvar-value-from-element js-params-end js-statement-end
+        jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-cross-street-id underscore-double-here selectext-loc-saved underscore-double-here code-close-quote js-concat jsvar-pointer-digit js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-cross-street-id code-close-quote js-params-next "contents" js-params-next jsvar-value-from-element js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-gohere code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+        jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-map code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-location code-close-quote js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-news-item-container code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-locsaved code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+        jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-locsaved code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+    js-if-end
+<new_line>
+
+combee *** click = latlonloc (get intersection that is closest to a specified latitude and longitude) *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-latlonloc code-close-quote js-then
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-input-location code-close-quote js-params-next "value" js-params-next code-open-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-working code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-news code-close-quote js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-finding-news code-close-quote js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-news-item-container code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-latlonloc code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+        jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-latlonloc code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+        javascript-inline-clear-map-tiles-area
+    js-if-end
+
+<new_line>
+
+combee *** click = (show) biz *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-biz code-close-quote js-then
+        jsvar-yes-no-got-biz js-equals code-open-quote selectext-no code-close-quote js-statement-end
+        jsvar-yes-no-got-biz js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-no-got-biz code-close-quote js-params-end js-statement-end
+        js-if jsvar-yes-no-got-biz js-is-equal-to code-open-quote selectext-yes code-close-quote js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+            jsfunction-update-copies-of-content no-space () js-statement-end
+        js-else
+            jsvar-location-loc js-equals code-open-close-quote js-statement-end
+            jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+            js-if jsvar-location-loc no-space .length js-is-equal-to 0 js-then
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-where code-close-quote js-params-end js-statement-end
+                jsvar-block-or-none js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-biz code-close-quote js-params-next "display" js-params-end js-statement-end
+                jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-ask-where code-close-quote js-params-end js-statement-end
+                jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-biz code-close-quote js-params-end js-statement-end
+                js-if js-paren-begin jsvar-tab-previously-highlighted js-is-equal-to code-open-quote selectext-where code-close-quote js-paren-end js-logical-and js-paren-begin jsvar-block-or-none !== "none" js-paren-end js-then
+                    jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-message-no-location-no-biz code-close-quote js-params-end js-statement-end
+                js-if-end
+                jsfunction-show-hide-saved-locations no-space () js-statement-end
+            js-if-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** Show special message if URL does not look like a URL. *** comenn
+
+    js-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-addspecialevent code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-addnewssource code-close-quote js-paren-end js-then
+        jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-supplied-url code-close-quote js-params-next "value" js-params-end js-statement-end
+        js-if jscon-re-user-supplied-url no-space .test( jsvar-input-text ) js-then
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-user-error-url code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-user-error-url code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next "" js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** Show special message if address number does not contain only digits. *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-addspecialevent code-close-quote js-then
+        jsvar-special-event-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-button-value-for-group underscore-double-here selectext-event-type code-close-quote js-params-end js-statement-end
+        js-if js-paren-begin jsvar-special-event-type js-is-equal-to code-open-quote selectext-yardsale code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-special-event-type js-is-equal-to code-open-quote selectext-estatesale code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-special-event-type js-is-equal-to code-open-quote selectext-lostpet code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-special-event-type js-is-equal-to code-open-quote selectext-specialmarket code-close-quote js-paren-end js-then
+            jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-supplied-address-number code-close-quote js-params-next "value" js-params-end js-statement-end
+            js-if jscon-re-user-address-number no-space .test( jsvar-input-text ) js-then
+                jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-user-error-address-number code-close-quote js-params-end js-statement-end
+            js-else
+                jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-user-error-address-number code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next "" js-params-end js-statement-end
+            js-if-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** Show special message if street or cross-street name is empty. *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-geolocbystreets code-close-quote js-then
+        jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-street-name code-close-quote js-params-next "value" js-params-end js-statement-end
+        js-if jscon-re-user-geo-name no-space .test( jsvar-input-text ) js-then
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-street-name code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-street-name code-close-quote js-params-end js-statement-end
+        js-if-end
+        jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-cross-street-name code-close-quote js-params-next "value" js-params-end js-statement-end
+        js-if jscon-re-user-geo-name no-space .test( jsvar-input-text ) js-then
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-cross-street-name code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-cross-street-name code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next "" js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** Show special message if neighborhood name is empty. *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-geolocbyname code-close-quote js-then
+        jsvar-input-text js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-neighborhood-name code-close-quote js-params-next "value" js-params-end js-statement-end
+        js-if jscon-re-user-geo-name no-space .test( jsvar-input-text ) js-then
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-neighborhood code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-neighborhood code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next "" js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = swapstreet *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-swapstreet code-close-quote js-then
+        jsvar-yes-no js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-yes-or-empty-swap-street-names code-close-quote js-params-end js-statement-end
+        js-if jsvar-yes-no js-is-equal-to code-open-quote selectext-yes code-close-quote js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-or-empty-swap-street-names code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-street-name-one underscore-double-here selectext-page-info code-close-quote js-params-end js-statement-end
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-street-name-two underscore-double-here selectext-page-info code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-yes-or-empty-swap-street-names code-close-quote js-params-next code-open-quote selectext-yes code-close-quote js-params-end js-statement-end
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-street-name-two underscore-double-here selectext-page-info code-close-quote js-params-end js-statement-end
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-street-name-one underscore-double-here selectext-page-info code-close-quote js-params-end js-statement-end
+        js-if-end
+        return true js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** Show special message if delete request reason is "personal" *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-do underscore-double-here selectext-editdelete code-close-quote js-then
+        jsvar-content-of-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-button-value-for-group underscore-double-here selectext-delete-reason code-close-quote js-params-end js-statement-end
+        js-if jsvar-content-of-element js-is-equal-to code-open-quote selectext-personal code-close-quote js-then
+            jsvar-show-or-hide js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-delete-personal-message code-close-quote js-params-next "display" js-params-end js-statement-end
+            js-if jsvar-show-or-hide js-is-equal-to "none" js-then
+                jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-info code-close-quote js-params-end js-statement-end
+                jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-deletepersonal code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-info code-close-quote js-params-end js-statement-end
+                jsvar-clicked-button-name js-equals code-open-close-quote js-statement-end
+                jsvar-components-of-clicked-button-name no-space [0] js-equals code-open-close-quote js-statement-end
+                jsvar-components-of-clicked-button-name no-space [1] js-equals code-open-close-quote js-statement-end
+                jsvar-components-of-clicked-button-name no-space [2] js-equals code-open-close-quote js-statement-end
+                jsvar-components-of-clicked-button-name no-space [3] js-equals code-open-close-quote js-statement-end
+
+            js-if-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = edit ... *** comenn
+
+    js-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-edit code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdelete code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdelete underscore-double-here selectext-personal code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-addspecialevent code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-addnewssource code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-notthisintersection code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdatepast code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-editdatefuture code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-geolocbystreets code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-geolocbyname code-close-quote js-paren-end js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-info code-close-quote js-params-end js-statement-end
+        jsfunction-update-page-info-for-clicked-button js-params-begin jsvar-clicked-button-name js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = do__ ... *** comenn
+
+    js-if jsvar-components-of-clicked-button-name no-space [0] js-is-equal-to code-open-quote selectext-do code-close-quote js-then
+        jsvar-block-or-none-url js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-error-url code-close-quote js-params-next code-open-quote display code-close-quote js-params-end js-statement-end
+        jsvar-block-or-none-number js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-error-address-number code-close-quote js-params-next code-open-quote display code-close-quote js-params-end js-statement-end
+        jsvar-block-or-none-street js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-street-name code-close-quote js-params-next code-open-quote display code-close-quote js-params-end js-statement-end
+        jsvar-block-or-none-neighborhood js-equals jsfunction-get-attribute-value-from-html-element-with-id js-params-begin code-open-quote selectext-id-user-error-geo-loc-neighborhood code-close-quote js-params-next code-open-quote display code-close-quote js-params-end js-statement-end
+        js-if js-paren-begin jsvar-block-or-none-url js-is-equal-to code-open-quote block code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-block-or-none-number js-is-equal-to code-open-quote block code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-block-or-none-street js-is-equal-to code-open-quote block code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-block-or-none-neighborhood js-is-equal-to code-open-quote block code-close-quote js-paren-end js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-working code-close-quote js-params-end js-statement-end
+            jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-item-on-page-working code-close-quote js-params-end js-statement-end
+            jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-show-hide underscore-double-here selectext-editingnewsitem code-close-quote js-params-end js-statement-end
+            jsvar-edit-request-type js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-edit-request-type code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next jsvar-edit-request-type js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-geolocate-confirmed code-close-quote js-params-next code-open-close-quote js-params-end js-statement-end
+            js-if js-paren-begin jsvar-edit-request-type js-is-equal-to code-open-quote selectext-geolocbystreets code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-edit-request-type js-is-equal-to code-open-quote selectext-geolocbyname code-close-quote js-paren-end js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-loc code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-news code-close-quote js-params-end js-statement-end
+                jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-geolocate code-close-quote js-params-end js-statement-end
+                jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+            js-else
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-news code-close-quote js-params-end js-statement-end
+                jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-edit code-close-quote js-params-end js-statement-end
+                jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+            js-if-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = osmlink or satellitelink *** comenn
+
+    js-if js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-osmlink code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-satellitelink code-close-quote js-paren-end js-then
+        jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-item code-close-quote js-params-end js-statement-end
+        jsfunction-convert-loc-to-lat-lon-decimal js-params-begin jsvar-location-loc js-params-end js-statement-end
+        jsvar-latitude-decimal js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-latitude-decimal code-close-quote js-params-end js-statement-end
+        jsvar-longitude-decimal js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-longitude-decimal code-close-quote js-params-end js-statement-end
+        jsvar-osm-zoom-level js-equals code-open-quote 15 code-close-quote js-statement-end
+        jsvar-redirect-request js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-redirect-text code-close-quote js-params-end js-statement-end
+        js-if js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote gps code-close-quote js-paren-end js-logical-or js-paren-begin jsvar-redirect-request js-is-equal-to code-open-quote osm code-close-quote js-paren-end js-then
+            js-if jsvar-redirect-request js-is-equal-to code-open-quote gps code-close-quote js-then
+                jsvar-osm-zoom-level js-equals code-open-quote 19 code-close-quote js-statement-end
+            js-if-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+        js-if-end
+        js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-osmlink code-close-quote js-then
+            jsvar-link-string js-equals code-open-quote url-open-street-map no-space /?mlat= code-close-quote js-concat jsvar-latitude-decimal js-concat "&mlon=" js-concat jsvar-longitude-decimal js-concat "&zoom=" js-concat jsvar-osm-zoom-level js-statement-end
+            jsvar-tab-name js-equals code-open-quote selectext-open-street-map code-close-quote js-statement-end
+        js-else
+
+combee *** reference: https://developer.apple.com/library/mac/featuredarticles/iPhoneURLScheme_Reference/MapLinks/MapLinks.html *** comenn
+combee *** t=k specifies satellite view *** comenn
+            jsvar-link-string js-equals "https://maps.apple.com/?t=k&z=18&ll=" js-concat jsvar-latitude-decimal js-concat "," js-concat jsvar-longitude-decimal js-statement-end
+
+            jsvar-tab-name js-equals code-open-quote selectext-satellite-view code-close-quote js-statement-end
+        js-if-end
+
+        js-if jsvar-link-string no-space .length > 30 js-then
+
+combee ***
+old version, opens in standalone UI
+            jsvar-object-reference js-equals window.open( jsvar-link-string , jsvar-tab-name , code-open-close-quote ) js-statement-end
+*** comenn
+            jsvar-object-reference js-equals window.open( jsvar-link-string ) js-statement-end
+
+        js-else
+            jslog-begin code-open-quote link not valid: code-close-quote jslog-equal-sign jsvar-link-string jslog-end
+            return false js-statement-end
+        js-if-end
+
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = websitelink *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-websitelink code-close-quote js-then
+        jsvar-link-string js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-one-item-website code-close-quote js-params-end js-statement-end
+        js-if jsvar-link-string no-space .substr( 0 , 4 ) js-is-equal-to "www." js-then
+            jsvar-link-string js-equals "http://" js-concat jsvar-link-string js-statement-end
+        js-else-if jsvar-link-string no-space .substr( 0 , 7 ) js-is-not-equal-to "http://" js-then
+            jsvar-link-string js-equals "http://" js-concat jsvar-link-string js-statement-end
+        js-if-end
+        js-if jsvar-link-string no-space .length > 6 js-then
+            jsvar-object-reference js-equals window.open( jsvar-link-string , code-open-quote selectext-business-website code-close-quote , code-open-close-quote ) js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-biz code-close-quote js-params-end js-statement-end
+            return true js-statement-end
+        js-else
+            return false js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = (show) polls *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-polls code-close-quote js-then
+        jsvar-location-loc js-equals code-open-close-quote js-statement-end
+        jsvar-location-loc js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-loc-map-center code-close-quote js-params-end js-statement-end
+        js-if jsvar-location-loc no-space .length js-is-equal-to 0 js-then
+            jsfunction-show-element-with-id js-params-begin code-open-quote selectext-id-no-local-polls-if-no-location code-close-quote js-params-end js-statement-end
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-no-local-polls-here code-close-quote js-params-end js-statement-end
+        js-else
+            jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-no-local-polls-if-no-location code-close-quote js-params-end js-statement-end
+        js-if-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+        jsfunction-hide-element-with-id js-params-begin code-open-quote selectext-id-warning-minimum-age code-close-quote js-params-end js-statement-end
+        jsfunction-adjust-heights js-params-begin js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = get specific poll (article and ballot) *** comenn
+
+    js-if jsvar-components-of-clicked-button-name no-space [0] js-is-equal-to code-open-quote selectext-id-poll-specific code-close-quote js-then
+        jsvar-poll-id js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-id-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+        js-if jsvar-poll-id no-space .length > 0 js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+            jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-id code-close-quote js-params-end js-statement-end
+            js-if jsvar-value-from-element js-is-not-equal-to jsvar-poll-id js-then
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-id code-close-quote js-params-next jsvar-poll-id js-params-end js-statement-end
+                jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-version-name-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-version-name code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-title-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-title code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-title code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-subtitle-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-subtitle code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-subtitle code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-status-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-status code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsvar-value-from-element js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-poll-question-count-at-row-column underscore-double-here code-close-quote js-concat jsvar-components-of-clicked-button-name no-space [1] js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-poll-question-count code-close-quote js-params-next jsvar-value-from-element js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-hide-when-poll-download-begins code-close-quote js-params-next "display" js-params-next "none" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote selectext-item-show-when-poll-download-begins code-close-quote js-params-next "display" js-params-next "block" js-params-end js-statement-end
+                jsfunction-update-all-elements-of-class-with-attribute-value js-params-begin code-open-quote class-style-working-gif-poll code-close-quote js-params-next "display" js-params-next "inline" js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-poll-specific code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-polls code-close-quote js-params-end js-statement-end
+                jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-poll-specific code-close-quote js-params-end js-statement-end
+                jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+                jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+            js-if-end
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-back code-close-quote js-params-next code-open-quote selectext-polls code-close-quote js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** click = view poll results current *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-id-poll-specific-current code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-nav-tab-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = show ballot *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-show-ballot code-close-quote js-then
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-ballot code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = cast ballot *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-cast-ballot code-close-quote js-then
+        jsvar-epoch-seconds js-equals code-open-close-quote js-statement-end
+        jsvar-epoch-seconds js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-current-id code-close-quote js-params-end js-statement-end
+        js-if jsvar-epoch-seconds no-space .length js-is-equal-to 0 js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-current-id code-close-quote js-params-next code-open-quote ??? code-close-quote js-params-end js-statement-end
+        js-if-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-previous-id code-close-quote js-params-next jsvar-epoch-seconds js-params-end js-statement-end
+        jsvar-date-time js-equals new Date() js-statement-end
+        jsvar-epoch-seconds js-equals jsvar-date-time no-space .getTime() js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-ballot-current-id code-close-quote js-params-next jsvar-epoch-seconds js-params-end js-statement-end
+        jsfunction-ballot-encode-rankings js-params-begin js-params-end js-statement-end
+        jsfunction-hide-elements-of-class js-params-begin code-open-quote selectext-item-hide-when-cast-ballot code-close-quote js-params-end js-statement-end
+        jsfunction-show-elements-of-class js-params-begin code-open-quote selectext-item-show-when-cast-ballot code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-pollspecific code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-json-request-type code-close-quote js-params-next code-open-quote selectext-cast-ballot code-close-quote js-params-end js-statement-end
+        jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-server-request-category code-close-quote js-params-next code-open-quote server-request-category-polls code-close-quote js-params-end js-statement-end
+        jsfunction-get-parameters-send-request js-params-begin code-open-quote selectext-need-for-cast-ballot code-close-quote js-params-end js-statement-end
+        jsfunction-update-attribute-of-html-element-with-id js-params-begin code-open-quote selectext-id-content-area code-close-quote js-params-next code-open-quote cursor code-close-quote js-params-next code-open-quote progress code-close-quote js-params-end js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** click = jump to poll results on public html page *** comenn
+
+    js-if jsvar-clicked-button-name js-is-equal-to code-open-quote selectext-external-poll-results code-close-quote js-then
+        jsvar-redirect-request js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-pointer-to-public-poll-result code-close-quote js-params-end js-statement-end
+
+
+        jslog-begin code-open-quote jsvar-redirect-request code-close-quote jslog-equal-sign jsvar-redirect-request jslog-end
+
+
+        js-if jsvar-redirect-request js-is-not-equal-to code-open-close-quote js-then
+            jsvar-link-string js-equals code-open-quote http-www-news-here-now-domain-name no-space / code-close-quote js-concat jsvar-redirect-request js-statement-end
+
+
+            jslog-begin code-open-quote jsvar-link-string code-close-quote jslog-equal-sign jsvar-link-string jslog-end
+
+
+            jsvar-object-reference js-equals window.open( jsvar-link-string ) js-statement-end
+        js-if-end
+        jsfunction-un-brighten-button js-params-begin js-params-end js-statement-end
+        return true js-statement-end
+    js-if-end
+
+<new_line>
+
+combee *** Continue here for any case for which there is no return statement above. *** comenn
+
+<new_line>
+
+combee *** If the page segment name is not recognized, request display of the error message segment. *** comenn
+
+    jsvar-page-segment-to-show js-equals jsfunction-get-contents-from-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-end js-statement-end
+    js-if jsvar-page-segment-to-show js-is-not-equal-to code-open-close-quote js-then
+        jsvar-element-selected js-equals document.getElementById( jsvar-page-segment-to-show ) js-statement-end
+        js-if jsvar-element-selected js-then
+            jsfunction-update-contents-of-html-element-with-id js-params-begin code-open-quote selectext-id-page-segment-current code-close-quote js-params-next code-open-quote selectext-errormessage code-close-quote js-params-end js-statement-end
+        js-if-end
+    js-if-end
+
+<new_line>
+
+combee *** In the sandbox version, log some info. *** comenn
+
+    jslog-begin code-open-quote jsvar-clicked-button-name code-close-quote jslog-equal-sign jsvar-clicked-button-name jslog-end
+    jslog-begin code-open-quote jsvar-page-segment-to-show code-close-quote jslog-equal-sign jsvar-page-segment-to-show jslog-end
+
+<new_line>
+
+combee *** Start the delay timer, then after the delay, show the requested page segment and navigation tab. *** comenn
+
+    jsvar-unused-timer-id js-equals setTimeout js-params-begin jsfunction-show-next-page-segment js-params-next number-milliseconds-delay-until-new-page-segment js-params-end js-statement-end
+
+<new_line>
+
+    return true js-statement-end
+
+} js-statement-end
+<new_line>
