@@ -1,1 +1,0 @@
-serverpathtotopfolder/lookup/intersections/lat9_ nospay ambee get-characters-from-position-to-position latitude-integer 1 4 amenn nospay / no-space
