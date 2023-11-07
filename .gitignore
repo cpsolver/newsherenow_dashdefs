@@ -14,3 +14,4 @@ generate-unique-id*.txt
 /pages/page-combo/start-here.txt
 *cgi*.txt
 *letters-for-short-names.txt
+*.pl
