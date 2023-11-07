@@ -1,0 +1,15 @@
+ambee copy-word-at-position linewise-input-line-from-file latitude-integer 2 amenn
+ambee copy-word-at-position linewise-input-line-from-file longitude-integer 3 amenn
+ambee copy-word-at-position linewise-input-line-from-file city-name 7 amenn
+ambee copy-text latitude-integer output-line amenn
+ambee append-text longitude-integer output-line amenn
+ambee append-text city-name output-line amenn
+
+combee
+bracketed-start-of-next-file
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions linewise-input-line-from-file revised-line amenn amenn
+ambee if-end amenn
+comenn
+
+ambee append-text-no-space output-line all-lines amenn
+ambee append-text-no-space character-newline all-lines amenn
