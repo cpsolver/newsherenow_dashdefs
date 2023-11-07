@@ -1,0 +1,5 @@
+combee
+input file:  temp_list_of_folder_prefixes.txt
+comenn
+
+ambee do-filter-file-paths amenn
