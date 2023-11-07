@@ -1,0 +1,14 @@
+compile
+generate_collected_dashdef_files
+execute
+generate_collected_dashdef_files
+
+compile
+language_translation_page
+execute
+language_translation_page
+
+compile
+split_translation_into_files
+execute
+split_translation_into_files

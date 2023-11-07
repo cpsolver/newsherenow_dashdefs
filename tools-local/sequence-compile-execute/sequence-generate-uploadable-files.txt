@@ -1,0 +1,5 @@
+compile
+generate_uploadable_files
+
+execute
+generate_uploadable_files
