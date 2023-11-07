@@ -1,1 +1,1 @@
-serverpathtotopfolder/lookup/locations-previously-found/
+lookup/locations-previously-found/

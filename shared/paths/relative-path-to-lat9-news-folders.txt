@@ -1,1 +1,1 @@
-serverpathtotopfolder/news/news/
+news/news/

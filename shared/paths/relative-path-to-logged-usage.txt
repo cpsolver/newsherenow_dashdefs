@@ -1,1 +1,1 @@
-serverpathtotopfolder/logged-usage/
+logged-usage/

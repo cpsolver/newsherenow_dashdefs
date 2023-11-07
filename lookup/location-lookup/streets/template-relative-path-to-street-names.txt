@@ -1,1 +1,1 @@
-serverpathtotopfolder/lookup/street_names/pattern_ no-space last-two-digits-in-street-id no-space /
+lookup/street_names/pattern_ no-space last-two-digits-in-street-id no-space /

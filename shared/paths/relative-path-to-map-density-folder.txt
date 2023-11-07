@@ -1,1 +1,1 @@
-serverpathtotopfolder/map_density/
+map_density/

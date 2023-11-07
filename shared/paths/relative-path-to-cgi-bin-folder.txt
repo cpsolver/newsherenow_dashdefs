@@ -1,1 +1,1 @@
-serverpathtotopfolder/public_html/cgi-bin/
+public_html/cgi-bin/

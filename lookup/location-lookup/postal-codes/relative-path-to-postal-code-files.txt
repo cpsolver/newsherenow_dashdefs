@@ -1,1 +1,1 @@
-serverpathtotopfolder/lookup/postal_codes/
+lookup/postal_codes/

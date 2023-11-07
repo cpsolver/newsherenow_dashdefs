@@ -1,1 +1,1 @@
-serverpathtotopfolder/news/neigh_news_urls/
+news/neigh_news_urls/

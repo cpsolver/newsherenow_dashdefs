@@ -1,1 +1,1 @@
-serverpathtotopfolder/contact-messages/
+contact-messages/

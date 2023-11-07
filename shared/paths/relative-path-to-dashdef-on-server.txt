@@ -1,1 +1,1 @@
-serverpathtotopfolder/dashdef/
+dashdef/
