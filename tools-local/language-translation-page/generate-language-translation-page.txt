@@ -1,0 +1,63 @@
+ambee clear-phrase list-of-language-translation-items amenn
+ambee copy-text input-lang other-language-choice amenn
+ambee copy-and-replace string-no-space-with-underscores string-no-space-within-spaces character-underscore character-space amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase other-language-choice amenn amenn
+ambee put-into-phrase other-language-choice  ko  amenn
+ambee if-end amenn
+
+ambee put-into-phrase other-language-choice  ja  amenn
+
+ambee copy-text language-choice-en language-choice amenn
+ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+
+ambee generate-list-of-files-in-current-read-directory list-of-phrase-names-in-folder amenn
+ambee copy-and-replace list-of-phrase-names-in-folder list-of-language-translation-items-in-language-en string-dot-txt empty-text amenn
+ambee copy-text other-language-choice language-choice amenn
+ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+
+ambee generate-list-of-files-in-current-read-directory list-of-phrase-names-in-folder amenn
+ambee copy-and-replace list-of-phrase-names-in-folder list-of-language-translation-items-in-language-other string-dot-txt empty-text amenn
+ambee copy-words-found-only-in-first-list list-of-language-translation-items-in-language-en list-of-language-translation-items-in-language-other list-of-language-translation-items-needed amenn
+ambee copy-words-found-only-in-first-list list-of-language-translation-items-needed list-of-phrases-no-need-to-translate list-of-language-translation-items-needed amenn
+ambee copy-words-sort-alphabetic list-of-language-translation-items-needed list-of-language-translation-items-needed amenn
+
+ambee if-yes-begin ambee yes-or-no-empty-phrase list-of-language-translation-items-needed amenn amenn
+ambee copy-text message-no-keyword-phrases-needed content-for-page-language-translation amenn
+ambee if-else amenn
+ambee copy-text language-choice-en language-choice amenn
+ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+
+ambee use-handler-with-each-word-in-phrase add-phrase-to-list-of-language-translation-items list-of-language-translation-items-needed amenn
+ambee if-end amenn
+
+ambee expand-text template-page-language-translation-begin expanded-page-language-translation-begin amenn
+ambee expand-text template-page-language-translation-end expanded-page-language-translation-end amenn
+ambee copy-text expanded-page-language-translation-begin expanded-page-language-translation amenn
+ambee append-text-no-space list-of-language-translation-items expanded-page-language-translation amenn
+ambee append-text-no-space expanded-page-language-translation-end expanded-page-language-translation amenn
+ambee copy-text other-language-choice language-choice amenn
+ambee expand-text template-path-to-generated-language-page dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-generated-translation-page target-filename amenn
+ambee delete-file ambee target-filename amenn amenn
+ambee copy-from-phrase-append-to-file expanded-page-language-translation ambee target-filename amenn amenn
+
+
+ambee trace-show language-choice amenn
+ambee trace-show other-language-choice amenn
+ambee trace-show dashrep-path-prefix-for-file-writing amenn
+ambee trace-show target-filename amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show list-of-language-translation-items-in-language-en amenn
+ambee trace-show list-of-language-translation-items-in-language-other amenn
+ambee trace-show list-of-language-translation-items-needed amenn
+ambee trace-show list-of-language-translation-items amenn
+combee ***
+ambee write-all-dashrep-definitions-to-file output_all_dashrep_definitions.txt amenn
+*** comenn

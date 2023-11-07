@@ -1,0 +1,10 @@
+ambee copy-text path-to-local-language-translation-files dashrep-path-prefix-for-file-reading amenn
+ambee copy-text path-to-local-language-translation-files dashrep-path-prefix-for-file-writing amenn
+ambee linewise-read-from-file-and-use-handler input_to_restore_replacements_after_translation.txt handle-one-line amenn
+ambee delete-file output_from_restore_replacements_after_translation.txt amenn
+ambee copy-from-phrase-append-to-file all-lines-after-modified output_from_restore_replacements_after_translation.txt amenn
+
+
+ambee trace-show all-lines-after-modified amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show dashrep-path-prefix-for-file-writing amenn

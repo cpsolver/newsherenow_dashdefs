@@ -1,0 +1,6 @@
+ambee copy-text linewise-input-line-from-file line-from-file amenn
+ambee put-into-phrase position-of-string-to-match  ambee get-position-of-matching-text string-to-match line-from-file amenn  amenn
+ambee put-into-phrase yes-or-no-line-contains-string-to-match  ambee yes-or-no-same-two-words multiple ambee zero-one-multiple ambee position-of-string-to-match amenn amenn amenn  amenn
+ambee if-yes-begin ambee yes-or-no-line-contains-string-to-match amenn amenn
+ambee handle-get-translation-phrase-name-for-case-string-match amenn
+ambee if-end amenn

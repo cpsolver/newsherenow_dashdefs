@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+new-line
+<html>
+new-line
+<head>
+new-line
+<title>Temp translation page</title>
+new-line
+<meta http hyphen-here equiv="Content hyphen-here Type" content="text/html; charset=UTF hyphen-here 8" />
+new-line
+<meta name="robots" content="noindex, nofollow" />
+new-line
+<meta name="description" content="" />
+new-line
+<meta name="copyright" content="Copyright 2014-2019 Fovationz, Inc." />
+new-line
+</head>
+new-line
+<body style="background hyphen-here color:hsl(0,0%,90%);">
+new-line
+
+no-space
+<ul>
+new-line
