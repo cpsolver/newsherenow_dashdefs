@@ -1,0 +1,35 @@
+ambee copy-without-extra-spaces linewise-input-line-from-file input-line amenn
+ambee clear-phrase word-one amenn
+ambee clear-phrase word-two amenn
+ambee clear-phrase word-three amenn
+ambee clear-phrase word-four amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee get-count-of-words input-line amenn 0 amenn amenn amenn
+ambee copy-word-at-position input-line word-one 1 amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee get-count-of-words input-line amenn 1 amenn amenn amenn
+ambee copy-word-at-position input-line word-two 2 amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee get-count-of-words input-line amenn 2 amenn amenn amenn
+ambee copy-word-at-position input-line word-three 3 amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee get-count-of-words input-line amenn 3 amenn amenn amenn
+ambee copy-word-at-position input-line word-four 4 amenn
+ambee if-end amenn
+
+ambee copy-and-replace template-output-line output-line string-placeholder-word-one word-one amenn
+ambee copy-and-replace output-line output-line string-placeholder-word-two word-two amenn
+ambee copy-and-replace output-line output-line string-placeholder-word-three word-three amenn
+ambee copy-and-replace output-line output-line string-placeholder-word-four word-four amenn
+ambee copy-and-replace output-line output-line character-asterisk character-underscore amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase input-line amenn amenn
+ambee copy-from-phrase-append-to-file output-line ambee output-filename amenn amenn
+ambee if-end amenn
+
+
+ambee trace-show input-line amenn
+ambee trace-show output-line amenn

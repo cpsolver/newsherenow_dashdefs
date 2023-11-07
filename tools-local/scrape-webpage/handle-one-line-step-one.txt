@@ -1,0 +1,15 @@
+ambee copy-and-remove-attributes-from-xml-tags linewise-input-line-from-file input-line amenn
+ambee copy-without-extra-spaces input-line input-line amenn
+ambee copy-and-replace input-line input-line-with-underscores character-space character-underscore amenn
+ambee copy-and-replace-using-paired-listed-words input-line-with-underscores line-after-replacements paired-replacements amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions input-line-with-underscores line-after-replacements amenn amenn
+ambee copy-and-replace line-after-replacements output-line string-double-underscore character-space amenn
+ambee copy-and-replace output-line output-line character-asterisk character-space amenn
+ambee copy-words-found-only-in-first-list output-line character-underscore output-line amenn
+ambee copy-without-extra-spaces output-line output-line amenn
+ambee append-text output-line all-lines amenn
+ambee trace-show input-line-with-underscores amenn
+ambee trace-show line-after-replacements amenn
+ambee trace-show output-line amenn
+ambee if-end amenn
