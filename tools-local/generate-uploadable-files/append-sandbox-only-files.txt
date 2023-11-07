@@ -1,0 +1,26 @@
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-line-file-start-path-to-dashdef line-file-start-path-to-dashdef amenn
+ambee copy-text line-file-start-path-to-dashdef line-file-start amenn
+ambee expand-text template-filename-shorter-defs-lookup-sandbox filename-shorter-defs-lookup-sandbox amenn
+ambee append-text-no-space filename-shorter-defs-lookup-sandbox line-file-start amenn
+ambee copy-from-phrase-append-to-file line-file-start ambee output-filename amenn amenn
+ambee copy-append-file-to-file ambee filename-shorter-defs-lookup-sandbox amenn ambee output-filename amenn amenn
+ambee copy-text line-file-start-path-to-dashdef line-file-start amenn
+ambee expand-text template-filename-shorter-defs-combo-sandbox filename-shorter-defs-combo-sandbox amenn
+ambee append-text-no-space filename-shorter-defs-combo-sandbox line-file-start amenn
+ambee copy-from-phrase-append-to-file line-file-start ambee output-filename amenn amenn
+ambee copy-append-file-to-file ambee filename-shorter-defs-combo-sandbox amenn ambee output-filename amenn amenn
+
+ambee expand-text template-line-file-with-web-app-manifest line-file-with-web-app-manifest amenn
+ambee copy-from-phrase-append-to-file line-file-with-web-app-manifest ambee output-filename amenn amenn
+
+ambee copy-text local-path-to-dashrep-language-compiler dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-line-file-start-compiled-dashrep-test line-file-start-compiled-dashrep-test amenn
+ambee copy-from-phrase-append-to-file line-file-start-compiled-dashrep-test ambee output-filename amenn amenn
+ambee put-into-phrase input-filename  test_compiler_executable.pl  amenn
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-dashrep-test-data line-file-start-dashrep-test-data amenn
+ambee copy-from-phrase-append-to-file line-file-start-dashrep-test-data ambee output-filename amenn amenn
+ambee copy-text local-path-to-dashrep-language-compiler dashrep-path-prefix-for-file-reading amenn
+ambee put-into-phrase input-filename  input-data-to-test-gather-find-actions.txt  amenn
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn

@@ -1,0 +1,7 @@
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-combo-and-lookup-files-sandbox output-filename amenn
+ambee expand-text template-line-file-start-get-move-sandbox-backstage-onstage line-file-start-get-move-sandbox-backstage-onstage amenn
+ambee copy-from-phrase-append-to-file line-file-start-get-move-sandbox-backstage-onstage ambee output-filename amenn amenn
+ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
+ambee copy-text filename-executable-get-move-server-version-dot-pl source-filename amenn
+ambee copy-append-file-to-file ambee source-filename amenn ambee output-filename amenn amenn

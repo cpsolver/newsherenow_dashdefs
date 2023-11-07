@@ -1,0 +1,8 @@
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-get-map-tiles output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-get-map-tiles expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
+ambee copy-text filename-executable-get-map-tiles-local source-filename amenn
+ambee copy-append-file-to-file ambee source-filename amenn ambee output-filename amenn amenn

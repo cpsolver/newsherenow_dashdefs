@@ -1,0 +1,6 @@
+ambee expand-text template-line-file-start-generated-lookup-executable line-file-start-generated-lookup-executable amenn
+ambee copy-from-phrase-append-to-file line-file-start-generated-lookup-executable ambee output-filename amenn amenn
+ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-filename-cgi-lookup-executable input-filename amenn
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn
+ambee use-handler-with-each-word-in-phrase append-one-combo-page-language-specific language-choices amenn

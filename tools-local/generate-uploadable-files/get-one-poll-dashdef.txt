@@ -1,0 +1,20 @@
+ambee copy-text word-to-use-in-handler full-path amenn
+ambee get-phrase-name-and-path-prefix amenn
+ambee copy-and-replace full-path full-path-on-server path-to-polls-local path-to-polls-on-server amenn
+ambee copy-and-replace full-path-on-server full-path-on-server character-backslash character-slash amenn
+ambee copy-text bracketed-start-of-next-file content-of-one-poll-file amenn
+ambee append-text full-path-on-server content-of-one-poll-file amenn
+ambee append-new-line content-of-one-poll-file amenn
+ambee copy-text path-prefix dashrep-path-prefix-for-file-reading amenn
+ambee copy-text phrase-name input-filename amenn
+ambee append-text-no-space string-dot-txt input-filename amenn
+ambee copy-from-file-to-phrase ambee input-filename amenn phrase-definition amenn
+ambee append-text-no-space phrase-definition content-of-one-poll-file amenn
+ambee append-text-no-space content-of-one-poll-file content-of-poll-files amenn
+
+
+combee ****
+ambee trace-show full-path amenn
+ambee trace-show phrase-name amenn
+ambee trace-show path-prefix amenn
+**** comenn

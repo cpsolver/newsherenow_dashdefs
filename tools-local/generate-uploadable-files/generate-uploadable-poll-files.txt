@@ -1,0 +1,26 @@
+ambee expand-text template-bracketed-start-of-next-file bracketed-start-of-next-file amenn
+ambee get-list-of-all-files amenn
+ambee copy-words-that-contain-listed-words list-of-all-files list-of-matching-files list-of-partial-paths-poll-folders-to-upload amenn
+ambee copy-words-unique-only list-of-matching-files list-of-matching-files amenn
+ambee copy-without-extra-spaces list-of-matching-files list-of-matching-files amenn
+ambee use-handler-with-each-word-in-phrase get-one-poll-dashdef list-of-matching-files amenn
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-combo-lookup-poll-files-backstage output-filename amenn
+ambee copy-from-phrase-append-to-file content-of-poll-files ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-tool-get-current-poll-version-name expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-tool-convert-ip-address-to-integer expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+ambee copy-text compatibility-version-number-sandbox compatibility-version-number amenn
+ambee expand-text template-multiple-request-poll-changes expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+ambee copy-text compatibility-version-number-backstage compatibility-version-number amenn
+ambee expand-text template-multiple-request-poll-changes expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+
+
+ambee trace-show output-filename amenn
+combee ****
+ambee trace-show path-to-polls-local amenn
+ambee trace-show list-of-matching-files amenn
+**** comenn

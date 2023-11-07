@@ -1,0 +1,48 @@
+ambee copy-text path-to-dashdef-local path-to-dashdef amenn
+ambee copy-text slash-or-backslash-server slash-or-backslash amenn
+ambee copy-text choice-sandbox sandbox-or-backstage amenn
+ambee copy-text compatibility-version-number-sandbox compatibility-version-number amenn
+ambee copy-text language-choice-sandbox language-choice amenn
+ambee copy-text language-choice language-choices amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space local-relative-path-to-dashdef dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-combo-and-lookup-files-sandbox output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee generate-uploadable-files-sandbox-or-backstage amenn
+ambee append-sandbox-only-files amenn
+ambee copy-text choice-backstage sandbox-or-backstage amenn
+ambee copy-text compatibility-version-number-backstage compatibility-version-number amenn
+ambee copy-text list-of-languages-to-upload language-choices amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+
+
+*** TODO: fix this line!!! ***
+ambee append-text-no-space local-relative-path-to-whatever dashrep-path-prefix-for-file-writing amenn
+
+
+ambee copy-text filename-uploadable-combo-lookup-poll-files-backstage output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee generate-uploadable-files-sandbox-or-backstage amenn
+ambee append-backstage-only-files amenn
+ambee generate-uploadable-get-move amenn
+ambee generate-uploadable-poll-files amenn
+ambee expand-text template-optional-uploadable-request-onstage-poll-changes optional-uploadable-request-onstage-poll-changes amenn
+ambee copy-from-phrase-append-to-file optional-uploadable-request-onstage-poll-changes ambee output-filename amenn amenn
+ambee path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+
+
+combee
+todo: fix error, file not found: output_upload_poll_processing_files.txt
+comenn
+ambee put-into-phrase input-filename  output_upload_poll_processing_files.txt  amenn
+
+
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn
+ambee generate-uploadable-do-redirect amenn
+ambee generate-uploadable-get-map-tiles amenn
+ambee generate-uploadable-news-density amenn
+ambee generate-uploadable-news-gather-and-compress amenn
+
+
+combee **** need trace output to overwrite compiler trace messages **** comenn
+ambee trace-show output-filename amenn

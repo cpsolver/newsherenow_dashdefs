@@ -1,0 +1,11 @@
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+ambee copy-text line-file-start-path-to-dashdef line-file-start amenn
+ambee expand-text template-filename-shorter-defs-lookup-backstage filename-shorter-defs-lookup-backstage amenn
+ambee append-text-no-space filename-shorter-defs-lookup-backstage line-file-start amenn
+ambee copy-from-phrase-append-to-file line-file-start ambee output-filename amenn amenn
+ambee copy-append-file-to-file ambee filename-shorter-defs-lookup-backstage amenn ambee output-filename amenn amenn
+ambee copy-text line-file-start-path-to-dashdef line-file-start amenn
+ambee expand-text template-filename-shorter-defs-combo-backstage filename-shorter-defs-combo-backstage amenn
+ambee append-text-no-space filename-shorter-defs-combo-backstage line-file-start amenn
+ambee copy-from-phrase-append-to-file line-file-start ambee output-filename amenn amenn
+ambee copy-append-file-to-file ambee filename-shorter-defs-combo-backstage amenn ambee output-filename amenn amenn

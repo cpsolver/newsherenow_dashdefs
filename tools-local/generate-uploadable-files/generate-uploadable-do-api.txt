@@ -1,0 +1,9 @@
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space local-relative-path-to-web-api dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-do-api output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-do-api expanded-text amenn
+ambee copy-from-phrase-append-to-file expanded-text ambee output-filename amenn amenn
+ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
+ambee copy-text filename-executable-do-api source-filename amenn
+ambee copy-append-file-to-file ambee source-filename amenn ambee output-filename amenn amenn
