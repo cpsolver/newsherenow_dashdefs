@@ -1,6 +1,7 @@
 ambee copy-text path-to-dashdef-local path-to-dashdef amenn
-ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
-ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+ambee copy-text dashrep-path-prefix-for-file-reading dashrep-path-prefix-for-file-writing amenn
 ambee copy-words-from-position-to-position list-of-letters-for-short-names list-of-letters-for-short-names-truncated 1 3 amenn
 ambee use-handler-with-each-word-in-phrase generate-one-shorter-name-level-one list-of-letters-for-short-names amenn
 ambee copy-text list-of-two-letter-names list-of-shorter-names amenn

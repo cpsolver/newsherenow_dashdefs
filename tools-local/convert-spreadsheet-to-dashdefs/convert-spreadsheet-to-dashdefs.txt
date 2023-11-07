@@ -1,6 +1,7 @@
-ambee put-into-phrase dashrep-path-prefix-for-file-reading  localpathtotopfolder\VoteFair-polls\z_Canadian_electoral_district_data\  amenn
-ambee put-into-phrase dashrep-path-prefix-for-file-writing  localpathtotopfolder\VoteFair-polls\z_Canadian_electoral_district_data\  amenn
-
+ambee put-into-phrase relative-path-to-canadian-electoral-data  VoteFair-polls\z_Canadian_electoral_district_data\  amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-canadian-electoral-data dashrep-path-prefix-for-file-reading amenn
+ambee copy-text dashrep-path-prefix-for-file-reading dashrep-path-prefix-for-file-writing amenn
 ambee put-into-phrase filename-input  ManitobaDistrictNumbersNames.txt  amenn
 ambee put-into-phrase filename-input  Canadian_electoral_district_names.txt  amenn
 

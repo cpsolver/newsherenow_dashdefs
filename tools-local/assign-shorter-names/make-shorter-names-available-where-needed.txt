@@ -12,7 +12,8 @@ ambee copy-from-phrase-append-to-file combined-dashdefs-for-sandbox-lookup-names
 ambee expand-text template-filename-lookup-executable-backstage filename-lookup-executable-backstage amenn
 ambee copy-from-phrase-append-to-file combined-dashdefs-for-backstage-lookup-names ambee filename-lookup-executable-backstage amenn amenn
 
-ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space relative-path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
 
 ambee expand-text template-filename-shorter-defs-combo-sandbox filename-shorter-defs-combo-sandbox amenn
 ambee delete-file ambee filename-shorter-defs-combo-sandbox amenn amenn

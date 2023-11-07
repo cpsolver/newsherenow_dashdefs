@@ -3,7 +3,9 @@ ambee copy-text word-language-name fenambee language-choice amenn word-language-
 ambee copy-text word-language-name-for-language-choice word-language-name-for-displayed-list amenn
 ambee copy-text character-comma possible-character-comma amenn
 ambee expand-text side-by-side-floating-middle-not-last expanded-side-by-side-floating-middle amenn
-ambee expand-text template-path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-path-to-words-for-language-choice path-to-words-for-language-choice amenn
+ambee append-text-no-space path-to-words-for-language-choice dashrep-path-prefix-for-file-reading amenn
 ambee copy-from-file-to-phrase http-www-news-here-now-language-specific.txt http-www-to-foreign-language amenn
 
 ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions language-choice language-choice-not-foreign amenn amenn

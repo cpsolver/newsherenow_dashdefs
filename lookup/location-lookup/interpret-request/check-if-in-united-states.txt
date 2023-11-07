@@ -1,6 +1,7 @@
 ambee trace-show-where amenn
 
-ambee copy-text path-to-list-united-states-region-ids dashrep-path-prefix-for-file-reading amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-list-united-states-region-ids dashrep-path-prefix-for-file-reading amenn
 ambee put-into-phrase input-filename  list-united-states-region-ids.txt  amenn
 ambee copy-from-file-to-phrase ambee input-filename amenn list-of-united-states-region-ids amenn
 ambee put-into-phrase position-of-region-id-if-found ambee get-position-of-matching-text region-id list-of-united-states-region-ids amenn amenn

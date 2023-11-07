@@ -1,5 +1,6 @@
 ambee copy-text word-to-use-in-handler poll-id amenn
-ambee copy-text path-to-polls-generated-json dashrep-path-prefix-for-file-reading amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-polls-generated-json dashrep-path-prefix-for-file-reading amenn
 ambee expand-text template-filename-json-button-poll-local filename-json-button-poll-local amenn
 ambee copy-from-file-to-phrase ambee filename-json-button-poll-local amenn json-content-button-local-poll amenn
 

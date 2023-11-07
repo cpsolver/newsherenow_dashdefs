@@ -1,4 +1,5 @@
-ambee copy-text path-to-admin-key-ids dashrep-path-prefix-for-file-reading amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-admin-key-ids dashrep-path-prefix-for-file-reading amenn
 
 ambee if-yes-begin ambee yes-or-no-file-exists ambee filename-list-of-admin-key-ids amenn amenn amenn
     ambee copy-from-file-to-phrase ambee filename-list-of-admin-key-ids amenn list-of-admin-user-ids amenn

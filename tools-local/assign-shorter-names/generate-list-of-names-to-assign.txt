@@ -1,6 +1,7 @@
 ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
 ambee copy-from-file-to-phrase ambee filename-dashrep-code-needing-shorter-names amenn list-of-names-to-assign amenn
-ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
 ambee copy-words-unique-only list-of-names-to-assign list-of-names-to-assign amenn
 ambee put-into-phrase begin-with-text  jsfunction  amenn
 ambee copy-words-that-begin-with-text list-of-names-to-assign names-to-assign-beginning-with-jsfunction begin-with-text amenn

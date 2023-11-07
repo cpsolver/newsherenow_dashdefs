@@ -3,8 +3,10 @@ ambee trace-show-where amenn
 
 ambee put-into-phrase count-of-characters-in-street-id  ambee get-count-of-characters street-id amenn amenn
 ambee put-into-phrase last-two-digits-in-street-id  ambee get-characters-from-position-to-position street-id ambee numeric-minus ambee count-of-characters-in-street-id amenn 1 amenn ambee count-of-characters-in-street-id amenn amenn amenn
-ambee expand-text template-path-to-street-names path-to-street-names amenn
-ambee put-into-phrase dashrep-path-prefix-for-file-reading  ambee path-to-street-names amenn  amenn
+ambee copy-text server-path-to-top-folder path-to-street-names amenn
+ambee expand-text template-relative-path-to-street-names relative-path-to-street-names amenn
+ambee append-text-no-space relative-path-to-street-names path-to-street-names amenn
+ambee copy-text path-to-street-names dashrep-path-prefix-for-file-reading amenn
 ambee get-filename-street-id-to-street-name amenn
 ambee copy-text street-id street-id-terminated-with-space amenn
 ambee append-text-no-space character-space street-id-terminated-with-space amenn

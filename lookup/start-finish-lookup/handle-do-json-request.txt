@@ -5,7 +5,8 @@ ambee put-into-phrase dashrep-endless-loop-counter-limit  900000000  amenn
 ambee put-into-phrase yes-or-no-access-granted-and-request-valid  yes  amenn
 ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epoch-seconds amenn  amenn
 ambee split-epoch-seconds-into-named-components-for-zero-meridian ambee epoch-seconds-starting-time amenn amenn
-ambee put-into-phrase dashrep-path-prefix-for-file-reading  serverpathtotopfolder/dashdef/  amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-dashdef dashrep-path-prefix-for-file-reading amenn
 ambee copy-text dashrep-path-prefix-for-file-reading dashrep-path-prefix-for-file-writing amenn
 ambee expand-text template-list-of-valid-json-lookup-requests list-of-valid-json-lookup-requests-possibly-shortened amenn
 ambee put-into-phrase string-selectext-hyphen  selectext  amenn

@@ -1,5 +1,6 @@
 ambee clear-phrase list-of-news-ids-in-different-regions amenn
-ambee copy-text path-to-news-moved-info dashrep-path-prefix-for-file-reading amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-news-moved-info dashrep-path-prefix-for-file-reading amenn
 ambee copy-text filename-news-moved-to-different-region source-filename amenn
 
 ambee if-yes-begin ambee yes-or-no-file-exists ambee source-filename amenn amenn amenn

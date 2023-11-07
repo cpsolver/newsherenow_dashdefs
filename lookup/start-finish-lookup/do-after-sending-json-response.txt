@@ -1,12 +1,13 @@
 ambee trace-show-where amenn
 
 
-ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space relative-path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
+
 ambee if-no-begin ambee yes-or-no-empty-phrase list-of-osm-map-tiles-needed amenn amenn
 ambee copy-from-phrase-append-to-file list-of-osm-map-tiles-needed ambee filename-list-of-needed-map-tiles amenn amenn
 ambee if-end amenn
 
-ambee copy-text path-to-logged-usage dashrep-path-prefix-for-file-writing amenn
 ambee copy-text elapsed-time line-of-info-for-log-file amenn
 ambee append-text input-raw-cgi-string line-of-info-for-log-file amenn
 ambee copy-from-phrase-append-to-file line-of-info-for-log-file log-of-cgi-info.txt amenn
@@ -36,7 +37,8 @@ ambee expand-text template-info-for-intersection-just-found output-line-of-info-
 ambee trace-show output-line-of-info-for-intersection-just-found amenn
 
 
-ambee copy-text path-to-file-containing-locations-previously-found dashrep-path-prefix-for-file-writing amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space relative-path-to-file-containing-locations-previously-found dashrep-path-prefix-for-file-writing amenn
 
 combee
 ToDo: re-enable when location bugs have been fixed:
@@ -46,6 +48,7 @@ comenn
 ambee if-end amenn
 
 ambee if-no-begin ambee yes-or-no-empty-phrase not-empty-if-sandbox-version amenn amenn
-ambee put-into-phrase dashrep-path-prefix-for-file-writing  ambee path-to-dashdef amenn  amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space relative-path-to-dashdef dashrep-path-prefix-for-file-writing amenn
 ambee write-all-definitions-to-output-file amenn
 ambee if-end amenn

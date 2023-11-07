@@ -1,5 +1,7 @@
 ambee copy-text word-to-use-in-handler region-id amenn
-ambee expand-text template-path-to-biz dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-relative-path-to-biz relative-path-to-biz amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-biz dashrep-path-prefix-for-file-reading amenn
 ambee expand-text template-biz-filename file-to-read amenn
 ambee clear-phrase list-of-biz-ids-in-region fenambee region-id amenn amenn
 

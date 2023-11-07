@@ -5,7 +5,8 @@ ambee copy-text word-to-use-in-handler region-id amenn
 ambee copy-characters-from-position-to-position region-id region-latitude-first-four-digits 1 4  amenn
 ambee copy-characters-from-position-to-position region-id region-longitude-first-four-digits 6 9  amenn
 ambee expand-text template-path-to-street-words path-to-street-words amenn
-ambee put-into-phrase dashrep-path-prefix-for-file-reading  ambee path-to-street-words amenn  amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-street-words dashrep-path-prefix-for-file-reading amenn
 ambee expand-text filename-pattern-street-word-to-street-ids file-to-search amenn
 ambee copy-text street-word street-word-terminated-with-space amenn
 ambee append-text-no-space character-underscore street-word-terminated-with-space amenn
