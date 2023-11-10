@@ -1,1 +1,0 @@
-news/neigh_news_urls/

@@ -1,1 +1,0 @@
-compress_news_executable.pl
