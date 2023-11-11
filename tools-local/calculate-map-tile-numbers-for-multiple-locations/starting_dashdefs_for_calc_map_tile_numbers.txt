@@ -4,7 +4,8 @@ ambee copy-text dashrep-path-prefix-for-file-reading dashrep-path-prefix-for-fil
 ambee get-definitions-from-file combined_dashdef_category_defaults.txt amenn
 ambee get-definitions-from-file combined_dashdef_category_lookup.txt amenn
 ambee get-definitions-from-file combined_dashdef_category_tools_local.txt amenn
-ambee put-into-phrase path-to-dashdef  F:\NewsHereNowLocal\dashdef\ amenn
+ambee copy-text local-path-to-top-folder path-to-dashdef amenn
+ambee append-text-no-space local-relative-path-to-dashdef path-to-dashdef amenn
 ambee put-into-phrase slash-or-backslash  \ amenn
 ambee execute-tool-request-calcmaptilenumbers amenn
 
