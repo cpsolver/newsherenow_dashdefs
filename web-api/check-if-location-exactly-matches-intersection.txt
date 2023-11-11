@@ -28,7 +28,19 @@ ambee if-else amenn
     ambee clear-phrase file-to-search-for-intersections amenn
 ambee if-end amenn
 
-ambee if-yes-begin ambee yes-or-no-file-exists ambee file-to-search-for-intersections amenn amenn amenn
+
+ambee trace-show text-to-match amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
+ambee trace-show file-to-search-for-intersections amenn
+
+
+ambee if-no-begin ambee yes-or-no-empty-phrase file-to-search-for-intersections amenn amenn
+    ambee put-into-phrase yes-or-no-intersection-file-exists ambee yes-or-no-file-exists ambee file-to-search-for-intersections amenn amenn amenn
+ambee if-else amenn
+    ambee copy-text string-no yes-or-no-intersection-file-exists amenn
+ambee if-end amenn
+
+ambee if-yes-begin ambee yes-or-no-intersection-file-exists ambee file-to-search-for-intersections amenn amenn amenn
     ambee linewise-read-from-file-and-use-handler ambee file-to-search-for-intersections amenn search-intersection-lines-for-text-to-match amenn
 ambee if-end amenn
 
@@ -39,6 +51,6 @@ ambee if-no-begin ambee yes-or-no-empty-phrase matching-intersection-line-info a
 ambee if-end amenn
 
 
-ambee trace-show text-to-match amenn
+ambee trace-show dashrep-path-prefix-for-file-reading amenn
 ambee trace-show file-to-search-for-intersections amenn
 ambee trace-show matching-intersection-line-info amenn
