@@ -1,0 +1,52 @@
+ambee put-into-phrase yes-or-no-trim-spaces-when-copy-from-file  yes  amenn
+
+combee new code comenn
+ambee get-sandbox-experiments-folder-prefixes-if-experiments-requested amenn
+
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space local-relative-path-to-page-combo dashrep-path-prefix-for-file-reading amenn
+ambee put-into-phrase filename-list-of-folder-prefixes  list-of-folders-for-generate-combo-page-any-version.txt  amenn
+ambee copy-from-file-to-phrase ambee filename-list-of-folder-prefixes amenn list-of-folder-prefixes amenn
+
+combee new code comenn
+ambee copy-text list-of-folder-prefixes list-of-folder-prefixes-for-backstage amenn
+ambee prepend-text sandbox-experiments-folder-prefixes list-of-folder-prefixes amenn
+
+ambee copy-words-unique-only list-of-folder-prefixes list-of-folder-prefixes amenn
+ambee clear-phrase list-of-files-to-exclude amenn
+ambee copy-text string-yes no-if-not-generate-dashdefs amenn
+ambee get-list-of-matching-files-using-list-of-folder-prefixes amenn
+ambee copy-text collected-dashdefs collected-dashdefs-for-generate-combo-page-sandbox amenn
+ambee remove-jslog-and-trace-lines amenn
+ambee copy-text collected-dashdefs collected-dashdefs-for-generate-combo-page-backstage amenn
+ambee copy-text language-choice-sandbox language-choice amenn
+ambee generate-collected-dashdefs-language-choice-only amenn
+ambee copy-text compatibility-version-number-sandbox compatibility-version-number amenn
+ambee clear-phrase dashrep-path-prefix-for-file-writing amenn
+ambee expand-text template-filename-generate-combo-page-sandbox output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-that-specify-sandbox ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-language-choice-only ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-for-generate-combo-page-sandbox ambee output-filename amenn amenn
+
+combee
+todo: exit here if sandbox experiments inserted,
+so that backstage version never has experimental code
+comenn
+
+combee **** Reminder: A copy of the sandbox code is needed later for assigning shorter names **** comenn
+ambee copy-text filename-dashrep-code-needing-shorter-names output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-for-generate-combo-page-sandbox ambee output-filename amenn amenn
+
+ambee copy-text language-choice-en language-choice amenn
+ambee generate-collected-dashdefs-language-choice-only amenn
+ambee copy-text compatibility-version-number-backstage compatibility-version-number amenn
+ambee expand-text template-filename-generate-combo-page-backstage output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-that-specify-backstage ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-language-choice-only ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-for-generate-combo-page-backstage ambee output-filename amenn amenn
+
+ambee expand-text template-sequence-compile-execute-combo-always sequence-compile-execute-combo-always amenn
+ambee append-text-no-space sequence-compile-execute-combo-always sequence-items-generate-lookup-and-combo amenn

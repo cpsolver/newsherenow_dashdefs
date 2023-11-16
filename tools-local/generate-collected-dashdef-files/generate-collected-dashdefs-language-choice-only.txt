@@ -1,0 +1,6 @@
+ambee put-into-phrase dashdef-phrase-name  language-choice  amenn
+ambee copy-text language-choice dashdef-phrase-definition amenn
+ambee append-new-line dashdef-phrase-definition amenn
+ambee clear-phrase collected-dashdefs amenn
+ambee generate-one-dashdef amenn
+ambee copy-text collected-dashdefs collected-dashdefs-language-choice-only amenn

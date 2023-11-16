@@ -1,0 +1,5 @@
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space local-relative-path-to-tools-local dashrep-path-prefix-for-file-reading amenn
+ambee clear-phrase dashrep-path-prefix-for-file-writing amenn
+ambee delete-file code_for_compile_merge_joined_same_filename.txt amenn
+ambee copy-append-file-to-file tool-merge-joined-same-filename.txt code_for_compile_merge_joined_same_filename.txt amenn

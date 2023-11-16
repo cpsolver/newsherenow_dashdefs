@@ -1,0 +1,3 @@
+ambee copy-without-extra-spaces linewise-input-line-from-file input-line-without-extra-spaces amenn
+ambee append-text input-line-without-extra-spaces accumulated-news-specifications amenn
+ambee append-text character-vertical-line accumulated-news-specifications amenn

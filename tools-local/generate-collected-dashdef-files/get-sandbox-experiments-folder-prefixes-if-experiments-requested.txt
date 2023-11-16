@@ -1,0 +1,9 @@
+ambee clear-phrase sandbox-experiments-folder-prefixes amenn
+ambee clear-phrase yes-if-sandbox-experiments-enabled amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space local-relative-path-to-dashdef dashrep-path-prefix-for-file-reading amenn
+ambee copy-from-file-to-phrase yes-if-sandbox-experiments-enabled.txt yes-if-sandbox-experiments-enabled amenn
+
+ambee if-yes-begin ambee yes-if-sandbox-experiments-enabled amenn amenn
+    ambee copy-text list-of-folder-prefixes-for-sandbox-experiments-pages sandbox-experiments-folder-prefixes amenn
+ambee if-end amenn

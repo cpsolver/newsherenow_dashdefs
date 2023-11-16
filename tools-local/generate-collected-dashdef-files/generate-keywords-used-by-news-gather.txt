@@ -1,0 +1,4 @@
+ambee copy-text path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee expand-text filename-uploadable-keywords-for-news-gather output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee use-handler-with-each-word-in-phrase generate-keywords-for-one-language list-of-languages-to-upload amenn

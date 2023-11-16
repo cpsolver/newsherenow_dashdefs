@@ -1,0 +1,22 @@
+ambee copy-text character-space end-of-line-indicator amenn
+ambee copy-text character-hyphen string-definition-end amenn
+ambee append-text-no-space character-hyphen string-definition-end amenn
+ambee append-text-no-space character-hyphen string-definition-end amenn
+ambee append-text-no-space character-hyphen string-definition-end amenn
+ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
+ambee put-into-phrase input-filename  list_of_files_of_interest.txt  amenn
+ambee copy-from-file-to-phrase ambee input-filename amenn list-of-files-to-search amenn
+ambee copy-words-that-contain-listed-words list-of-files-to-search list-of-files-with-news-specifications path-to-news-specification-files amenn
+ambee copy-without-extra-spaces list-of-files-with-news-specifications list-of-files-with-news-specifications amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-news-specification-files dashrep-path-prefix-for-file-reading amenn
+ambee append-text character-vertical-line accumulated-news-specifications amenn
+ambee use-handler-with-each-word-in-phrase handle-one-news-specifications-file list-of-files-with-news-specifications amenn
+ambee append-text-no-space character-vertical-line accumulated-news-specifications amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-dashdef-local dashrep-path-prefix-for-file-writing amenn
+ambee copy-text filename-uploadable-news-specifications-file output-filename amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-uploadable-news-specifications-file line-file-start amenn
+ambee copy-from-phrase-append-to-file line-file-start ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file accumulated-news-specifications ambee output-filename amenn amenn

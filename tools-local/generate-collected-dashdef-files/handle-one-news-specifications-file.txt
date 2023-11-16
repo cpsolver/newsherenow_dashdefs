@@ -1,0 +1,12 @@
+ambee copy-text word-to-use-in-handler full-path amenn
+ambee get-phrase-name-and-path-prefix amenn
+ambee append-text-no-space character-vertical-line accumulated-news-specifications amenn
+ambee copy-characters-from-position-to-position phrase-name news-source-name 16 999 amenn
+ambee append-text news-source-name accumulated-news-specifications amenn
+ambee append-text character-vertical-line accumulated-news-specifications amenn
+ambee copy-text phrase-name input-filename amenn
+ambee append-text-no-space string-dot-txt input-filename amenn
+ambee copy-text path-prefix dashrep-path-prefix-for-file-reading amenn
+ambee linewise-read-from-file-and-use-handler ambee input-filename amenn handle-one-line-of-news-specifications amenn
+ambee clear-phrase phrase-name amenn
+ambee clear-phrase path-prefix amenn

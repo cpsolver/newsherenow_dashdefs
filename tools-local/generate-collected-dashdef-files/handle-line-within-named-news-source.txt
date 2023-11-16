@@ -1,0 +1,11 @@
+ambee if-yes-begin ambee yes-or-no-same-two-phrase-definitions possible-definition-end string-definition-end amenn amenn
+ambee clear-phrase news-source-name amenn
+ambee if-else amenn
+ambee append-text input-line-without-extra-spaces accumulated-news-specifications amenn
+ambee append-text character-vertical-line accumulated-news-specifications amenn
+ambee if-end amenn
+
+
+ambee trace-show possible-definition-end amenn
+ambee trace-show input-line-without-extra-spaces amenn
+ambee trace-show character-vertical-line amenn

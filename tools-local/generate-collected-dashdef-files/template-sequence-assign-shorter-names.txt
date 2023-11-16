@@ -1,0 +1,9 @@
+compile
+<new_line>
+assign_shorter_names
+<new_line>
+
+execute
+<new_line>
+assign_shorter_names
+<new_line>

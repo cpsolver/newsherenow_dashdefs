@@ -1,0 +1,34 @@
+ambee copy-text path-to-dashdef-local path-to-dashdef amenn
+ambee put-into-phrase yes-or-no-trim-spaces-when-copy-from-file  yes  amenn
+ambee put-into-phrase yes-or-no-skip-empty-lines-when-copy-from-file  no  amenn
+ambee copy-text slash-or-backslash-local slash-or-backslash amenn
+ambee expand-text template-definition-end definition-end amenn
+ambee copy-text string-yes no-if-not-generate-dashdefs amenn
+ambee get-list-of-all-files amenn
+ambee join-main-files-of-interest amenn
+ambee copy-words-that-contain-listed-words list-of-all-files list-of-all-files string-dot-txt amenn
+ambee generate-list-of-biztypes amenn
+ambee generate-keywords-used-by-news-gather amenn
+ambee generate-code-for-combo-page-and-lookup amenn
+ambee generate-code-for-get-sandbox-or-backstage amenn
+ambee generate-code-for-assign-shorter-names amenn
+ambee generate-code-for-generate-uploadable-files amenn
+ambee generate-code-for-scan-joined-files amenn
+ambee generate-code-for-restore-replacements-after-translation amenn
+ambee generate-news-specifications-file amenn
+ambee generate-code-for-get-map-tiles amenn
+ambee generate-code-for-news-density amenn
+ambee generate-code-for-compress-news amenn
+ambee generate-code-for-do-redirect amenn
+ambee generate-code-for-web-api amenn
+ambee generate-code-for-news-gather amenn
+ambee generate-code-for-iterate-language-choice amenn
+ambee generate-code-for-do-replacements amenn
+ambee generate-code-for-merge-joined-same-filename amenn
+ambee generate-code-for-language-translation-page amenn
+ambee generate-code-for-split-translation-into-files amenn
+ambee generate-code-for-calculate-boundary-midpoints amenn
+ambee generate-code-for-list-one-minus-list-two amenn
+ambee generate-code-for-get-word-usage-count amenn
+ambee generate-code-for-convert-spreadsheet-to-dashdefs amenn
+ambee generate-code-for-scrape-webpage amenn

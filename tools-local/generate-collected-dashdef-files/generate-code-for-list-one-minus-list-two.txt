@@ -1,0 +1,9 @@
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space local-relative-path-to-tools-generate-list-one-minus-list-two dashrep-path-prefix-for-file-reading amenn
+ambee put-into-phrase input-filename  start-here.txt  amenn
+ambee put-into-phrase output-filename  code_for_compile_generate_list_one_minus_list_two.txt  amenn
+ambee clear-phrase dashrep-path-prefix-for-file-writing amenn
+ambee delete-file ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file line-start-here-colon ambee output-filename amenn amenn
+ambee copy-append-file-to-file ambee input-filename amenn ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file four-hyphens ambee output-filename amenn amenn

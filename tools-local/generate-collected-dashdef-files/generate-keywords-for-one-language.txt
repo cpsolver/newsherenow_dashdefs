@@ -1,0 +1,34 @@
+ambee copy-text word-to-use-in-handler language-choice amenn
+ambee expand-text template-line-file-start-keywords-one-language line-file-start-keywords-one-language amenn
+ambee copy-from-phrase-append-to-file line-file-start-keywords-one-language ambee output-filename amenn amenn
+ambee copy-without-extra-spaces sequence-of-keyword-phrase-names sequence-of-keyword-phrase-names amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee append-text-no-space relative-path-to-dashdef-local dashrep-path-prefix-for-file-reading amenn
+ambee copy-text compatibility-version-number-backstage compatibility-version-number amenn
+ambee expand-text template-filename-json-content-keyword-phrases filename-prefix-for-json-keywords amenn
+
+
+ambee trace-show compatibility-version-number amenn
+ambee trace-show filename-prefix-for-json-keywords amenn
+
+
+ambee copy-from-file-to-phrase ambee filename-prefix-for-json-keywords amenn json-content-keyword-phrase-words amenn
+ambee copy-and-replace json-content-keyword-phrase-words json-content-keyword-phrase-words character-newline character-space amenn
+ambee copy-without-extra-spaces json-content-keyword-phrase-words json-content-keyword-phrase-words amenn
+ambee copy-text server-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee expand-text template-relative-path-to-keywords-local-language-choice relative-path-to-keywords-local-language-choice amenn
+ambee append-text-no-space relative-path-to-keywords-local-language-choice dashrep-path-prefix-for-file-reading amenn
+ambee clear-phrase keyword-phrases-with-underscores amenn
+ambee clear-phrase keyword-reverse-lookup-lines amenn
+ambee copy-text digit-0 keyword-phrase-number amenn
+ambee use-handler-with-each-word-in-phrase generate-keyword-phrase-for-news-gather sequence-of-keyword-phrase-names amenn
+ambee copy-lowercase-only keyword-phrases-with-underscores keyword-phrases-with-underscores amenn
+ambee copy-and-replace keyword-phrases-with-underscores keyword-phrases-with-underscores character-hyphen character-underscore amenn
+ambee copy-from-phrase-append-to-file keyword-phrases-with-underscores ambee output-filename amenn amenn
+ambee expand-text template-line-file-start-keywords-reverse-lookup-one-language line-file-start-keywords-reverse-lookup-one-language amenn
+ambee copy-from-phrase-append-to-file line-file-start-keywords-reverse-lookup-one-language ambee output-filename amenn amenn
+ambee copy-from-phrase-append-to-file keyword-reverse-lookup-lines ambee output-filename amenn amenn
+ambee expand-text template-filename-json-keywords filename-json-keywords amenn
+ambee copy-without-extra-spaces filename-json-keywords filename-json-keywords amenn
+ambee delete-file ambee filename-json-keywords amenn amenn
+ambee copy-from-phrase-append-to-file json-content-keyword-phrase-words ambee filename-json-keywords amenn amenn
