@@ -1,0 +1,5 @@
+ambee trace-show empty-if-begin-not-end amenn
+ambee trace-show begin-or-end-character-position amenn
+
+
+ambee copy-text begin-or-end-character-position begin-character-position amenn
