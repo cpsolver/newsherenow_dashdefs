@@ -1,0 +1,9 @@
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\language-translation-page
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths-local\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\filenames-local\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\defaults\language-choice-en
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\languages\placeholder-replacements-during-translation
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\languages\list-of-
+local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder

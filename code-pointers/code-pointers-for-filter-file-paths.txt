@@ -1,0 +1,6 @@
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\filter-file-paths\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\character-period
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths-local\path-to-dashdef-local
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths-local\string-angle-bracketed-path-to-dashdef-local
+local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder

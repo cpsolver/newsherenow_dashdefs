@@ -1,0 +1,6 @@
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\dashdef\shared\source-code-copyright-notice
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\dashdef\tools-local\convert-spreadsheet-to-dashdefs\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\dashdef\shared\paths-local\path-to-dashdef-local.txt
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\dashdef\tools-local\calculate-boundary-midpoints\canadian-province-for-federal-id
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\dashdef\tools-local\calculate-boundary-midpoints\manitoba
+local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder

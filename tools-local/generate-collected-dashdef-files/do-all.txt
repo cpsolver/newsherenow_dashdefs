@@ -7,6 +7,9 @@ ambee copy-text string-yes no-if-not-generate-dashdefs amenn
 ambee get-list-of-all-files amenn
 ambee join-main-files-of-interest amenn
 ambee copy-words-that-contain-listed-words list-of-all-files list-of-all-files string-dot-txt amenn
+ambee use-handler-with-each-word-in-phrase handle-generate-code-for-one-tool list-of-tools-for-generate-code amenn
+
+combee
 ambee generate-list-of-biztypes amenn
 ambee generate-keywords-used-by-news-gather amenn
 ambee generate-code-for-combo-page-and-lookup amenn
@@ -20,7 +23,6 @@ ambee generate-code-for-get-map-tiles amenn
 ambee generate-code-for-news-density amenn
 ambee generate-code-for-compress-news amenn
 ambee generate-code-for-do-redirect amenn
-ambee generate-code-for-web-api amenn
 ambee generate-code-for-news-gather amenn
 ambee generate-code-for-iterate-language-choice amenn
 ambee generate-code-for-do-replacements amenn
@@ -28,7 +30,4 @@ ambee generate-code-for-merge-joined-same-filename amenn
 ambee generate-code-for-language-translation-page amenn
 ambee generate-code-for-split-translation-into-files amenn
 ambee generate-code-for-calculate-boundary-midpoints amenn
-ambee generate-code-for-list-one-minus-list-two amenn
-ambee generate-code-for-get-word-usage-count amenn
-ambee generate-code-for-convert-spreadsheet-to-dashdefs amenn
-ambee generate-code-for-scrape-webpage amenn
+comenn

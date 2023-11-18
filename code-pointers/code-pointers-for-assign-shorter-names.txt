@@ -1,0 +1,10 @@
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\assign-shorter-names\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths-local\path-to-dashdef-local
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\filenames-local\
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\filenames\template-filename-shorter-defs
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\compatibility-version-number-sandbox
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\compatibility-version-number-backstage
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\list-of-digits-0-through-9
+local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder

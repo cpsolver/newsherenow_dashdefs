@@ -1,0 +1,3 @@
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\get-word-usage-count\
+local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder
