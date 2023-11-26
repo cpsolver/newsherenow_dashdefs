@@ -1,5 +1,5 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\categorize-cities-by-location\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\generate-list-one-removing-text-items\
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

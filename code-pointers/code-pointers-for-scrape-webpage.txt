@@ -1,3 +1,7 @@
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\scrape-webpage\
-local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\scrape-webpage\
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-asterisk
+
+<local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

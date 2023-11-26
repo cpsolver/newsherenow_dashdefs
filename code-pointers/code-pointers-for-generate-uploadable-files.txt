@@ -1,24 +1,29 @@
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\generate-uploadable-files\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\languages\list-of-languages-to-upload
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\generate-collected-dashdef-files\get-list-of-all-files
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\page-combo\get-language-choice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\combine-dashdefs\get-phrase-name-and-path-prefix
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\language-choice-sandbox
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\paths-local\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\filenames\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\filenames-local\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\line-file-start-templates\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\compatibility-version-number-sandbox
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\compatibility-version-number-backstage
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\compatibility-version-number-onstage
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\defaults\choice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\defaults\language-choice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\defaults\string-dot-txt
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\defaults\template-bracketed-start-of-next-file
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\character
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\template-bracketed-start-of-next-file
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\public\template-definition-end
-local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\generate-uploadable-files\
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\list-of-languages-to-upload
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\generate-collected-dashdef-files\get-list-of-all-files
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\page-combo\get-language-choice
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\combine-dashdefs\get-phrase-name-and-path-prefix
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\language-choice-sandbox
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths-local\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames-local\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\line-file-start-templates\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-sandbox
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-backstage
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-onstage
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\choice
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\language-choice
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\string-dot-txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\template-bracketed-start-of-next-file
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\template-bracketed-start-of-next-file
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\template-definition-end
+
+<local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

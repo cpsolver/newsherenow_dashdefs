@@ -1,6 +1,9 @@
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\web-api\source-code-copyright-notice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\web-api\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\lookup\location-lookup\intersections\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\lookup\location-lookup\streets\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\lookup\businesses\
-local-path-to-top-folder no-space \dashdef\private-local\server-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\web-api\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\web-api\
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\intersections\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\streets\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\businesses\
+
+<local_path_to_top_folder>dashdef\private-local\server-path-to-top-folder

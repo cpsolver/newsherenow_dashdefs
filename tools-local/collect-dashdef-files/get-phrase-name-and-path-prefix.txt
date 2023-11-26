@@ -8,11 +8,3 @@ ambee copy-characters-from-position-to-position full-path phrase-file-name ambee
 ambee copy-characters-from-position-to-position full-path path-prefix 1 ambee position-of-last-slash-or-backslash amenn amenn
 ambee copy-and-replace phrase-file-name phrase-name character-period character-space amenn
 ambee copy-word-at-position phrase-name phrase-name 1 amenn
-
-
-combee ***
-ambee trace-show full-path amenn
-ambee trace-show path-prefix amenn
-ambee trace-show phrase-file-name amenn
-ambee trace-show phrase-name amenn
-*** comenn

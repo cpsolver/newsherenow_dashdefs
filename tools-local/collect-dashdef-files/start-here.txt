@@ -1,0 +1,7 @@
+combee
+input files:
+list_of_all_nhn_files.txt
+temp_input_list_of_collected_dashdef_files.txt
+comenn
+
+ambee do-collect-dashdef-files amenn

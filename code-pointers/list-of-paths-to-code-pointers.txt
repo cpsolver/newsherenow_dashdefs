@@ -1,0 +1,7 @@
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-generate-list-one-minus-list-two.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-generate-list-one-containing-list-two.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-generate-list-one-removing-text-items.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-web-api.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-get-word-usage-count.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-convert-spreadsheet-to-dashdefs.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-scrape-webpage.txt

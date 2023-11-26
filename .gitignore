@@ -15,4 +15,5 @@ generate-unique-id*.txt
 *cgi*.txt
 *letters-for-short-names.txt
 *.pl
+*.lnk
 *-news-*.txt

@@ -1,5 +1,8 @@
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\restore-replacements-after-translation\
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\split-translation-into-files\path-to-local-language-translation-files
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\languages\replacements-restore-after-translation
-local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\restore-replacements-after-translation\
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\split-translation-into-files\path-to-local-language-translation-files
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\replacements-restore-after-translation
+
+<local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

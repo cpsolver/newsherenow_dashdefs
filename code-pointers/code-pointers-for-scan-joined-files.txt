@@ -1,3 +1,9 @@
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
-local-path-to-top-folder no-space github_public\newsherenow_dashdefs\tools-local\scan-joined-files\
-local-path-to-top-folder no-space \dashdef\private-local\local-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\scan-joined-files\
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-am.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-bee.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-enn.txt
+
+<local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

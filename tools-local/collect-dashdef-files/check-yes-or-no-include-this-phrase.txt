@@ -1,0 +1,37 @@
+ambee copy-text string-yes yes-or-no-include-this-phrase amenn
+
+combee
+omit if duplicate
+comenn
+ambee put-into-phrase zero-if-not-yet-encountered  ambee get-position-of-word phrase-name list-of-phrase-names-encountered amenn  amenn
+
+ambee if-yes-begin ambee yes-or-no-same-two-words zero ambee zero-or-nonzero ambee zero-if-not-yet-encountered amenn amenn amenn amenn
+    ambee append-text phrase-name list-of-phrase-names-encountered amenn
+ambee if-else amenn
+    ambee copy-text string-no yes-or-no-include-this-phrase amenn
+    ambee append-text phrase-name list-of-duplicate-phrase-names amenn
+ambee if-end amenn
+
+combee
+omit if no hyphen in phrase name
+comenn
+ambee if-yes-begin ambee yes-or-no-same-two-words 0 ambee get-position-of-matching-text character-hyphen phrase-name amenn amenn amenn
+    ambee copy-text string-no yes-or-no-include-this-phrase amenn
+ambee if-end amenn
+
+combee
+omit if phrase name is not at least three characters in length
+comenn
+ambee if-no-begin ambee yes-or-no-same-two-words greater ambee numeric-equal-greater-less-compare ambee get-count-of-characters phrase-name amenn 2 amenn amenn amenn
+    ambee copy-text string-no yes-or-no-include-this-phrase amenn
+ambee if-end amenn
+
+combee
+omit if phrase definition file does not exist
+comenn
+ambee copy-text path-prefix dashrep-path-prefix-for-file-reading amenn
+ambee copy-text phrase-name filename-dashdef amenn
+ambee append-text-no-space string-dot-txt filename-dashdef amenn
+ambee if-no-begin ambee yes-or-no-file-exists ambee filename-dashdef amenn amenn amenn
+    ambee copy-text string-no yes-or-no-include-this-phrase amenn
+ambee if-end amenn

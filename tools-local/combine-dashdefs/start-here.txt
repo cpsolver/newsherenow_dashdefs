@@ -1,5 +1,0 @@
-combee
-input file:  temp_list_of_dsashdef_files_to_join.txt
-comenn
-
-ambee do-combine-dashdefs amenn

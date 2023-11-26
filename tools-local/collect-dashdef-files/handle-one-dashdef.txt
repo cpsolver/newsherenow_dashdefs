@@ -1,0 +1,34 @@
+ambee copy-text word-to-use-in-handler full-path amenn
+ambee get-phrase-name-and-path-prefix amenn
+ambee check-yes-or-no-include-this-phrase amenn
+ambee clear-phrase one-dashdef amenn
+ambee clear-phrase dashdef-phrase-definition amenn
+
+ambee if-yes-begin ambee yes-or-no-include-this-phrase amenn amenn
+    ambee copy-text path-prefix dashrep-path-prefix-for-file-reading amenn
+    ambee copy-text phrase-name filename-dashdef amenn
+    ambee append-text-no-space string-dot-txt filename-dashdef amenn
+    ambee copy-from-file-to-phrase ambee filename-dashdef amenn dashdef-phrase-definition amenn
+    ambee copy-text phrase-name one-dashdef amenn
+    ambee append-text-no-space character-colon one-dashdef amenn
+    ambee append-new-line one-dashdef amenn
+    ambee append-text-no-space dashdef-phrase-definition one-dashdef amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase dashdef-phrase-definition amenn amenn
+    ambee put-into-phrase length-of-definition  ambee get-count-of-characters dashdef-phrase-definition amenn  amenn
+    ambee copy-characters-from-position-to-position dashdef-phrase-definition last-character ambee length-of-definition amenn ambee length-of-definition amenn amenn
+ambee if-else amenn
+    ambee copy-text character-space last-character amenn
+ambee if-end amenn
+
+ambee if-no-begin ambee yes-or-no-same-two-phrase-definitions last-character character-newline amenn amenn
+    ambee append-new-line one-dashdef amenn
+ambee if-end amenn
+
+ambee append-text-no-space definition-end one-dashdef amenn
+ambee append-new-line one-dashdef amenn
+
+ambee if-yes-begin ambee yes-or-no-include-this-phrase amenn amenn
+    ambee append-text-no-space one-dashdef collected-dashdefs-for-combine-dashdefs amenn
+ambee if-end amenn

@@ -1,0 +1,16 @@
+ambee get-tool-name-from-full-path amenn
+ambee clear-phrase list-of-matching-file-paths amenn
+ambee copy-from-file-to-phrase ambee filename-input-list-of-patterns-to-match amenn list-of-patterns-to-match amenn
+ambee expand-text list-of-patterns-to-match list-of-patterns-to-match amenn
+ambee copy-words-unique-only list-of-patterns-to-match list-of-patterns-to-match amenn
+ambee clear-phrase list-of-phrase-names-encountered amenn
+ambee clear-phrase matching-file-paths amenn
+ambee clear-phrase collected-dashdefs-for-combine-dashdefs amenn
+ambee use-handler-with-each-word-in-phrase handle-one-pattern-to-match list-of-patterns-to-match amenn
+ambee use-handler-with-each-word-in-phrase handle-one-dashdef list-of-matching-file-paths amenn
+ambee put-into-phrase output-filename-dashdefs  code_for_compile_  amenn
+ambee append-text-no-space tool-name output-filename-dashdefs amenn
+ambee append-text-no-space string-dot-txt output-filename-dashdefs amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee delete-file ambee output-filename-dashdefs amenn amenn
+ambee copy-from-phrase-append-to-file collected-dashdefs-for-combine-dashdefs ambee output-filename-dashdefs amenn amenn
