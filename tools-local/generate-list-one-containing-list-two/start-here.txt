@@ -1,5 +1,5 @@
-ambee clear-phrase dashrep-path-prefix-for-file-reading amenn
-ambee clear-phrase dashrep-path-prefix-for-file-writing amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
 ambee copy-text character-space end-of-line-indicator amenn
 ambee put-into-phrase yes-or-no-trim-spaces-when-copy-from-file  yes  amenn
 ambee put-into-phrase yes-or-no-skip-empty-lines-when-copy-from-file  yes  amenn
@@ -7,15 +7,15 @@ ambee copy-from-file-to-phrase list_one.txt list-one amenn
 ambee copy-from-file-to-phrase list_two.txt list-two amenn
 ambee copy-without-extra-spaces list-one list-one amenn
 ambee copy-without-extra-spaces list-two list-two amenn
-ambee copy-words-that-contain-listed-words list-one list-two list-one-containing-two amenn
+ambee copy-words-that-contain-listed-words list-one list-one-containing-two list-two amenn
 ambee append-new-line list-one-containing-two amenn
 ambee copy-and-replace list-one-containing-two list-one-containing-two character-space character-newline amenn
 ambee copy-text list-one-containing-two standard-output amenn
+combee
+comenn
 
 
 combee
-for testing
-comenn
 ambee append-text character-newline standard-output amenn
 ambee append-text character-newline standard-output amenn
 ambee copy-and-replace list-one list-one-as-lines character-space character-newline amenn
@@ -24,3 +24,4 @@ ambee append-text character-newline standard-output amenn
 ambee append-text character-newline standard-output amenn
 ambee copy-and-replace list-two list-two-as-lines character-space character-newline amenn
 ambee append-text list-two-as-lines standard-output amenn
+comenn

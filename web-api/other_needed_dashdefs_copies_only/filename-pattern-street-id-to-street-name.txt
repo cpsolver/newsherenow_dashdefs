@@ -1,1 +1,0 @@
-street_names_category_ no-space street-names-pattern-digits no-space .txt

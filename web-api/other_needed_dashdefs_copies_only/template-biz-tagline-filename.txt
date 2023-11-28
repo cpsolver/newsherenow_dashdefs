@@ -1,1 +1,0 @@
-nhn_business_taglines_in_region_ no-space region-id no-space .txt no-space

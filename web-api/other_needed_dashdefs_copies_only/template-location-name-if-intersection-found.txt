@@ -1,1 +1,0 @@
-first-street-name character-ampersand second-street-name ( no-space city-name-or-postal-code-name no-space )

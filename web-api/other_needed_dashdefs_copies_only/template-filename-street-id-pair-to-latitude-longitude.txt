@@ -1,1 +1,0 @@
-intersections_category_ no-space ambee region-latitude-first-four-digits amenn no-space _ no-space ambee region-longitude-first-four-digits amenn no-space .txt no-space

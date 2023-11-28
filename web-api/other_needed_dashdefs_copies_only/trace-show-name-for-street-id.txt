@@ -1,5 +1,0 @@
-ambee copy-text word-to-use-in-handler street-id amenn
-ambee get-street-name-based-on-street-id amenn
-
-
-ambee trace-show street-name-for-street-id fenambee street-id amenn amenn

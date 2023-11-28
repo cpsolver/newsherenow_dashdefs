@@ -1,2 +1,0 @@
-ambee copy-word-at-position biz-ids-sorted-by-distance biz-id ambee word-to-use-in-handler amenn amenn
-ambee append-text biz-id biz-ids-first-of-each-biz-type amenn

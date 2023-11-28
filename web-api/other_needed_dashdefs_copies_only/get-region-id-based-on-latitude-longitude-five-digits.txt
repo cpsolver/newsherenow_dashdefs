@@ -1,3 +1,0 @@
-ambee copy-zero-pad-left-to-length latitude-five-digits latitude-five-digits 5 amenn
-ambee copy-zero-pad-left-to-length longitude-five-digits longitude-five-digits 5 amenn
-ambee put-into-phrase region-id  ambee get-characters-from-position-to-position latitude-five-digits 1 4 amenn nospay _ nospay ambee get-characters-from-position-to-position longitude-five-digits 1 4 amenn amenn
