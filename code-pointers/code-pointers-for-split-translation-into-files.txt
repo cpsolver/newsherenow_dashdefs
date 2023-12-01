@@ -2,10 +2,10 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\split-translation-into-files
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\template-bracketed-start-of-next-file
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\template-bracketed-start-of-next-file
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\replacements-restore-after-translation
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-backslash
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-dot-txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-backslash
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-dot-txt
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

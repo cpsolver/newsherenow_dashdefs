@@ -2,13 +2,13 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\language-translation-page
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths-local\
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames-local\
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\language-choice-en
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\language-choice-en
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\placeholder-replacements-during-translation
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\list-of-
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-dot-txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-dot-txt
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

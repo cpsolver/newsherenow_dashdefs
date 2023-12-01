@@ -2,6 +2,6 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\scrape-webpage\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-asterisk
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-asterisk.
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

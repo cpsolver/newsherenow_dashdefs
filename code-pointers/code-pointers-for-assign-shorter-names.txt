@@ -6,7 +6,7 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames\template-filename-shorter-defs
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-sandbox
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-backstage
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\slash-or-backslash
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\list-of-digits-0-through-9
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\list-of-digits-0-through-9
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

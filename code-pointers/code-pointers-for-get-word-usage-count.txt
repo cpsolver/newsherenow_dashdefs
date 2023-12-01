@@ -2,6 +2,6 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\get-word-usage-count\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-colon
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-colon.
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder

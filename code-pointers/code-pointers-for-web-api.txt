@@ -2,36 +2,36 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\web-api\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-ampersand.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-backslash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-close-brace.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-comma.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-period.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-plus-sign.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-slash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\code-close-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\code-open-close-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\code-open-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\digit-0.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\digit-1.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\letter-r.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\letter-w.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\slash-or-backslash-server.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\slash-or-backslash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-no.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-yes.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\value-of-pi.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-ampersand.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-backslash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-close-brace.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-comma.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-plus-sign.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-slash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-close-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-close-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-0.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-1.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-r.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-w.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-server.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-no.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-yes.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\value-of-pi.
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\utilities\check-elapsed-time.
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\dashrep-endless-loop-counter-limit.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\flipped-not-unflipped.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\unflipped-not-flipped.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\time-limit-in-seconds.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\string-00000000.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\string-9999_9999.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\string-99999999999_99999999999.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\defaults\string-space-comma-equivalent.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\dashrep-endless-loop-counter-limit.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\flipped-not-unflipped.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\unflipped-not-flipped.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\time-limit-in-seconds.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-00000000.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-9999_9999.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-99999999999_99999999999.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-space-comma-equivalent.
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\businesses\get-first-biz-of-each-biz-type.txt
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\businesses\handle-get-businesses-in-region-file.txt

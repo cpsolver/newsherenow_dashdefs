@@ -2,7 +2,7 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\filter-file-paths\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\character-period
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths-local\local-relative-path-to-dashdef
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths-local\string-angle-bracketed-path-to-dashdef-local
 

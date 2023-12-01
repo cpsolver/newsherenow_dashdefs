@@ -2,8 +2,8 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\scan-joined-files\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-am.txt
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-bee.txt
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\public\string-enn.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-am.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-bee.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-enn.txt
 
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder
