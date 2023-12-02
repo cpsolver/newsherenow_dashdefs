@@ -40,7 +40,7 @@ ambee if-else amenn
     ambee copy-text string-no yes-or-no-intersection-file-exists amenn
 ambee if-end amenn
 
-ambee if-yes-begin ambee yes-or-no-intersection-file-exists ambee file-to-search-for-intersections amenn amenn amenn
+ambee if-yes-begin ambee yes-or-no-intersection-file-exists amenn amenn
     ambee linewise-read-from-file-and-use-handler ambee file-to-search-for-intersections amenn search-intersection-lines-for-text-to-match amenn
 ambee if-end amenn
 
