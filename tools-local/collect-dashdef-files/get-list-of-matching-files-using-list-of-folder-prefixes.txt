@@ -1,6 +1,12 @@
 ambee copy-words-unique-only list-of-folder-prefixes list-of-folder-prefixes amenn
-ambee copy-and-replace list-of-folder-prefixes list-of-folder-prefixes string-angle-bracketed-path-to-dashdef-local path-to-dashdef-local amenn
-ambee copy-words-unique-only list-of-folder-prefixes list-of-folder-prefixes amenn
+
+ambee if-no-begin ambee yes-or-no-empty-phrase list-of-folder-prefixes amenn amenn
+     ambee copy-and-replace list-of-folder-prefixes list-of-folder-prefixes string-angle-bracketed-path-to-dashdef-local path-to-dashdef-local amenn
+    ambee copy-words-unique-only list-of-folder-prefixes list-of-folder-prefixes amenn
+ambee if-else amenn
+    ambee clear-phrase list-of-folder-prefixes amenn
+ambee if-end amenn
+
 ambee clear-phrase collected-dashdefs amenn
 ambee clear-phrase list-of-duplicate-phrase-names amenn
 ambee clear-phrase list-of-phrase-names-encountered amenn

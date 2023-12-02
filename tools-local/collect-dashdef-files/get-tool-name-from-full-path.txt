@@ -1,7 +1,11 @@
-ambee copy-and-replace full-path path-segments character-slash character-space amenn
-ambee copy-and-replace path-segments path-segments character-backslash character-space amenn
-ambee copy-word-at-position path-segments path-last-segment 99999 amenn
-ambee copy-and-replace path-last-segment path-last-segment character-hyphen character-underscore amenn
-ambee copy-and-replace path-last-segment tool-name string-dot-txt empty-text amenn
-ambee copy-and-replace tool-name tool-name string-underscore-for-underscore character-space amenn
-ambee copy-word-at-position tool-name tool-name 999 amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase full-path amenn
+    ambee copy-and-replace full-path path-segments character-slash character-space amenn
+    ambee copy-and-replace path-segments path-segments character-backslash character-space amenn
+    ambee copy-word-at-position path-segments path-last-segment 99999 amenn
+    ambee copy-and-replace path-last-segment path-last-segment character-hyphen character-underscore amenn
+    ambee copy-and-replace path-last-segment tool-name string-dot-txt empty-text amenn
+    ambee copy-and-replace tool-name tool-name string-underscore-for-underscore character-space amenn
+    ambee copy-word-at-position tool-name tool-name 999 amenn
+ambee if-else amenn
+    ambee clear-phrase tool-name amenn
+ambee if-end amenn

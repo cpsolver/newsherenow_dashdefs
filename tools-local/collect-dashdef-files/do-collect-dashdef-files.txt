@@ -2,6 +2,7 @@ combee
 Reminder:  If a dashrep file is added to the "collect-dashdef-files" folder, or is renamed, then the file "expanded-code-pointers-to-files-for-collect-dashdef-files.txt" must be edited to match
 comenn
 
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
 ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
 ambee expand-text template-definition-end definition-end amenn
 ambee copy-text character-newline end-of-line-indicator amenn
