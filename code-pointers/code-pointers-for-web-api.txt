@@ -2,26 +2,6 @@
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\web-api\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-ampersand.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-backslash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-close-brace.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-comma.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-plus-sign.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-slash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-close-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-close-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-quote.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-0.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-1.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-r.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-w.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-server.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-no.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-yes.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\value-of-pi.
-
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\utilities\check-elapsed-time.
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\dashrep-endless-loop-counter-limit.
@@ -79,5 +59,25 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\map-meta\determine-map-tile-filenames.txt
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\start-finish-lookup\do-after-sending-json-response.txt
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-ampersand.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-backslash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-close-brace.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-comma.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-plus-sign.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-slash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-close-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-close-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-quote.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-0.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\digit-1.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-r.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-w.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-server.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-no.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-yes.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\value-of-pi.
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\private-local\server-path-to-top-folder
