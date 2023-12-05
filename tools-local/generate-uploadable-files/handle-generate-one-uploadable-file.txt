@@ -1,0 +1,13 @@
+ambee copy-text word-to-use-in-handler one-uploadable-file-name amenn
+ambee copy-text bracketed-start-of-next-file start-line amenn
+ambee append-text server-path-to-top-folder start-line amenn
+ambee append-text-no-space server-path-for-uploadable fenambee one-uploadable-file-name amenn start-line amenn
+ambee append-text-no-space server-filename-for-uploadable fenambee one-uploadable-file-name amenn start-line amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee copy-text local-filename-source-for-uploadable fenambee one-uploadable-file-name amenn source-filename amenn
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-writing amenn
+ambee append-text-no-space local-relative-path-to-dashdef dashrep-path-prefix-for-file-writing amenn
+ambee copy-text local-filename-target-for-uploadable fenambee one-uploadable-file-name amenn target-filename amenn
+ambee delete-file ambee target-filename amenn amenn
+ambee copy-from-phrase-append-to-file start-line ambee target-filename amenn amenn
+ambee copy-append-file-to-file ambee source-filename amenn ambee target-filename amenn amenn

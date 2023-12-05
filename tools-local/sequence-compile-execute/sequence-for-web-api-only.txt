@@ -1,0 +1,12 @@
+compile
+collect_dashdef_files
+execute
+collect_dashdef_files
+compile
+web_api
+execute
+web_api
+compile
+generate_uploadable_files
+execute
+generate_uploadable_files

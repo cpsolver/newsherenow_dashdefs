@@ -1,4 +1,4 @@
-ambee if-no-begin ambee yes-or-no-empty-phrase full-path amenn
+ambee if-no-begin ambee yes-or-no-empty-phrase full-path amenn amenn
     ambee copy-and-replace full-path path-segments character-slash character-space amenn
     ambee copy-and-replace path-segments path-segments character-backslash character-space amenn
     ambee copy-word-at-position path-segments path-last-segment 99999 amenn

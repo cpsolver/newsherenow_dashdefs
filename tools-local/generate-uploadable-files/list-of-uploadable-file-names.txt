@@ -1,0 +1,4 @@
+web_api
+do_redirect
+get_move
+get_map_tiles

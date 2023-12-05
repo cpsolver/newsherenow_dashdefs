@@ -19,5 +19,8 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-local.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-server.
 
+<local_path_to_top_folder>dashdef\private-local\server-filename-for-uploadable-
+<local_path_to_top_folder>dashdef\private-local\server-path-for-uploadable-
+
 <local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder
 <local_path_to_top_folder>dashdef\private-local\server-path-to-top-folder
