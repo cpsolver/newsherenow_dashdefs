@@ -3,6 +3,10 @@ ambee put-into-phrase epoch-seconds-starting-time  ambee get-current-time-in-epo
 ambee get-cgi-information amenn
 ambee check-if-lookup-access-granted amenn
 
+
+ambee trace-show input-raw amenn
+
+
 ambee if-yes-begin ambee yes-or-no-empty-phrase message-success-or-error amenn amenn
     ambee web-api-handle-request-intbiz amenn
 ambee if-end amenn

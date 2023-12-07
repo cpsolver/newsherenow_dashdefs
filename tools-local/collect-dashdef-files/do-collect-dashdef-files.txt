@@ -1,5 +1,8 @@
 combee
-Reminder:  If a dashrep file is added to the "collect-dashdef-files" folder, or is renamed, then the file "expanded-code-pointers-to-files-for-collect-dashdef-files.txt" must be edited to match
+Reminder:  If a dashrep file is added to the "collect-dashdef-files" folder, or is renamed, then add it to the file:
+"expanded-code-pointers-to-files-for-collect-dashdef-files.txt"
+If a dashrep file in any other folder is added, also add it to the file:
+"code-pointers-for-collect-dashdef-files.txt"
 comenn
 
 ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
@@ -9,6 +12,14 @@ ambee copy-text character-newline end-of-line-indicator amenn
 ambee put-into-phrase yes-or-no-trim-spaces-when-copy-from-file  yes  amenn
 ambee put-into-phrase yes-or-no-skip-empty-lines-when-copy-from-file  no  amenn
 ambee get-list-of-all-files amenn
+
+ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
+ambee copy-from-file-to-phrase ambee filename-list-of-dashrep-phrase-names amenn list-of-dashrep-phrase-names amenn
+
+
+ambee trace-show list-of-dashrep-phrase-names amenn
+
+
 ambee copy-text local-path-to-top-folder dashrep-path-prefix-for-file-reading amenn
 ambee copy-from-file-to-phrase ambee filename-input-list-of-paths-to-code-pointers amenn list-of-paths-to-code-pointers amenn
 ambee expand-text list-of-paths-to-code-pointers expanded-list-of-paths-to-code-pointers amenn

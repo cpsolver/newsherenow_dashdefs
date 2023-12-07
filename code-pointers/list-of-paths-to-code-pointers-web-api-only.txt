@@ -1,2 +1,0 @@
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-web-api.txt
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-generate-uploadable-files.txt

@@ -4,10 +4,4 @@ list_of_all_nhn_files.txt
 temp_input_list_of_collected_dashdef_files.txt
 comenn
 
-combee
-Reminder: Both versions of these two "build" files must be correct:
-expanded-code-pointers-to-files-for-collect-dashdef-files.txt
-code-pointers-for-collect-dashdef-files.txt
-comenn
-
 ambee do-collect-dashdef-files amenn

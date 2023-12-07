@@ -1,6 +1,11 @@
 ambee copy-text input-lat latitude-decimal amenn
 ambee copy-text input-lon longitude-decimal amenn
 
+
+ambee trace-show latitude-decimal amenn
+ambee trace-show longitude-decimal amenn
+
+
 ambee if-yes-begin ambee yes-or-no-empty-phrase latitude-decimal amenn amenn
     ambee copy-text string-message-lat_or_lon_invalid message-success-or-error amenn
 ambee if-end amenn

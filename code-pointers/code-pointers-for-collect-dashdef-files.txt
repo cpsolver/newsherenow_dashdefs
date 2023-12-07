@@ -8,17 +8,10 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames\
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames-local\
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-sandbox.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-backstage.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\list-of-valid-language-choices.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-dot-txt.
-
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\pages\page-combo\get-language-choice.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\languages\list-of-languages-to-upload.
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\pages\generate-keywords\sequence-of-keyword-phrase-names.
-
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\language-choice-
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-colon.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\choice
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\language-choice-
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\letter-k.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\line-file-start-templates\
 

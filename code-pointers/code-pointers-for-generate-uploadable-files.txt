@@ -13,6 +13,7 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\compatibility-version-number-onstage.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\choice-backstage.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\choice-sandbox.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\list-of-valid-language-choices.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\language-choice.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-dot-txt.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\template-bracketed-start-of-next-file.

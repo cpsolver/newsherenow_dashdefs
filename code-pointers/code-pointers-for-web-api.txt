@@ -56,9 +56,16 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\streets\trace-show-name-for-street-id.txt
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\streets\trace-show-name-for-street-ids.txt
 
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\intersections\specify-path-and-filename-for-intersection-info-in-region-id.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\intersections\template-relative-path-to-street-intersections.
+
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\map-meta\determine-map-tile-filenames.txt
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\start-finish-lookup\do-after-sending-json-response.txt
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\utilities\convert-latitude-longitude-decimal-to-integer.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\utilities\convert-latitude-or-longitude-decimal-to-integer.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\utilities\convert-decimal-latitude-longitude-to-integer.
 
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-ampersand.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-backslash.
@@ -66,6 +73,7 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-comma.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-plus-sign.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-question-mark.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-slash.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-close-quote.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\code-open-close-quote.
@@ -80,4 +88,14 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-yes.
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\value-of-pi.
 
-<local_path_to_top_folder>github_public\newsherenow_dashdefs\private-local\server-path-to-top-folder
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\urls\template-url-local-map-tile-not-available.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\location-lookup\interpret-request\template-info-for-intersection-just-found.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\filenames\filename-for-locations-previously-found.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\lookup\map-meta\filename-list-of-needed-map-tiles.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths\relative-path-to-file-containing-locations-previously-found.
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths\relative-path-to-dashdef.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths\template-relative-path-to-biz.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\paths\template-relative-path-to-street-names.
+
+<local_path_to_top_folder>dashdef\private-local\server-path-to-top-folder

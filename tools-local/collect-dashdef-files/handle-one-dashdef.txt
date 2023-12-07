@@ -31,4 +31,5 @@ ambee append-new-line one-dashdef amenn
 
 ambee if-yes-begin ambee yes-or-no-include-this-phrase amenn amenn
     ambee append-text-no-space one-dashdef collected-dashdefs-for-combine-dashdefs amenn
+    ambee append-text phrase-name list-of-phrase-names-defined amenn
 ambee if-end amenn
