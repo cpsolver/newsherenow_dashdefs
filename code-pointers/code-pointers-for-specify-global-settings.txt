@@ -1,0 +1,12 @@
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\source-code-copyright-notice
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\tools-local\specify-global-settings\
+
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\slash-or-backslash-local.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-dot-txt.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\character-period.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-yes.
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\shared\general\string-no.
+
+<local_path_to_top_folder>dashdef\private-local\local-path-to-top-folder
+<local_path_to_top_folder>dashdef\private-local\votefair-path-to-top-folder

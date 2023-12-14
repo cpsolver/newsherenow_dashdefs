@@ -12,3 +12,4 @@
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-restore-replacements-after-translation.txt
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-language-translation-page.txt
 <local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-generate-uploadable-files.txt
+<local_path_to_top_folder>github_public\newsherenow_dashdefs\code-pointers\code-pointers-for-specify-global-settings.txt

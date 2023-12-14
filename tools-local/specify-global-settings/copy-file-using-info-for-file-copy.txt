@@ -1,0 +1,6 @@
+ambee extract-and-check-paths-filenames amenn
+
+ambee if-yes-begin ambee yes-or-no-have-valid-info amenn amenn
+    ambee delete-file ambee target-filename amenn amenn
+    ambee copy-append-file-to-file ambee source-filename amenn ambee target-filename amenn amenn
+ambee if-end amenn

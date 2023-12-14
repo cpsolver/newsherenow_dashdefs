@@ -1,0 +1,170 @@
+ambee copy-text slash-or-backslash-local slash-or-backslash amenn
+ambee copy-and-replace string-dot-txt string-txt character-period character-space amenn
+ambee copy-without-extra-spaces string-txt string-txt amenn
+ambee put-into-phrase string-top-folder-with-underscore  top_folder amenn
+ambee copy-text local-path-to-top-folder path-to-top-source-folder amenn
+ambee copy-text local-path-to-top-folder path-to-top-target-folder amenn
+
+combee
+The phrase "info-for-file-copy" uses partial paths, not full paths.
+The partial path must be relative to "path-to-top-folder".
+comenn
+
+combee
+The following list MUST include en for English
+comenn
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_list_of_languages_to_upload.txt
+dashdef\languages\ list-of-languages-to-upload.txt 
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+combee
+The following list SHOULD include en for English
+comenn
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_list_of_languages_accessible.txt
+dashdef\languages\ list-of-languages-accessible.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+combee
+The following global value can be a language abbreviation other than en for English
+comenn
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_language_choice_sandbox.txt
+dashdef\shared\ language-choice-sandbox.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+combee
+Delete instead of copy
+comenn
+ambee put-into-phrase info-for-file-copy
+dashdef\ yes-if-sandbox-experiments-enabled.txt
+dashdef\ yes-if-sandbox-experiments-enabled.txt
+amenn
+ambee extract-and-check-paths-filenames amenn
+ambee if-yes-begin ambee yes-or-no-have-valid-info amenn amenn
+    ambee delete-file yes-if-sandbox-experiments-enabled.txt amenn
+ambee if-end amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_sandbox.txt
+dashdef\shared\ compatibility-version-number-sandbox.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_backstage.txt
+dashdef\shared\ compatibility-version-number-backstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_onstage.txt
+dashdef\shared\ compatibility-version-number-onstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_backstage.txt
+top_folder temp-copy-compatibility-version-number-backstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_path_to_dashdef_local.txt
+dashdef\shared\paths-local\ path-to-dashdef-local.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_path_to_dashdef_local.txt
+top_folder path_to_dashdef_local.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_path_to_dashdef_server.txt
+dashdef\shared\paths\ path-to-dashdef-server.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_user_id_sandbox_version.txt
+dashdef\shared\user-ids\ user-id-sandbox-version.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_user_id_valid_current.txt
+dashdef\shared\user-ids\ user-id-valid-current.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_list_of_valid_user_ids.txt
+dashdef\shared\user-ids\ list-of-valid-user-ids.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\shared\defaults\ language-choice-en.txt
+dashdef\ language-choice.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\shared\ choice-sandbox.txt
+dashdef\shared\ sandbox-or-backstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\shared\ compatibility-version-number-sandbox.txt
+dashdef\shared\ compatibility-version-number.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+combee
+For remaining file copy actions,
+change target top folder to VoteFairPolls area
+comenn
+ambee copy-text votefair-path-to-top-folder path-to-top-target-folder amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_sandbox.txt
+dashdef\ compatibility-version-number-sandbox.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_sandbox.txt
+dashdef\shared\ compatibility-version-number-sandbox.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_backstage.txt
+dashdef\ compatibility-version-number-backstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_backstage.txt
+dashdef\shared\ compatibility-version-number-backstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_onstage.txt
+dashdef\ compatibility-version-number-onstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn
+
+ambee put-into-phrase info-for-file-copy
+dashdef\ global_compatibility_version_number_onstage.txt
+dashdef\shared\ compatibility-version-number-onstage.txt
+amenn
+ambee copy-file-using-info-for-file-copy amenn

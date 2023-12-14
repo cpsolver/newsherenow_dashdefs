@@ -4,6 +4,11 @@ execute
 collect_dashdef_files
 
 compile
+specify_global_settings
+execute
+specify_global_settings
+
+compile
 scan_joined_files
 execute
 scan_joined_files
